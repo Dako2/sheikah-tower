@@ -1,2 +1,4 @@
-# Sheikah Tower (The AI Tower)
-OCP Hackathon 2023
+# Sheikah_Tower
+ 
+Step 1: 
+pip install -r requirements.txt
