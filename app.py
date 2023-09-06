@@ -1,5 +1,6 @@
 import logging
 import eventlet
+eventlet.monkey_patch()
 from flask import Flask, render_template_string
 from flask_socketio import SocketIO, emit
 from llm.llm_agent import Conversation
@@ -7,7 +8,6 @@ import openai
 from environment import OPENAI_API_KEY
 import wrapper
 
-eventlet.monkey_patch()
 conversation = Conversation()  # An instance of the Conversation class to handle the chat.
 openai.api_key = OPENAI_API_KEY
 
