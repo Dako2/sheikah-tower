@@ -37,3 +37,6 @@ class MECApp():
         nearby_locations = f"{list(event.keys())[2]}: {event[list(event.keys())[2]]}" # 3rd key is 'nearby_locations within 500'
 
         return user_live_coor, nearby_locations
+
+if __name__ == "__main__":
+    mec = MECApp()

@@ -22,6 +22,7 @@ from VecDB import VecDataBase
 # initiate a conversation
 convo = Conversation()
 
+"""
 # initatie a location manager
 log_file_path = "db/user_event_log_file.json"
 db_location_file_path = "db/monaco_coordinates.json"
@@ -36,6 +37,7 @@ nearby_locations = f"{list(event.keys())[2]}: {event[list(event.keys())[2]]}" # 
 # check to delete
 print(user_live_coor)
 print(nearby_locations)
+"""
 
 DATA_PATH={'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
 v = VecDataBase(db_csv_paths = DATA_PATH, update_db=True)
@@ -45,7 +47,7 @@ try:
         user_input = input("\n\nUser: ")
         loc1_found_db_texts, loc1_found_score = v.search_db(user_input, DATA_PATH['loc1'])
         print(loc1_found_db_texts)
-        user_found_db_texts, user_found_score = v.search_db(user_input, DATA_PATH['user'])
+        user_found_db_texts, user_found_score = v.search_db(user_input, DATA_PATH['user1'])
         print(user_found_db_texts)      
         
         output = convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
