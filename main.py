@@ -11,9 +11,9 @@ import openai
 from environment import OPENAI_API_KEY
 from datetime import datetime
 openai.api_key = OPENAI_API_KEY
-from search.search_client import search_db
+#from search.search_client import search_db
 from llm.llm_agent import Conversation
-from ebd.ebd import text_to_ebds_csv
+#from ebd.ebd import text_to_ebds_csv
 from mec_apis.location_manager import LocationManager
 from VecDB import VecDataBase
 # [skip if saved already] convert text in db into embeddings
