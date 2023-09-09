@@ -8,7 +8,8 @@ class VecDataBase():
         self.model = SentenceTransformer(NAME_EMBEDDING_MODEL)
         if update_db and db_csv_paths:
             for _, db_csv_path in db_csv_paths.items():
-                self.text_to_ebds_csv(db_csv_path)
+                self.text_to_ebds_csv(db_csv_path) 
+                # above todo: add a switch if to convert the text in db into ebd, becuase sometimes it's saved already and there was not changes on the texts  
 
     def text_to_ebds_csv(self, db_csv_path):
         with open(db_csv_path, 'r') as file:
