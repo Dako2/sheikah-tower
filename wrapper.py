@@ -23,20 +23,29 @@ class MECApp():
         
     def chat_api(self, user_input):
         loc1_found_db_texts, loc1_found_score = self.v.search_db(user_input, DATA_PATH['loc1'])
-        #print(loc1_found_db_texts)
         user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
-        #print(user_found_db_texts)
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
         print(self.convo.messages)
         return output
     
     def loc_api(self):
-        # @Qi live information to present by UI
+        nearby_locations = None
         event = self.locationManager.fetch_nearby_locations()
         user_live_coor = f"User now at: {event['user_live_coor']}"
-        nearby_locations = f"{list(event.keys())[2]}: {event[list(event.keys())[2]]}" # 3rd key is 'nearby_locations within 500'
-
+        if event[list(event.keys())[2]]:
+            nearby_locations = f"{list(event.keys())[2]}: {event[list(event.keys())[2]]}" # nearby_locations within 500: ['Monte Carlo Casino', 'Japanese Garden in Monaco']
         return user_live_coor, nearby_locations
+    
+    def desert_mode(self, user_input): # use user db, city coordinates & user location (outside this function)
+        #loc1_found_db_texts, loc1_found_score = self.v.search_db(user_input, DATA_PATH['loc1'])
+        user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
+        return user_found_db_texts, user_found_score # output tuple ('', [], '', [])
+
+    def spot_mode(self, user_input): # use user db, spot db (e.g. museum), no user location (already entered the place)
+        loc1_found_db_texts, loc1_found_score = self.v.search_db(user_input, DATA_PATH['loc1'])
+        user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
+        return loc1_found_db_texts, loc1_found_score, user_found_db_texts, user_found_score # output tuple ('', [], '', [])
+
 
 if __name__ == "__main__":
     mec = MECApp()

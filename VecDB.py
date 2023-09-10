@@ -21,12 +21,12 @@ class VecDataBase():
         np.save(db_emb_path, db_ebds)
 
     #WIP
-    def similarity(self, sentences, threshold=0.6, top_n = 2):
+    def similarity(self, sentences, threshold=0.2, top_n = 2): # threshold input
         embeddings = self.model.encode(sentences, convert_to_numpy=True)
         similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
         print(similarity.item())
 
-    def search_db(self, user_input, db_text_file, threshold=0.6, top_n = 5):
+    def search_db(self, user_input, db_text_file, threshold=0.2, top_n = 5): # threshold input
         query_embedding = self.model.encode(user_input, convert_to_numpy=True)
         
         # Load corpus and corpus embedding
@@ -44,10 +44,10 @@ class VecDataBase():
         score = []
         for idx in top_results[0]:
             if cosine_scores[0][idx].item() > threshold:
-                print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
+                # print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
                 result += corpus[idx]
                 score.append(cosine_scores[0][idx].item())
-        print("\n most similar sentences in corpus:",result, "score:",score)
+        print(f"\nThe most similar sentences in {db_text_file}: {result}\nscore: {score}")
         return result, score
     
 if __name__ == "__main__":
