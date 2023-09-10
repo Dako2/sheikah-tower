@@ -2,7 +2,11 @@
 
 class Conversation:
     def __init__(self):
-        self.messages = [{"role": "system", "content": "Be a helpful assitant and language interpreter for Monoco."},{"role": "assistant", "content": "Hi Link!"}]
+        self.PROMPT_LIST = [{"desert_mode":"Be a helpful city tour assitant and language interpreter for Monaco."}
+               ,{"spot_mode":"Act as a museum tour guide."}
+                ]
+        self.messages = [{"role": "system", "content": self.PROMPT_LIST[0]["desert_mode"]}]
+    
     def call_api(self):
         # text + user inputs as inputs of calling LLM APIs
         response = openai.ChatCompletion.create(

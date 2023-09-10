@@ -46,6 +46,18 @@ class MECApp():
         user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
         return loc1_found_db_texts, loc1_found_score, user_found_db_texts, user_found_score # output tuple ('', [], '', [])
 
+    def if_enter_a_spot(self):
+        confirmation = False
+        positive_confirmations = ["yes", "ok", "sure", "of course", "let's do it", "fine", "yeah", "yup"]
+        if self.loc_api()[1]:
+            nearby_locations = self.loc_api()[1]
+            user_input = input(f"Are you interested in exploring these nearby spots further with me? {nearby_locations}").lower()
+            if any(word in user_input for word in positive_confirmations):
+                confirmation = True
+        return confirmation
+    
+    def if_leave_a_spot(self):
+        return False # TODO   
 
 if __name__ == "__main__":
     mec = MECApp()
