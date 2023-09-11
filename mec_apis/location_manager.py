@@ -20,7 +20,7 @@ class LocationManager:
     def __init__(self, user_IP_address, log_file_path, db_location_file_path):
         self.db_location_file_path = db_location_file_path
         self.locations = self._read_locations(self.db_location_file_path)
-        self.radius = 500
+        self.radius = 100
         self.user_IP_address = user_IP_address
         self.log_file_path = log_file_path
 

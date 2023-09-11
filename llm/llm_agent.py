@@ -2,8 +2,11 @@
 
 class Conversation:
     def __init__(self):
-        self.messages = [{"role": "system", "content": "Be a helpful assitant and language interpreter for Monoco."},{"role": "assistant", "content": "Hi Link!"}]
-        #print("\n\n\
+        self.PROMPT_LIST = [{"desert_mode":"Be a helpful city tour assitant and language interpreter for Monaco."}
+               ,{"spot_mode":"Act as a museum tour guide."}
+                ]
+        self.messages = [{"role": "system", "content": self.PROMPT_LIST[0]["desert_mode"]}]
+    
     def call_api(self):
         # text + user inputs as inputs of calling LLM APIs
         response = openai.ChatCompletion.create(
@@ -20,7 +23,7 @@ class Conversation:
         return message
         # TODO: Add logic to calculate tokens used and speed
    
-    def rolling_convo(self, user_input, found_db_texts, found_db_user_data):
+    def rolling_convo(self, user_input, found_db_texts, found_db_user_data, user_location_info = None):
         self.messages.append({"role": "user", "content": user_input})
         vec_info =''
         if found_db_texts:
@@ -30,13 +33,13 @@ class Conversation:
         if found_db_user_data:
             self.messages.append({"role": "system", "content": f"Something you know about the user: {found_db_user_data}"})
             vec_info = f'\n<p style="color: red;">found user info: {found_db_user_data}</p>'
-        #for message in self.messages:
-        #    print(message)
-        #return self.messages
+
+        if user_location_info: # @QT new added
+            self.messages.append({"role": "system", "content": f"User is near: {user_location_info}"})
+            vec_info = f'\n<p style="color: red;">found user info: {user_location_info}</p>'
     
         chat_response = self.call_api() # use new added user_input to call API again
         print(f"\n\nVIP Guide: {chat_response}")
         self.messages.append({"role": "assistant", "content": chat_response}) #['system', 'assistant', 'user', 'function']
-        print(type(chat_response),chat_response)
         
         return chat_response + vec_info
