@@ -1,7 +1,7 @@
 import logging
 import eventlet
 eventlet.monkey_patch()
-from flask import Flask, render_template_string
+from flask import Flask, render_template_string, request, jsonify
 from flask_socketio import SocketIO, emit
 from llm.llm_agent import Conversation
 import openai
@@ -84,5 +84,26 @@ def handle_message(data):
     logging.info(f'Bot response: {bot_response}')
     emit('new message', {'sender': 'Bot', 'message': bot_response}, broadcast=True)
 
+@app.route('/api/chat', methods=['POST'])
+def chat_api():
+    try:
+        # Get the user's message from the request's JSON data
+        user_message = request.json['message']
+
+        # Call the mec.chat_api function to get the bot's response
+        bot_response = mec.chat_api(user_message)
+
+        # Log the user's message and bot's response
+        logging.info(f'User sent message: {user_message}')
+        logging.info(f'Bot response: {bot_response}')
+
+        # Return the bot's response as JSON
+        return jsonify({'message': bot_response})
+
+    except Exception as e:
+        # Handle any exceptions, e.g., invalid JSON format or errors in chat_api function
+        logging.error(f'Error in chat_api: {str(e)}')
+        return jsonify({'error': 'An error occurred'}), 500
+
 if __name__ == '__main__':
-    socketio.run(app, debug=False, port=9090)
+    socketio.run(app, host='0.0.0.0',port=9090, debug=True)

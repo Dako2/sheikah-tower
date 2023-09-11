@@ -25,7 +25,7 @@ class VecDataBase():
         similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
         print(similarity.item())
 
-    def search_db(self, user_input, db_text_file, threshold=0.6, top_n = 5):
+    def search_db(self, user_input, db_text_file, threshold=0.2, top_n = 5):
         query_embedding = self.model.encode(user_input, convert_to_numpy=True)
         
         # Load corpus and corpus embedding

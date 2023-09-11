@@ -28,6 +28,7 @@ class LocationManager:
     def _read_locations(self, db_location_file_path):
         with open(self.db_location_file_path, 'r') as location_json_file:
             locations = json.load(location_json_file)
+            print(locations)
         return locations
 
     def fetch_nearby_locations(self):
@@ -35,6 +36,7 @@ class LocationManager:
         nearby_locations_list = []
 
         for location, coordinates in self.locations.items(): # key, values
+            print(coordinates["latitude"], coordinates["longitude"])
             distance = distance_calc(user_live_coor[0], user_live_coor[1], coordinates["latitude"], coordinates["longitude"])
             """ A sample result
             (43.746475, 7.433062, 1693767018)

@@ -40,3 +40,4 @@ class MECApp():
 
 if __name__ == "__main__":
     mec = MECApp()
+    print(mec.loc_api())
