@@ -55,11 +55,11 @@ def fetch_distance(address1, latitude, longitude):
     """
 #print(fetch_distance('10.100.0.4', '43.74588', '7.432222')) 
 
-
-def fetch_user_coordinates(ip_address):
-    api_url = f'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/users?address={ip_address}'
+#
+def fetch_user_coordinates(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='):
+    api_url = f'{fetchURL}{ip_address}'
     response = requests.get(api_url)
-
+    
     if response.status_code == 200: # successful
         response = response.json()
         latitude = response['userList']['user'][0]['locationInfo']['latitude'][0] # [0] first element of the list
@@ -68,7 +68,7 @@ def fetch_user_coordinates(ip_address):
         return latitude, longitude, timestamp_seconds
     else:
         print(f"Request failed with status code: {response.status_code}")
-        return None
+        return None, None, None
 #print(fetch_user_coordinates('10.100.0.4'))
 
 def distance_calc(lat1, lon1, lat2, lon2):

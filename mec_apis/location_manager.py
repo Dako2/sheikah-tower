@@ -17,12 +17,13 @@ import json
 from mec_apis.mec_location_api import fetch_user_coordinates, distance_calc
 
 class LocationManager:
-    def __init__(self, user_IP_address, log_file_path, db_location_file_path):
+    def __init__(self, user_IP_address, log_file_path, db_location_file_path, fetch_URL):
         self.db_location_file_path = db_location_file_path
         self.locations = self._read_locations(self.db_location_file_path)
         self.radius = 100
         self.user_IP_address = user_IP_address
         self.log_file_path = log_file_path
+        self.fetch_URL = fetch_URL
 
     # read the locations and their coordinates from the db
     def _read_locations(self, db_location_file_path):
@@ -32,7 +33,7 @@ class LocationManager:
         return locations
 
     def fetch_nearby_locations(self):
-        user_live_coor = fetch_user_coordinates(self.user_IP_address)
+        user_live_coor = fetch_user_coordinates(self.user_IP_address, self.fetch_URL)
         nearby_locations_list = []
 
         for location, coordinates in self.locations.items(): # key, values

@@ -105,5 +105,21 @@ def chat_api():
         logging.error(f'Error in chat_api: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
 
+@app.route('/api/location', methods=['POST'])
+def location_api(ip_addr = '10.100.0.4'):
+    try:
+        # Get the location data from the request's JSON data
+        location_data = mec.loc_user_api(ip_addr)
+        # Log the received location data
+        logging.info(f'Received location data: {location_data}')
+        # Return a response as needed (e.g., success message or processed data)
+        response_message = "Location data received and processed successfully"
+        return jsonify({'message': location_data})
+
+    except Exception as e:
+        # Handle any exceptions, e.g., invalid JSON format or processing errors
+        logging.error(f'Error in location_api: {str(e)}')
+        return jsonify({'error': 'An error occurred'}), 500
+
 if __name__ == '__main__':
     socketio.run(app, host='0.0.0.0',port=9090, debug=True)

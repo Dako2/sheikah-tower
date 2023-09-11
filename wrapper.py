@@ -5,11 +5,13 @@ openai.api_key = OPENAI_API_KEY
 from llm.llm_agent import Conversation
 from mec_apis.location_manager import LocationManager
 from VecDB import VecDataBase
+from mec_apis.mec_location_api import fetch_user_coordinates
 
 # [skip if saved already] convert text in db into embeddings
 #text_to_ebds_csv('db/exhibit-info.csv','db/exhibit-info-ebds.csv')
 #text_to_ebds_csv('db/user-data.csv','db/user-data-ebds.csv')
 DATA_PATH={'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
+FETCH_URL = 'https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='
 
 class MECApp():
     def __init__(self) -> None:
@@ -17,8 +19,7 @@ class MECApp():
         log_file_path = "db/user_event_log_file.json"
         db_location_file_path = "db/monaco_coordinates.json"
         user_IP_address = '10.100.0.4'
-        self.locationManager = LocationManager(user_IP_address, log_file_path, db_location_file_path)
-
+        self.locationManager = LocationManager(user_IP_address, log_file_path, db_location_file_path, FETCH_URL)
         self.v = VecDataBase(db_csv_paths = DATA_PATH, update_db=True)
         
     def chat_api(self, user_input):
@@ -35,6 +36,10 @@ class MECApp():
         if event[list(event.keys())[2]]:
             nearby_locations = f"{list(event.keys())[2]}: {event[list(event.keys())[2]]}" # nearby_locations within 500: ['Monte Carlo Casino', 'Japanese Garden in Monaco']
         return user_live_coor, nearby_locations
+    
+    def loc_user_api(self, ip_addr = '10.100.0.4'):
+        user_live_coor = fetch_user_coordinates(ip_addr)
+        return user_live_coor
     
     def desert_mode(self, user_input): # use user db, city coordinates & user location (outside this function)
         #loc1_found_db_texts, loc1_found_score = self.v.search_db(user_input, DATA_PATH['loc1'])
@@ -61,4 +66,4 @@ class MECApp():
 
 if __name__ == "__main__":
     mec = MECApp()
-    print(mec.loc_api())
+    print(mec.loc_user_api())
