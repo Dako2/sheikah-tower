@@ -44,20 +44,3 @@ try:
         output = convo.rolling_convo(user_input, found_loc_db, found_user_db, user_location_info)
 except KeyboardInterrupt:
     print("...Keyboard Interrupted!")
-
-
-"""
-# todo modules to build
-1. mechanism/agent to ask users' confirmation: some research on langchain agent
-2. mark the location_database with coordinates. When it's [5] meters close, ask about if you are interested going in -> switch to the database
-3. two prompts (one desert mode; mode museum mode) and how to switch
-
-To test if to enter a spot:
-"Rosicrucian Egyptian Museum": {
-        "latitude": 43.731724, 
-        "longitude": 7.423547
-    }
-
-Assumed user live coordinates: (43.731724,7.423547)
-
-"""
