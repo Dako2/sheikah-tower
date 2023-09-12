@@ -21,12 +21,18 @@ data = {
     "code": authorization_code,
     "redirect_uri": redirect_uri,
 }
-response = requests.post(token_url, data=data)
-print(response)
-access_token = response.json()["access_token"]
-print(access_token)
+response = requests.post(token_url, data=data, headers={"Accept": "application/json"})  # Explicitly request JSON response
 
-# Now you can use the access token for API requests to GitHub.
+if response.status_code == 200:
+    response_data = response.json()
+    if 'access_token' in response_data:
+        access_token = response_data["access_token"]
+        print(access_token)
+    elif 'error' in response_data:
+        print(f"Error: {response_data['error']}. Description: {response_data['error_description']}")
+else:
+    print(f"Failed to retrieve access token. HTTP status code: {response.status_code}")
+
 
 """
 from flask import Flask, request, redirect, session, url_for
