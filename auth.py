@@ -7,7 +7,7 @@ CLIENT_SECRET = GITHUB_CLIENT_SECRETS
 redirect_uri = "http://localhost"  # Usually, this can be set to "http://localhost"
 
 # Step 1: Redirect the user to the GitHub OAuth authorization URL
-auth_url = f"https://github.com/login/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&scope=public_repo"
+auth_url = f"https://github.com/login/oauth/authorize?client_id={CLIENT_ID}&redirect_uri={redirect_uri}&scope=public_repo"
 print(f"Visit this URL to authorize: {auth_url}")
 
 # Step 2: Get the authorization code from the redirected URL (manually)
