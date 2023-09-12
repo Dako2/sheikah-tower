@@ -1,10 +1,10 @@
 import requests
-from environment import GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRETS
+from environment import GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRETS,REDIRECT_URL
 
 # Replace with your GitHub OAuth App credentials
 CLIENT_ID = GITHUB_CLIENT_ID
 CLIENT_SECRET = GITHUB_CLIENT_SECRETS
-redirect_uri = "http://localhost"  # Usually, this can be set to "http://localhost"
+redirect_uri = REDIRECT_URL  # Usually, this can be set to "http://localhost"
 
 # Step 1: Redirect the user to the GitHub OAuth authorization URL
 auth_url = f"https://github.com/login/oauth/authorize?client_id={CLIENT_ID}&redirect_uri={redirect_uri}&scope=public_repo"
