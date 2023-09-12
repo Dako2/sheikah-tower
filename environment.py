@@ -6,6 +6,8 @@ load_dotenv()
 
 # Access environment variable
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+GITHUB_CLIENT_ID = os.getenv('GITHUB_CLIENT_ID')
+GITHUB_CLIENT_SECRETS = os.getenv('GITHUB_CLIENT_SECRETS')
 
 if OPENAI_API_KEY is None:
     raise Exception("API key not found in the .env file")
