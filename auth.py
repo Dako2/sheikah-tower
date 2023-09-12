@@ -4,9 +4,8 @@ from environment import GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRETS
 # Replace with your GitHub OAuth App credentials
 CLIENT_ID = GITHUB_CLIENT_ID
 CLIENT_SECRET = GITHUB_CLIENT_SECRETS
-redirect_uri = "http://34.136.140.65"  # Usually, this can be set to "http://localhost"
+redirect_uri = "http://localhost"  # Usually, this can be set to "http://localhost"
 
-"""
 # Step 1: Redirect the user to the GitHub OAuth authorization URL
 auth_url = f"https://github.com/login/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&scope=public_repo"
 print(f"Visit this URL to authorize: {auth_url}")
@@ -17,13 +16,15 @@ authorization_code = input("Enter the authorization code from the URL: ")
 # Step 3: Use the authorization code to obtain an access token
 token_url = "https://github.com/login/oauth/access_token"
 data = {
-    "client_id": client_id,
-    "client_secret": client_secret,
+    "client_id": CLIENT_ID,
+    "client_secret": CLIENT_SECRET,
     "code": authorization_code,
     "redirect_uri": redirect_uri,
 }
 response = requests.post(token_url, data=data)
+print(response)
 access_token = response.json()["access_token"]
+print(access_token)
 
 # Now you can use the access token for API requests to GitHub.
 
@@ -36,8 +37,6 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Generate a secret key for session
 
 # GitHub OAuth Configuration
-CLIENT_ID = 'your_github_client_id'
-CLIENT_SECRET = 'your_github_client_secret'
 GITHUB_AUTHORIZE_URL = 'https://github.com/login/oauth/authorize'
 GITHUB_TOKEN_URL = 'https://github.com/login/oauth/access_token'
 REDIRECT_URI = 'http://your-server-ip/callback'  # Replace with your server's callback URL
@@ -98,3 +97,4 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
+"""
