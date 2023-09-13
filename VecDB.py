@@ -1,10 +1,12 @@
+#transfer any raw text data into embeddings with index
+
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
 
 NAME_EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
 class VecDataBase():
-    def __init__(self, db_csv_paths, update_db = True):
+    def __init__(self, db_csv_paths={'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}, update_db = True):
         self.model = SentenceTransformer(NAME_EMBEDDING_MODEL)
         if update_db and db_csv_paths:
             for _, db_csv_path in db_csv_paths.items():
@@ -27,17 +29,18 @@ class VecDataBase():
 
     def search_db(self, user_input, db_text_file, threshold=0.2, top_n = 5):
         query_embedding = self.model.encode(user_input, convert_to_numpy=True)
-        
         # Load corpus and corpus embedding
         with open(db_text_file, 'r') as file:
-            corpus = [line.strip() for line in file.readlines()]
+            corpus = [line.strip() for line in file.readlines()] #List
         corpus_embeddings = np.load(db_text_file + '.npy')
-        
+        print(type(corpus), type(corpus_embeddings))
+        return self.search_db_raw(query_embedding, corpus, corpus_embeddings, threshold, top_n)
+    
+    def search_db_raw(self, query_embedding, corpus, corpus_embeddings, threshold=0.2, top_n = 5):
         # Find the most similar sentences
         # hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=2)
         cosine_scores = util.pytorch_cos_sim(query_embedding, corpus_embeddings)        
         top_results = np.argpartition(-cosine_scores, range(top_n))[0:top_n]
-
         #print("\nTop {top_n} most similar sentences in corpus:")
         result = ''
         score = []
