@@ -32,13 +32,14 @@ class LocationManager:
             print(locations)
         return locations
 
-    def fetch_nearby_locations(self):
+    def fetch_nearby_locations(self, radius = 100):
         user_live_coor = fetch_user_coordinates(self.user_IP_address, self.fetch_URL)
         nearby_locations_list = []
+        full_list = {}
 
-        for location, coordinates in self.locations.items(): # key, values
-            print(coordinates["latitude"], coordinates["longitude"])
-            distance = distance_calc(user_live_coor[0], user_live_coor[1], coordinates["latitude"], coordinates["longitude"])
+        for location, values in self.locations.items(): # key, values
+            print(values["latitude"], values["longitude"])
+            distance = distance_calc(user_live_coor[0], user_live_coor[1], values["latitude"], values["longitude"])
             """ A sample result
             (43.746475, 7.433062, 1693767018)
             2020.2393897489778
@@ -50,8 +51,9 @@ class LocationManager:
             1344.2731778778702
             474.79232706685116
             """
-            if distance < self.radius:
+            if distance < radius:
                 nearby_locations_list.append(location)
+                full_list[location] = values
                 # prompt_nearby_locations = f"Now user is close to: {', '.join(nearby_locations_list)}"
         
         event = {
@@ -60,7 +62,8 @@ class LocationManager:
                 "longitude": float(user_live_coor[1])
             },
             "time": user_live_coor[2], 
-            f"nearby_locations within {self.radius}": nearby_locations_list
+            f"nearby_locations within {radius}": nearby_locations_list,
+            "db":full_list
         }
 
         # write above event info into user_event_log file

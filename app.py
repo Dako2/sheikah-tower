@@ -1,3 +1,11 @@
+"""
+app.py (frontend)
+ |_wrapper.py (backend wrapper)
+    |_ llm.llm_agent.py, mec_apis.mec_location_api.py, VecDB.py
+
+"""
+
+
 import logging
 import eventlet
 eventlet.monkey_patch()
@@ -105,7 +113,7 @@ def chat_api():
         logging.error(f'Error in chat_api: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
 
-@app.route('/api/location', methods=['POST'])
+@app.route('/api/location_only', methods=['POST'])
 def location_api(ip_addr = '10.100.0.4'):
     try:
         # Get the location data from the request's JSON data
@@ -120,10 +128,22 @@ def location_api(ip_addr = '10.100.0.4'):
         # Handle any exceptions, e.g., invalid JSON format or processing errors
         logging.error(f'Error in location_api: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
-    
-@app.route('/api/vdb', methods=['POST'])
+
+@app.route('/api/location', methods=['POST']) #get the json file of the places of interest
 def location_api(ip_addr = '10.100.0.4'):
-    pass
-    
+    try:
+        # Get the location data from the request's JSON data
+        user_live_coor, nearby_locations, event = mec.loc_api(radius = 1000)
+        # Log the received location data
+        logging.info(f'Received location data: {nearby_locations}')
+        # Return a response as needed (e.g., success message or processed data)
+        response_message = "Location data received and processed successfully"
+        return jsonify({'message': nearby_locations})
+
+    except Exception as e:
+        # Handle any exceptions, e.g., invalid JSON format or processing errors
+        logging.error(f'Error in location_api: {str(e)}')
+        return jsonify({'error': 'An error occurred'}), 500
+
 if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0',port=9090, debug=True)
+    socketio.run(app, host='0.0.0.0',port=9090, debug=False)

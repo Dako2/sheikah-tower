@@ -47,3 +47,14 @@
 {"user_live_coor": {"latitude": 43.74252, "longitude": 7.430457}, "time": 1694325985, "nearby_locations within 100": ["Japanese Garden in Monaco"]}
 {"user_live_coor": {"latitude": 43.745174, "longitude": 7.431741}, "time": 1694409822, "nearby_locations within 100": []}
 {"user_live_coor": {"latitude": 43.742245, "longitude": 7.430407}, "time": 1694410519, "nearby_locations within 100": ["Japanese Garden in Monaco"]}
+{"user_live_coor": {"latitude": 43.748535, "longitude": 7.43577}, "time": 1694590322, "nearby_locations within 100": []}
+{"user_live_coor": {"latitude": 43.7485, "longitude": 7.435833}, "time": 1694590421, "nearby_locations within 100": ["Japanese Garden in Monaco"]}
+{"user_live_coor": {"latitude": 43.74843, "longitude": 7.437865}, "time": 1694590433, "nearby_locations within 100": ["Monte Carlo Casino", "Monaco-Ville", "Port Hercules", "Cathedral of Our Lady Immaculate", "Saint-Martin Gardens", "Japanese Garden in Monaco", "Solarium Beach", "Quai des Artistes", "Panoramic view of Monaco", "Mus\u00e9e oc\u00e9anographique de Monaco", "Prince's Palace of Monaco", "Chapel of the Visitation", "New National Museum of Monaco - Villa Paloma", "Monaco Museum of Prehistoric Anthropology", "Princess Grace Hospital", "Frame (Photo point)", "Rosicrucian Egyptian Museum"]}
+{"user_live_coor": {"latitude": 43.74769, "longitude": 7.438557}, "time": 1694590441, "nearby_locations within 100": ["Japanese Garden in Monaco"]}
+{"user_live_coor": {"latitude": 43.74472, "longitude": 7.431474}, "time": 1694590487, "nearby_locations within 100": ["Monte Carlo Casino", "Japanese Garden in Monaco"]}
+{"user_live_coor": {"latitude": 43.74178, "longitude": 7.430208}, "time": 1694590504, "nearby_locations within 100": ["Monte Carlo Casino", "Saint-Martin Gardens", "Japanese Garden in Monaco", "Solarium Beach"]}
+{"user_live_coor": {"latitude": 43.74212, "longitude": 7.430553}, "time": 1694590516, "nearby_locations within 100": ["Monte Carlo Casino", "Saint-Martin Gardens", "Japanese Garden in Monaco", "Solarium Beach"]}
+{"user_live_coor": {"latitude": 43.74621, "longitude": 7.432704}, "time": 1694590538, "nearby_locations within 100": ["Monte Carlo Casino", "Japanese Garden in Monaco"]}
+{"user_live_coor": {"latitude": 43.747105, "longitude": 7.434072}, "time": 1694590546, "nearby_locations within 100": ["Monte Carlo Casino", "Japanese Garden in Monaco"]}
+{"user_live_coor": {"latitude": 43.747623, "longitude": 7.434611}, "time": 1694591284, "nearby_locations within 1000": ["Japanese Garden in Monaco"], "db": [["Japanese Garden in Monaco", 43.74248115, 7.430971286907864, "None"]]}
+{"user_live_coor": {"latitude": 43.74869, "longitude": 7.437794}, "time": 1694591401, "nearby_locations within 1000": ["Japanese Garden in Monaco"], "db": {"Japanese Garden in Monaco": {"latitude": 43.74248115, "longitude": 7.430971286907864, "db_path": "None"}}}

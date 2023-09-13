@@ -1,71 +1,88 @@
 {  
     "Monte Carlo Casino": {
         "latitude": 43.739648,
-        "longitude": 7.427329
+        "longitude": 7.427329,
+        "db_path": "None"
     },
     "Monaco-Ville": {
         "latitude": 43.728593,
-        "longitude": 7.420988
+        "longitude": 7.420988,
+        "db_path": "None"
     },
     "Port Hercules": {
         "latitude": 43.731420,
-        "longitude": 7.423016
+        "longitude": 7.423016,
+        "db_path": "None"
     },
     "Cathedral of Our Lady Immaculate": {
         "latitude": 43.733836,
-        "longitude": 7.420948
+        "longitude": 7.420948,
+        "db_path": "None"
     },
     "Saint-Martin Gardens": {
         "latitude": 43.737030,
-        "longitude": 7.422617
+        "longitude": 7.422617,
+        "db_path": "None"
     },
     "Japanese Garden in Monaco": {
         "latitude": 43.74248115,
-        "longitude": 7.430971286907864
+        "longitude": 7.430971286907864,
+        "db_path": "None"
     },
     "Solarium Beach": {
         "latitude": 43.73325232186141,
-        "longitude": 7.428618457080532
+        "longitude": 7.428618457080532,
+        "db_path": "None"
     },
     "Quai des Artistes": {
         "latitude": 43.732791857398986,
-        "longitude": 7.423854177370784
+        "longitude": 7.423854177370784,
+        "db_path": "None"
     },
     "Panoramic view of Monaco": {
         "latitude": 43.73196959062447,
-        "longitude": 7.423656930121654
+        "longitude": 7.423656930121654,
+        "db_path": "None"
     },
     "Musée océanographique de Monaco": {
         "latitude": 43.73102671082824,
-        "longitude": 7.426054242841845
+        "longitude": 7.426054242841845,
+        "db_path": "None"
     },
     "Prince's Palace of Monaco": {
         "latitude": 43.73144333396397,
-        "longitude": 7.420379591213037
+        "longitude": 7.420379591213037,
+        "db_path": "None"
     },
     "Chapel of the Visitation": {
         "latitude": 43.731552191982814,
-        "longitude": 7.4252453753106265
+        "longitude": 7.4252453753106265,
+        "db_path": "None"
     },
     "New National Museum of Monaco - Villa Paloma": {
         "latitude": 43.732994142004095,
-        "longitude": 7.413797707247785
+        "longitude": 7.413797707247785,
+        "db_path": "None"
     },
     "Monaco Museum of Prehistoric Anthropology": {
         "latitude": 43.732406725608335,
-        "longitude": 7.413690923697957
+        "longitude": 7.413690923697957,
+        "db_path": "None"
     },
     "Princess Grace Hospital": {
         "latitude": 43.7311159562009,
-        "longitude": 7.412806783407811
+        "longitude": 7.412806783407811,
+        "db_path": "None"
     },
     "Frame (Photo point)": {
         "latitude": 43.73277184910535,
-        "longitude": 7.427305256449753
+        "longitude": 7.427305256449753,
+        "db_path": "None"
     },
     "Rosicrucian Egyptian Museum": {
         "latitude": 43.731724, 
-        "longitude": 7.423547
+        "longitude": 7.423547,
+        "db_path": "./exhibit-info.csv"
     }
 
 }

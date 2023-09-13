@@ -7,13 +7,14 @@ def fetch_coordinates(location):
     api_url = f"https://nominatim.openstreetmap.org/search?{params}"
     
     response = requests.get(api_url)
-    print(response)
+    #print(response)
     if response.status_code == 200:
         data = response.json()
         if data:
             return float(data[0]["lat"]), float(data[0]["lon"])
     return print("Failed to retreive the coordinates.")
 
+"""
 # List of historical and sightseeing spots in Monaco
 monaco_spots = [
     "Prince's Palace of Monaco",
@@ -43,3 +44,4 @@ with open(output_file, "w") as json_file:
     json.dump(coordinates_data, json_file, indent=4)
 
 print(f"Coordinates data saved to '{output_file}'")
+"""
