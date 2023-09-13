@@ -80,10 +80,11 @@ museum.csv
 museum.npy
 
 """
-def gen_db_to_emb_csvformat(db):
+def gen_db_to_emb_csvformat(db): #combine wiki, web page data
     #pass it to csv 
     wiki_data = {key: value['wiki'] for key, value in db.items() if 'wiki' in value}
-    save_to_csv_and_np(wiki_data) 
+    combined_data = wiki_data 
+    save_to_csv_and_np(combined_data) 
 
 def chunk_string(s, token_count=50):
     # Tokenize the string
@@ -92,8 +93,8 @@ def chunk_string(s, token_count=50):
     rows = [' '.join(chunk) for chunk in chunks]
     return rows
 
-def save_to_csv_and_np(wiki_data):
-    for key, value in wiki_data.items():
+def save_to_csv_and_np(combined_data):
+    for key, value in combined_data.items():
         filename = key + ".csv"
         rows = chunk_string(value)
         corpus = [row.strip() for row in rows]
@@ -106,7 +107,6 @@ def save_to_csv_and_np(wiki_data):
         db_emb_path = './db/' + filename + '.npy'
         db_ebds = v.model.encode(corpus, convert_to_numpy=True)
         np.save(db_emb_path, db_ebds)
-
     return 
 
 if __name__ == "__main__":
