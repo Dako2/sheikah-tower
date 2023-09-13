@@ -14,7 +14,7 @@ import numpy as np
 
 v = VecDataBase(update_db = False)
 
-def get_nearby_places(api_key, latitude, longitude, radius=1000, keyword=None):
+def get_nearby_places(api_key, latitude, longitude, radius=50000, keyword=None):
     """Fetch nearby places using Google Places API.
     
     Parameters:
@@ -39,6 +39,7 @@ def get_nearby_places(api_key, latitude, longitude, radius=1000, keyword=None):
         params['keyword'] = keyword
 
     response = requests.get(endpoint_url, params=params)
+    print(response)
     return response.json()
 
 def get_info_from_wikipedia(query):
@@ -52,8 +53,8 @@ def get_info_from_wikipedia(query):
             print(option)
         return None
     
-def query_interestpoints(lat = 37.417146,lng = -122.076376):
-    results = get_nearby_places(GOOGLE_MAP_API, lat, lng)
+def query_interestpoints(lat = 37.417146,lng = -122.076376, keyword = None):
+    results = get_nearby_places(GOOGLE_MAP_API, lat, lng, keyword)
     db = {}
     for place in results.get('results', []):
         name = place.get('name')
@@ -64,7 +65,7 @@ def query_interestpoints(lat = 37.417146,lng = -122.076376):
         
         print(f"{name}: ({place_lat}, {place_lng}), Rating: {rating}, Total Ratings: {user_ratings_total}")
         try:
-            if int(user_ratings_total) > 5000:
+            if int(user_ratings_total) > 1000:
                 query = name
                 info = get_info_from_wikipedia(query)
                 if info:
@@ -110,5 +111,6 @@ def save_to_csv_and_np(combined_data):
     return 
 
 if __name__ == "__main__":
-    db = query_interestpoints(lat = 37.417146,lng = -122.076376)
+    #43.7410606,7.4208206
+    db = query_interestpoints(lat = 43.7410606,lng = 7.4208206, keyword='museum')
     a = gen_db_to_emb_csvformat(db)
