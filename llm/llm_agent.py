@@ -28,15 +28,15 @@ class Conversation:
         vec_info =''
         if found_db_texts:
             self.messages.append({"role": "system", "content": f"Some helpful knowledge: {found_db_texts}"})
-            vec_info = f'\n<p style="color: red;">found loc info: {found_db_texts}</p>'
+            vec_info = f'\n<p style="color: red;">found local info: {found_db_texts}</p>\n'
 
         if found_db_user_data:
             self.messages.append({"role": "system", "content": f"Something you know about the user: {found_db_user_data}"})
-            vec_info = f'\n<p style="color: red;">found user info: {found_db_user_data}</p>'
+            vec_info = f'\n<p style="color: red;">found user info: {found_db_user_data}</p>\n'
 
         if user_location_info: # @QT new added
             self.messages.append({"role": "system", "content": f"User is near: {user_location_info}"})
-            vec_info = f'\n<p style="color: red;">found user info: {user_location_info}</p>'
+            vec_info = f'\n<p style="color: red;">found user info: {user_location_info}</p>\n'
     
         chat_response = self.call_api() # use new added user_input to call API again
         print(f"\n\nVIP Guide: {chat_response}")

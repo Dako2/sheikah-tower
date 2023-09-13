@@ -120,6 +120,10 @@ def location_api(ip_addr = '10.100.0.4'):
         # Handle any exceptions, e.g., invalid JSON format or processing errors
         logging.error(f'Error in location_api: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
-
+    
+@app.route('/api/vdb', methods=['POST'])
+def location_api(ip_addr = '10.100.0.4'):
+    pass
+    
 if __name__ == '__main__':
     socketio.run(app, host='0.0.0.0',port=9090, debug=True)
