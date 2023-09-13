@@ -17,7 +17,6 @@ class VecDataBase():
             rows = file.readlines()
         corpus = [row.strip() for row in rows]
         db_ebds = self.model.encode(corpus, convert_to_numpy=True)
-        
         db_emb_path = db_csv_path + '.npy'
         np.save(db_emb_path, db_ebds)
 
