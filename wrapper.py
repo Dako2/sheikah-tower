@@ -15,6 +15,10 @@ import image_vecdb
 DATA_PATH={'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
 FETCH_URL = 'https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='
 
+def load_jsonl(file_path):
+    with open(file_path, 'r') as file:
+        return [json.loads(line) for line in file]
+    
 class MECApp():
     def __init__(self, user_IP_address = '10.100.0.1') -> None:
         self.convo = Conversation()
@@ -29,17 +33,17 @@ class MECApp():
         self.cellid = None
         self.zoneid = None
         self.image_db = image_vecdb.ImageVecDataBase('./db/images', './db/images/embeddings')
-
+        self.image_db_jsonlist = load_jsonl("./db/images/metadata.jsonl")
+        
     def analyze_image_api(self, filename = './upload/image.jpeg'):
         # Read image
         img = image_vecdb.Image.open(filename)
         most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
         
         print("Score: %.4f" % (sim_score))
-        print("Index of most similar image in DB: %.4f" % (most_similar_img_idx))
-
+        print("Index of most similar image in DB: %d" % (most_similar_img_idx))
+        print(self.image_db_jsonlist[most_similar_img_idx])
         return sim_score, most_similar_img_idx
-
 
     def loc_user_places_api(self):
         try:
@@ -112,7 +116,7 @@ class MECApp():
 if __name__ == "__main__":
     mec = MECApp('10.100.0.1')
     
-    mec.loc_user_places_api()
+    #mec.loc_user_places_api()
     print('\n\n\n\n')
-    mec.chat_api("hello, any interesting spots? ")
+    #mec.chat_api("hello, any interesting spots? ")
     mec.analyze_image_api('./test_data/images/test_0001.jpeg')
