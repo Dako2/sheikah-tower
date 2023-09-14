@@ -1,0 +1,63 @@
+2023-09-14 13:29:38,613 - Server initialized for eventlet.
+2023-09-14 13:29:38,614 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:29:38,955 - Use pytorch device: cpu
+2023-09-14 13:30:57,861 - Server initialized for eventlet.
+2023-09-14 13:30:57,862 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:30:58,109 - Use pytorch device: cpu
+2023-09-14 13:31:21,261 - Server initialized for eventlet.
+2023-09-14 13:31:21,262 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:31:21,480 - Use pytorch device: cpu
+2023-09-14 13:38:49,265 - Server initialized for eventlet.
+2023-09-14 13:38:49,265 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:38:49,552 - Use pytorch device: cpu
+2023-09-14 13:40:22,256 - Server initialized for eventlet.
+2023-09-14 13:40:22,257 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:40:22,525 - Use pytorch device: cpu
+2023-09-14 13:40:29,034 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:40:30,976 - User sent message: hi
+2023-09-14 13:40:30,976 - Bot response: Hello! How can I assist you today? Are you looking for information or need help with something specific?
+<p style="color: red;">found user info: "Name","Link""Latest Appearance","The Legend of Zelda: Breath of the Wild (2017 as of my last update)""Main Shield","Hylian Shield"</p>
+
+2023-09-14 13:40:33,939 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:40:38,938 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:40:43,915 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:40:48,991 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:40:54,010 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:40:58,924 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:03,916 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:08,959 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:13,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:18,997 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:24,012 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:28,928 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:33,916 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:38,917 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:43,918 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:48,997 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:41:54,656 - Server initialized for eventlet.
+2023-09-14 13:41:54,657 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:41:54,944 - Use pytorch device: cpu
+2023-09-14 13:41:58,935 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:03,949 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:08,966 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:13,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:19,001 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:24,019 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:29,037 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:33,951 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:38,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:43,989 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:48,917 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:42:54,424 - Server initialized for eventlet.
+2023-09-14 13:42:54,425 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:42:54,722 - Use pytorch device: cpu
+2023-09-14 13:42:59,177 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:43:03,955 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:44:03,009 - Server initialized for eventlet.
+2023-09-14 13:44:03,010 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:44:03,283 - Use pytorch device: cpu
+2023-09-14 13:44:03,968 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:44:08,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 13:47:45,892 - NumExpr defaulting to 8 threads.
+2023-09-14 13:47:46,172 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 13:47:46,465 - Use pytorch device: cpu

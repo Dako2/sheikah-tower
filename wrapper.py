@@ -8,6 +8,7 @@ from VecDB import VecDataBase
 from mec_apis.mec_location_api import fetch_user_coordinates, fetch_user_coordinates_zoneid_cellid
 import json
 import time
+import image_vecdb
 # [skip if saved already] convert text in db into embeddings
 #text_to_ebds_csv('db/loc_apiexhibit-info.csv','db/exhibit-info-ebds.csv')
 #text_to_ebds_csv('db/user-data.csv','db/user-data-ebds.csv')
@@ -27,7 +28,19 @@ class MECApp():
             self.db_json = json.load(file) 
         self.cellid = None
         self.zoneid = None
+        self.image_db = image_vecdb.ImageVecDataBase('./db/images', './db/images/embeddings')
+
+    def analyze_image_api(self, filename = './upload/image.jpeg'):
+        # Read image
+        img = image_vecdb.Image.open(filename)
+        most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
         
+        print("Score: %.4f" % (sim_score))
+        print("Index of most similar image in DB: %.4f" % (most_similar_img_idx))
+
+        return sim_score, most_similar_img_idx
+
+
     def loc_user_places_api(self):
         try:
             latitude, longitude, _, self.cellid, self.zoneid = fetch_user_coordinates_zoneid_cellid(self.ip_addr, FETCH_URL)
@@ -102,3 +115,4 @@ if __name__ == "__main__":
     mec.loc_user_places_api()
     print('\n\n\n\n')
     mec.chat_api("hello, any interesting spots? ")
+    mec.analyze_image_api('./test_data/images/test_0001.jpeg')

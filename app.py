@@ -15,6 +15,11 @@ from llm.llm_agent import Conversation
 import openai
 from environment import OPENAI_API_KEY
 import wrapper
+import os
+
+UPLOAD_FOLDER = 'uploads'
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
 
 conversation = Conversation()  # An instance of the Conversation class to handle the chat.
 openai.api_key = OPENAI_API_KEY
@@ -97,14 +102,11 @@ def chat_api():
     try:
         # Get the user's message from the request's JSON data
         user_message = request.json['message']
-
         # Call the mec.chat_api function to get the bot's response
         bot_response = mec.chat_api(user_message)
-
         # Log the user's message and bot's response
         logging.info(f'User sent message: {user_message}')
         logging.info(f'Bot response: {bot_response}')
-
         # Return the bot's response as JSON
         return jsonify({'message': bot_response})
 
@@ -129,10 +131,10 @@ def location_api(ip_addr = '10.100.0.1'):
         return jsonify({'error': 'An error occurred'}), 500
 
 @app.route('/api/places', methods=['POST']) #get the json file of the places of interest
-def location_api(ip_addr = '10.100.0.4'):
+def places_api(ip_addr = '10.100.0.4'):
     try:
         # Get the location data from the request's JSON data
-        _, nearby_locations = mec.loc_user_places_api() #tuple, dictionary if not None
+        (lat, lgn), nearby_locations = mec.loc_user_places_api() #tuple, dictionary if not None
         # Log the received location data
         logging.info(f'Received location data: {nearby_locations}')
         return jsonify({'message': nearby_locations})
@@ -141,6 +143,19 @@ def location_api(ip_addr = '10.100.0.4'):
         # Handle any exceptions, e.g., invalid JSON format or processing errors
         logging.error(f'Error in location_api: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
+
+@app.route('/api/image', methods=['POST'])
+def upload_image():
+    if 'file' not in request.files:
+        return jsonify(error="No file part in the request"), 400
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify(error="No selected file"), 400
+    if file:
+        filename = os.path.join(UPLOAD_FOLDER, file.filename)
+        file.save(filename)
+        print(f"received image and saved {filename}")
+        return jsonify(success=True, message="File successfully uploaded"), 200
 
 if __name__ == '__main__':
     socketio.run(app, host='0.0.0.0',port=9090, debug=False)
