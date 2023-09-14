@@ -55,7 +55,6 @@ def fetch_distance(address1, latitude, longitude):
     """
 #print(fetch_distance('10.100.0.4', '43.74588', '7.432222')) 
 
-#
 def fetch_user_coordinates(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='):
     api_url = f'{fetchURL}{ip_address}'
     response = requests.get(api_url)
@@ -69,6 +68,22 @@ def fetch_user_coordinates(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbw
     else:
         print(f"Request failed with status code: {response.status_code}")
         return None, None, None
+    
+def fetch_user_coordinates_zoneid_cellid(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='):
+    api_url = f'{fetchURL}{ip_address}'
+    response = requests.get(api_url)
+    
+    if response.status_code == 200: # successful
+        response = response.json()
+        cellid = response['userList']['user'][0]['accessPointId'] # [0] first element of the list
+        zoneid = response['userList']['user'][0]['zoneId']
+        latitude = response['userList']['user'][0]['locationInfo']['latitude'][0] # [0] first element of the list
+        longitude = response['userList']['user'][0]['locationInfo']['longitude'][0]
+        timestamp_seconds = response['userList']['user'][0]['locationInfo']['timestamp']['seconds']
+        return latitude, longitude, timestamp_seconds, cellid, zoneid
+    else:
+        print(f"Request failed with status code: {response.status_code}")
+        return None, None, None, None, None
 #print(fetch_user_coordinates('10.100.0.4'))
 
 def distance_calc(lat1, lon1, lat2, lon2):

@@ -28,6 +28,7 @@ class VecDataBase():
 
     def search_db(self, user_input, db_text_file, threshold=0.2, top_n = 5):
         query_embedding = self.model.encode(user_input, convert_to_numpy=True)
+        print("opening...",db_text_file)
         # Load corpus and corpus embedding
         with open(db_text_file, 'r') as file:
             corpus = [line.strip() for line in file.readlines()] #List

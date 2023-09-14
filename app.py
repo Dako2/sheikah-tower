@@ -113,15 +113,13 @@ def chat_api():
         logging.error(f'Error in chat_api: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
 
-@app.route('/api/location_only', methods=['POST'])
+@app.route('/api/location', methods=['POST'])
 def location_api(ip_addr = '10.100.0.4'):
     try:
         # Get the location data from the request's JSON data
         location_data = mec.loc_user_api(ip_addr)
         # Log the received location data
         logging.info(f'Received location data: {location_data}')
-        # Return a response as needed (e.g., success message or processed data)
-        response_message = "Location data received and processed successfully"
         return jsonify({'message': location_data})
 
     except Exception as e:
@@ -129,15 +127,13 @@ def location_api(ip_addr = '10.100.0.4'):
         logging.error(f'Error in location_api: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
 
-@app.route('/api/location', methods=['POST']) #get the json file of the places of interest
+@app.route('/api/places', methods=['POST']) #get the json file of the places of interest
 def location_api(ip_addr = '10.100.0.4'):
     try:
         # Get the location data from the request's JSON data
-        user_live_coor, nearby_locations, event = mec.loc_api(radius = 1000)
+        _, nearby_locations = mec.loc_user_places_api(ip_addr) #tuple, dictionary if not None
         # Log the received location data
         logging.info(f'Received location data: {nearby_locations}')
-        # Return a response as needed (e.g., success message or processed data)
-        response_message = "Location data received and processed successfully"
         return jsonify({'message': nearby_locations})
 
     except Exception as e:

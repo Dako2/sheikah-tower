@@ -3,44 +3,74 @@ from environment import OPENAI_API_KEY
 from datetime import datetime
 openai.api_key = OPENAI_API_KEY
 from llm.llm_agent import Conversation
-from mec_apis.location_manager import LocationManager
+#from mec_apis.location_manager import LocationManager
 from VecDB import VecDataBase
-from mec_apis.mec_location_api import fetch_user_coordinates
-
+from mec_apis.mec_location_api import fetch_user_coordinates, fetch_user_coordinates_zoneid_cellid
+import json
+import time
 # [skip if saved already] convert text in db into embeddings
 #text_to_ebds_csv('db/loc_apiexhibit-info.csv','db/exhibit-info-ebds.csv')
 #text_to_ebds_csv('db/user-data.csv','db/user-data-ebds.csv')
 DATA_PATH={'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
-FETCH_URL = 'https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='
+FETCH_URL = 'https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='
 
 class MECApp():
-    def __init__(self) -> None:
+    def __init__(self, user_IP_address = '10.100.0.1') -> None:
         self.convo = Conversation()
-        log_file_path = "db/user_event_log_file.json"
-        db_location_file_path = "db/monaco_coordinates.json"
-        user_IP_address = '10.100.0.4'
-        self.locationManager = LocationManager(user_IP_address, log_file_path, db_location_file_path, FETCH_URL)
+        #log_file_path = "db/user_event_log_file.json"
+        #db_location_file_path = "db/monaco_coordinates.json"
+        self.ip_addr = user_IP_address
+        #self.locationManager = LocationManager(user_IP_address, log_file_path, db_location_file_path, FETCH_URL)
         self.v = VecDataBase(db_csv_paths = DATA_PATH, update_db=True)
-        self.nearby_locations = ""
+        self.places_dict = {}
+        with open('monoco_zone_cellid_places.json', 'r') as file:
+            self.db_json = json.load(file) 
+        self.cellid = None
+        self.zoneid = None
+        
+    def loc_user_places_api(self):
+        try:
+            latitude, longitude, _, self.cellid, self.zoneid = fetch_user_coordinates_zoneid_cellid(self.ip_addr, FETCH_URL)
+            self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
+            self.convo.messages = [{"role": "system", "content": f"The user is currently nearby {self.places_dict.keys()}"}]
+            
+            return (latitude, longitude), self.places_dict
+        except:
+            return (None, None), {}
         
     def chat_api(self, user_input):
-        loc1_found_db_texts, loc1_found_score = self.v.search_db(user_input, DATA_PATH['loc1'])
+        loc1_found_db_texts = ""
+        self.loc_user_places_api()
+        #time.sleep(1)
+        if self.places_dict:
+            for loc_name, value in self.places_dict.items(): #loc_name, loc_dictionary: lat, long, db_path
+                text, loc1_found_score = self.v.search_db(user_input, value['db_path'])
+                loc1_found_db_texts += text
+                print(f"search loc info {loc_name}: {text}")
+        
         user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
-        output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts, self.nearby_locations)
+        output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
         print(self.convo.messages)
         return output
     
+    """
     def loc_api(self, radius = 1000):
         nearby_locations = None
         event = self.locationManager.fetch_nearby_locations(radius)
         user_live_coor = f"User now at: {event['user_live_coor']}"
+
         if event[list(event.keys())[2]]:
             self.nearby_locations = f"{list(event.keys())[2]}: {event[list(event.keys())[2]]}" # nearby_locations within 500: ['Monte Carlo Casino', 'Japanese Garden in Monaco']
         return user_live_coor, self.nearby_locations, event
+    """
     
-    def loc_user_api(self, ip_addr = '10.100.0.1'):
-        user_live_coor = fetch_user_coordinates(ip_addr)
-        return user_live_coor
+    def loc_user_api(self):
+        try:
+            user_live_coor = fetch_user_coordinates(self.ip_addr, FETCH_URL)
+            return user_live_coor
+        except:
+            print("user loc cannot be found")
+            return (None, None)
     
     def desert_mode(self, user_input): # use user db, city coordinates & user location (outside this function)
         #loc1_found_db_texts, loc1_found_score = self.v.search_db(user_input, DATA_PATH['loc1'])
@@ -67,5 +97,8 @@ class MECApp():
         return False # TODO   
 
 if __name__ == "__main__":
-    mec = MECApp()
-    print(mec.loc_api(radius = 1000))
+    mec = MECApp('10.100.0.1')
+    
+    mec.loc_user_places_api()
+    print('\n\n\n\n')
+    mec.chat_api("hello, any interesting spots? ")
