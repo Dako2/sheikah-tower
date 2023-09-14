@@ -154,8 +154,9 @@ def upload_image():
     if file:
         filename = os.path.join(UPLOAD_FOLDER, file.filename)
         file.save(filename)
-        image_info = mec.analyze_image_api(filename)
+        sim_score, image_info = mec.analyze_image_api(filename)
         print(f"received image and saved {filename}")
+        print(sim_score, image_info)
         return jsonify(success=True, message=image_info), 200
 
 if __name__ == '__main__':

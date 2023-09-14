@@ -67,3 +67,137 @@
 2023-09-14 13:57:57,842 - NumExpr defaulting to 8 threads.
 2023-09-14 13:57:58,062 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
 2023-09-14 13:57:58,337 - Use pytorch device: cpu
+2023-09-14 14:08:16,096 - NumExpr defaulting to 8 threads.
+2023-09-14 14:08:16,335 - Server initialized for eventlet.
+2023-09-14 14:08:16,336 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 14:08:16,619 - Use pytorch device: cpu
+2023-09-14 14:08:28,038 - Exception on /api/image [POST]
+Traceback (most recent call last):
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/app.py", line 157, in upload_image
+    image_info = mec.analyze_image_api(filename)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py", line 43, in analyze_image_api
+    print("Score: %.4f" % (sim_score))
+TypeError: must be real number, not NoneType
+2023-09-14 14:09:06,017 - Exception on /api/image [POST]
+Traceback (most recent call last):
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/app.py", line 157, in upload_image
+    image_info = mec.analyze_image_api(filename)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py", line 43, in analyze_image_api
+    print("Score: %.4f" % (sim_score))
+TypeError: must be real number, not NoneType
+2023-09-14 14:09:08,478 - Exception on /api/image [POST]
+Traceback (most recent call last):
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/app.py", line 157, in upload_image
+    image_info = mec.analyze_image_api(filename)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py", line 43, in analyze_image_api
+    print("Score: %.4f" % (sim_score))
+TypeError: must be real number, not NoneType
+2023-09-14 14:09:08,909 - Exception on /api/image [POST]
+Traceback (most recent call last):
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/app.py", line 157, in upload_image
+    image_info = mec.analyze_image_api(filename)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py", line 43, in analyze_image_api
+    print("Score: %.4f" % (sim_score))
+TypeError: must be real number, not NoneType
+2023-09-14 14:11:52,711 - Exception on /api/image [POST]
+Traceback (most recent call last):
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/app.py", line 157, in upload_image
+    image_info = mec.analyze_image_api(filename)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py", line 43, in analyze_image_api
+    print("Score: %.4f" % (sim_score))
+TypeError: must be real number, not NoneType
+2023-09-14 14:11:53,105 - Exception on /api/image [POST]
+Traceback (most recent call last):
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/app.py", line 157, in upload_image
+    image_info = mec.analyze_image_api(filename)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py", line 43, in analyze_image_api
+    print("Score: %.4f" % (sim_score))
+TypeError: must be real number, not NoneType
+2023-09-14 14:12:15,045 - Exception on /api/image [POST]
+Traceback (most recent call last):
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/app.py", line 157, in upload_image
+    image_info = mec.analyze_image_api(filename)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py", line 43, in analyze_image_api
+    print("Score: %.4f" % (sim_score))
+TypeError: must be real number, not NoneType
+2023-09-14 14:12:16,900 - Exception on /api/image [POST]
+Traceback (most recent call last):
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dako22/miniconda3/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/app.py", line 157, in upload_image
+    image_info = mec.analyze_image_api(filename)
+  File "/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py", line 43, in analyze_image_api
+    print("Score: %.4f" % (sim_score))
+TypeError: must be real number, not NoneType
+2023-09-14 14:19:43,811 - NumExpr defaulting to 8 threads.
+2023-09-14 14:19:44,026 - Server initialized for eventlet.
+2023-09-14 14:19:44,027 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 14:19:44,303 - Use pytorch device: cpu
+2023-09-14 14:20:47,362 - NumExpr defaulting to 8 threads.
+2023-09-14 14:20:47,535 - Server initialized for eventlet.
+2023-09-14 14:20:47,535 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 14:20:47,794 - Use pytorch device: cpu
+2023-09-14 15:00:34,279 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 15:00:39,485 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given

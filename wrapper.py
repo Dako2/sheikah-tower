@@ -43,7 +43,8 @@ class MECApp():
         print("Score: %.4f" % (sim_score))
         print("Index of most similar image in DB: %d" % (most_similar_img_idx))
         print(self.image_db_jsonlist[most_similar_img_idx])
-        return sim_score, most_similar_img_idx
+        #return sim_score, most_similar_img_idx
+        return [sim_score, self.image_db_jsonlist[most_similar_img_idx]]
 
     def loc_user_places_api(self):
         try:
