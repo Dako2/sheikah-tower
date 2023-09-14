@@ -85,3 +85,5 @@ if __name__ == '__main__':
     
     print("Score: %.4f" % (sim_score))
     print("Index of most similar image in DB: %.4f" % (most_similar_img_idx))
+    plt.imshow(most_similar_img)
+    plt.show()
