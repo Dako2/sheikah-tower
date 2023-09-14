@@ -8,6 +8,26 @@ logging.basicConfig(level=logging.INFO, filename='api_responses.log', format='%(
 
 # todo to add concurrent.futures to make multiple requests concurrently
 
+"""
+virtual mep server for demo purpose
+"""
+class JsonlIterator:
+    def __init__(self, filename = "api_responses.jsonl"):
+        # Load all lines into a list
+        with open(filename, 'r') as f:
+            self.lines = f.readlines()
+        self.index = 0
+
+    def get_next(self):
+        # Return the current line in json format
+        data = json.loads(self.lines[self.index])
+        
+        # Move to the next line or wrap to the first line
+        self.index = (self.index + 1) % len(self.lines)
+        return data 
+
+jsonl_iter = JsonlIterator('./mec_apis/api_responses.jsonl')
+
 def fetch_userlist_in_zone(zone_id):
     api_url = f'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/users?zoneId={zone_id}'
     response = requests.get(api_url)
@@ -60,7 +80,25 @@ def fetch_distance(address1, latitude, longitude):
     """
 #print(fetch_distance('10.100.0.4', '43.74588', '7.432222')) 
 
-def fetch_user_coordinates(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='):
+
+def fetch_user_coordinates(ip_address, fetchURL): #virtually
+    response = jsonl_iter.get_next()
+    latitude = response['userList']['user'][0]['locationInfo']['latitude'][0] # [0] first element of the list
+    longitude = response['userList']['user'][0]['locationInfo']['longitude'][0]
+    timestamp_seconds = response['userList']['user'][0]['locationInfo']['timestamp']['seconds']
+    return latitude, longitude, timestamp_seconds
+
+def fetch_user_coordinates_zoneid_cellid(ip_address, fetchURL): #virtually
+    response = jsonl_iter.get_next()
+    cellid = response['userList']['user'][0]['accessPointId'] # [0] first element of the list
+    zoneid = response['userList']['user'][0]['zoneId']
+    latitude = response['userList']['user'][0]['locationInfo']['latitude'][0] # [0] first element of the list
+    longitude = response['userList']['user'][0]['locationInfo']['longitude'][0]
+    timestamp_seconds = response['userList']['user'][0]['locationInfo']['timestamp']['seconds']
+    return latitude, longitude, timestamp_seconds, cellid, zoneid
+
+
+def fetch_user_coordinates_real(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='):
     api_url = f'{fetchURL}{ip_address}'
     response = requests.get(api_url)
     
@@ -73,8 +111,9 @@ def fetch_user_coordinates(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbw
     else:
         print(f"Request failed with status code: {response.status_code}")
         return None, None, None
-    
-def fetch_user_coordinates_zoneid_cellid(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='):
+
+
+def fetch_user_coordinates_zoneid_cellid_real(ip_address, fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address='):
     api_url = f'{fetchURL}{ip_address}'
     response = requests.get(api_url)
     

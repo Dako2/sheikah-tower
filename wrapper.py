@@ -117,7 +117,7 @@ class MECApp():
 if __name__ == "__main__":
     mec = MECApp('10.100.0.1')
     
-    #mec.loc_user_places_api()
+    mec.loc_user_places_api()
     print('\n\n\n\n')
     #mec.chat_api("hello, any interesting spots? ")
-    mec.analyze_image_api('./test_data/images/test_0001.jpeg')
+    #mec.analyze_image_api('./test_data/images/test_0001.jpeg')

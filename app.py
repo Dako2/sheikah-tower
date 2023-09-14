@@ -89,10 +89,8 @@ def handle_message(data):
     user_message = data['message']
     logging.info(f'User sent message: {user_message}')
     emit('new message', {'sender': 'You', 'message': user_message}, broadcast=True)
-    
     #bot_response = conversation.rolling_convo(user_message, None, None) #default
     bot_response = mec.chat_api(user_message) #vector database
-    
     logging.info(f'Bot response: {bot_response}')
     emit('new message', {'sender': 'Bot', 'message': bot_response}, broadcast=True)
 

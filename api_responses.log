@@ -201,3 +201,119 @@ TypeError: must be real number, not NoneType
 2023-09-14 14:20:47,794 - Use pytorch device: cpu
 2023-09-14 15:00:34,279 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
 2023-09-14 15:00:39,485 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 16:41:31,216 - NumExpr defaulting to 8 threads.
+2023-09-14 16:41:31,576 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 16:41:31,889 - Use pytorch device: cpu
+2023-09-14 16:42:19,858 - NumExpr defaulting to 8 threads.
+2023-09-14 16:42:20,029 - Server initialized for eventlet.
+2023-09-14 16:42:20,029 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 16:42:20,312 - Use pytorch device: cpu
+2023-09-14 16:42:27,104 - FmlrPRHG6jAuZQekAAAA: Sending packet OPEN data {'sid': 'FmlrPRHG6jAuZQekAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 16:42:27,124 - FmlrPRHG6jAuZQekAAAA: Received packet MESSAGE data 0
+2023-09-14 16:42:27,125 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 0{"sid":"wL3xX548amzTwccsAAAB"}
+2023-09-14 16:42:27,125 - FmlrPRHG6jAuZQekAAAA: Received request to upgrade to websocket
+2023-09-14 16:42:27,130 - FmlrPRHG6jAuZQekAAAA: Upgrade to websocket successful
+2023-09-14 16:42:29,281 - FmlrPRHG6jAuZQekAAAA: Received packet MESSAGE data 2["message sent",{"message":"hi"}]
+2023-09-14 16:42:29,281 - received event "message sent" from wL3xX548amzTwccsAAAB [/]
+2023-09-14 16:42:29,283 - User sent message: hi
+2023-09-14 16:42:29,283 - emitting event "new message" to all [/]
+2023-09-14 16:42:29,284 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"hi"}]
+2023-09-14 16:42:30,508 - Bot response: Hello! How can I assist you today? Are you looking for any specific information or need help with something?
+<p style="color: red;">found user info: "Name","Link""Latest Appearance","The Legend of Zelda: Breath of the Wild (2017 as of my last update)""Main Shield","Hylian Shield"</p>
+
+2023-09-14 16:42:30,509 - emitting event "new message" to all [/]
+2023-09-14 16:42:30,510 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"Hello! How can I assist you today? Are you looking for any specific information or need help with something?\n<p style=\"color: red;\">found user info: \"Name\",\"Link\"\"Latest Appearance\",\"The Legend of Zelda: Breath of the Wild (2017 as of my last update)\"\"Main Shield\",\"Hylian Shield\"</p>\n"}]
+2023-09-14 16:42:32,954 - FmlrPRHG6jAuZQekAAAA: Received packet MESSAGE data 2["message sent",{"message":"hi"}]
+2023-09-14 16:42:32,954 - received event "message sent" from wL3xX548amzTwccsAAAB [/]
+2023-09-14 16:42:32,956 - User sent message: hi
+2023-09-14 16:42:32,956 - emitting event "new message" to all [/]
+2023-09-14 16:42:32,956 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"hi"}]
+2023-09-14 16:42:34,396 - Bot response: Hello! How can I assist you today? Are you looking for any specific information or need help with something?
+<p style="color: red;">found user info: "Name","Link""Latest Appearance","The Legend of Zelda: Breath of the Wild (2017 as of my last update)""Main Shield","Hylian Shield"</p>
+
+2023-09-14 16:42:34,397 - emitting event "new message" to all [/]
+2023-09-14 16:42:34,397 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"Hello! How can I assist you today? Are you looking for any specific information or need help with something?\n<p style=\"color: red;\">found user info: \"Name\",\"Link\"\"Latest Appearance\",\"The Legend of Zelda: Breath of the Wild (2017 as of my last update)\"\"Main Shield\",\"Hylian Shield\"</p>\n"}]
+2023-09-14 16:42:35,288 - FmlrPRHG6jAuZQekAAAA: Received packet MESSAGE data 2["message sent",{"message":"hi"}]
+2023-09-14 16:42:35,288 - received event "message sent" from wL3xX548amzTwccsAAAB [/]
+2023-09-14 16:42:35,289 - User sent message: hi
+2023-09-14 16:42:35,290 - emitting event "new message" to all [/]
+2023-09-14 16:42:35,290 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"hi"}]
+2023-09-14 16:42:36,546 - Bot response: Hello! How can I assist you today? Are you looking for any specific information or need help with something?
+<p style="color: red;">found user info: "Name","Link""Latest Appearance","The Legend of Zelda: Breath of the Wild (2017 as of my last update)""Main Shield","Hylian Shield"</p>
+
+2023-09-14 16:42:36,546 - emitting event "new message" to all [/]
+2023-09-14 16:42:36,547 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"Hello! How can I assist you today? Are you looking for any specific information or need help with something?\n<p style=\"color: red;\">found user info: \"Name\",\"Link\"\"Latest Appearance\",\"The Legend of Zelda: Breath of the Wild (2017 as of my last update)\"\"Main Shield\",\"Hylian Shield\"</p>\n"}]
+2023-09-14 16:42:43,060 - FmlrPRHG6jAuZQekAAAA: Received packet MESSAGE data 2["message sent",{"message":"any interesting spots? "}]
+2023-09-14 16:42:43,061 - received event "message sent" from wL3xX548amzTwccsAAAB [/]
+2023-09-14 16:42:43,062 - User sent message: any interesting spots? 
+2023-09-14 16:42:43,062 - emitting event "new message" to all [/]
+2023-09-14 16:42:43,062 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"any interesting spots? "}]
+2023-09-14 16:42:44,837 - Bot response: Certainly! Could you please let me know which location or city you are referring to? That way, I can provide you with some interesting spots to visit in that specific area.
+2023-09-14 16:42:44,838 - emitting event "new message" to all [/]
+2023-09-14 16:42:44,838 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"Certainly! Could you please let me know which location or city you are referring to? That way, I can provide you with some interesting spots to visit in that specific area."}]
+2023-09-14 16:42:52,106 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:42:52,109 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:43:17,111 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:43:17,114 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:43:42,122 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:43:42,126 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:44:07,130 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:44:07,131 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:44:32,133 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:44:32,135 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:44:57,137 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:44:57,141 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:45:22,143 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:45:22,145 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:45:47,147 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:45:47,149 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:46:12,151 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:46:12,154 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:46:37,155 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:46:37,157 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:47:02,159 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:47:02,161 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:47:27,163 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:47:27,166 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:47:52,168 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:47:52,170 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:48:17,171 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:48:17,173 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:48:42,174 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:48:42,178 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:49:07,180 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:49:07,182 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:49:32,183 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:49:32,188 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:49:32,635 - FmlrPRHG6jAuZQekAAAA: Received packet MESSAGE data 2["message sent",{"message":"hi"}]
+2023-09-14 16:49:32,636 - received event "message sent" from wL3xX548amzTwccsAAAB [/]
+2023-09-14 16:49:32,636 - User sent message: hi
+2023-09-14 16:49:32,637 - emitting event "new message" to all [/]
+2023-09-14 16:49:32,637 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"hi"}]
+2023-09-14 16:49:33,848 - FmlrPRHG6jAuZQekAAAA: Received packet MESSAGE data 2["message sent",{"message":""}]
+2023-09-14 16:49:33,848 - received event "message sent" from wL3xX548amzTwccsAAAB [/]
+2023-09-14 16:49:33,848 - User sent message: 
+2023-09-14 16:49:33,849 - emitting event "new message" to all [/]
+2023-09-14 16:49:33,849 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":""}]
+2023-09-14 16:49:34,666 - Bot response: Hello! How can I assist you today? Are you looking for any specific information or need help with something?
+<p style="color: red;">found user info: "Name","Link""Latest Appearance","The Legend of Zelda: Breath of the Wild (2017 as of my last update)""Main Shield","Hylian Shield"</p>
+
+2023-09-14 16:49:34,666 - emitting event "new message" to all [/]
+2023-09-14 16:49:34,667 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"Hello! How can I assist you today? Are you looking for any specific information or need help with something?\n<p style=\"color: red;\">found user info: \"Name\",\"Link\"\"Latest Appearance\",\"The Legend of Zelda: Breath of the Wild (2017 as of my last update)\"\"Main Shield\",\"Hylian Shield\"</p>\n"}]
+2023-09-14 16:49:35,472 - Bot response: Hello! How can I assist you today? Are you looking for any specific information or need help with something?
+2023-09-14 16:49:35,472 - emitting event "new message" to all [/]
+2023-09-14 16:49:35,473 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"Hello! How can I assist you today? Are you looking for any specific information or need help with something?"}]
+2023-09-14 16:49:38,718 - FmlrPRHG6jAuZQekAAAA: Received packet MESSAGE data 2["message sent",{"message":"hello"}]
+2023-09-14 16:49:38,718 - received event "message sent" from wL3xX548amzTwccsAAAB [/]
+2023-09-14 16:49:38,719 - User sent message: hello
+2023-09-14 16:49:38,720 - emitting event "new message" to all [/]
+2023-09-14 16:49:38,720 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"hello"}]
+2023-09-14 16:49:40,174 - Bot response: Hello! How can I assist you today? Are you looking for any specific information or need help with something?
+<p style="color: red;">found user info: "Name","Link""Latest Appearance","The Legend of Zelda: Breath of the Wild (2017 as of my last update)"</p>
+
+2023-09-14 16:49:40,174 - emitting event "new message" to all [/]
+2023-09-14 16:49:40,175 - FmlrPRHG6jAuZQekAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"Hello! How can I assist you today? Are you looking for any specific information or need help with something?\n<p style=\"color: red;\">found user info: \"Name\",\"Link\"\"Latest Appearance\",\"The Legend of Zelda: Breath of the Wild (2017 as of my last update)\"</p>\n"}]
+2023-09-14 16:49:57,189 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:49:57,193 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:50:22,195 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:50:22,198 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
