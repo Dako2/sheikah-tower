@@ -67,7 +67,7 @@ def query_interestpoints(lat = 37.417146,lng = -122.076376, radius = 500, keywor
         
         print(f"{name}: ({place_lat}, {place_lng}), Rating: {rating}, Total Ratings: {user_ratings_total}")
         try:
-            if int(user_ratings_total) > 1000:
+            if int(user_ratings_total) > 400:
                 query = name
                 info = get_info_from_wikipedia(query)
                 if info:
@@ -118,18 +118,27 @@ def chunk_string(s, token_count=50):
     return rows
 
 def save_to_csv_and_np(combined_data, cellid):
-    for key, value in combined_data.items():
+    jsonfile = 'monoco_zone_cellid_places.json'
+    if not os.path.exists(jsonfile):
+        with open(jsonfile, 'w') as file:
+            json.dump({}, file)
+        print(f"{jsonfile} created.")
 
+    with open(jsonfile, 'r') as file:
+        db_json = json.load(file)
+
+    db_folder_path = './db/'
+    for key, value in combined_data.items():
         filename = key + ".csv"
         rows = chunk_string(value['wiki'])
         corpus = [row.strip() for row in rows]
-        # Write to the CSV file
-        csv_path = './db/'+filename
+        csv_path = './db/csv/'+filename
         with open(csv_path, 'w', newline='') as file:
             writer = csv.writer(file)
             for row in corpus:
                 writer.writerow([row])
         print(f"Saved to {filename}")
+        
         db_emb_path = './db/' + filename + '.npy'
         db_ebds = v.model.encode(corpus, convert_to_numpy=True)
         np.save(db_emb_path, db_ebds)
@@ -137,14 +146,36 @@ def save_to_csv_and_np(combined_data, cellid):
         name = value.get('name')
         place_lat = value.get('geometry', {}).get('location', {}).get('lat')
         place_lng = value.get('geometry', {}).get('location', {}).get('lng')
-        save_to_json({name: {"latitude": place_lat, "longitude": place_lng, "db_path": csv_path}}, jsonfile=str(cellid)+'.json')
-        
+
+        # Ensure the path and get a reference to the 'places' dictionary
+        places_dict = ensure_path(db_json, [cellid[0], cellid[1], 'places'])
+
+        # Insert the new place into the 'places' dictionary
+        places_dict[name] = {"latitude": place_lat, "longitude": place_lng, "db_path": csv_path}
+
+    with open(jsonfile, 'w') as file:
+        json.dump(db_json, file, indent=4)
+
+
+def ensure_path(d, keys):
+    for key in keys[:-1]:
+        d = d.setdefault(key, {})
+    return d.setdefault(keys[-1], {})
+
 
 if __name__ == "__main__":
     #43.7410606,7.4208206
-    with open("zone_loc.json", 'r') as file:
-        zones = json.load(file)
+    import glob
+    zone_dic = {}
+    for fn in glob.glob("./db/zones/*.json"):
+        with open(fn, 'r') as file:
+            zone_info = json.load(file)
+            zone_dic[zone_info['accessPointList']['zoneId']] = zone_info['accessPointList']['accessPoint']
 
-    for zoneid, (lat, lng) in zones.items():
-        db = query_interestpoints(lat = lat, lng = lng, radius = 10000, keyword=None)
-        gen_db_to_emb_csvformat(db, zoneid)
+    for zoneid, ap_list in zone_dic.items():
+        for ap in ap_list:
+            cellid = ap['accessPointId']
+            lat = ap['locationInfo']['latitude'][0]
+            lng = ap['locationInfo']['longitude'][0]
+            db = query_interestpoints(lat = lat, lng = lng, radius = 250, keyword=None)
+            gen_db_to_emb_csvformat(db, (zoneid,cellid))

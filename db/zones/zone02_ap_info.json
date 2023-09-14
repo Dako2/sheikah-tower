@@ -1,0 +1,240 @@
+{
+  "accessPointList": {
+    "accessPoint": [
+      {
+        "accessPointId": "5g-small-cell-4",
+        "connectionType": "Smallcell",
+        "locationInfo": {
+          "latitude": [
+            43.732998
+          ],
+          "longitude": [
+            7.419741
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/5g-small-cell-4"
+      },
+      {
+        "accessPointId": "wifi-ap-4",
+        "connectionType": "Wifi",
+        "locationInfo": {
+          "latitude": [
+            43.733475
+          ],
+          "longitude": [
+            7.427702
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/wifi-ap-4"
+      },
+      {
+        "accessPointId": "4g-macro-cell-4",
+        "connectionType": "Macro",
+        "locationInfo": {
+          "latitude": [
+            43.731724
+          ],
+          "longitude": [
+            7.423547
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/4g-macro-cell-4"
+      },
+      {
+        "accessPointId": "5g-small-cell-9",
+        "connectionType": "Smallcell",
+        "locationInfo": {
+          "latitude": [
+            43.73308
+          ],
+          "longitude": [
+            7.427027
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 1,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/5g-small-cell-9"
+      },
+      {
+        "accessPointId": "5g-small-cell-5",
+        "connectionType": "Smallcell",
+        "locationInfo": {
+          "latitude": [
+            43.732063
+          ],
+          "longitude": [
+            7.421158
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/5g-small-cell-5"
+      },
+      {
+        "accessPointId": "5g-small-cell-8",
+        "connectionType": "Smallcell",
+        "locationInfo": {
+          "latitude": [
+            43.732555
+          ],
+          "longitude": [
+            7.425063
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/5g-small-cell-8"
+      },
+      {
+        "accessPointId": "wifi-ap-5",
+        "connectionType": "Wifi",
+        "locationInfo": {
+          "latitude": [
+            43.735027
+          ],
+          "longitude": [
+            7.421984
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/wifi-ap-5"
+      },
+      {
+        "accessPointId": "5g-small-cell-7",
+        "connectionType": "Smallcell",
+        "locationInfo": {
+          "latitude": [
+            43.734097
+          ],
+          "longitude": [
+            7.420943
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/5g-small-cell-7"
+      },
+      {
+        "accessPointId": "4g-macro-cell-5",
+        "connectionType": "Macro",
+        "locationInfo": {
+          "latitude": [
+            43.73411
+          ],
+          "longitude": [
+            7.429257
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/4g-macro-cell-5"
+      },
+      {
+        "accessPointId": "wifi-ap-3",
+        "connectionType": "Wifi",
+        "locationInfo": {
+          "latitude": [
+            43.73342
+          ],
+          "longitude": [
+            7.422327
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/wifi-ap-3"
+      },
+      {
+        "accessPointId": "5g-small-cell-6",
+        "connectionType": "Smallcell",
+        "locationInfo": {
+          "latitude": [
+            43.733368
+          ],
+          "longitude": [
+            7.421865
+          ],
+          "shape": 2,
+          "timestamp": {
+            "nanoSeconds": 0,
+            "seconds": 1694664578
+          }
+        },
+        "numberOfUsers": 0,
+        "operationStatus": "Serviceable",
+        "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints/5g-small-cell-6"
+      }
+    ],
+    "resourceURL": 
+"https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/zones/zone02/accessPoints",
+    "zoneId": "zone02"
+  }
+}
