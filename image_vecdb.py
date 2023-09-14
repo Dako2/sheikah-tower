@@ -35,7 +35,10 @@ class ImageVecDataBase():
         self.dataset = load_dataset('imagefolder', data_dir=db_image_dir_path)['train']
         if update and db_image_embeding_path:
             self.db_embedding_dump(db_image_embeding_path)
-
+        
+        # Load db corpus embeddings
+        self.corpus_embeddings = np.load(self.db_image_embeding_path + '.npy')
+       
     def db_embedding_dump(self, db_image_embeding_path):
         embeddings = self.embed_images([data['image'] for data in self.dataset])
         np.save(db_image_embeding_path, embeddings)
@@ -60,11 +63,8 @@ class ImageVecDataBase():
     def search_db(self, user_image, threshold=0.2, top_n = 5):
         query_embedding = self.embed_images([user_image])
         
-        # Load db corpus embeddings
-        corpus_embeddings = np.load(self.db_image_embeding_path + '.npy')
-        
         # Find the most similar image
-        cosine_scores = util.pytorch_cos_sim(query_embedding, corpus_embeddings)        
+        cosine_scores = util.pytorch_cos_sim(query_embedding, self.corpus_embeddings)        
         top_results = np.argpartition(-cosine_scores, range(top_n))[0:top_n]
 
         # #print("\nTop {top_n} most similar sentences in corpus:")
