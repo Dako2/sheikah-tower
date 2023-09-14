@@ -9,3 +9,6 @@ numpy
 requests
 # time
 # math
+transformers
+datasets
+matplotlib
