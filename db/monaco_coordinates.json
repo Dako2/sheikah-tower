@@ -158,5 +158,25 @@
         "latitude": 43.5234979,
         "longitude": 7.0438094,
         "db_path": "./db/Royal Fort.csv"
+    },
+    "Casino de Monte-Carlo": {
+        "latitude": 43.7390972,
+        "longitude": 7.428068100000001,
+        "db_path": "./db/Casino de Monte-Carlo.csv"
+    },
+    "Casino Barri\u00e8re": {
+        "latitude": 43.7729317,
+        "longitude": 7.4987863,
+        "db_path": "./db/Casino Barri\u00e8re.csv"
+    },
+    "Casino Caf\u00e9 de Paris": {
+        "latitude": 43.7397335,
+        "longitude": 7.427713,
+        "db_path": "./db/Casino Caf\u00e9 de Paris.csv"
+    },
+    "Casino Supermarket": {
+        "latitude": 43.7353102,
+        "longitude": 7.421098700000001,
+        "db_path": "./db/Casino Supermarket.csv"
     }
 }

@@ -11,6 +11,7 @@ from VecDB import VecDataBase
 import time
 import csv
 import numpy as np
+import os 
 
 v = VecDataBase(update_db = False)
 
@@ -82,13 +83,18 @@ museum.csv
 museum.npy
 
 """
-def gen_db_to_emb_csvformat(db): #combine wiki, web page data
+def gen_db_to_emb_csvformat(db, cellid): #combine wiki, web page data
     #pass it to csv
     wiki_data = {key: value for key, value in db.items() if 'wiki' in value}
     combined_data = wiki_data 
-    csv_path = save_to_csv_and_np(combined_data)
+    csv_path = save_to_csv_and_np(combined_data, cellid)
 
-def save_to_json(new_place,jsonfile = './db/monaco_coordinates.json'):
+def save_to_json(new_place, jsonfile = './db/monaco_coordinates.json'):
+    if not os.path.exists(jsonfile):
+        with open(jsonfile, 'w') as file:
+            json.dump({}, file)
+        print(f"{jsonfile} created.")
+
     with open(jsonfile, 'r') as file:
         data = json.load(file)
     # Check if the place already exists in data and add if not
@@ -111,7 +117,7 @@ def chunk_string(s, token_count=50):
     rows = [' '.join(chunk) for chunk in chunks]
     return rows
 
-def save_to_csv_and_np(combined_data):
+def save_to_csv_and_np(combined_data, cellid):
     for key, value in combined_data.items():
 
         filename = key + ".csv"
@@ -131,10 +137,14 @@ def save_to_csv_and_np(combined_data):
         name = value.get('name')
         place_lat = value.get('geometry', {}).get('location', {}).get('lat')
         place_lng = value.get('geometry', {}).get('location', {}).get('lng')
-        save_to_json({name: {"latitude": place_lat, "longitude": place_lng, "db_path": csv_path}})
+        save_to_json({name: {"latitude": place_lat, "longitude": place_lng, "db_path": csv_path}}, jsonfile=str(cellid)+'.json')
         
 
 if __name__ == "__main__":
     #43.7410606,7.4208206
-    db = query_interestpoints(lat = 43.7410606,lng = 7.4208206, radius = 50000, keyword='point of interest')
-    a = gen_db_to_emb_csvformat(db)
+    with open("zone_loc.json", 'r') as file:
+        zones = json.load(file)
+
+    for zoneid, (lat, lng) in zones.items():
+        db = query_interestpoints(lat = lat, lng = lng, radius = 10000, keyword=None)
+        gen_db_to_emb_csvformat(db, zoneid)
