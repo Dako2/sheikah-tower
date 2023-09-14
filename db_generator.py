@@ -83,11 +83,27 @@ museum.npy
 
 """
 def gen_db_to_emb_csvformat(db): #combine wiki, web page data
-    #pass it to csv 
-    wiki_data = {key: value['wiki'] for key, value in db.items() if 'wiki' in value}
+    #pass it to csv
+    wiki_data = {key: value for key, value in db.items() if 'wiki' in value}
     combined_data = wiki_data 
-    save_to_csv_and_np(combined_data) 
+    csv_path = save_to_csv_and_np(combined_data)
 
+def save_to_json(new_place,jsonfile = './db/monaco_coordinates.json'):
+    with open(jsonfile, 'r') as file:
+        data = json.load(file)
+    # Check if the place already exists in data and add if not
+    for place_name, place_data in new_place.items():
+        if place_name not in data:
+            data[place_name] = place_data
+            print(f"Added {place_name} to data.")
+        else:
+            data[place_name] = place_data
+            print(f"{place_name} already exists in data.")
+
+    # Save the updated data back to the file
+    with open(jsonfile, 'w') as file:
+        json.dump(data, file, indent=4)
+        
 def chunk_string(s, token_count=50):
     # Tokenize the string
     tokens = s.split()
@@ -97,11 +113,13 @@ def chunk_string(s, token_count=50):
 
 def save_to_csv_and_np(combined_data):
     for key, value in combined_data.items():
+
         filename = key + ".csv"
-        rows = chunk_string(value)
+        rows = chunk_string(value['wiki'])
         corpus = [row.strip() for row in rows]
         # Write to the CSV file
-        with open('./db/'+filename, 'w', newline='') as file:
+        csv_path = './db/'+filename
+        with open(csv_path, 'w', newline='') as file:
             writer = csv.writer(file)
             for row in corpus:
                 writer.writerow([row])
@@ -109,9 +127,14 @@ def save_to_csv_and_np(combined_data):
         db_emb_path = './db/' + filename + '.npy'
         db_ebds = v.model.encode(corpus, convert_to_numpy=True)
         np.save(db_emb_path, db_ebds)
-    return
+
+        name = value.get('name')
+        place_lat = value.get('geometry', {}).get('location', {}).get('lat')
+        place_lng = value.get('geometry', {}).get('location', {}).get('lng')
+        save_to_json({name: {"latitude": place_lat, "longitude": place_lng, "db_path": csv_path}})
+        
 
 if __name__ == "__main__":
     #43.7410606,7.4208206
-    db = query_interestpoints(lat = 43.7410606,lng = 7.4208206, radius = 50000, keyword='museum')
+    db = query_interestpoints(lat = 43.7410606,lng = 7.4208206, radius = 50000, keyword='point of interest')
     a = gen_db_to_emb_csvformat(db)

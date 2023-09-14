@@ -1,4 +1,4 @@
-{  
+{
     "Monte Carlo Casino": {
         "latitude": 43.739648,
         "longitude": 7.427329,
@@ -10,7 +10,7 @@
         "db_path": "None"
     },
     "Port Hercules": {
-        "latitude": 43.731420,
+        "latitude": 43.73142,
         "longitude": 7.423016,
         "db_path": "None"
     },
@@ -20,7 +20,7 @@
         "db_path": "None"
     },
     "Saint-Martin Gardens": {
-        "latitude": 43.737030,
+        "latitude": 43.73703,
         "longitude": 7.422617,
         "db_path": "None"
     },
@@ -44,10 +44,10 @@
         "longitude": 7.423656930121654,
         "db_path": "None"
     },
-    "Musée océanographique de Monaco": {
-        "latitude": 43.73102671082824,
-        "longitude": 7.426054242841845,
-        "db_path": "None"
+    "Mus\u00e9e oc\u00e9anographique de Monaco": {
+        "latitude": 43.7308132,
+        "longitude": 7.425573999999999,
+        "db_path": "./db/Mus\u00e9e oc\u00e9anographique de Monaco.csv"
     },
     "Prince's Palace of Monaco": {
         "latitude": 43.73144333396397,
@@ -80,10 +80,83 @@
         "db_path": "None"
     },
     "Rosicrucian Egyptian Museum": {
-        "latitude": 43.731724, 
+        "latitude": 43.731724,
         "longitude": 7.423547,
         "db_path": "./exhibit-info.csv"
+    },
+    "Marc Chagall National Museum": {
+        "latitude": 43.7094754,
+        "longitude": 7.270165099999999,
+        "db_path": "./db/Marc Chagall National Museum.csv"
+    },
+    "Mus\u00e9e Matisse": {
+        "latitude": 43.7193868,
+        "longitude": 7.276243,
+        "db_path": "./db/Mus\u00e9e Matisse.csv"
+    },
+    "La Collection Automobiles de S.A.S. le Prince de Monaco": {
+        "latitude": 43.7354011,
+        "longitude": 7.421811399999998,
+        "db_path": "./db/La Collection Automobiles de S.A.S. le Prince de Monaco.csv"
+    },
+    "mus\u00e9e Renoir": {
+        "latitude": 43.6676656,
+        "longitude": 7.157041299999999,
+        "db_path": "./db/mus\u00e9e Renoir.csv"
+    },
+    "Mus\u00e9e du Palais Lascaris": {
+        "latitude": 43.6976766,
+        "longitude": 7.277245799999999,
+        "db_path": "./db/Mus\u00e9e du Palais Lascaris.csv"
+    },
+    "Mus\u00e9e Picasso": {
+        "latitude": 43.5807611,
+        "longitude": 7.1282519,
+        "db_path": "./db/Mus\u00e9e Picasso.csv"
+    },
+    "Fondation Maeght": {
+        "latitude": 43.7007173,
+        "longitude": 7.1148738,
+        "db_path": "./db/Fondation Maeght.csv"
+    },
+    "Villa Mass\u00e9na Mus\u00e9e": {
+        "latitude": 43.6956097,
+        "longitude": 7.258894799999999,
+        "db_path": "./db/Villa Mass\u00e9na Mus\u00e9e.csv"
+    },
+    "#ILoveNICE": {
+        "latitude": 43.6936742,
+        "longitude": 7.278999900000001,
+        "db_path": "./db/#ILoveNICE.csv"
+    },
+    "Fontaine du Soleil": {
+        "latitude": 43.69650439999999,
+        "longitude": 7.270614999999999,
+        "db_path": "./db/Fontaine du Soleil.csv"
+    },
+    "Le Fort Carr\u00e9": {
+        "latitude": 43.5903278,
+        "longitude": 7.1272506,
+        "db_path": "./db/Le Fort Carr\u00e9.csv"
+    },
+    "Colline du Ch\u00e2teau": {
+        "latitude": 43.694705,
+        "longitude": 7.280566700000001,
+        "db_path": "./db/Colline du Ch\u00e2teau.csv"
+    },
+    "Place Mass\u00e9na": {
+        "latitude": 43.697233,
+        "longitude": 7.270236499999999,
+        "db_path": "./db/Place Mass\u00e9na.csv"
+    },
+    "Place des Arcades, Valbonne": {
+        "latitude": 43.6415215,
+        "longitude": 7.008647400000001,
+        "db_path": "./db/Place des Arcades, Valbonne.csv"
+    },
+    "Royal Fort": {
+        "latitude": 43.5234979,
+        "longitude": 7.0438094,
+        "db_path": "./db/Royal Fort.csv"
     }
-
 }
-
