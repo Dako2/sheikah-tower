@@ -64,7 +64,7 @@ class MECApp():
         return user_live_coor, self.nearby_locations, event
     """
     
-    def loc_user_api(self):
+    def loc_user_api(self,):
         try:
             user_live_coor = fetch_user_coordinates(self.ip_addr, FETCH_URL)
             return user_live_coor

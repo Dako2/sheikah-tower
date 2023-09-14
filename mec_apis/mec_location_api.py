@@ -1,5 +1,10 @@
 import requests
 import math
+import logging
+import json
+import time
+
+logging.basicConfig(level=logging.INFO, filename='api_responses.log', format='%(asctime)s - %(message)s')
 
 # todo to add concurrent.futures to make multiple requests concurrently
 
@@ -80,6 +85,14 @@ def fetch_user_coordinates_zoneid_cellid(ip_address, fetchURL='https://try-mec.e
         latitude = response['userList']['user'][0]['locationInfo']['latitude'][0] # [0] first element of the list
         longitude = response['userList']['user'][0]['locationInfo']['longitude'][0]
         timestamp_seconds = response['userList']['user'][0]['locationInfo']['timestamp']['seconds']
+
+        # Log the data
+        logging.info(json.dumps(response))
+        # Save to a file (you can adjust this if you want to save in a different format or location)
+        with open('api_responses.json', 'a') as file:
+            json.dump(response, file)
+            file.write('\n')  # Separate each JSON object with a newline
+
         return latitude, longitude, timestamp_seconds, cellid, zoneid
     else:
         print(f"Request failed with status code: {response.status_code}")
@@ -108,3 +121,9 @@ def distance_calc(lat1, lon1, lat2, lon2):
     return distance
 
 # print(distance_calc(43.730785, 7.420383, 43.739648, 7.427329)) # output: 1132.556840778062
+if __name__ == '__main__':
+    ip_address = '10.100.0.4'  # Replace with your IP address
+
+    while True:
+        fetch_user_coordinates_zoneid_cellid(ip_address)
+        time.sleep(1)

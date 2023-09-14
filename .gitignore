@@ -1,6 +1,6 @@
 .env
 app.log
 *.jpeg
-
+testdata
 __pycache__
 */__pycache__

@@ -22,7 +22,6 @@ openai.api_key = OPENAI_API_KEY
 app = Flask(__name__)
 socketio = SocketIO(app, logger=True, engineio_logger=True, cors_allowed_origins="*")
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-mec = wrapper.MECApp()
 
 @app.route('/')
 def chat():
@@ -92,6 +91,7 @@ def handle_message(data):
     logging.info(f'Bot response: {bot_response}')
     emit('new message', {'sender': 'Bot', 'message': bot_response}, broadcast=True)
 
+
 @app.route('/api/chat', methods=['POST'])
 def chat_api():
     try:
@@ -113,8 +113,9 @@ def chat_api():
         logging.error(f'Error in chat_api: {str(e)}')
         return jsonify({'error': 'An error occurred'}), 500
 
+mec = wrapper.MECApp()
 @app.route('/api/location', methods=['POST'])
-def location_api(ip_addr = '10.100.0.4'):
+def location_api(ip_addr = '10.100.0.1'):
     try:
         # Get the location data from the request's JSON data
         location_data = mec.loc_user_api(ip_addr)
@@ -131,7 +132,7 @@ def location_api(ip_addr = '10.100.0.4'):
 def location_api(ip_addr = '10.100.0.4'):
     try:
         # Get the location data from the request's JSON data
-        _, nearby_locations = mec.loc_user_places_api(ip_addr) #tuple, dictionary if not None
+        _, nearby_locations = mec.loc_user_places_api() #tuple, dictionary if not None
         # Log the received location data
         logging.info(f'Received location data: {nearby_locations}')
         return jsonify({'message': nearby_locations})
