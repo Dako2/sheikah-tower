@@ -14,7 +14,7 @@ import numpy as np
 
 v = VecDataBase(update_db = False)
 
-def get_nearby_places(api_key, latitude, longitude, radius=50000, keyword=None):
+def get_nearby_places(latitude, longitude, radius=5000, keyword=None):
     """Fetch nearby places using Google Places API.
     
     Parameters:
@@ -28,18 +28,19 @@ def get_nearby_places(api_key, latitude, longitude, radius=50000, keyword=None):
     - dict: Parsed JSON response from the Google Places API.
     """
     endpoint_url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+    #endpoint_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
     
     params = {
         'location': f"{latitude},{longitude}",
         'radius': radius,
-        'key': api_key
+        'key': GOOGLE_MAP_API
     }
     
     if keyword:
         params['keyword'] = keyword
 
     response = requests.get(endpoint_url, params=params)
-    print(response)
+    print(response.json())
     return response.json()
 
 def get_info_from_wikipedia(query):
@@ -53,8 +54,8 @@ def get_info_from_wikipedia(query):
             print(option)
         return None
     
-def query_interestpoints(lat = 37.417146,lng = -122.076376, keyword = None):
-    results = get_nearby_places(GOOGLE_MAP_API, lat, lng, keyword)
+def query_interestpoints(lat = 37.417146,lng = -122.076376, radius = 500, keyword = None):
+    results = get_nearby_places(lat, lng, radius, keyword)
     db = {}
     for place in results.get('results', []):
         name = place.get('name')
@@ -108,9 +109,9 @@ def save_to_csv_and_np(combined_data):
         db_emb_path = './db/' + filename + '.npy'
         db_ebds = v.model.encode(corpus, convert_to_numpy=True)
         np.save(db_emb_path, db_ebds)
-    return 
+    return
 
 if __name__ == "__main__":
     #43.7410606,7.4208206
-    db = query_interestpoints(lat = 43.7410606,lng = 7.4208206, keyword='museum')
+    db = query_interestpoints(lat = 43.7410606,lng = 7.4208206, radius = 50000, keyword='museum')
     a = gen_db_to_emb_csvformat(db)
