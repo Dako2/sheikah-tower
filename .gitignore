@@ -1,7 +1,6 @@
 .env
 app.log
-*.jpeg
-*.jpg
+
 testdata
 .DS_Store
 
