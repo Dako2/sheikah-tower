@@ -134,7 +134,7 @@ def distance_calc(lat1, lon1, lat2, lon2):
 
 # print(distance_calc(43.730785, 7.420383, 43.739648, 7.427329)) # output: 1132.556840778062
 if __name__ == '__main__':
-    ip_address = '10.10.0.4'  # Replace with your IP address
+    ip_address = '10.100.0.2'  # Replace with your IP address
 
     while True:
         print(fetch_user_coordinates_zoneid_cellid_real(ip_address))
