@@ -317,3 +317,93 @@ TypeError: must be real number, not NoneType
 2023-09-14 16:49:57,193 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
 2023-09-14 16:50:22,195 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
 2023-09-14 16:50:22,198 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:50:47,200 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:50:47,203 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:51:12,204 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:51:12,206 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:51:37,208 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:51:37,211 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:52:02,212 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:52:02,215 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:52:27,217 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:52:27,221 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:52:52,223 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:52:52,226 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:53:17,227 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:53:17,231 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:53:42,232 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:53:42,235 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:54:07,236 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:54:07,239 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:54:32,241 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:54:32,244 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:54:57,245 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:54:57,247 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:55:22,248 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:55:22,252 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:55:47,254 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:55:47,259 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:56:12,261 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:56:12,265 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:56:37,266 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:56:37,269 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:57:02,271 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:57:02,274 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:57:27,275 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:57:27,281 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:57:52,283 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:57:52,287 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:58:17,289 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:58:17,294 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:58:42,295 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:58:42,298 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:59:07,299 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:59:07,304 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:59:32,305 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:59:32,307 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 16:59:57,308 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 16:59:57,311 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:00:22,312 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:00:22,315 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:00:47,317 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:00:47,320 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:01:12,322 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:01:12,326 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:01:37,328 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:01:37,330 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:02:02,332 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:02:02,336 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:02:27,338 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:02:27,342 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:02:52,344 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:02:52,346 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:03:17,348 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:03:17,352 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:03:42,354 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:03:42,356 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:04:07,358 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:04:07,360 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:04:32,361 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:04:32,365 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:04:57,367 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:04:57,368 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:05:22,370 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:05:22,374 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:05:47,376 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:05:47,380 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:06:12,381 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:06:12,385 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:06:37,386 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:06:37,389 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:07:02,391 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:07:02,393 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:07:27,394 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:07:27,395 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:07:52,397 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:07:52,399 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:08:17,400 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:08:17,403 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:08:42,405 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:08:42,408 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:09:07,410 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:09:07,413 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
