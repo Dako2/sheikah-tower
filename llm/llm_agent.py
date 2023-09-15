@@ -5,7 +5,7 @@ class Conversation:
         
         #if spot_mode, just append to this system messages
         #self.PROMPT_LIST = [{"desert_mode":"Be a helpful tour guide and language interpreter."}]
-        self.messages = [{"role": "system", "content": "Be my City Tour Guide. Please show me around. I am nearby: [locations]"},]
+        self.messages = [{"role": "system", "content": "Play an assistant role at [locations]"},]
     
     def call_api(self):
         # text + user inputs as inputs of calling LLM APIs
