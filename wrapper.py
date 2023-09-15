@@ -53,23 +53,24 @@ class MECApp():
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
             place_names = ', '.join(map(str, self.places_dict.keys()))
-            print("\n*****",place_names)
             self.convo.messages[0]["content"] = self.convo.messages[0]["content"].replace("[locations]", place_names)
-            print("\n\nThe user's location:",latitude, longitude, self.cellid, self.zoneid, "\n\n")
+            print(f"\n\n{self.convo.messages}\n\n")
             return (latitude, longitude), self.places_dict
         except:
             return (None, None), {}
         
     def chat_api(self, user_input):
+        print("Yi asked if this is running?????")
         loc1_found_db_texts = ""
         self.loc_user_places_api()
         #time.sleep(1)
+        print("Yi asked if this is running too?????")
         if self.places_dict:
             for loc_name, value in self.places_dict.items(): #loc_name, loc_dictionary: lat, long, db_path
                 text, loc1_found_score = self.v.search_db(user_input, value['db_path'])
                 loc1_found_db_texts += text
                 print(f"search loc info {loc_name}: {text}")
-        
+        print("Yi asked if this is running three?????")
         #user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
         user_found_db_texts = "The user name is Link"
 
