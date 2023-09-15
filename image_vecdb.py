@@ -5,8 +5,6 @@ import torchvision.transforms as T
 import torch
 import numpy as np
 from PIL import Image
-
-
 from datasets import load_dataset
 
 IMAGE_EMBEDDING_MODEL = "google/vit-base-patch16-224"
@@ -76,7 +74,6 @@ class ImageVecDataBase():
             
         return None, None, None
         
-
 if __name__ == '__main__':
     image_db = ImageVecDataBase('./db/images', './db/images/embeddings')
     # Read image

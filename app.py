@@ -115,7 +115,7 @@ def chat_api():
 
 mec = wrapper.MECApp()
 @app.route('/api/location', methods=['POST'])
-def location_api(ip_addr = '10.100.0.1'):
+def location_api(ip_addr = '10.10.0.1'):
     try:
         # Get the location data from the request's JSON data
         location_data = mec.loc_user_api(ip_addr)
@@ -129,7 +129,7 @@ def location_api(ip_addr = '10.100.0.1'):
         return jsonify({'error': 'An error occurred'}), 500
 
 @app.route('/api/places', methods=['POST']) #get the json file of the places of interest
-def places_api(ip_addr = '10.100.0.4'):
+def places_api(ip_addr = '10.100.0.1'):
     try:
         # Get the location data from the request's JSON data
         (lat, lgn), nearby_locations = mec.loc_user_places_api() #tuple, dictionary if not None

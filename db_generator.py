@@ -171,7 +171,6 @@ if __name__ == "__main__":
         with open(fn, 'r') as file:
             zone_info = json.load(file)
             zone_dic[zone_info['accessPointList']['zoneId']] = zone_info['accessPointList']['accessPoint']
-
     for zoneid, ap_list in zone_dic.items():
         for ap in ap_list:
             cellid = ap['accessPointId']

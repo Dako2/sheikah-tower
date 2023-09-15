@@ -5,7 +5,7 @@ openai.api_key = OPENAI_API_KEY
 from llm.llm_agent import Conversation
 #from mec_apis.location_manager import LocationManager
 from VecDB import VecDataBase
-from mec_apis.mec_location_api import fetch_user_coordinates, fetch_user_coordinates_zoneid_cellid
+from mec_apis.mec_location_api import fetch_user_coordinates, fetch_user_coordinates_zoneid_cellid, fetch_user_coordinates_zoneid_cellid_real
 import json
 import time
 import image_vecdb
@@ -47,11 +47,15 @@ class MECApp():
         return [sim_score, self.image_db_jsonlist[most_similar_img_idx]]
 
     def loc_user_places_api(self):
+        
+        latitude, longitude, _, self.cellid, self.zoneid = fetch_user_coordinates_zoneid_cellid_real()
+        print("\n\n****************",latitude, longitude, _, self.cellid, self.zoneid)
         try:
-            latitude, longitude, _, self.cellid, self.zoneid = fetch_user_coordinates_zoneid_cellid(self.ip_addr, FETCH_URL)
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
-            self.convo.messages = [{"role": "system", "content": f"The user is currently nearby {self.places_dict.keys()}"}]
-            
+            place_names = ', '.join(map(str, self.places_dict.keys()))
+            print("\n*****",place_names)
+            self.convo.messages[0]["content"] = self.convo.messages[0]["content"].replace("[locations]", place_names)
+            print("\n\nThe user's location:",latitude, longitude, self.cellid, self.zoneid, "\n\n")
             return (latitude, longitude), self.places_dict
         except:
             return (None, None), {}
@@ -66,9 +70,12 @@ class MECApp():
                 loc1_found_db_texts += text
                 print(f"search loc info {loc_name}: {text}")
         
-        user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
+        #user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
+        user_found_db_texts = "The user name is Link"
+
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
-        print(self.convo.messages)
+        print("\n\n\n===============", self.convo.messages, "==============================\n\n\n")
+
         return output
     
     """

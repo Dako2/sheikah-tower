@@ -28,20 +28,19 @@ class VecDataBase():
 
     def search_db(self, user_input, db_text_file, threshold=0.2, top_n = 5):
         query_embedding = self.model.encode(user_input, convert_to_numpy=True)
-        print("opening...",db_text_file)
         # Load corpus and corpus embedding
         with open(db_text_file, 'r') as file:
             corpus = [line.strip() for line in file.readlines()] #List
         corpus_embeddings = np.load(db_text_file + '.npy')
-        print(type(corpus), type(corpus_embeddings))
+        #print(type(corpus), type(corpus_embeddings))
+
         return self.search_db_raw(query_embedding, corpus, corpus_embeddings, threshold, top_n)
     
-    def search_db_raw(self, query_embedding, corpus, corpus_embeddings, threshold=0.2, top_n = 5):
+    def search_db_raw(self, query_embedding, corpus, corpus_embeddings, threshold=0.2, top_n = 2):
         # Find the most similar sentences
         # hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=2)
         cosine_scores = util.pytorch_cos_sim(query_embedding, corpus_embeddings)        
         top_results = np.argpartition(-cosine_scores, range(top_n))[0:top_n]
-        #print("\nTop {top_n} most similar sentences in corpus:")
         result = ''
         score = []
         for idx in top_results[0]:
@@ -49,7 +48,8 @@ class VecDataBase():
                 print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
                 result += corpus[idx]
                 score.append(cosine_scores[0][idx].item())
-        print("\n most similar sentences in corpus:",result, "score:",score)
+        if result:
+            print("\n most similar sentences in corpus:", result, "avg. score:",sum(score)/len(score),"\n")
         return result, score
     
 if __name__ == "__main__":

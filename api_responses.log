@@ -407,3 +407,1032 @@ TypeError: must be real number, not NoneType
 2023-09-14 17:08:42,408 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
 2023-09-14 17:09:07,410 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
 2023-09-14 17:09:07,413 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:09:32,413 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:09:32,416 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:09:57,417 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:09:57,419 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:10:22,483 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:10:22,486 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:10:47,488 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:10:47,491 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:11:12,493 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:11:12,495 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:11:37,497 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:11:37,499 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:12:02,502 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:12:02,504 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:12:27,506 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:12:27,508 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:12:52,510 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:12:52,513 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:13:17,515 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:13:17,517 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:13:42,526 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:13:42,530 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:14:07,532 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:14:07,534 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:14:32,536 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:14:32,538 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:14:57,540 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:14:57,542 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:15:22,545 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:15:22,548 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:15:47,552 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:15:47,553 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:16:12,555 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:16:12,558 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:16:37,560 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:16:37,562 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:17:02,565 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:17:02,568 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:17:27,571 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:17:27,577 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:17:52,580 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:17:52,586 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:18:17,589 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:18:17,592 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:18:42,595 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:18:42,597 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:19:07,599 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:19:07,602 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:19:32,605 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:19:32,608 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:19:57,611 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:19:57,619 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:20:22,626 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:20:22,629 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:20:47,631 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:20:47,633 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:21:12,636 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:21:12,638 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:21:37,640 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:21:37,644 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:22:02,647 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:22:02,649 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:22:27,652 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:22:27,654 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:22:52,656 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:22:52,659 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:23:17,661 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:23:17,664 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:23:42,666 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:23:42,669 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:24:07,671 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:24:07,673 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:24:32,676 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:24:32,678 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:24:57,681 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:24:57,684 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:25:22,687 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:25:22,690 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:25:47,693 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:25:47,696 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:26:12,698 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:26:12,701 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:26:37,703 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:26:37,706 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:27:02,708 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:27:02,712 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:27:27,714 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:27:27,718 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:27:52,720 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:27:52,723 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:28:17,725 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:28:17,728 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:28:42,730 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:28:42,732 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:29:07,735 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:29:07,737 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:29:32,739 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:29:32,742 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:29:57,745 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:29:57,748 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:30:22,750 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:30:22,753 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:30:47,755 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:30:47,758 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:31:12,759 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:31:12,762 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:31:37,764 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:31:37,767 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:32:02,769 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:32:02,771 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:32:27,774 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:32:27,776 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:32:52,779 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:32:52,781 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:33:17,784 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:33:17,786 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:33:42,788 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:33:42,791 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:34:07,793 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:34:07,796 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:34:32,798 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:34:32,801 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:34:57,803 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:34:57,806 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:35:22,807 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:35:22,810 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:35:47,811 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:35:47,814 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:36:12,817 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:36:12,820 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:36:37,822 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:36:37,824 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:37:02,826 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:37:02,828 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:37:27,831 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:37:27,834 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:37:52,837 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:37:52,840 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:38:17,831 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:38:17,833 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:38:42,817 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:38:42,818 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:39:07,817 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:39:07,820 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:39:32,821 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:39:32,823 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:39:57,825 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:39:57,828 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:40:22,830 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:40:22,832 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:40:47,834 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:40:47,837 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:41:12,839 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:41:12,841 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:41:37,843 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:41:37,846 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:42:02,848 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:42:02,850 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:42:27,852 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:42:27,855 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:42:52,857 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:42:52,860 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:43:17,862 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:43:17,864 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:43:42,866 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:43:42,867 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:44:07,869 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:44:07,871 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:44:32,873 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:44:32,876 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:44:57,878 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:44:57,881 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:45:22,883 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:45:22,886 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:45:47,888 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:45:47,891 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:46:12,893 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:46:12,896 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:46:37,898 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:46:37,900 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:47:02,902 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:47:02,905 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:47:27,907 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:47:27,909 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:47:52,911 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:47:52,913 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:48:17,915 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:48:17,917 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:48:42,919 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:48:42,922 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:49:07,924 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:49:07,926 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:49:32,928 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:49:32,931 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:49:57,934 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:49:57,936 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:50:22,938 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:50:22,942 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:50:47,944 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:50:47,946 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:51:12,948 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:51:12,951 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:51:37,953 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:51:37,955 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:52:02,957 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:52:02,960 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:52:27,962 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:52:27,965 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:52:52,967 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:52:52,971 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:53:17,972 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:53:17,974 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:53:42,976 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:53:42,979 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:54:07,981 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:54:07,983 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:54:32,985 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:54:32,988 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:54:57,990 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:54:57,992 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:55:22,994 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:55:22,998 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:55:48,000 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:55:48,002 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:56:13,003 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:56:13,006 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:56:38,008 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:56:38,011 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:57:03,013 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:57:03,016 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:57:28,017 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:57:28,019 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:57:53,021 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:57:53,023 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:58:18,025 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:58:18,029 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:58:43,030 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:58:43,034 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:59:08,036 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:59:08,040 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:59:33,042 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:59:33,043 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 17:59:58,045 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 17:59:58,048 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:00:23,050 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:00:23,053 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:00:48,055 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:00:48,058 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:01:13,060 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:01:13,062 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:01:38,064 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:01:38,066 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:02:03,069 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:02:03,070 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:02:28,071 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:02:28,075 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:02:53,077 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:02:53,081 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:03:18,083 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:03:18,085 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:03:43,087 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:03:43,089 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:04:08,090 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:04:08,092 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:04:33,093 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:04:33,097 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:04:58,098 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:04:58,101 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:05:23,102 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:05:23,104 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:05:48,106 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:05:48,110 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:06:13,106 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:06:13,108 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:06:38,108 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:06:38,111 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:07:03,112 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:07:03,115 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:07:28,117 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:07:28,120 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:07:53,122 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:07:53,126 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:08:18,128 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:08:18,131 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:08:43,133 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:08:43,134 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:09:08,136 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:09:08,137 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:09:33,139 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:09:33,142 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:09:58,144 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:09:58,146 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:10:23,148 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:10:23,150 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:10:48,152 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:10:48,154 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:11:13,155 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:11:13,156 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:11:38,158 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:11:38,161 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:12:03,163 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:12:03,164 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:12:28,166 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:12:28,171 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:12:53,173 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:12:53,175 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:13:18,177 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:13:18,180 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:13:43,182 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:13:43,186 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:14:08,189 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:14:08,193 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:14:33,195 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:14:33,197 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:14:58,199 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:14:58,202 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:15:23,204 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:15:23,206 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:15:48,208 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:15:48,212 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:16:13,214 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:16:13,216 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:16:38,217 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:16:38,219 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:17:03,221 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:17:03,225 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:17:28,227 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:17:28,229 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:17:53,231 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:17:53,232 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:18:18,234 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:18:18,235 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:18:43,237 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:18:43,239 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:19:08,241 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:19:08,244 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:19:33,246 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:19:33,250 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:19:58,252 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:19:58,255 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:20:23,257 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:20:23,261 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:20:48,263 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:20:48,266 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:21:13,268 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:21:13,270 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:21:32,426 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:21:37,182 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:21:38,272 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:21:38,274 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:21:42,177 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:21:47,179 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:21:52,176 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:21:57,176 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:02,177 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:03,275 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:22:03,276 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:22:07,177 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:12,177 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:17,259 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:22,283 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:27,178 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:28,278 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:22:28,281 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:22:32,178 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:37,178 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:22:53,283 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:22:53,287 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:23:18,289 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:23:18,291 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:23:43,293 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:23:43,295 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:24:08,297 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:24:08,298 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:24:33,300 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:24:33,302 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:24:58,304 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:24:58,308 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:25:23,310 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:25:23,314 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:25:48,315 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:25:48,316 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:26:09,004 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:26:13,318 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:26:13,321 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:26:13,909 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:26:18,774 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:26:23,841 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 18:26:38,322 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:26:38,324 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:27:03,326 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:27:03,329 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:27:28,331 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:27:28,334 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:27:53,336 - FmlrPRHG6jAuZQekAAAA: Sending packet PING data None
+2023-09-14 18:27:53,340 - FmlrPRHG6jAuZQekAAAA: Received packet PONG data 
+2023-09-14 18:28:23,232 - NumExpr defaulting to 8 threads.
+2023-09-14 18:28:23,440 - Server initialized for eventlet.
+2023-09-14 18:28:23,441 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 18:28:23,717 - Use pytorch device: cpu
+2023-09-14 18:28:33,961 - 7c-uNFQHJn8TDSbeAAAA: Sending packet OPEN data {'sid': '7c-uNFQHJn8TDSbeAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 18:28:33,970 - 7c-uNFQHJn8TDSbeAAAA: Received packet MESSAGE data 0
+2023-09-14 18:28:33,970 - 7c-uNFQHJn8TDSbeAAAA: Sending packet MESSAGE data 0{"sid":"QDevTjXkiuHWUnMMAAAB"}
+2023-09-14 18:28:33,971 - 7c-uNFQHJn8TDSbeAAAA: Received request to upgrade to websocket
+2023-09-14 18:28:33,977 - 7c-uNFQHJn8TDSbeAAAA: Upgrade to websocket successful
+2023-09-14 18:28:58,963 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:28:58,966 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:29:23,968 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:29:23,971 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:29:25,714 - User sent message: ho
+2023-09-14 18:29:25,714 - Bot response: Hello! How can I assist you today?
+2023-09-14 18:29:48,973 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:29:48,977 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:30:13,978 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:30:13,982 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:30:38,984 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:30:38,986 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:31:03,988 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:31:03,990 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:31:28,992 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:31:28,994 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:31:53,996 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:31:53,998 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:32:18,999 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:32:19,002 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:32:44,004 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:32:44,007 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:33:09,010 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:33:09,012 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:33:34,014 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:33:34,016 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:33:59,024 - 7c-uNFQHJn8TDSbeAAAA: Sending packet PING data None
+2023-09-14 18:33:59,026 - 7c-uNFQHJn8TDSbeAAAA: Received packet PONG data 
+2023-09-14 18:34:08,186 - NumExpr defaulting to 8 threads.
+2023-09-14 18:34:08,362 - Server initialized for eventlet.
+2023-09-14 18:34:08,363 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 18:34:08,622 - Use pytorch device: cpu
+2023-09-14 18:34:17,989 - SeMsQesq2pgZmon6AAAA: Sending packet OPEN data {'sid': 'SeMsQesq2pgZmon6AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 18:34:17,994 - SeMsQesq2pgZmon6AAAA: Received packet MESSAGE data 0
+2023-09-14 18:34:17,995 - SeMsQesq2pgZmon6AAAA: Sending packet MESSAGE data 0{"sid":"bTKK9MbxH7C1QC_zAAAB"}
+2023-09-14 18:34:17,996 - SeMsQesq2pgZmon6AAAA: Received request to upgrade to websocket
+2023-09-14 18:34:18,001 - SeMsQesq2pgZmon6AAAA: Upgrade to websocket successful
+2023-09-14 18:34:19,887 - User sent message: h h h o po
+2023-09-14 18:34:19,887 - Bot response: Hello and welcome to Hyrule! As your tour guide, I'm here to assist you with any questions or help you may need. How can I assist you today?
+<p style="color: red;">found user info: "Origin","Hyrule""Species","Hylian"</p>
+
+2023-09-14 18:34:43,000 - SeMsQesq2pgZmon6AAAA: Sending packet PING data None
+2023-09-14 18:34:43,002 - SeMsQesq2pgZmon6AAAA: Received packet PONG data 
+2023-09-14 18:35:08,006 - SeMsQesq2pgZmon6AAAA: Sending packet PING data None
+2023-09-14 18:35:08,009 - SeMsQesq2pgZmon6AAAA: Received packet PONG data 
+2023-09-14 18:35:35,794 - NumExpr defaulting to 8 threads.
+2023-09-14 18:35:35,963 - Server initialized for eventlet.
+2023-09-14 18:35:35,964 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 18:35:36,223 - Use pytorch device: cpu
+2023-09-14 18:35:44,021 - User sent message: hi
+2023-09-14 18:35:44,021 - Bot response: Hello, welcome! How can I assist you today?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:35:46,002 - Ey9wcFMN6GOwiLyuAAAA: Sending packet OPEN data {'sid': 'Ey9wcFMN6GOwiLyuAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 18:35:46,007 - Ey9wcFMN6GOwiLyuAAAA: Received packet MESSAGE data 0
+2023-09-14 18:35:46,007 - Ey9wcFMN6GOwiLyuAAAA: Sending packet MESSAGE data 0{"sid":"CmoklEqCVebfW7m8AAAB"}
+2023-09-14 18:35:46,008 - Ey9wcFMN6GOwiLyuAAAA: Received request to upgrade to websocket
+2023-09-14 18:35:46,012 - Ey9wcFMN6GOwiLyuAAAA: Upgrade to websocket successful
+2023-09-14 18:36:09,822 - User sent message: g gu
+2023-09-14 18:36:09,823 - Bot response: I apologize, but I'm not sure what you mean by "g gu." Could you please provide more information or clarify your request?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:36:11,005 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:36:11,007 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:36:20,780 - User sent message: h h h g
+2023-09-14 18:36:20,781 - Bot response: I'm sorry, but I'm still not sure what you're trying to communicate. If you have any questions or need assistance with something specific, please let me know and I'll be happy to help!
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:36:32,144 - User sent message: Museum
+2023-09-14 18:36:32,144 - Bot response: Ah, I see! You're interested in visiting a museum. That's a great choice! Museums are wonderful places to explore and learn about art, history, science, and more. 
+
+To help you further, could you please let me know which city or country you are in or planning to visit? That way, I can provide you with information about museums in that specific location.
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:36:36,009 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:36:36,011 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:37:01,013 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:37:01,016 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:37:26,018 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:37:26,021 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:37:51,023 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:37:51,025 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:37:55,807 - User sent message: Monoco
+2023-09-14 18:37:55,808 - Bot response: Certainly! In Monaco, there are several notable museums that you might find interesting to visit. Here are a few recommendations:
+
+1. Oceanographic Museum of Monaco: Located on a cliffside overlooking the Mediterranean Sea, this museum showcases marine life, oceanography, and scientific research. It has a vast collection of marine specimens, aquariums, and educational exhibits.
+
+2. Prince's Palace of Monaco: While not a traditional museum, the Prince's Palace offers guided tours where you can explore the history and grandeur of the palace. You can admire the stunning architecture, visit the State Apartments, and witness the Changing of the Guard ceremony.
+
+3. Monaco Top Cars Collection: This museum displays a remarkable collection of classic cars, including vintage and luxury vehicles. It's a must-visit for car enthusiasts and those interested in automotive history.
+
+4. Nouveau Musée National de Monaco: This contemporary art museum focuses on showcasing modern and contemporary artworks. It has two locations: Villa Paloma and Villa Sauber,
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:38:16,028 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:38:16,030 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:38:41,031 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:38:41,034 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:39:06,036 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:39:06,038 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:39:31,040 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:39:31,043 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:39:56,045 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:39:56,047 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:40:21,050 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:40:21,053 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:40:46,055 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:40:46,057 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:41:11,059 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:41:11,061 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:41:36,063 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:41:36,065 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:42:01,067 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:42:01,070 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:42:26,072 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:42:26,074 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:42:51,077 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:42:51,079 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:43:16,081 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:43:16,083 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:43:41,085 - Ey9wcFMN6GOwiLyuAAAA: Sending packet PING data None
+2023-09-14 18:43:41,088 - Ey9wcFMN6GOwiLyuAAAA: Received packet PONG data 
+2023-09-14 18:44:05,856 - NumExpr defaulting to 8 threads.
+2023-09-14 18:44:06,026 - Server initialized for eventlet.
+2023-09-14 18:44:06,026 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 18:44:06,284 - Use pytorch device: cpu
+2023-09-14 18:44:18,007 - jWiXjZjpHUs97gkFAAAA: Sending packet OPEN data {'sid': 'jWiXjZjpHUs97gkFAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 18:44:18,013 - jWiXjZjpHUs97gkFAAAA: Received packet MESSAGE data 0
+2023-09-14 18:44:18,013 - jWiXjZjpHUs97gkFAAAA: Sending packet MESSAGE data 0{"sid":"puyLfHdfCaES7tZAAAAB"}
+2023-09-14 18:44:18,015 - jWiXjZjpHUs97gkFAAAA: Received request to upgrade to websocket
+2023-09-14 18:44:18,017 - jWiXjZjpHUs97gkFAAAA: Upgrade to websocket successful
+2023-09-14 18:44:26,190 - User sent message: Heloo
+2023-09-14 18:44:26,191 - Bot response: Hello, Link! How can I assist you today?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:44:43,009 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:44:43,012 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:44:46,852 - User sent message: HDh
+2023-09-14 18:44:46,852 - Bot response: Hello, Link! How can I assist you today?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:45:08,015 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:45:08,017 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:45:33,019 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:45:33,022 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:45:58,024 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:45:58,026 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:46:23,028 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:46:23,030 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:46:48,032 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:46:48,034 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:47:13,037 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:47:13,039 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:47:38,041 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:47:38,043 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:48:03,046 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:48:03,048 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:48:28,050 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:48:28,052 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:48:53,054 - jWiXjZjpHUs97gkFAAAA: Sending packet PING data None
+2023-09-14 18:48:53,057 - jWiXjZjpHUs97gkFAAAA: Received packet PONG data 
+2023-09-14 18:49:17,616 - NumExpr defaulting to 8 threads.
+2023-09-14 18:49:17,806 - Server initialized for eventlet.
+2023-09-14 18:49:17,807 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 18:49:18,078 - Use pytorch device: cpu
+2023-09-14 18:49:27,009 - SsKY0_JFMEXOZAB4AAAA: Sending packet OPEN data {'sid': 'SsKY0_JFMEXOZAB4AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 18:49:27,013 - SsKY0_JFMEXOZAB4AAAA: Received packet MESSAGE data 0
+2023-09-14 18:49:27,013 - SsKY0_JFMEXOZAB4AAAA: Sending packet MESSAGE data 0{"sid":"rjS6CikdUjgcTAFZAAAB"}
+2023-09-14 18:49:27,014 - SsKY0_JFMEXOZAB4AAAA: Received request to upgrade to websocket
+2023-09-14 18:49:27,016 - SsKY0_JFMEXOZAB4AAAA: Upgrade to websocket successful
+2023-09-14 18:49:36,084 - User sent message: Hi
+2023-09-14 18:49:36,085 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or assistance with something?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:49:45,447 - User sent message: Hrjej
+2023-09-14 18:49:45,447 - Bot response: I'm sorry, but I'm unable to understand what you're trying to communicate. Can you please provide more context or rephrase your question? I'm here to help!
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 18:49:52,011 - SsKY0_JFMEXOZAB4AAAA: Sending packet PING data None
+2023-09-14 18:49:52,013 - SsKY0_JFMEXOZAB4AAAA: Received packet PONG data 
+2023-09-14 18:50:17,015 - SsKY0_JFMEXOZAB4AAAA: Sending packet PING data None
+2023-09-14 18:50:17,017 - SsKY0_JFMEXOZAB4AAAA: Received packet PONG data 
+2023-09-14 18:50:42,019 - SsKY0_JFMEXOZAB4AAAA: Sending packet PING data None
+2023-09-14 18:50:42,022 - SsKY0_JFMEXOZAB4AAAA: Received packet PONG data 
+2023-09-14 19:19:56,988 - NumExpr defaulting to 8 threads.
+2023-09-14 19:19:57,223 - Server initialized for eventlet.
+2023-09-14 19:19:57,224 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:19:57,540 - Use pytorch device: cpu
+2023-09-14 19:20:08,397 - User sent message: Hi
+2023-09-14 19:20:08,399 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or assistance with something?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:20:09,993 - h4iLV7Vrcz9E63ylAAAA: Sending packet OPEN data {'sid': 'h4iLV7Vrcz9E63ylAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:20:10,000 - h4iLV7Vrcz9E63ylAAAA: Received packet MESSAGE data 0
+2023-09-14 19:20:10,000 - h4iLV7Vrcz9E63ylAAAA: Sending packet MESSAGE data 0{"sid":"E1-fiYPqsNj6KlWRAAAB"}
+2023-09-14 19:20:10,002 - h4iLV7Vrcz9E63ylAAAA: Received request to upgrade to websocket
+2023-09-14 19:20:10,007 - h4iLV7Vrcz9E63ylAAAA: Upgrade to websocket successful
+2023-09-14 19:20:34,995 - h4iLV7Vrcz9E63ylAAAA: Sending packet PING data None
+2023-09-14 19:20:34,998 - h4iLV7Vrcz9E63ylAAAA: Received packet PONG data 
+2023-09-14 19:21:00,000 - h4iLV7Vrcz9E63ylAAAA: Sending packet PING data None
+2023-09-14 19:21:00,002 - h4iLV7Vrcz9E63ylAAAA: Received packet PONG data 
+2023-09-14 19:21:25,005 - h4iLV7Vrcz9E63ylAAAA: Sending packet PING data None
+2023-09-14 19:21:25,007 - h4iLV7Vrcz9E63ylAAAA: Received packet PONG data 
+2023-09-14 19:21:50,009 - h4iLV7Vrcz9E63ylAAAA: Sending packet PING data None
+2023-09-14 19:21:50,011 - h4iLV7Vrcz9E63ylAAAA: Received packet PONG data 
+2023-09-14 19:22:15,013 - h4iLV7Vrcz9E63ylAAAA: Sending packet PING data None
+2023-09-14 19:22:15,015 - h4iLV7Vrcz9E63ylAAAA: Received packet PONG data 
+2023-09-14 19:22:17,634 - User sent message: Heelo
+2023-09-14 19:22:17,634 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or assistance with something?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:22:40,016 - h4iLV7Vrcz9E63ylAAAA: Sending packet PING data None
+2023-09-14 19:22:40,019 - h4iLV7Vrcz9E63ylAAAA: Received packet PONG data 
+2023-09-14 19:23:05,021 - h4iLV7Vrcz9E63ylAAAA: Sending packet PING data None
+2023-09-14 19:23:05,023 - h4iLV7Vrcz9E63ylAAAA: Received packet PONG data 
+2023-09-14 19:23:31,459 - NumExpr defaulting to 8 threads.
+2023-09-14 19:23:31,628 - Server initialized for eventlet.
+2023-09-14 19:23:31,628 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:23:31,886 - Use pytorch device: cpu
+2023-09-14 19:23:40,312 - User sent message: Hi
+2023-09-14 19:23:40,314 - Bot response: Hello, welcome! How can I assist you today, Link? Are you looking for any specific information or in need of any assistance?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:23:40,996 - N1Xj73G6Zd5HCav0AAAA: Sending packet OPEN data {'sid': 'N1Xj73G6Zd5HCav0AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:23:41,003 - N1Xj73G6Zd5HCav0AAAA: Received packet MESSAGE data 0
+2023-09-14 19:23:41,004 - N1Xj73G6Zd5HCav0AAAA: Sending packet MESSAGE data 0{"sid":"gELNGyXJSFhP3NdmAAAB"}
+2023-09-14 19:23:41,005 - N1Xj73G6Zd5HCav0AAAA: Received request to upgrade to websocket
+2023-09-14 19:23:41,010 - N1Xj73G6Zd5HCav0AAAA: Upgrade to websocket successful
+2023-09-14 19:23:50,284 - User sent message: Gff
+2023-09-14 19:23:50,284 - Bot response: I apologize, but I'm not sure what "Gff" means. Could you please provide more context or clarify your request? I'm here to help you with any questions or assistance you may need.
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:24:00,787 - NumExpr defaulting to 8 threads.
+2023-09-14 19:24:00,956 - Server initialized for eventlet.
+2023-09-14 19:24:00,956 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:24:01,202 - Use pytorch device: cpu
+2023-09-14 19:24:09,517 - User sent message: )8
+2023-09-14 19:24:09,517 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or assistance with something?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:24:11,994 - 1ZOy2vEKok2RnpXlAAAA: Sending packet OPEN data {'sid': '1ZOy2vEKok2RnpXlAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:24:12,000 - 1ZOy2vEKok2RnpXlAAAA: Received packet MESSAGE data 0
+2023-09-14 19:24:12,001 - 1ZOy2vEKok2RnpXlAAAA: Sending packet MESSAGE data 0{"sid":"imDs1LoJrYZptEKzAAAB"}
+2023-09-14 19:24:12,002 - 1ZOy2vEKok2RnpXlAAAA: Received request to upgrade to websocket
+2023-09-14 19:24:12,007 - 1ZOy2vEKok2RnpXlAAAA: Upgrade to websocket successful
+2023-09-14 19:24:15,654 - User sent message: hi
+2023-09-14 19:24:15,654 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or assistance with something?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:24:30,401 - User sent message: g g
+2023-09-14 19:24:30,401 - Bot response: I'm sorry, but I'm not sure what you mean by "g g." Can you please provide more information or let me know how I can assist you?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:24:36,996 - 1ZOy2vEKok2RnpXlAAAA: Sending packet PING data None
+2023-09-14 19:24:36,999 - 1ZOy2vEKok2RnpXlAAAA: Received packet PONG data 
+2023-09-14 19:25:02,001 - 1ZOy2vEKok2RnpXlAAAA: Sending packet PING data None
+2023-09-14 19:25:02,005 - 1ZOy2vEKok2RnpXlAAAA: Received packet PONG data 
+2023-09-14 19:25:28,135 - NumExpr defaulting to 8 threads.
+2023-09-14 19:25:28,315 - Server initialized for eventlet.
+2023-09-14 19:25:28,316 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:25:28,590 - Use pytorch device: cpu
+2023-09-14 19:25:38,495 - User sent message: ad ha fu
+2023-09-14 19:25:38,496 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or need help with something?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:25:38,995 - 9wbGnlmH8NSTT2zWAAAA: Sending packet OPEN data {'sid': '9wbGnlmH8NSTT2zWAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:25:39,002 - 9wbGnlmH8NSTT2zWAAAA: Received packet MESSAGE data 0
+2023-09-14 19:25:39,003 - 9wbGnlmH8NSTT2zWAAAA: Sending packet MESSAGE data 0{"sid":"DxC8sy2ajcQ-PtKSAAAB"}
+2023-09-14 19:25:39,004 - 9wbGnlmH8NSTT2zWAAAA: Received request to upgrade to websocket
+2023-09-14 19:25:39,013 - 9wbGnlmH8NSTT2zWAAAA: Upgrade to websocket successful
+2023-09-14 19:25:47,641 - User sent message: 怎么样鹅wm
+2023-09-14 19:25:47,642 - Bot response: 抱歉，我不太明白您的问题是什么。您能提供更多的上下文或者详细说明吗？这样我才能更好地帮助您。谢谢！
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:26:03,996 - 9wbGnlmH8NSTT2zWAAAA: Sending packet PING data None
+2023-09-14 19:26:03,999 - 9wbGnlmH8NSTT2zWAAAA: Received packet PONG data 
+2023-09-14 19:26:29,001 - 9wbGnlmH8NSTT2zWAAAA: Sending packet PING data None
+2023-09-14 19:26:29,004 - 9wbGnlmH8NSTT2zWAAAA: Received packet PONG data 
+2023-09-14 19:26:54,006 - 9wbGnlmH8NSTT2zWAAAA: Sending packet PING data None
+2023-09-14 19:26:54,008 - 9wbGnlmH8NSTT2zWAAAA: Received packet PONG data 
+2023-09-14 19:27:19,010 - 9wbGnlmH8NSTT2zWAAAA: Sending packet PING data None
+2023-09-14 19:27:19,013 - 9wbGnlmH8NSTT2zWAAAA: Received packet PONG data 
+2023-09-14 19:27:44,015 - 9wbGnlmH8NSTT2zWAAAA: Sending packet PING data None
+2023-09-14 19:27:44,019 - 9wbGnlmH8NSTT2zWAAAA: Received packet PONG data 
+2023-09-14 19:28:09,021 - 9wbGnlmH8NSTT2zWAAAA: Sending packet PING data None
+2023-09-14 19:28:09,024 - 9wbGnlmH8NSTT2zWAAAA: Received packet PONG data 
+2023-09-14 19:43:45,106 - NumExpr defaulting to 8 threads.
+2023-09-14 19:43:45,335 - Server initialized for eventlet.
+2023-09-14 19:43:45,335 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:43:45,628 - Use pytorch device: cpu
+2023-09-14 19:43:57,214 - Error in chat_api: cannot unpack non-iterable NoneType object
+2023-09-14 19:43:57,976 - rDznCWRVsDfJLIFUAAAA: Sending packet OPEN data {'sid': 'rDznCWRVsDfJLIFUAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:43:57,983 - rDznCWRVsDfJLIFUAAAA: Received packet MESSAGE data 0
+2023-09-14 19:43:57,984 - rDznCWRVsDfJLIFUAAAA: Sending packet MESSAGE data 0{"sid":"gA5s1PE65iN4kVFlAAAB"}
+2023-09-14 19:43:57,985 - rDznCWRVsDfJLIFUAAAA: Received request to upgrade to websocket
+2023-09-14 19:43:57,990 - rDznCWRVsDfJLIFUAAAA: Upgrade to websocket successful
+2023-09-14 19:44:04,926 - Error in chat_api: cannot unpack non-iterable NoneType object
+2023-09-14 19:44:13,973 - Error in chat_api: cannot unpack non-iterable NoneType object
+2023-09-14 19:44:22,978 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:44:22,981 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:44:47,982 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:44:47,985 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:44:55,677 - Error in chat_api: cannot unpack non-iterable NoneType object
+2023-09-14 19:45:12,987 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:45:12,989 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:45:15,134 - User sent message: Cavan
+2023-09-14 19:45:15,134 - Bot response: Hello Link! Welcome to Cavan, Ireland! Cavan is a beautiful town located in County Cavan, known for its stunning landscapes and rich history. How can I assist you today?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:45:37,991 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:45:37,994 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:45:58,576 - User sent message: Cbfh
+2023-09-14 19:45:58,577 - Bot response: I apologize if there was any confusion. If you have any questions or need assistance with anything related to Cavan, please let me know and I'll be happy to help!
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:46:02,996 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:46:02,998 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:46:28,001 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:46:28,003 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:46:53,005 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:46:53,009 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:47:18,010 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:47:18,011 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:47:43,013 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:47:43,015 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:48:08,017 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:48:08,020 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:48:33,023 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:48:33,026 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:48:58,028 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:48:58,030 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:49:23,032 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:49:23,035 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:49:48,037 - rDznCWRVsDfJLIFUAAAA: Sending packet PING data None
+2023-09-14 19:49:48,040 - rDznCWRVsDfJLIFUAAAA: Received packet PONG data 
+2023-09-14 19:49:57,605 - NumExpr defaulting to 8 threads.
+2023-09-14 19:49:57,775 - Server initialized for eventlet.
+2023-09-14 19:49:57,776 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:49:58,034 - Use pytorch device: cpu
+2023-09-14 19:50:06,975 - zb2R2FqdD2H1QO_CAAAA: Sending packet OPEN data {'sid': 'zb2R2FqdD2H1QO_CAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:50:06,982 - zb2R2FqdD2H1QO_CAAAA: Received packet MESSAGE data 0
+2023-09-14 19:50:06,983 - zb2R2FqdD2H1QO_CAAAA: Sending packet MESSAGE data 0{"sid":"hUgx57TxKaTkQokXAAAB"}
+2023-09-14 19:50:06,984 - zb2R2FqdD2H1QO_CAAAA: Received request to upgrade to websocket
+2023-09-14 19:50:06,987 - zb2R2FqdD2H1QO_CAAAA: Upgrade to websocket successful
+2023-09-14 19:50:12,126 - User sent message: Hi A
+2023-09-14 19:50:12,126 - Bot response: Hello Link! How can I assist you today? Are you looking for any specific information or assistance?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:50:31,977 - zb2R2FqdD2H1QO_CAAAA: Sending packet PING data None
+2023-09-14 19:50:31,980 - zb2R2FqdD2H1QO_CAAAA: Received packet PONG data 
+2023-09-14 19:50:56,831 - NumExpr defaulting to 8 threads.
+2023-09-14 19:50:57,000 - Server initialized for eventlet.
+2023-09-14 19:50:57,001 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:50:57,252 - Use pytorch device: cpu
+2023-09-14 19:51:03,973 - LGvGq8TxY7GEdpHzAAAA: Sending packet OPEN data {'sid': 'LGvGq8TxY7GEdpHzAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:51:03,978 - LGvGq8TxY7GEdpHzAAAA: Received packet MESSAGE data 0
+2023-09-14 19:51:03,978 - LGvGq8TxY7GEdpHzAAAA: Sending packet MESSAGE data 0{"sid":"dN7lAXo-smC2EyX5AAAB"}
+2023-09-14 19:51:03,979 - LGvGq8TxY7GEdpHzAAAA: Received request to upgrade to websocket
+2023-09-14 19:51:03,983 - LGvGq8TxY7GEdpHzAAAA: Upgrade to websocket successful
+2023-09-14 19:51:08,442 - User sent message: Ahi
+2023-09-14 19:51:08,442 - Bot response: Hello Link! How can I assist you today? Are you looking for any specific information or assistance in the area?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:51:18,743 - User sent message: Hemmmo
+2023-09-14 19:51:18,744 - Bot response: Hello Link! How can I assist you today? Are you looking for any specific information or assistance in the area?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:51:28,975 - LGvGq8TxY7GEdpHzAAAA: Sending packet PING data None
+2023-09-14 19:51:28,978 - LGvGq8TxY7GEdpHzAAAA: Received packet PONG data 
+2023-09-14 19:51:53,980 - LGvGq8TxY7GEdpHzAAAA: Sending packet PING data None
+2023-09-14 19:51:53,982 - LGvGq8TxY7GEdpHzAAAA: Received packet PONG data 
+2023-09-14 19:52:18,984 - LGvGq8TxY7GEdpHzAAAA: Sending packet PING data None
+2023-09-14 19:52:18,986 - LGvGq8TxY7GEdpHzAAAA: Received packet PONG data 
+2023-09-14 19:52:43,988 - LGvGq8TxY7GEdpHzAAAA: Sending packet PING data None
+2023-09-14 19:52:43,991 - LGvGq8TxY7GEdpHzAAAA: Received packet PONG data 
+2023-09-14 19:53:08,992 - LGvGq8TxY7GEdpHzAAAA: Sending packet PING data None
+2023-09-14 19:53:08,994 - LGvGq8TxY7GEdpHzAAAA: Received packet PONG data 
+2023-09-14 19:53:33,996 - LGvGq8TxY7GEdpHzAAAA: Sending packet PING data None
+2023-09-14 19:53:33,999 - LGvGq8TxY7GEdpHzAAAA: Received packet PONG data 
+2023-09-14 19:53:59,000 - LGvGq8TxY7GEdpHzAAAA: Sending packet PING data None
+2023-09-14 19:53:59,003 - LGvGq8TxY7GEdpHzAAAA: Received packet PONG data 
+2023-09-14 19:54:04,582 - NumExpr defaulting to 8 threads.
+2023-09-14 19:54:04,752 - Server initialized for eventlet.
+2023-09-14 19:54:04,753 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:54:05,013 - Use pytorch device: cpu
+2023-09-14 19:54:10,973 - IL-VS_Jf8M3hDntEAAAA: Sending packet OPEN data {'sid': 'IL-VS_Jf8M3hDntEAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:54:10,978 - IL-VS_Jf8M3hDntEAAAA: Received packet MESSAGE data 0
+2023-09-14 19:54:10,979 - IL-VS_Jf8M3hDntEAAAA: Sending packet MESSAGE data 0{"sid":"E3oV1WeTRnFj9gUdAAAB"}
+2023-09-14 19:54:10,981 - IL-VS_Jf8M3hDntEAAAA: Received request to upgrade to websocket
+2023-09-14 19:54:10,985 - IL-VS_Jf8M3hDntEAAAA: Upgrade to websocket successful
+2023-09-14 19:54:15,017 - User sent message: Hi
+2023-09-14 19:54:15,018 - Bot response: Hello, Link! How can I assist you today?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:54:17,657 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:54:20,333 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:54:24,433 - User sent message: Hi
+2023-09-14 19:54:24,433 - Bot response: Hello, Link! How can I assist you today?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:54:25,045 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:54:29,962 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:54:34,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:54:35,975 - IL-VS_Jf8M3hDntEAAAA: Sending packet PING data None
+2023-09-14 19:54:35,977 - IL-VS_Jf8M3hDntEAAAA: Received packet PONG data 
+2023-09-14 19:54:39,996 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:54:45,013 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:54:50,032 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:54:55,047 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:02,843 - NumExpr defaulting to 8 threads.
+2023-09-14 19:55:03,012 - Server initialized for eventlet.
+2023-09-14 19:55:03,013 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:55:03,272 - Use pytorch device: cpu
+2023-09-14 19:55:09,996 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:12,391 - User sent message: Ggk
+2023-09-14 19:55:12,392 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or assistance with something?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:55:13,976 - b1-WJ2UG5F9_8ygrAAAA: Sending packet OPEN data {'sid': 'b1-WJ2UG5F9_8ygrAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:55:13,982 - b1-WJ2UG5F9_8ygrAAAA: Received packet MESSAGE data 0
+2023-09-14 19:55:13,983 - b1-WJ2UG5F9_8ygrAAAA: Sending packet MESSAGE data 0{"sid":"oqD82miiWLOmbIENAAAB"}
+2023-09-14 19:55:13,985 - b1-WJ2UG5F9_8ygrAAAA: Received request to upgrade to websocket
+2023-09-14 19:55:13,989 - b1-WJ2UG5F9_8ygrAAAA: Upgrade to websocket successful
+2023-09-14 19:55:15,018 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:20,034 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:24,949 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:29,942 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:34,986 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:38,978 - b1-WJ2UG5F9_8ygrAAAA: Sending packet PING data None
+2023-09-14 19:55:38,982 - b1-WJ2UG5F9_8ygrAAAA: Received packet PONG data 
+2023-09-14 19:55:39,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:44,942 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:49,949 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:54,944 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:55:59,944 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:03,983 - b1-WJ2UG5F9_8ygrAAAA: Sending packet PING data None
+2023-09-14 19:56:03,984 - b1-WJ2UG5F9_8ygrAAAA: Received packet PONG data 
+2023-09-14 19:56:04,944 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:09,943 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:15,021 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:20,040 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:25,057 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:28,986 - b1-WJ2UG5F9_8ygrAAAA: Sending packet PING data None
+2023-09-14 19:56:28,990 - b1-WJ2UG5F9_8ygrAAAA: Received packet PONG data 
+2023-09-14 19:56:29,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:34,945 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:40,138 - NumExpr defaulting to 8 threads.
+2023-09-14 19:56:40,318 - Server initialized for eventlet.
+2023-09-14 19:56:40,318 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 19:56:40,591 - Use pytorch device: cpu
+2023-09-14 19:56:49,860 - W7tQ8XaLBieuEV60AAAA: Sending packet OPEN data {'sid': 'W7tQ8XaLBieuEV60AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 19:56:49,868 - W7tQ8XaLBieuEV60AAAA: Received packet MESSAGE data 0
+2023-09-14 19:56:49,869 - W7tQ8XaLBieuEV60AAAA: Sending packet MESSAGE data 0{"sid":"cv-3UWwXywRhzOjsAAAB"}
+2023-09-14 19:56:49,870 - W7tQ8XaLBieuEV60AAAA: Received request to upgrade to websocket
+2023-09-14 19:56:49,876 - W7tQ8XaLBieuEV60AAAA: Upgrade to websocket successful
+2023-09-14 19:56:51,544 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:55,204 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:56:55,355 - User sent message: Hi
+2023-09-14 19:56:55,355 - Bot response: Hello Link! How can I assist you today? Are you looking for information about Monaco Brewery?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:56:59,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:04,993 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:09,943 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:12,368 - User sent message: Nope
+2023-09-14 19:57:12,368 - Bot response: I apologize for the confusion. How can I assist you today, Link? Is there something specific you need help with?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 19:57:14,863 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 19:57:14,867 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 19:57:15,029 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:20,456 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:24,961 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:29,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:34,995 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:39,869 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 19:57:39,872 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 19:57:40,014 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:45,035 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:50,060 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:57:54,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:00,000 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:04,893 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 19:58:04,896 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 19:58:04,960 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:10,038 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:15,058 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:19,998 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:24,970 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:29,903 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 19:58:29,905 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 19:58:30,010 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:34,970 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:40,046 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:44,969 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:49,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:58:54,909 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 19:58:54,912 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 19:58:54,996 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:00,014 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:04,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:09,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:14,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:19,914 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 19:59:19,916 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 19:59:19,970 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:24,970 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:29,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:34,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:40,023 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:44,918 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 19:59:44,920 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 19:59:44,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:49,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:55,004 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 19:59:59,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:04,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:09,922 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:00:09,925 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:00:09,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:14,986 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:19,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:24,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:30,025 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:34,927 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:00:34,928 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:00:34,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:39,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:44,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:49,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:54,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:00:59,930 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:00:59,932 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:00:59,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:04,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:09,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:14,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:19,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:24,933 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:01:24,935 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:01:24,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:29,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:34,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:39,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:44,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:49,937 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:01:49,939 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:01:49,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:54,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:01:59,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:04,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:09,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:14,941 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:02:14,944 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:02:14,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:19,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:24,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:29,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:34,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:39,946 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:02:39,947 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:02:39,971 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:44,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:49,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:54,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:02:59,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:04,949 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:03:04,952 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:03:04,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:09,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:14,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:19,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:24,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:29,954 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:03:29,957 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:03:29,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:34,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:39,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:44,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:49,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:54,959 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:03:54,961 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:03:54,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:03:59,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:04,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:09,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:14,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:19,963 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:04:19,966 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:04:19,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:24,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:29,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:34,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:39,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:44,967 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:04:44,969 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:04:44,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:49,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:54,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:04:59,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:04,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:09,971 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:05:09,973 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:09,978 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:05:14,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:19,972 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:24,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:29,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:34,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:34,979 - W7tQ8XaLBieuEV60AAAA: Sending packet PING data None
+2023-09-14 20:05:34,980 - W7tQ8XaLBieuEV60AAAA: Received packet PONG data 
+2023-09-14 20:05:39,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:44,851 - NumExpr defaulting to 8 threads.
+2023-09-14 20:05:45,031 - Server initialized for eventlet.
+2023-09-14 20:05:45,032 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:05:45,309 - Use pytorch device: cpu
+2023-09-14 20:05:53,287 - hoO1UrHdiVSPyd_IAAAA: Sending packet OPEN data {'sid': 'hoO1UrHdiVSPyd_IAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:05:53,291 - hoO1UrHdiVSPyd_IAAAA: Received packet MESSAGE data 0
+2023-09-14 20:05:53,292 - hoO1UrHdiVSPyd_IAAAA: Sending packet MESSAGE data 0{"sid":"A_Tlp-2QVPw9RpFMAAAB"}
+2023-09-14 20:05:53,293 - hoO1UrHdiVSPyd_IAAAA: Received request to upgrade to websocket
+2023-09-14 20:05:53,296 - hoO1UrHdiVSPyd_IAAAA: Upgrade to websocket successful
+2023-09-14 20:05:54,989 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:05:59,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:04,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
