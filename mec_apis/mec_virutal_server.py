@@ -60,6 +60,7 @@ class VirtualMEC:
 # Initialize the VirtualMEC
 v = VirtualMEC()
 
+"""
 def broadcast_location(latitude, longitude):
     BROADCAST_IP = '255.255.255.255'
     PORT = 12345  # Choose an appropriate port
@@ -95,3 +96,5 @@ def broadcast():
 
 if __name__ == "__main__":
     app.run('0.0.0.0',port = 9091, debug=True)
+
+"""

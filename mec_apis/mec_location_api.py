@@ -10,17 +10,17 @@ logging.basicConfig(level=logging.INFO, filename='api_responses.log', format='%(
 def fetch_user_coordinates(api_url="http://127.0.0.1:9091/get_location"):
     try:
         response = requests.get(api_url)
-        
         # Check if the response is successful
         if response.status_code == 200:
             data = response.json()
             return data['latitude'], data['longitude'], data['timestamp_seconds']
         else:
             print(f"Error: Received status code {response.status_code}")
-            return None
+            return {}
     except requests.RequestException as e:
         print(f"Error fetching location data: {e}")
-        return None
+        return {}
+    
 def fetch_user_coordinates_zoneid_cellid(api_url="http://127.0.0.1:9091/get_location"):
     try:
         response = requests.get(api_url)
@@ -44,7 +44,7 @@ def fetch_userlist_in_zone(zone_id):
         data = response.json()['userList']['resourceURL'] # {'userList': {'resourceURL': 'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/users'}}
         """{'userList': {'resourceURL': 'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/users', 'user':  [{'accessPointId': '5g-small-cell-13', 'address': '10.100.0.4', 'locationInfo': {'latitude': [43.74588], 'longitude': [7.432222], 'shape': 2, 'timestamp': {'nanoSeconds': 0, 'seconds': 1693526572}}, 'resourceURL': 'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/users?address=10.100.0.4', 'timestamp': {'nanoSeconds': 0, 'seconds': 1693526572}, 'zoneId': 'zone04'}, 
                                                                                                                     {'accessPointId': '4g-macro-cell-9', 'address': '10.100.0.1', 'locationInfo': {'latitude': [43.748833], 'longitude': [7.434197], 'shape': 2, 'timestamp': {'nanoSeconds': 0, 'seconds': 1693526572}}, 'resourceURL': 'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/users?address=10.100.0.1', 'timestamp': {'nanoSeconds': 0, 'seconds': 1693526572}, 'zoneId': 'zone04'}, 
-                                                                                                                    {'accessPointId': 'wifi-ap-10', 'address': '10.1.0.4', 'locationInfo': {'latitude': [43.74835], 'longitude': [7.438248], 'shape': 2, 'timestamp': {'nanoSeconds': 0, 'seconds': 1693526572}}, 'resourceURL': 'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/users?address=10.1.0.4', 'timestamp': {'nanoSeconds': 0, 'seconds': 1693526572}, 'zoneId': 'zone04'}]}}
+                                                                                                   {'accessPointId': 'wifi-ap-10', 'address': '10.1.0.4', 'locationInfo': {'latitude': [43.74835], 'longitude': [7.438248], 'shape': 2, 'timestamp': {'nanoSeconds': 0, 'seconds': 1693526572}}, 'resourceURL': 'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/users?address=10.1.0.4', 'timestamp': {'nanoSeconds': 0, 'seconds': 1693526572}, 'zoneId': 'zone04'}]}}
         """
         userlist = requests.get(data).json()
         return userlist
@@ -85,7 +85,7 @@ def fetch_user_coordinates_real(ip_address, fetchURL='https://try-mec.etsi.org/s
         print(f"Request failed with status code: {response.status_code}")
         return None, None, None
 
-def fetch_user_coordinates_zoneid_cellid_real(ip_address ="10.10.0.1", fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='):
+def fetch_user_coordinates_zoneid_cellid_real(ip_address ="10.10.0.4", fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='):
     api_url = f'{fetchURL}{ip_address}'
     response = requests.get(api_url)
     

@@ -31,12 +31,11 @@
                     "longitude": 7.423574,
                     "db_path": "./db/csv/Egyptian Museum.csv"
                 },
-		"Cafe of Hyrule": {
+		        "Cafe of Hyrule": {
                     "latitude": 43.731722,
                     "longitude": 7.423572,
                     "db_path": "./db/csv/Cafe of Hyrule.csv"
-		}
-
+		        }
             }
         },
         "5g-small-cell-5": {
