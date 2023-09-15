@@ -1436,3 +1436,506 @@ To help you further, could you please let me know which city or country you are 
 2023-09-14 20:05:54,989 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
 2023-09-14 20:05:59,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
 2023-09-14 20:06:04,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:07,385 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-10", "address": "10.10.0.1", "locationInfo": {"latitude": [43.737186], "longitude": [7.426711], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747170}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747170}, "zoneId": "zone03"}]}}
+2023-09-14 20:06:07,418 - Error in chat_api: kth(=2) out of bounds (2)
+2023-09-14 20:06:09,992 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:14,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:18,290 - hoO1UrHdiVSPyd_IAAAA: Sending packet PING data None
+2023-09-14 20:06:18,292 - hoO1UrHdiVSPyd_IAAAA: Received packet PONG data 
+2023-09-14 20:06:19,612 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "wifi-ap-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.737022], "longitude": [7.425667], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747182}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747182}, "zoneId": "zone03"}]}}
+2023-09-14 20:06:19,640 - Error in chat_api: kth(=2) out of bounds (2)
+2023-09-14 20:06:19,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:24,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:29,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:34,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:39,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:43,294 - hoO1UrHdiVSPyd_IAAAA: Sending packet PING data None
+2023-09-14 20:06:43,296 - hoO1UrHdiVSPyd_IAAAA: Received packet PONG data 
+2023-09-14 20:06:44,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:49,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:54,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:06:59,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:04,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:08,298 - hoO1UrHdiVSPyd_IAAAA: Sending packet PING data None
+2023-09-14 20:07:08,300 - hoO1UrHdiVSPyd_IAAAA: Received packet PONG data 
+2023-09-14 20:07:09,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:14,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:19,974 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:24,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:29,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:33,301 - hoO1UrHdiVSPyd_IAAAA: Sending packet PING data None
+2023-09-14 20:07:33,303 - hoO1UrHdiVSPyd_IAAAA: Received packet PONG data 
+2023-09-14 20:07:34,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:39,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:44,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:49,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:54,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:07:58,305 - hoO1UrHdiVSPyd_IAAAA: Sending packet PING data None
+2023-09-14 20:07:58,307 - hoO1UrHdiVSPyd_IAAAA: Received packet PONG data 
+2023-09-14 20:07:59,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:04,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:09,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:14,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:19,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:23,308 - hoO1UrHdiVSPyd_IAAAA: Sending packet PING data None
+2023-09-14 20:08:23,310 - hoO1UrHdiVSPyd_IAAAA: Received packet PONG data 
+2023-09-14 20:08:24,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:29,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:34,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:47,494 - NumExpr defaulting to 8 threads.
+2023-09-14 20:08:47,665 - Server initialized for eventlet.
+2023-09-14 20:08:47,666 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:08:47,924 - Use pytorch device: cpu
+2023-09-14 20:08:54,993 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:08:55,117 - W5yyu1IdoEIrMIZuAAAA: Sending packet OPEN data {'sid': 'W5yyu1IdoEIrMIZuAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:08:55,120 - W5yyu1IdoEIrMIZuAAAA: Received packet MESSAGE data 0
+2023-09-14 20:08:55,121 - W5yyu1IdoEIrMIZuAAAA: Sending packet MESSAGE data 0{"sid":"got4ggsx8ZGiJgpZAAAB"}
+2023-09-14 20:08:55,122 - W5yyu1IdoEIrMIZuAAAA: Received request to upgrade to websocket
+2023-09-14 20:08:55,125 - W5yyu1IdoEIrMIZuAAAA: Upgrade to websocket successful
+2023-09-14 20:08:59,498 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-4", "address": "10.10.0.1", "locationInfo": {"latitude": [43.733166], "longitude": [7.423132], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747342}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747342}, "zoneId": "zone02"}]}}
+2023-09-14 20:08:59,541 - Error in chat_api: kth(=4) out of bounds (4)
+2023-09-14 20:08:59,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:02,544 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-4", "address": "10.10.0.1", "locationInfo": {"latitude": [43.733036], "longitude": [7.42337], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747345}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747345}, "zoneId": "zone02"}]}}
+2023-09-14 20:09:02,576 - Error in chat_api: kth(=4) out of bounds (4)
+2023-09-14 20:09:04,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:10,399 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:14,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:19,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:20,119 - W5yyu1IdoEIrMIZuAAAA: Sending packet PING data None
+2023-09-14 20:09:20,121 - W5yyu1IdoEIrMIZuAAAA: Received packet PONG data 
+2023-09-14 20:09:24,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:29,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:34,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:39,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:44,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:45,123 - W5yyu1IdoEIrMIZuAAAA: Sending packet PING data None
+2023-09-14 20:09:45,126 - W5yyu1IdoEIrMIZuAAAA: Received packet PONG data 
+2023-09-14 20:09:49,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:54,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:09:59,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:10:04,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:10:11,211 - NumExpr defaulting to 8 threads.
+2023-09-14 20:10:11,412 - Server initialized for eventlet.
+2023-09-14 20:10:11,413 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:10:11,689 - Use pytorch device: cpu
+2023-09-14 20:10:18,776 - lH1WTbd-f0smfUoUAAAA: Sending packet OPEN data {'sid': 'lH1WTbd-f0smfUoUAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:10:18,783 - lH1WTbd-f0smfUoUAAAA: Received packet MESSAGE data 0
+2023-09-14 20:10:18,783 - lH1WTbd-f0smfUoUAAAA: Sending packet MESSAGE data 0{"sid":"6qfRRePGxotCqHmiAAAB"}
+2023-09-14 20:10:18,784 - lH1WTbd-f0smfUoUAAAA: Received request to upgrade to websocket
+2023-09-14 20:10:18,788 - lH1WTbd-f0smfUoUAAAA: Upgrade to websocket successful
+2023-09-14 20:10:19,990 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:10:24,976 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:10:27,320 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "wifi-ap-4", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73361], "longitude": [7.427657], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747430}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747430}, "zoneId": "zone02"}]}}
+2023-09-14 20:10:28,918 - User sent message: Ahi
+2023-09-14 20:10:28,919 - Bot response: Hello Link! How can I assist you today? Are you looking for information about a specific location or do you need help with translation?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:10:33,025 - NumExpr defaulting to 8 threads.
+2023-09-14 20:10:33,196 - Server initialized for eventlet.
+2023-09-14 20:10:33,197 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:10:33,443 - Use pytorch device: cpu
+2023-09-14 20:10:40,001 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:10:40,866 - eBK9w5h_x5blPxmaAAAA: Sending packet OPEN data {'sid': 'eBK9w5h_x5blPxmaAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:10:40,873 - eBK9w5h_x5blPxmaAAAA: Received packet MESSAGE data 0
+2023-09-14 20:10:40,873 - eBK9w5h_x5blPxmaAAAA: Sending packet MESSAGE data 0{"sid":"anvblcZXRKP--AYwAAAB"}
+2023-09-14 20:10:40,875 - eBK9w5h_x5blPxmaAAAA: Received request to upgrade to websocket
+2023-09-14 20:10:40,882 - eBK9w5h_x5blPxmaAAAA: Upgrade to websocket successful
+2023-09-14 20:10:44,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:10:47,758 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-5", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73499], "longitude": [7.427582], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747450}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747450}, "zoneId": "zone02"}]}}
+2023-09-14 20:10:48,945 - User sent message: Hi
+2023-09-14 20:10:48,945 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or assistance?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:10:49,989 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:10:54,975 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:10:59,977 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:04,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:05,869 - eBK9w5h_x5blPxmaAAAA: Sending packet PING data None
+2023-09-14 20:11:05,872 - eBK9w5h_x5blPxmaAAAA: Received packet PONG data 
+2023-09-14 20:11:09,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:14,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:19,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:24,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:29,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:30,874 - eBK9w5h_x5blPxmaAAAA: Sending packet PING data None
+2023-09-14 20:11:30,877 - eBK9w5h_x5blPxmaAAAA: Received packet PONG data 
+2023-09-14 20:11:34,752 - NumExpr defaulting to 8 threads.
+2023-09-14 20:11:34,925 - Server initialized for eventlet.
+2023-09-14 20:11:34,926 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:11:35,185 - Use pytorch device: cpu
+2023-09-14 20:11:42,509 - EkPLoFQbSiPNgeUSAAAA: Sending packet OPEN data {'sid': 'EkPLoFQbSiPNgeUSAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:11:42,516 - EkPLoFQbSiPNgeUSAAAA: Received packet MESSAGE data 0
+2023-09-14 20:11:42,516 - EkPLoFQbSiPNgeUSAAAA: Sending packet MESSAGE data 0{"sid":"ekjySMhR2cLDuzo5AAAB"}
+2023-09-14 20:11:42,517 - EkPLoFQbSiPNgeUSAAAA: Received request to upgrade to websocket
+2023-09-14 20:11:42,524 - EkPLoFQbSiPNgeUSAAAA: Upgrade to websocket successful
+2023-09-14 20:11:44,999 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:46,291 - Error in chat_api: 'user'
+2023-09-14 20:11:49,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:55,087 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:11:55,686 - Error in chat_api: 'user'
+2023-09-14 20:11:59,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:04,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:07,511 - EkPLoFQbSiPNgeUSAAAA: Sending packet PING data None
+2023-09-14 20:12:07,514 - EkPLoFQbSiPNgeUSAAAA: Received packet PONG data 
+2023-09-14 20:12:09,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:14,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:21,090 - NumExpr defaulting to 8 threads.
+2023-09-14 20:12:21,279 - Server initialized for eventlet.
+2023-09-14 20:12:21,279 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:12:21,555 - Use pytorch device: cpu
+2023-09-14 20:12:29,566 - YM3jpfKDtYRdTug5AAAA: Sending packet OPEN data {'sid': 'YM3jpfKDtYRdTug5AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:12:29,572 - YM3jpfKDtYRdTug5AAAA: Received packet MESSAGE data 0
+2023-09-14 20:12:29,572 - YM3jpfKDtYRdTug5AAAA: Sending packet MESSAGE data 0{"sid":"O-dbDuytr3Ccs067AAAB"}
+2023-09-14 20:12:29,573 - YM3jpfKDtYRdTug5AAAA: Received request to upgrade to websocket
+2023-09-14 20:12:29,576 - YM3jpfKDtYRdTug5AAAA: Upgrade to websocket successful
+2023-09-14 20:12:29,989 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:34,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:39,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:44,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:46,173 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-8", "address": "10.100.0.4", "locationInfo": {"latitude": [43.742958], "longitude": [7.43068], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747569}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep2/location/v2/queries/users?address=10.100.0.4", "timestamp": {"nanoSeconds": 0, "seconds": 1694747569}, "zoneId": "zone04"}]}}
+2023-09-14 20:12:47,851 - User sent message: Hi
+2023-09-14 20:12:47,851 - Bot response: Hello, Link! How can I assist you today? Are you looking for any specific information or assistance?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:12:49,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:54,568 - YM3jpfKDtYRdTug5AAAA: Sending packet PING data None
+2023-09-14 20:12:54,572 - YM3jpfKDtYRdTug5AAAA: Received packet PONG data 
+2023-09-14 20:12:54,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:12:59,979 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:04,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:09,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:15,000 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:19,574 - YM3jpfKDtYRdTug5AAAA: Sending packet PING data None
+2023-09-14 20:13:19,576 - YM3jpfKDtYRdTug5AAAA: Received packet PONG data 
+2023-09-14 20:13:19,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:24,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:29,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:34,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:40,046 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:44,578 - YM3jpfKDtYRdTug5AAAA: Sending packet PING data None
+2023-09-14 20:13:44,581 - YM3jpfKDtYRdTug5AAAA: Received packet PONG data 
+2023-09-14 20:13:44,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:49,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:13:54,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:00,010 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:04,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:11,445 - NumExpr defaulting to 8 threads.
+2023-09-14 20:14:11,616 - Server initialized for eventlet.
+2023-09-14 20:14:11,616 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:14:11,877 - Use pytorch device: cpu
+2023-09-14 20:14:19,991 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:20,625 - 7PmF9MQX72AlZV25AAAA: Sending packet OPEN data {'sid': '7PmF9MQX72AlZV25AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:14:20,632 - 7PmF9MQX72AlZV25AAAA: Received packet MESSAGE data 0
+2023-09-14 20:14:20,633 - 7PmF9MQX72AlZV25AAAA: Sending packet MESSAGE data 0{"sid":"mkn_l2sLwBspbyFJAAAB"}
+2023-09-14 20:14:20,635 - 7PmF9MQX72AlZV25AAAA: Received request to upgrade to websocket
+2023-09-14 20:14:20,640 - 7PmF9MQX72AlZV25AAAA: Upgrade to websocket successful
+2023-09-14 20:14:24,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:29,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:37,071 - NumExpr defaulting to 8 threads.
+2023-09-14 20:14:37,254 - Server initialized for eventlet.
+2023-09-14 20:14:37,254 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:14:37,525 - Use pytorch device: cpu
+2023-09-14 20:14:44,996 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:45,610 - X33tpehdtt9t1MszAAAA: Sending packet OPEN data {'sid': 'X33tpehdtt9t1MszAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:14:45,615 - X33tpehdtt9t1MszAAAA: Received packet MESSAGE data 0
+2023-09-14 20:14:45,616 - X33tpehdtt9t1MszAAAA: Sending packet MESSAGE data 0{"sid":"CG1DCxz-yLQOdE7YAAAB"}
+2023-09-14 20:14:45,617 - X33tpehdtt9t1MszAAAA: Received request to upgrade to websocket
+2023-09-14 20:14:45,620 - X33tpehdtt9t1MszAAAA: Upgrade to websocket successful
+2023-09-14 20:14:49,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:54,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:14:59,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:04,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:10,612 - X33tpehdtt9t1MszAAAA: Sending packet PING data None
+2023-09-14 20:15:10,615 - X33tpehdtt9t1MszAAAA: Received packet PONG data 
+2023-09-14 20:15:22,571 - Error in chat_api: 'user'
+2023-09-14 20:15:24,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:29,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:34,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:35,617 - X33tpehdtt9t1MszAAAA: Sending packet PING data None
+2023-09-14 20:15:35,619 - X33tpehdtt9t1MszAAAA: Received packet PONG data 
+2023-09-14 20:15:39,984 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:44,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:49,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:54,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:15:59,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:00,621 - X33tpehdtt9t1MszAAAA: Sending packet PING data None
+2023-09-14 20:16:00,623 - X33tpehdtt9t1MszAAAA: Received packet PONG data 
+2023-09-14 20:16:04,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:10,061 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:14,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:18,340 - NumExpr defaulting to 8 threads.
+2023-09-14 20:16:18,526 - Server initialized for eventlet.
+2023-09-14 20:16:18,527 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:16:18,801 - Use pytorch device: cpu
+2023-09-14 20:16:25,001 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:27,026 - m-OH-4x4Ui2T0DjsAAAA: Sending packet OPEN data {'sid': 'm-OH-4x4Ui2T0DjsAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:16:27,029 - m-OH-4x4Ui2T0DjsAAAA: Received packet MESSAGE data 0
+2023-09-14 20:16:27,029 - m-OH-4x4Ui2T0DjsAAAA: Sending packet MESSAGE data 0{"sid":"1oHlcmHqGAdBu66QAAAB"}
+2023-09-14 20:16:27,030 - m-OH-4x4Ui2T0DjsAAAA: Received request to upgrade to websocket
+2023-09-14 20:16:27,033 - m-OH-4x4Ui2T0DjsAAAA: Upgrade to websocket successful
+2023-09-14 20:16:29,380 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73679], "longitude": [7.422834], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747792}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747792}, "zoneId": "zone03"}]}}
+2023-09-14 20:16:29,993 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:31,963 - User sent message: Hi
+2023-09-14 20:16:31,963 - Bot response: Hello, Link! How can I assist you today? Are you looking for information about the Port Palace Hôtel, Novotel Monte Carlo, Monaco-Monte-Carlo station, or the Hop On Hop Off Monaco tour?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:16:34,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:39,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:43,367 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.736923], "longitude": [7.424142], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747806}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747806}, "zoneId": "zone03"}]}}
+2023-09-14 20:16:44,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:49,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:51,714 - User sent message: Yes
+2023-09-14 20:16:51,714 - Bot response: Great! Let's start with the Port Palace Hôtel. The Port Palace Hôtel is a luxury hotel located in the heart of Monte Carlo, Monaco. It offers stunning views of the Port Hercule and is known for its elegant design and exceptional service. If you have any specific questions or need assistance with reservations, feel free to let me know!
+
+Now, moving on to the Novotel Monte Carlo. The Novotel Monte Carlo is a modern hotel situated in the center of Monte Carlo. It is conveniently located near the Casino de Monte-Carlo and the Grimaldi Forum. The hotel offers comfortable rooms, a rooftop pool, and a fitness center. If you have any inquiries about the hotel or need help with bookings, feel free to ask.
+
+Next, let's talk about the Monaco-Monte-Carlo station. The Monaco-Monte-Carlo station is the main railway station in Monaco. It is located in the district of Monte Carlo and offers convenient access to the city and surrounding areas
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:16:52,028 - m-OH-4x4Ui2T0DjsAAAA: Sending packet PING data None
+2023-09-14 20:16:52,030 - m-OH-4x4Ui2T0DjsAAAA: Received packet PONG data 
+2023-09-14 20:16:55,018 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:16:59,984 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:04,980 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:09,978 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:15,758 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:17,032 - m-OH-4x4Ui2T0DjsAAAA: Sending packet PING data None
+2023-09-14 20:17:17,034 - m-OH-4x4Ui2T0DjsAAAA: Received packet PONG data 
+2023-09-14 20:17:19,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:24,987 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:29,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:33,817 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-7", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73652], "longitude": [7.426932], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747856}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747856}, "zoneId": "zone03"}]}}
+2023-09-14 20:17:33,839 - Error in chat_api: kth(=2) out of bounds (2)
+2023-09-14 20:17:34,984 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:39,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:42,037 - m-OH-4x4Ui2T0DjsAAAA: Sending packet PING data None
+2023-09-14 20:17:42,039 - m-OH-4x4Ui2T0DjsAAAA: Received packet PONG data 
+2023-09-14 20:17:44,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:49,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:54,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:17:59,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:18:04,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:18:07,040 - m-OH-4x4Ui2T0DjsAAAA: Sending packet PING data None
+2023-09-14 20:18:07,042 - m-OH-4x4Ui2T0DjsAAAA: Received packet PONG data 
+2023-09-14 20:18:09,982 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:18:15,153 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:18:19,986 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:18:27,177 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:18:29,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:18:32,044 - m-OH-4x4Ui2T0DjsAAAA: Sending packet PING data None
+2023-09-14 20:18:32,047 - m-OH-4x4Ui2T0DjsAAAA: Received packet PONG data 
+2023-09-14 20:18:57,049 - m-OH-4x4Ui2T0DjsAAAA: Sending packet PING data None
+2023-09-14 20:18:57,051 - m-OH-4x4Ui2T0DjsAAAA: Received packet PONG data 
+2023-09-14 20:19:00,000 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:04,986 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:09,460 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-10", "address": "10.10.0.1", "locationInfo": {"latitude": [43.737236], "longitude": [7.427601], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694747952}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694747952}, "zoneId": "zone03"}]}}
+2023-09-14 20:19:09,482 - Error in chat_api: kth(=2) out of bounds (2)
+2023-09-14 20:19:09,998 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:14,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:19,986 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:22,054 - m-OH-4x4Ui2T0DjsAAAA: Sending packet PING data None
+2023-09-14 20:19:22,056 - m-OH-4x4Ui2T0DjsAAAA: Received packet PONG data 
+2023-09-14 20:19:24,984 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:29,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:34,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:39,984 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:44,981 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:47,057 - m-OH-4x4Ui2T0DjsAAAA: Sending packet PING data None
+2023-09-14 20:19:47,059 - m-OH-4x4Ui2T0DjsAAAA: Received packet PONG data 
+2023-09-14 20:19:49,986 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:54,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:19:59,546 - NumExpr defaulting to 8 threads.
+2023-09-14 20:19:59,720 - Server initialized for eventlet.
+2023-09-14 20:19:59,720 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:19:59,981 - Use pytorch device: cpu
+2023-09-14 20:20:09,407 - ejNpzPibdfHM2EbaAAAA: Sending packet OPEN data {'sid': 'ejNpzPibdfHM2EbaAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:20:09,413 - ejNpzPibdfHM2EbaAAAA: Received packet MESSAGE data 0
+2023-09-14 20:20:09,414 - ejNpzPibdfHM2EbaAAAA: Sending packet MESSAGE data 0{"sid":"ZcmdGDMnvuYlQVmyAAAB"}
+2023-09-14 20:20:09,415 - ejNpzPibdfHM2EbaAAAA: Received request to upgrade to websocket
+2023-09-14 20:20:09,419 - ejNpzPibdfHM2EbaAAAA: Upgrade to websocket successful
+2023-09-14 20:20:09,994 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:20:14,987 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:20:19,985 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:20:24,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:20:29,986 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:20:34,410 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:20:34,413 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:20:34,983 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:20:39,986 - Error in location_api: MECApp.loc_user_api() takes 1 positional argument but 2 were given
+2023-09-14 20:20:49,617 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.736767], "longitude": [7.422639], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748052}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748052}, "zoneId": "zone03"}]}}
+2023-09-14 20:20:51,908 - User sent message: Hello
+2023-09-14 20:20:51,908 - Bot response: Hello Link! How can I assist you today? Are you looking for information about the Port Palace Hôtel, Novotel Monte Carlo, Monaco-Monte-Carlo station, or the Hop On Hop Off Monaco tour?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:20:59,415 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:20:59,419 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:21:08,337 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.735542], "longitude": [7.422002], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748071}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748071}, "zoneId": "zone03"}]}}
+2023-09-14 20:21:12,022 - User sent message: Port place hotel 
+2023-09-14 20:21:12,023 - Bot response: The Port Palace Hôtel is a luxury hotel located in Monaco. It is situated on the Rue du Portier, near the Port Hercule. The hotel offers stunning views of the harbor and is known for its elegant design and excellent service. It is a great choice for those looking for a luxurious stay in Monaco. Is there anything specific you would like to know about the Port Palace Hôtel?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:21:24,422 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:21:24,424 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:21:37,912 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.734844], "longitude": [7.423162], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748101}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748101}, "zoneId": "zone03"}]}}
+2023-09-14 20:21:40,034 - User sent message: Where am I now?
+2023-09-14 20:21:40,034 - Bot response: Based on the information you provided, it seems that you are currently at the Port Palace Hôtel in Monaco. Enjoy your stay! If you need any further assistance or information, feel free to ask.
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:21:49,426 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:21:49,429 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:22:14,431 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:22:14,434 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:22:25,730 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.734566], "longitude": [7.42256], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748148}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748148}, "zoneId": "zone03"}]}}
+2023-09-14 20:22:27,196 - User sent message: hello 
+2023-09-14 20:22:27,196 - Bot response: Hello Link! How can I assist you today? Is there anything specific you would like to know or any help you need?
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:22:39,436 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:22:39,439 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:23:04,441 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:23:04,443 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:23:09,287 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-8", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73293], "longitude": [7.42441], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748192}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748192}, "zoneId": "zone02"}]}}
+2023-09-14 20:23:11,048 - User sent message: Lll
+2023-09-14 20:23:11,049 - Bot response: I apologize if there was any confusion. If you have any questions or need assistance with anything, please let me know. I'm here to help!
+<p style="color: red;">found user info: The user name is Link</p>
+
+2023-09-14 20:23:29,445 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:23:29,448 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:23:54,450 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:23:54,453 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:24:19,455 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:24:19,458 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:24:44,460 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:24:44,462 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:25:09,464 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:25:09,468 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:25:34,470 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:25:34,472 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:25:59,473 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:25:59,475 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:26:24,468 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:26:24,470 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:26:49,467 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:26:49,469 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:27:14,470 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:27:14,473 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:27:39,474 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:27:39,477 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:28:04,479 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:28:04,481 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:28:29,483 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:28:29,485 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:28:54,487 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:28:54,489 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:29:19,491 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:29:19,493 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:29:44,495 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:29:44,498 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:30:09,500 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:30:09,503 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:30:34,505 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:30:34,507 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:30:59,509 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:30:59,514 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:31:24,386 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-7", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73598], "longitude": [7.426925], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748687}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748687}, "zoneId": "zone03"}]}}
+2023-09-14 20:31:24,416 - Error in chat_api: kth(=2) out of bounds (2)
+2023-09-14 20:31:24,515 - ejNpzPibdfHM2EbaAAAA: Sending packet PING data None
+2023-09-14 20:31:24,518 - ejNpzPibdfHM2EbaAAAA: Received packet PONG data 
+2023-09-14 20:31:49,278 - NumExpr defaulting to 8 threads.
+2023-09-14 20:31:49,459 - Server initialized for eventlet.
+2023-09-14 20:31:49,459 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:31:49,730 - Use pytorch device: cpu
+2023-09-14 20:31:57,796 - F3B4f300F6izgCbsAAAA: Sending packet OPEN data {'sid': 'F3B4f300F6izgCbsAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:31:57,802 - F3B4f300F6izgCbsAAAA: Received packet MESSAGE data 0
+2023-09-14 20:31:57,803 - F3B4f300F6izgCbsAAAA: Sending packet MESSAGE data 0{"sid":"E8WAHPPAhKbYGa8mAAAB"}
+2023-09-14 20:31:57,804 - F3B4f300F6izgCbsAAAA: Received request to upgrade to websocket
+2023-09-14 20:31:57,808 - F3B4f300F6izgCbsAAAA: Upgrade to websocket successful
+2023-09-14 20:32:09,731 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-11", "address": "10.10.0.1", "locationInfo": {"latitude": [43.737377], "longitude": [7.429201], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748732}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748732}, "zoneId": "zone03"}]}}
+2023-09-14 20:32:09,767 - Error in chat_api: kth(=4) out of bounds (4)
+2023-09-14 20:32:22,799 - F3B4f300F6izgCbsAAAA: Sending packet PING data None
+2023-09-14 20:32:22,802 - F3B4f300F6izgCbsAAAA: Received packet PONG data 
+2023-09-14 20:32:37,143 - NumExpr defaulting to 8 threads.
+2023-09-14 20:32:37,312 - Server initialized for eventlet.
+2023-09-14 20:32:37,313 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:32:37,570 - Use pytorch device: cpu
+2023-09-14 20:32:44,962 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet OPEN data {'sid': 'BKyQ6Mo8QxsiFbkVAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:32:44,968 - BKyQ6Mo8QxsiFbkVAAAA: Received packet MESSAGE data 0
+2023-09-14 20:32:44,968 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet MESSAGE data 0{"sid":"wSzcbZqd20YR3j2GAAAB"}
+2023-09-14 20:32:44,969 - BKyQ6Mo8QxsiFbkVAAAA: Received request to upgrade to websocket
+2023-09-14 20:32:44,973 - BKyQ6Mo8QxsiFbkVAAAA: Upgrade to websocket successful
+2023-09-14 20:32:52,389 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-10", "address": "10.10.0.1", "locationInfo": {"latitude": [43.737247], "longitude": [7.427668], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748775}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748775}, "zoneId": "zone03"}]}}
+2023-09-14 20:32:52,416 - Error in chat_api: kth(=2) out of bounds (2)
+2023-09-14 20:33:09,965 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet PING data None
+2023-09-14 20:33:09,967 - BKyQ6Mo8QxsiFbkVAAAA: Received packet PONG data 
+2023-09-14 20:33:34,968 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet PING data None
+2023-09-14 20:33:34,971 - BKyQ6Mo8QxsiFbkVAAAA: Received packet PONG data 
+2023-09-14 20:33:59,973 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet PING data None
+2023-09-14 20:33:59,976 - BKyQ6Mo8QxsiFbkVAAAA: Received packet PONG data 
+2023-09-14 20:34:15,366 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.736942], "longitude": [7.424296], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748858}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748858}, "zoneId": "zone03"}]}}
+2023-09-14 20:34:16,930 - User sent message: hi
+2023-09-14 20:34:16,931 - Bot response: Hello! How can I assist you today? Are you looking for information about any specific location or need help with something in particular?
+2023-09-14 20:34:24,977 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet PING data None
+2023-09-14 20:34:24,979 - BKyQ6Mo8QxsiFbkVAAAA: Received packet PONG data 
+2023-09-14 20:34:49,981 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet PING data None
+2023-09-14 20:34:49,984 - BKyQ6Mo8QxsiFbkVAAAA: Received packet PONG data 
+2023-09-14 20:35:14,986 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet PING data None
+2023-09-14 20:35:14,988 - BKyQ6Mo8QxsiFbkVAAAA: Received packet PONG data 
+2023-09-14 20:35:39,990 - BKyQ6Mo8QxsiFbkVAAAA: Sending packet PING data None
+2023-09-14 20:35:39,992 - BKyQ6Mo8QxsiFbkVAAAA: Received packet PONG data 
+2023-09-14 20:35:44,025 - NumExpr defaulting to 8 threads.
+2023-09-14 20:35:44,195 - Server initialized for eventlet.
+2023-09-14 20:35:44,196 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:35:44,452 - Use pytorch device: cpu
+2023-09-14 20:35:52,024 - vAOxj4_DttzyNZa6AAAA: Sending packet OPEN data {'sid': 'vAOxj4_DttzyNZa6AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:35:52,030 - vAOxj4_DttzyNZa6AAAA: Received packet MESSAGE data 0
+2023-09-14 20:35:52,031 - vAOxj4_DttzyNZa6AAAA: Sending packet MESSAGE data 0{"sid":"tL1nbw7yjZdxDyxWAAAB"}
+2023-09-14 20:35:52,032 - vAOxj4_DttzyNZa6AAAA: Received request to upgrade to websocket
+2023-09-14 20:35:52,038 - vAOxj4_DttzyNZa6AAAA: Upgrade to websocket successful
+2023-09-14 20:36:00,342 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.7342], "longitude": [7.422852], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694748963}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694748963}, "zoneId": "zone03"}]}}
+2023-09-14 20:36:12,237 - User sent message: hi
+2023-09-14 20:36:12,238 - Bot response: Hello! Welcome to Monaco! I'd be happy to be your city guide and show you around. Let's start with some of the nearby attractions.
+
+1. Port Palace Hôtel: This luxurious hotel is located right on the Port Hercule and offers stunning views of the harbor. You can enjoy a walk along the port and take in the beautiful yachts and boats.
+
+2. Novotel Monte Carlo: This hotel is situated in the heart of Monte Carlo and is a great base for exploring the city. From here, you can easily access the famous Casino de Monte-Carlo and other attractions.
+
+3. Monaco-Monte Carlo station: This train station is well-connected and provides easy access to other parts of Monaco and the surrounding areas. You can take a train to explore nearby towns like Nice or Cannes.
+
+4. Hop On Hop Off Monaco: The Hop On Hop Off bus is a convenient way to explore Monaco. You can board the bus near the train station and enjoy a guided tour of the city's main attractions, including the Prince's Palace, the Oceanographic Museum, and the famous Formula One Grand Prix circuit.
+
+Now that you know the nearby attractions, let me know what you're interested in, and I can provide more specific recommendations and directions.
+2023-09-14 20:36:17,027 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:36:17,030 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:36:42,032 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:36:42,034 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:37:07,036 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:37:07,040 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:37:32,042 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:37:32,045 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:37:57,047 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:37:57,049 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:38:22,051 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:38:22,054 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:38:47,056 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:38:47,058 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:39:12,060 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:39:12,063 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:39:37,065 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:39:37,069 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:40:02,071 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:40:02,074 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:40:27,076 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:40:27,078 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:40:52,079 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:40:52,081 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:42:21,782 - NumExpr defaulting to 8 threads.
+2023-09-14 20:42:21,991 - Server initialized for eventlet.
+2023-09-14 20:42:21,993 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:42:22,257 - Use pytorch device: cpu
+2023-09-14 20:42:29,011 - rRRm-_0WlB4npSSYAAAA: Sending packet OPEN data {'sid': 'rRRm-_0WlB4npSSYAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:42:29,020 - rRRm-_0WlB4npSSYAAAA: Received packet MESSAGE data 0
+2023-09-14 20:42:29,021 - rRRm-_0WlB4npSSYAAAA: Sending packet MESSAGE data 0{"sid":"ZUzTgLAKSbrF6xe-AAAB"}
+2023-09-14 20:42:29,023 - rRRm-_0WlB4npSSYAAAA: Received request to upgrade to websocket
+2023-09-14 20:42:29,031 - rRRm-_0WlB4npSSYAAAA: Upgrade to websocket successful
+2023-09-14 20:42:54,014 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:42:54,016 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
