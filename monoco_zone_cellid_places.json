@@ -40,10 +40,10 @@
         },
         "5g-small-cell-5": {
             "places": {
-                "Prince's Palace of Hyrule": {
+                "Secret Egyptian Museum of Hyrule": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Prince's Palace of Hyrule.csv"
+                    "db_path": "./db/csv/Egyptian Museum.csv"
                 }
             }
         },
