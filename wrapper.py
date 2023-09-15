@@ -46,9 +46,10 @@ class MECApp():
             print("Index of most similar image in DB: %d" % (most_similar_img_idx))
             # print(self.image_db_jsonlist[most_similar_img_idx])
             #return sim_score, most_similar_img_idx
+            print(sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx))
             return [sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx)]
         except:
-            return [None, {}]
+            return [None, None, None]
 
         
     def loc_user_places_api(self):

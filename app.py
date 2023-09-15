@@ -59,13 +59,15 @@ def upload_image():
     filename = os.path.join(UPLOAD_FOLDER, file.filename)
     file.save(filename)
 
-    sim_score, image_info = executor.submit(analyze_image, filename).result()
-
+    sim_score, image_info, image_prompts = executor.submit(analyze_image, filename).result()
+    to_sent = {'file_name':'something.jpeg','sim_score':sim_score, 'text':image_prompts}
     if sim_score:
-        image_info['sim_score'] = sim_score    
-        return jsonify(success=True, message=image_info)
+        image_info['sim_score'] = sim_score
+        image_info['text'] = image_prompts
+        print(image_info)
+        return jsonify(success=True, message=to_sent)
     else:
-        return jsonify(success=True, message={"file_name": "N/A", "text": "Image not found in vector database", "sim_score": None})
+        return jsonify(success=True, message={"file_name": "N/A", "text": "Image not found in vector database!!!", "sim_score": None})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=9090, debug=False)
+    app.run(host='0.0.0.0', port=9090, debug=True)
