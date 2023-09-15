@@ -9,6 +9,7 @@ from mec_apis.mec_location_api import fetch_user_coordinates, fetch_user_coordin
 import json
 import time
 import image_vecdb
+from mec_apis.mec_virutal_server import VirtualMEC
 # [skip if saved already] convert text in db into embeddings
 #text_to_ebds_csv('db/loc_apiexhibit-info.csv','db/exhibit-info-ebds.csv')
 #text_to_ebds_csv('db/user-data.csv','db/user-data-ebds.csv')
@@ -27,6 +28,7 @@ class MECApp():
         self.ip_addr = user_IP_address
         #self.locationManager = LocationManager(user_IP_address, log_file_path, db_location_file_path, FETCH_URL)
         self.v = VecDataBase(db_csv_paths = DATA_PATH, update_db=True)
+        self.mec_virtual = VirtualMEC()
         self.places_dict = {}
         with open('monoco_zone_cellid_places.json', 'r') as file:
             self.db_json = json.load(file) 
@@ -49,8 +51,12 @@ class MECApp():
     def loc_user_places_api(self):
         
         latitude, longitude, _, self.cellid, self.zoneid = fetch_user_coordinates_zoneid_cellid_real()
+        print(latitude, longitude, _, self.cellid, self.zoneid, "\n\n--")
+        latitude, longitude, _, self.cellid, self.zoneid = self.mec_virtual.fetch_user_coordinates_zoneid_cellid()
+        print(latitude, longitude, _, self.cellid, self.zoneid)
+
         # todo to delete below
-        self.cellid, self.zoneid = "4g-macro-cell-4", "zone02"
+        #self.cellid, self.zoneid = "4g-macro-cell-4", "zone02"
         print("\n\n****************",latitude, longitude, _, self.cellid, self.zoneid)
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]

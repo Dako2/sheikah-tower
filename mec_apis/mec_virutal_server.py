@@ -24,7 +24,7 @@ class JsonlIterator:
         return data
 
 class VirtualMEC:
-    def __init__(self, filename='api_responses.jsonl'):
+    def __init__(self, filename='./mec_apis/api_responses.jsonl'):
         self.jsonl_iter = JsonlIterator(filename)
 
     def _fetch_data(self):
