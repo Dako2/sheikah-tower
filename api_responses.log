@@ -1939,3 +1939,564 @@ Now that you know the nearby attractions, let me know what you're interested in,
 2023-09-14 20:42:29,031 - rRRm-_0WlB4npSSYAAAA: Upgrade to websocket successful
 2023-09-14 20:42:54,014 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
 2023-09-14 20:42:54,016 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 21:04:28,485 - Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-09-14 21:04:28,485 - NumExpr defaulting to 8 threads.
+2023-09-14 21:04:28,690 - Server initialized for eventlet.
+2023-09-14 21:04:28,691 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:04:29,043 - Use pytorch device: cpu
+2023-09-14 21:05:33,573 - Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-09-14 21:05:33,573 - NumExpr defaulting to 8 threads.
+2023-09-14 21:05:33,719 - Server initialized for eventlet.
+2023-09-14 21:05:33,720 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:05:34,003 - Use pytorch device: cpu
+2023-09-14 21:05:40,107 - 9PO_7d9kcOTI10SSAAAA: Sending packet OPEN data {'sid': '9PO_7d9kcOTI10SSAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 21:05:40,128 - 9PO_7d9kcOTI10SSAAAA: Received packet MESSAGE data 0
+2023-09-14 21:05:40,129 - 9PO_7d9kcOTI10SSAAAA: Sending packet MESSAGE data 0{"sid":"oME9inBaHvM0oa8aAAAB"}
+2023-09-14 21:05:40,129 - 9PO_7d9kcOTI10SSAAAA: Received request to upgrade to websocket
+2023-09-14 21:05:40,143 - 9PO_7d9kcOTI10SSAAAA: Upgrade to websocket successful
+2023-09-14 21:06:05,108 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:06:05,113 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:06:09,497 - 9PO_7d9kcOTI10SSAAAA: Received packet MESSAGE data 2["message sent",{"message":"I want to find a Egyption museum near by"}]
+2023-09-14 21:06:09,498 - received event "message sent" from oME9inBaHvM0oa8aAAAB [/]
+2023-09-14 21:06:09,499 - User sent message: I want to find a Egyption museum near by
+2023-09-14 21:06:09,500 - emitting event "new message" to all [/]
+2023-09-14 21:06:09,500 - 9PO_7d9kcOTI10SSAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"I want to find a Egyption museum near by"}]
+2023-09-14 21:06:10,338 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-5", "address": "10.10.0.1", "locationInfo": {"latitude": [43.734554], "longitude": [7.429571], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694750773}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694750773}, "zoneId": "zone02"}]}}
+2023-09-14 21:06:12,502 - Bot response: Sure! To help you find an Egyptian museum nearby, I'll need to know your current location or the city you are in. Can you please provide me with that information?
+2023-09-14 21:06:12,504 - emitting event "new message" to all [/]
+2023-09-14 21:06:12,505 - 9PO_7d9kcOTI10SSAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"Sure! To help you find an Egyptian museum nearby, I'll need to know your current location or the city you are in. Can you please provide me with that information?"}]
+2023-09-14 21:06:22,881 - 9PO_7d9kcOTI10SSAAAA: Received packet MESSAGE data 2["message sent",{"message":"I am morocco"}]
+2023-09-14 21:06:22,881 - received event "message sent" from oME9inBaHvM0oa8aAAAB [/]
+2023-09-14 21:06:22,882 - User sent message: I am morocco
+2023-09-14 21:06:22,883 - emitting event "new message" to all [/]
+2023-09-14 21:06:22,883 - 9PO_7d9kcOTI10SSAAAA: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"I am morocco"}]
+2023-09-14 21:06:23,457 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-5", "address": "10.10.0.1", "locationInfo": {"latitude": [43.735287], "longitude": [7.430493], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694750786}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694750786}, "zoneId": "zone02"}]}}
+2023-09-14 21:06:30,114 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:06:30,116 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:06:34,110 - Bot response: If you are in Morocco and looking for an Egyptian museum nearby, unfortunately, there is no dedicated Egyptian museum in Morocco. However, there are other cultural and historical sites that you might find interesting. Here are a few suggestions:
+
+1. The Museum of Moroccan Judaism (Casablanca): This museum showcases the rich history and cultural heritage of the Jewish community in Morocco. It exhibits artifacts, documents, and photographs that highlight the Jewish presence in the country.
+
+2. The Museum of Moroccan Arts (Marrakech): Located in the Dar Si Said palace, this museum displays a wide range of traditional Moroccan arts and crafts, including ceramics, textiles, jewelry, and woodwork.
+
+3. The Dar Batha Museum (Fes): This museum is housed in a 19th-century palace and features a collection of traditional Moroccan arts and crafts, including ceramics, textiles, carpets, and metalwork.
+
+4. The Oudayas Museum (Rabat): Located in the Kasbah of the Udayas, this museum showcases Moroccan heritage through its collection of traditional clothing, jewelry, weapons, and musical instruments.
+
+While these museums may not focus specifically on Egyptian history, they offer valuable insights into Moroccan culture and history.
+2023-09-14 21:06:34,110 - emitting event "new message" to all [/]
+2023-09-14 21:06:34,111 - 9PO_7d9kcOTI10SSAAAA: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"If you are in Morocco and looking for an Egyptian museum nearby, unfortunately, there is no dedicated Egyptian museum in Morocco. However, there are other cultural and historical sites that you might find interesting. Here are a few suggestions:\n\n1. The Museum of Moroccan Judaism (Casablanca): This museum showcases the rich history and cultural heritage of the Jewish community in Morocco. It exhibits artifacts, documents, and photographs that highlight the Jewish presence in the country.\n\n2. The Museum of Moroccan Arts (Marrakech): Located in the Dar Si Said palace, this museum displays a wide range of traditional Moroccan arts and crafts, including ceramics, textiles, jewelry, and woodwork.\n\n3. The Dar Batha Museum (Fes): This museum is housed in a 19th-century palace and features a collection of traditional Moroccan arts and crafts, including ceramics, textiles, carpets, and metalwork.\n\n4. The Oudayas Museum (Rabat): Located in the Kasbah of the Udayas, this museum showcases Moroccan heritage through its collection of traditional clothing, jewelry, weapons, and musical instruments.\n\nWhile these museums may not focus specifically on Egyptian history, they offer valuable insights into Moroccan culture and history."}]
+2023-09-14 21:06:55,118 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:06:55,120 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:07:20,121 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:07:20,123 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:07:45,124 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:07:45,127 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:08:10,128 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:08:10,129 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:08:35,130 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:08:35,132 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:09:00,133 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:09:00,135 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:09:25,136 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:09:25,138 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:09:50,139 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:09:50,141 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:10:15,143 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:10:15,145 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:10:40,147 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:10:40,148 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:11:05,149 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:11:05,149 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:11:30,151 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:11:30,158 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:11:55,160 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:11:55,164 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:12:20,165 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:12:20,169 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:12:45,170 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:12:45,172 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:13:10,173 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:13:10,177 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:13:35,178 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:13:35,180 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:14:00,181 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:14:00,183 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:14:25,184 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:14:25,188 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:14:50,190 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:14:50,192 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:15:15,193 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:15:15,197 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:15:40,199 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:15:40,202 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:16:05,204 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:16:05,207 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:16:30,209 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:16:30,213 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:16:55,215 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:16:55,218 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:17:20,220 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:17:20,222 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:17:45,222 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:17:45,227 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:18:10,229 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:18:10,232 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:18:35,234 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:18:35,235 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:19:00,236 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:19:00,238 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:19:25,239 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:19:25,245 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:19:50,246 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:19:50,248 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:20:15,249 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:20:15,252 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:20:40,253 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:20:40,254 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:21:05,256 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:21:05,259 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:21:30,261 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:21:30,264 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:21:55,266 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:21:55,271 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:22:20,273 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:22:20,277 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:22:45,278 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:22:45,279 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:23:10,281 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:23:10,285 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:23:35,287 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:23:35,289 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:24:00,290 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:24:00,293 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:24:25,295 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:24:25,299 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:24:50,301 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:24:50,305 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:25:15,307 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:25:15,312 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:25:40,314 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:25:40,318 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:26:05,320 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:26:05,324 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:26:30,326 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:26:30,330 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:26:55,332 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:26:55,336 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:27:20,338 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:27:20,341 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:27:45,343 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:27:45,345 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:28:10,346 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:28:10,350 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:28:35,352 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:28:35,355 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:29:00,357 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:29:00,360 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:29:25,362 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:29:25,366 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:29:50,368 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:29:50,372 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:30:15,400 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:30:15,403 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:30:40,419 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:30:40,422 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:31:05,428 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:31:05,432 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:31:30,435 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:31:30,443 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:31:55,446 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:31:55,450 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:32:20,453 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:32:20,458 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:32:45,461 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:32:45,465 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:33:10,468 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:33:10,472 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:33:35,475 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:33:35,481 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:34:00,484 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:34:00,489 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:34:25,492 - 9PO_7d9kcOTI10SSAAAA: Sending packet PING data None
+2023-09-14 21:34:25,496 - 9PO_7d9kcOTI10SSAAAA: Received packet PONG data 
+2023-09-14 21:34:38,655 - 7khbKBA5M4PwpZ6DAAAC: Sending packet OPEN data {'sid': '7khbKBA5M4PwpZ6DAAAC', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 21:34:38,662 - 7khbKBA5M4PwpZ6DAAAC: Received packet MESSAGE data 0
+2023-09-14 21:34:38,663 - 7khbKBA5M4PwpZ6DAAAC: Sending packet MESSAGE data 0{"sid":"WwK8etcV9JjgPi7oAAAD"}
+2023-09-14 21:34:38,665 - 7khbKBA5M4PwpZ6DAAAC: Received request to upgrade to websocket
+2023-09-14 21:34:38,669 - 7khbKBA5M4PwpZ6DAAAC: Upgrade to websocket successful
+2023-09-14 21:50:24,659 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 21:50:24,662 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 21:50:49,668 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 21:50:49,672 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 21:51:14,676 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 21:51:14,679 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 21:51:39,683 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 21:51:39,686 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:07:24,362 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:07:24,367 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:07:49,363 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:07:49,365 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:08:14,367 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:08:14,370 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:13:49,047 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:13:49,049 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:14:14,051 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:14:14,052 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:14:39,053 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:14:39,060 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:15:04,062 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:15:04,064 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:15:29,066 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:15:29,068 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:15:54,070 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:15:54,073 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:16:19,075 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:16:19,076 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:16:44,078 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:16:44,081 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:17:09,083 - 7khbKBA5M4PwpZ6DAAAC: Sending packet PING data None
+2023-09-14 22:17:09,086 - 7khbKBA5M4PwpZ6DAAAC: Received packet PONG data 
+2023-09-14 22:17:17,503 - 7khbKBA5M4PwpZ6DAAAC: Received packet MESSAGE data 2["message sent",{"message":"Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of “The Nefertiti Bust is a painted stucco-coated limestone bust of Nefertiti, the Great Royal Wife of Egyptian pharaoh Akhenaten. The work is believed to have been crafted in 1345 BCE by Thutmose because it was found in his workshop in Tell-el Amarna, Egypt. It is one of the most-copied works of ancient Egypt.”. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist’s interests"}]
+2023-09-14 22:17:17,504 - received event "message sent" from WwK8etcV9JjgPi7oAAAD [/]
+2023-09-14 22:17:17,509 - User sent message: Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of “The Nefertiti Bust is a painted stucco-coated limestone bust of Nefertiti, the Great Royal Wife of Egyptian pharaoh Akhenaten. The work is believed to have been crafted in 1345 BCE by Thutmose because it was found in his workshop in Tell-el Amarna, Egypt. It is one of the most-copied works of ancient Egypt.”. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist’s interests
+2023-09-14 22:17:17,509 - emitting event "new message" to all [/]
+2023-09-14 22:17:17,510 - 7khbKBA5M4PwpZ6DAAAC: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of \u201cThe Nefertiti Bust is a painted stucco-coated limestone bust of Nefertiti, the Great Royal Wife of Egyptian pharaoh Akhenaten. The work is believed to have been crafted in 1345 BCE by Thutmose because it was found in his workshop in Tell-el Amarna, Egypt. It is one of the most-copied works of ancient Egypt.\u201d. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist\u2019s interests"}]
+2023-09-14 22:17:18,282 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-4", "address": "10.10.0.1", "locationInfo": {"latitude": [43.733475], "longitude": [7.424375], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694755041}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694755041}, "zoneId": "zone02"}]}}
+2023-09-14 22:17:33,874 - 9aNYjKsPVOOMDbUcAAAE: Sending packet OPEN data {'sid': '9aNYjKsPVOOMDbUcAAAE', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 22:17:33,894 - 9aNYjKsPVOOMDbUcAAAE: Received packet MESSAGE data 0
+2023-09-14 22:17:33,894 - 9aNYjKsPVOOMDbUcAAAE: Sending packet MESSAGE data 0{"sid":"6N22ZYPkTcqDbzPiAAAF"}
+2023-09-14 22:17:33,896 - 9aNYjKsPVOOMDbUcAAAE: Received request to upgrade to websocket
+2023-09-14 22:17:34,096 - 9aNYjKsPVOOMDbUcAAAE: Upgrade to websocket successful
+2023-09-14 22:17:38,013 - 9aNYjKsPVOOMDbUcAAAE: Received packet MESSAGE data 2["message sent",{"message":"Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of “The Nefertiti Bust is a painted stucco-coated limestone bust of Nefertiti, the Great Royal Wife of Egyptian pharaoh Akhenaten. The work is believed to have been crafted in 1345 BCE by Thutmose because it was found in his workshop in Tell-el Amarna, Egypt. It is one of the most-copied works of ancient Egypt.”. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist’s interests"}]
+2023-09-14 22:17:38,014 - received event "message sent" from 6N22ZYPkTcqDbzPiAAAF [/]
+2023-09-14 22:17:38,015 - User sent message: Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of “The Nefertiti Bust is a painted stucco-coated limestone bust of Nefertiti, the Great Royal Wife of Egyptian pharaoh Akhenaten. The work is believed to have been crafted in 1345 BCE by Thutmose because it was found in his workshop in Tell-el Amarna, Egypt. It is one of the most-copied works of ancient Egypt.”. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist’s interests
+2023-09-14 22:17:38,015 - emitting event "new message" to all [/]
+2023-09-14 22:17:38,015 - 9aNYjKsPVOOMDbUcAAAE: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of \u201cThe Nefertiti Bust is a painted stucco-coated limestone bust of Nefertiti, the Great Royal Wife of Egyptian pharaoh Akhenaten. The work is believed to have been crafted in 1345 BCE by Thutmose because it was found in his workshop in Tell-el Amarna, Egypt. It is one of the most-copied works of ancient Egypt.\u201d. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist\u2019s interests"}]
+2023-09-14 22:17:38,598 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-8", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73306], "longitude": [7.424479], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694755061}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694755061}, "zoneId": "zone02"}]}}
+2023-09-14 22:17:43,129 - Bot response: I'm sorry, but I couldn't find any information about an Egyptian museum near Musée océanographique de Monaco. However, if you're interested in Egyptian artifacts, I can tell you about the Egyptian collection at the Louvre Museum in Paris. The Louvre has an extensive collection of Egyptian antiquities, including statues, sarcophagi, and the famous Rosetta Stone. It's definitely worth a visit if you're interested in ancient Egypt.
+<p style="color: red;">found local info: "of fish and over 200 families of invertebrates can be seen. The aquarium also features a presentation of Mediterranean and tropical marine ecosystems.Numerous artists display their artworks in the museum, such as Damien Hirst and Philippe Pasqua.""2010, after extensive renovations. == Overview == The museum is home to exhibitions and collections of various species of sea fauna (starfish, seahorses, turtles, jellyfish, crabs, lobsters, rays, sharks, sea urchins, sea cucumbers, eels, cuttlefish etc.). The museum's holdings also include a great variety of sea related objects, including model""invited to the celebrations not just high officials and celebrities but also the world-leading oceanographers of the day to develop the concept of a future Mediterranean Commission dedicated to oceanography, now called Mediterranean Science Commission. Jacques-Yves Cousteau was director from 1957 to 1988. The Museum celebrated its centenary in March""of Prince Albert's research yachts. Observations made there led to an understanding of the phenomenon of anaphylaxis, for which Dr Charles Richet received the Nobel Prize in Physiology or Medicine in 1913.An aquarium in the basement of the museum presents a wide array of flora and fauna. Four thousand species""The Oceanographic Museum (Musée océanographique) is a museum of marine sciences in Monaco-Ville, Monaco. This building is part of the Institut océanographique, which is committed to sharing its knowledge of the oceans. == History == The Oceanographic Museum was inaugurated in 1910 by Monaco's modernist reformer Prince Albert I, who""ships, sea animal skeletons, tools, weapons etc., as well as a collection of material culture and ritual objects made from, or integrating materials such as pearls, molluscs and nacre.At the first floor, A Sailor’s Career showcases the work of Prince Albert I. It includes the laboratory from L’Hirondelle, the first"</p>
+
+2023-09-14 22:17:43,129 - emitting event "new message" to all [/]
+2023-09-14 22:17:43,130 - 9aNYjKsPVOOMDbUcAAAE: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"I'm sorry, but I couldn't find any information about an Egyptian museum near Mus\u00e9e oc\u00e9anographique de Monaco. However, if you're interested in Egyptian artifacts, I can tell you about the Egyptian collection at the Louvre Museum in Paris. The Louvre has an extensive collection of Egyptian antiquities, including statues, sarcophagi, and the famous Rosetta Stone. It's definitely worth a visit if you're interested in ancient Egypt.\n<p style=\"color: red;\">found local info: \"of fish and over 200 families of invertebrates can be seen. The aquarium also features a presentation of Mediterranean and tropical marine ecosystems.Numerous artists display their artworks in the museum, such as Damien Hirst and Philippe Pasqua.\"\"2010, after extensive renovations. == Overview == The museum is home to exhibitions and collections of various species of sea fauna (starfish, seahorses, turtles, jellyfish, crabs, lobsters, rays, sharks, sea urchins, sea cucumbers, eels, cuttlefish etc.). The museum's holdings also include a great variety of sea related objects, including model\"\"invited to the celebrations not just high officials and celebrities but also the world-leading oceanographers of the day to develop the concept of a future Mediterranean Commission dedicated to oceanography, now called Mediterranean Science Commission. Jacques-Yves Cousteau was director from 1957 to 1988. The Museum celebrated its centenary in March\"\"of Prince Albert's research yachts. Observations made there led to an understanding of the phenomenon of anaphylaxis, for which Dr Charles Richet received the Nobel Prize in Physiology or Medicine in 1913.An aquarium in the basement of the museum presents a wide array of flora and fauna. Four thousand species\"\"The Oceanographic Museum (Mus\u00e9e oc\u00e9anographique) is a museum of marine sciences in Monaco-Ville, Monaco. This building is part of the Institut oc\u00e9anographique, which is committed to sharing its knowledge of the oceans. == History == The Oceanographic Museum was inaugurated in 1910 by Monaco's modernist reformer Prince Albert I, who\"\"ships, sea animal skeletons, tools, weapons etc., as well as a collection of material culture and ritual objects made from, or integrating materials such as pearls, molluscs and nacre.At the first floor, A Sailor\u2019s Career showcases the work of Prince Albert I. It includes the laboratory from L\u2019Hirondelle, the first\"</p>\n"}]
+2023-09-14 22:17:58,876 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:17:58,880 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:18:23,883 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:18:23,888 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:18:48,890 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:18:48,895 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:19:13,897 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:19:13,900 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:19:38,903 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:19:38,907 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:20:03,909 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:20:03,913 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:20:28,915 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:20:28,919 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:20:53,921 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:20:53,923 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:21:18,924 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:21:18,926 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:21:43,928 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:21:43,935 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:21:47,472 - 9aNYjKsPVOOMDbUcAAAE: Received packet MESSAGE data 2["message sent",{"message":"Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of “The Nefertiti Bust”. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist’s interests"}]
+2023-09-14 22:21:47,473 - received event "message sent" from 6N22ZYPkTcqDbzPiAAAF [/]
+2023-09-14 22:21:47,476 - User sent message: Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of “The Nefertiti Bust”. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist’s interests
+2023-09-14 22:21:47,476 - emitting event "new message" to all [/]
+2023-09-14 22:21:47,478 - 9aNYjKsPVOOMDbUcAAAE: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of \u201cThe Nefertiti Bust\u201d. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist\u2019s interests"}]
+2023-09-14 22:21:48,065 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-11", "address": "10.10.0.1", "locationInfo": {"latitude": [43.737377], "longitude": [7.428298], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694755311}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694755311}, "zoneId": "zone03"}]}}
+2023-09-14 22:22:08,937 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:22:08,942 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:22:33,944 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:22:33,949 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:22:58,951 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:22:58,957 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:23:23,959 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:23:23,963 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:23:48,964 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:23:48,967 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:24:13,969 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:24:13,973 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:24:38,975 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:24:38,983 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:25:03,984 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:25:03,987 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:25:28,989 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:25:28,992 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:25:53,994 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:25:53,998 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:26:19,000 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:26:19,001 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:26:44,002 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:26:44,005 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:27:09,008 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:27:09,015 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:27:34,017 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:27:34,019 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:27:59,020 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:27:59,022 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:28:24,023 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:28:24,024 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:28:49,026 - 9aNYjKsPVOOMDbUcAAAE: Sending packet PING data None
+2023-09-14 22:28:49,028 - 9aNYjKsPVOOMDbUcAAAE: Received packet PONG data 
+2023-09-14 22:29:10,432 - nvHfDvuqYDHygiO5AAAG: Sending packet OPEN data {'sid': 'nvHfDvuqYDHygiO5AAAG', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 22:29:10,452 - nvHfDvuqYDHygiO5AAAG: Received packet MESSAGE data 0
+2023-09-14 22:29:10,453 - nvHfDvuqYDHygiO5AAAG: Sending packet MESSAGE data 0{"sid":"Yiadr99y5AasD9eQAAAH"}
+2023-09-14 22:29:10,454 - nvHfDvuqYDHygiO5AAAG: Received request to upgrade to websocket
+2023-09-14 22:29:10,658 - nvHfDvuqYDHygiO5AAAG: Upgrade to websocket successful
+2023-09-14 22:29:16,652 - nvHfDvuqYDHygiO5AAAG: Received packet MESSAGE data 2["message sent",{"message":"Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of “The Nefertiti Bust”. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist’s interests"}]
+2023-09-14 22:29:16,653 - received event "message sent" from Yiadr99y5AasD9eQAAAH [/]
+2023-09-14 22:29:16,654 - User sent message: Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of “The Nefertiti Bust”. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist’s interests
+2023-09-14 22:29:16,655 - emitting event "new message" to all [/]
+2023-09-14 22:29:16,655 - nvHfDvuqYDHygiO5AAAG: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"Assume you are a tour guide, you and your tourist are in one of the places of interest - Egyptian museum. The tourist is very excited and took a photo of \u201cThe Nefertiti Bust\u201d. Tell him an interesting story about the photo, it can be history related, a fun fact, current status, future event or just any stories that can raise the tourist\u2019s interests"}]
+2023-09-14 22:29:17,262 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-5", "address": "10.10.0.1", "locationInfo": {"latitude": [43.735306], "longitude": [7.430825], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694755760}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694755760}, "zoneId": "zone02"}]}}
+2023-09-14 22:29:35,434 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:29:35,436 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:30:00,438 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:30:00,441 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:30:25,442 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:30:25,443 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:30:50,444 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:30:50,447 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:31:15,448 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:31:15,450 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:31:40,451 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:31:40,452 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:32:05,454 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:32:05,456 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:32:30,458 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:32:30,460 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:32:55,461 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:32:55,463 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:33:20,464 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:33:20,468 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:33:45,470 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:33:45,473 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:34:10,475 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:34:10,479 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:34:35,480 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:34:35,482 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:35:00,483 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:35:00,484 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:35:25,486 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:35:25,491 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:35:50,493 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:35:50,498 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:36:15,500 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:36:15,504 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:36:40,506 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:36:40,510 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:37:05,511 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:37:05,514 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:37:30,516 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:37:30,523 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:37:55,525 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:37:55,526 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:38:20,529 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:38:20,534 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:38:45,536 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:38:45,543 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:39:10,545 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:39:10,550 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:39:35,552 - nvHfDvuqYDHygiO5AAAG: Sending packet PING data None
+2023-09-14 22:39:35,558 - nvHfDvuqYDHygiO5AAAG: Received packet PONG data 
+2023-09-14 22:39:57,798 - g4JrCquXPVuEMLufAAAI: Sending packet OPEN data {'sid': 'g4JrCquXPVuEMLufAAAI', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 22:39:57,829 - g4JrCquXPVuEMLufAAAI: Received packet MESSAGE data 0
+2023-09-14 22:39:57,829 - g4JrCquXPVuEMLufAAAI: Sending packet MESSAGE data 0{"sid":"8OhBqGMjEaD6E7eTAAAJ"}
+2023-09-14 22:39:57,830 - g4JrCquXPVuEMLufAAAI: Received request to upgrade to websocket
+2023-09-14 22:39:57,836 - g4JrCquXPVuEMLufAAAI: Upgrade to websocket successful
+2023-09-14 22:40:22,801 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:40:22,806 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:40:47,808 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:40:47,814 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:41:12,816 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:41:12,820 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:41:37,822 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:41:37,829 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:42:02,831 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:42:02,835 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:42:27,837 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:42:27,845 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:42:52,847 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:42:52,849 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:43:17,851 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:43:17,856 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:43:42,858 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:43:42,860 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:44:07,856 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:44:07,861 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:44:32,847 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:44:32,849 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:44:57,847 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:44:57,854 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:45:22,855 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:45:22,860 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:45:47,578 - g4JrCquXPVuEMLufAAAI: Received packet MESSAGE data 2["message sent",{"message":"hello"}]
+2023-09-14 22:45:47,580 - received event "message sent" from 8OhBqGMjEaD6E7eTAAAJ [/]
+2023-09-14 22:45:47,587 - User sent message: hello
+2023-09-14 22:45:47,589 - emitting event "new message" to all [/]
+2023-09-14 22:45:47,589 - g4JrCquXPVuEMLufAAAI: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"hello"}]
+2023-09-14 22:45:47,862 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:45:47,864 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:45:48,207 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-4", "address": "10.10.0.1", "locationInfo": {"latitude": [43.734257], "longitude": [7.422585], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694756751}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694756751}, "zoneId": "zone02"}]}}
+2023-09-14 22:46:12,866 - g4JrCquXPVuEMLufAAAI: Sending packet PING data None
+2023-09-14 22:46:12,873 - g4JrCquXPVuEMLufAAAI: Received packet PONG data 
+2023-09-14 22:46:33,661 - Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-09-14 22:46:33,661 - NumExpr defaulting to 8 threads.
+2023-09-14 22:46:33,816 - Server initialized for eventlet.
+2023-09-14 22:46:33,817 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 22:46:34,137 - Use pytorch device: cpu
+2023-09-14 22:46:38,421 - -gaGI7LKsfzdGF0QAAAK: Sending packet OPEN data {'sid': '-gaGI7LKsfzdGF0QAAAK', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 22:46:38,445 - -gaGI7LKsfzdGF0QAAAK: Received packet MESSAGE data 0
+2023-09-14 22:46:38,445 - -gaGI7LKsfzdGF0QAAAK: Sending packet MESSAGE data 0{"sid":"y7TuTRma9iXv19hXAAAL"}
+2023-09-14 22:46:38,446 - -gaGI7LKsfzdGF0QAAAK: Received request to upgrade to websocket
+2023-09-14 22:46:38,466 - -gaGI7LKsfzdGF0QAAAK: Upgrade to websocket successful
+2023-09-14 22:46:47,401 - -gaGI7LKsfzdGF0QAAAK: Received packet MESSAGE data 2["message sent",{"message":"I want to find a Egyption museum near by"}]
+2023-09-14 22:46:47,404 - received event "message sent" from y7TuTRma9iXv19hXAAAL [/]
+2023-09-14 22:46:47,406 - User sent message: I want to find a Egyption museum near by
+2023-09-14 22:46:47,406 - emitting event "new message" to all [/]
+2023-09-14 22:46:47,407 - -gaGI7LKsfzdGF0QAAAK: Sending packet MESSAGE data 2["new message",{"sender":"You","message":"I want to find a Egyption museum near by"}]
+2023-09-14 22:46:47,987 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73515], "longitude": [7.422599], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694756811}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694756811}, "zoneId": "zone03"}]}}
+2023-09-14 22:46:52,523 - Bot response: I apologize, but I couldn't find any information about an Egyptian museum near Musée océanographique de Monaco and Jardins Saint-Martin. However, if you are interested in Egyptian artifacts and history, I can recommend visiting the Louvre Museum in Paris. It houses a vast collection of Egyptian antiquities, including the famous Rosetta Stone and numerous statues, sarcophagi, and artifacts from ancient Egypt. The Louvre Museum is easily accessible from Monaco by train or car.
+<p style="color: red;">found local info: "located on the Rue du Faubourg Saint-Honoré near the Champs-Élysées in the 8th arrondissement of Paris, the name Élysée deriving from the Elysian Fields, the place of the blessed dead in Greek mythology. Important foreign visitors are hosted at the nearby Hôtel de Marigny, a palatial residence. The palace has""of France. The Élysée Palace, which contains the presidential office and residency, is also the meeting place of the Council of Ministers, the weekly meeting of the Government of France presided over by the President of the Republic. == History == === Hôtel d'Évreux === The architect Armand-Claude Mollet possessed"</p>
+
+2023-09-14 22:46:52,524 - emitting event "new message" to all [/]
+2023-09-14 22:46:52,524 - -gaGI7LKsfzdGF0QAAAK: Sending packet MESSAGE data 2["new message",{"sender":"Bot","message":"I apologize, but I couldn't find any information about an Egyptian museum near Mus\u00e9e oc\u00e9anographique de Monaco and Jardins Saint-Martin. However, if you are interested in Egyptian artifacts and history, I can recommend visiting the Louvre Museum in Paris. It houses a vast collection of Egyptian antiquities, including the famous Rosetta Stone and numerous statues, sarcophagi, and artifacts from ancient Egypt. The Louvre Museum is easily accessible from Monaco by train or car.\n<p style=\"color: red;\">found local info: \"located on the Rue du Faubourg Saint-Honor\u00e9 near the Champs-\u00c9lys\u00e9es in the 8th arrondissement of Paris, the name \u00c9lys\u00e9e deriving from the Elysian Fields, the place of the blessed dead in Greek mythology. Important foreign visitors are hosted at the nearby H\u00f4tel de Marigny, a palatial residence. The palace has\"\"of France. The \u00c9lys\u00e9e Palace, which contains the presidential office and residency, is also the meeting place of the Council of Ministers, the weekly meeting of the Government of France presided over by the President of the Republic. == History == === H\u00f4tel d'\u00c9vreux === The architect Armand-Claude Mollet possessed\"</p>\n"}]
+2023-09-14 22:47:03,423 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:47:03,427 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:47:28,429 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:47:28,433 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:47:53,435 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:47:53,439 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:48:18,441 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:48:18,443 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:48:43,444 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:48:43,445 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:49:08,447 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:49:08,449 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:49:33,451 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:49:33,457 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:49:58,458 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:49:58,460 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:50:23,461 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:50:23,462 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:50:48,463 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:50:48,464 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:51:13,465 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:51:13,467 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:51:38,468 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:51:38,469 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:52:03,471 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:52:03,476 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:52:28,477 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:52:28,484 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:52:53,486 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:52:53,487 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:53:18,489 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:53:18,495 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:53:43,497 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:53:43,500 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:54:08,502 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:54:08,507 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:54:33,509 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:54:33,510 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:54:58,511 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:54:58,516 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:55:23,517 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:55:23,520 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:55:48,521 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:55:48,523 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:56:13,524 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:56:13,526 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:56:38,527 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:56:38,531 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:57:03,533 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:57:03,538 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:57:28,540 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:57:28,545 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:57:53,546 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:57:53,550 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:58:18,553 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:58:18,554 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:58:43,555 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:58:43,557 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:59:08,559 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:59:08,564 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:59:33,566 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:59:33,567 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 22:59:58,569 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 22:59:58,571 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:00:23,572 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:00:23,574 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:00:48,576 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:00:48,579 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:01:13,581 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:01:13,583 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:01:38,585 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:01:38,591 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:02:03,594 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:02:03,598 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:02:28,600 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:02:28,603 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:02:53,605 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:02:53,610 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:03:18,611 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:03:18,614 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:03:43,615 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:03:43,617 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:04:08,618 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:04:08,622 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:04:33,624 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:04:33,629 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:04:58,631 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:04:58,632 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:05:23,633 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:05:23,634 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:05:48,636 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:05:48,654 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:06:13,657 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:06:13,661 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:06:38,662 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:06:38,666 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:07:03,668 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:07:03,671 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:07:28,673 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:07:28,675 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:07:53,677 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:07:53,683 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:08:18,685 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:08:18,687 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:08:43,689 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:08:43,693 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:09:08,695 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:09:08,698 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:09:33,700 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:09:33,703 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:09:58,704 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:09:58,705 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:10:23,707 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:10:23,710 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:10:48,712 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:10:48,714 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:11:13,716 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:11:13,719 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:11:38,721 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:11:38,725 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:12:03,727 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:12:03,728 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:12:28,730 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:12:28,737 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:12:53,739 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:12:53,743 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:13:18,745 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:13:18,748 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:13:43,750 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:13:43,753 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:14:08,755 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:14:08,758 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:14:33,759 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:14:33,763 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:14:58,765 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:14:58,769 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 
+2023-09-14 23:15:23,771 - -gaGI7LKsfzdGF0QAAAK: Sending packet PING data None
+2023-09-14 23:15:23,776 - -gaGI7LKsfzdGF0QAAAK: Received packet PONG data 

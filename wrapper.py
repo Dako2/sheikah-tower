@@ -33,7 +33,7 @@ class MECApp():
         self.cellid = None
         self.zoneid = None
         self.image_db = image_vecdb.ImageVecDataBase('./db/images', './db/images/embeddings')
-        self.image_db_jsonlist = load_jsonl("./db/images/metadata.jsonl")
+        # self.image_db_jsonlist = load_jsonl("./db/images/metadata.jsonl")
         
     def analyze_image_api(self, filename = './upload/image.jpeg'):
         # Read image
@@ -42,9 +42,9 @@ class MECApp():
         
         print("Score: %.4f" % (sim_score))
         print("Index of most similar image in DB: %d" % (most_similar_img_idx))
-        print(self.image_db_jsonlist[most_similar_img_idx])
+        # print(self.image_db_jsonlist[most_similar_img_idx])
         #return sim_score, most_similar_img_idx
-        return [sim_score, self.image_db_jsonlist[most_similar_img_idx]]
+        return [sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx)]
 
     def loc_user_places_api(self):
         
