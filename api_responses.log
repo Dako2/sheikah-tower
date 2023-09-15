@@ -1912,3 +1912,30 @@ Now that you know the nearby attractions, let me know what you're interested in,
 2023-09-14 20:37:07,040 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
 2023-09-14 20:37:32,042 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
 2023-09-14 20:37:32,045 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:37:57,047 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:37:57,049 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:38:22,051 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:38:22,054 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:38:47,056 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:38:47,058 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:39:12,060 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:39:12,063 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:39:37,065 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:39:37,069 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:40:02,071 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:40:02,074 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:40:27,076 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:40:27,078 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:40:52,079 - vAOxj4_DttzyNZa6AAAA: Sending packet PING data None
+2023-09-14 20:40:52,081 - vAOxj4_DttzyNZa6AAAA: Received packet PONG data 
+2023-09-14 20:42:21,782 - NumExpr defaulting to 8 threads.
+2023-09-14 20:42:21,991 - Server initialized for eventlet.
+2023-09-14 20:42:21,993 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:42:22,257 - Use pytorch device: cpu
+2023-09-14 20:42:29,011 - rRRm-_0WlB4npSSYAAAA: Sending packet OPEN data {'sid': 'rRRm-_0WlB4npSSYAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:42:29,020 - rRRm-_0WlB4npSSYAAAA: Received packet MESSAGE data 0
+2023-09-14 20:42:29,021 - rRRm-_0WlB4npSSYAAAA: Sending packet MESSAGE data 0{"sid":"ZUzTgLAKSbrF6xe-AAAB"}
+2023-09-14 20:42:29,023 - rRRm-_0WlB4npSSYAAAA: Received request to upgrade to websocket
+2023-09-14 20:42:29,031 - rRRm-_0WlB4npSSYAAAA: Upgrade to websocket successful
+2023-09-14 20:42:54,014 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:42:54,016 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 

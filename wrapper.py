@@ -71,8 +71,7 @@ class MECApp():
                 loc1_found_db_texts += text
                 print(f"search loc info {loc_name}: {text}")
         print("Yi asked if this is running three?????")
-        #user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
-        user_found_db_texts = "The user name is Link"
+        user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
 
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
         print("\n\n\n===============", self.convo.messages, "==============================\n\n\n")
