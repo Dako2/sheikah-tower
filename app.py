@@ -152,10 +152,12 @@ def upload_image():
     if file:
         filename = os.path.join(UPLOAD_FOLDER, file.filename)
         file.save(filename)
-        sim_score, image_info = mec.analyze_image_api(filename)
+        # Generated image prompt
+        sim_score, image_info, image_prompt = mec.analyze_image_api(filename)
         print(f"received image and saved {filename}")
         print(sim_score, image_info)
         return jsonify(success=True, message=image_info), 200
 
 if __name__ == '__main__':
+    print("http://127.0.0.1:9090")
     socketio.run(app, host='0.0.0.0',port=9090, debug=False)

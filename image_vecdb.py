@@ -8,10 +8,13 @@ from PIL import Image
 from datasets import load_dataset
 
 IMAGE_EMBEDDING_MODEL = "google/vit-base-patch16-224"
-
-# extractor = AutoFeatureExtractor.from_pretrained(IMAGE_EMBEDDING_MODEL)
-# model = AutoModel.from_pretrained(IMAGE_EMBEDDING_MODEL)
-# hidden_dim = model.config.hidden_size
+PROMPT_TEMPLATE = """
+You are a tour guide, your tourist is very excited and took a photo of “{name}”. 
+Tell the tourist an interesting story about the photo, it can be history related, a fun fact, 
+future event or just any stories that can raise the tourist’s interests.
+More info about the image: “{text}”.
+At the end of the conversation, ask the tourist a related question that the tourist might be able to guess.
+"""
 
 class ImageVecDataBase():
     def __init__(self, db_image_dir_path, db_image_embeding_path, update=True):
@@ -73,7 +76,19 @@ class ImageVecDataBase():
                 return self.dataset['image'][idx], int(idx.int()), float(score.float())
             
         return None, None, None
+    
+    def db_image_prompt(self, idx):
+        if idx >= 0 and idx < len(self.dataset):
+           return PROMPT_TEMPLATE.format(name=self.dataset[idx]["name"], text=self.dataset[idx]["text"])
         
+        return ""
+    
+    def db_image_info(self, idx):
+        if idx >= 0 and idx < len(self.dataset):
+            return self.dataset[idx]
+        
+        return ""
+
 if __name__ == '__main__':
     image_db = ImageVecDataBase('./db/images', './db/images/embeddings')
     # Read image
@@ -82,3 +97,6 @@ if __name__ == '__main__':
     
     print("Score: %.4f" % (sim_score))
     print("Index of most similar image in DB: %.4f" % (most_similar_img_idx))
+    print(image_db.image_to_prompt(img))
+    plt.imshow(most_similar_img)
+    plt.show()
