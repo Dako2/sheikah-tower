@@ -49,13 +49,15 @@ class MECApp():
     def loc_user_places_api(self):
         
         latitude, longitude, _, self.cellid, self.zoneid = fetch_user_coordinates_zoneid_cellid_real()
+        # todo to delete below
+        self.cellid, self.zoneid = "4g-macro-cell-4", "zone02"
         print("\n\n****************",latitude, longitude, _, self.cellid, self.zoneid)
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
             place_names = ', '.join(map(str, self.places_dict.keys()))
             self.convo.messages[0]["content"] = self.convo.messages[0]["content"].replace("[locations]", place_names)
             print(f"\n\n{self.convo.messages}\n\n")
-            return (latitude, longitude), self.places_dict
+            return (latitude, longitude), self.places_dict #(latitude, longitude) Egyption Museum: 43.731724, 7.423574
         except:
             return (None, None), {}
         
@@ -64,12 +66,17 @@ class MECApp():
         loc1_found_db_texts = ""
         self.loc_user_places_api()
         #time.sleep(1)
-        print("Yi asked if this is running too?????")
+       
         if self.places_dict:
             for loc_name, value in self.places_dict.items(): #loc_name, loc_dictionary: lat, long, db_path
-                text, loc1_found_score = self.v.search_db(user_input, value['db_path'])
-                loc1_found_db_texts += text
-                print(f"search loc info {loc_name}: {text}")
+                try:
+                    print(f"searching{loc_name}:{value}")
+                    text, loc1_found_score = self.v.search_db(user_input, value['db_path'])
+                    loc1_found_db_texts += text
+                    print(f"Found loc info {loc_name}: {text}")
+                except:
+                    print("bypassing..........\n\n\n")
+
         print("Yi asked if this is running three?????")
         user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
 

@@ -55,4 +55,7 @@ class VecDataBase():
 if __name__ == "__main__":
     DATA_PATH={'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
     v = VecDataBase(DATA_PATH)
-    res, score = v.search_db('Nefertiti Bust-Nefertiti','db/exhibit-info.csv')
+    #res, score = v.search_db('Nefertiti Bust-Nefertiti','db/exhibit-info.csv')
+
+    v.text_to_ebds_csv('./db/csv/Egyptian Museum.csv')
+

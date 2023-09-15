@@ -2,93 +2,98 @@
     "zone02": {
         "5g-small-cell-4": {
             "places": {
-                "Hotel Ambassador Monaco": {
+                "Hotel Ambassador Hyrule": {
                     "latitude": 43.7329145,
                     "longitude": 7.417962600000003,
-                    "db_path": "./db/csv/Hotel Ambassador Monaco.csv"
+                    "db_path": "./db/csv/Hotel Ambassador Hyrule.csv"
                 },
-                "Prince's Palace of Monaco": {
+                "Prince's Palace of Hyrule": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Prince's Palace of Monaco.csv"
+                    "db_path": "./db/csv/Prince's Palace of Hyrule.csv"
                 }
             }
         },
         "4g-macro-cell-4": {
             "places": {
-                "Mus\u00e9e oc\u00e9anographique de Monaco": {
+                "Mus\u00e9e oc\u00e9anographique de Hyrule": {
                     "latitude": 43.7308132,
                     "longitude": 7.425573999999999,
-                    "db_path": "./db/csv/Mus\u00e9e oc\u00e9anographique de Monaco.csv"
+                    "db_path": "./db/csv/Mus\u00e9e oc\u00e9anographique de Hyrule.csv"
                 },
-                "Jardins Saint-Martin": {
+                "Hyrule Jardins Saint-Martin": {
                     "latitude": 43.7299628,
                     "longitude": 7.424147400000001,
                     "db_path": "./db/csv/Jardins Saint-Martin.csv"
+                },
+                "Egyptian Museum": {
+                    "latitude": 43.731724,
+                    "longitude": 7.423574,
+                    "db_path": "./db/csv/Egyptian Museum.csv"
                 }
             }
         },
         "5g-small-cell-5": {
             "places": {
-                "Prince's Palace of Monaco": {
+                "Prince's Palace of Hyrule": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Prince's Palace of Monaco.csv"
+                    "db_path": "./db/csv/Prince's Palace of Hyrule.csv"
                 }
             }
         },
         "5g-small-cell-8": {
             "places": {
-                "Mus\u00e9e oc\u00e9anographique de Monaco": {
+                "Mus\u00e9e oc\u00e9anographique de Hyrule": {
                     "latitude": 43.7308132,
                     "longitude": 7.425573999999999,
-                    "db_path": "./db/csv/Mus\u00e9e oc\u00e9anographique de Monaco.csv"
+                    "db_path": "./db/csv/Mus\u00e9e oc\u00e9anographique de Hyrule.csv"
                 }
             }
         },
         "wifi-ap-5": {
             "places": {
-                "Monaco Brewery": {
+                "Hyrule Brewery": {
                     "latitude": 43.73384919999999,
                     "longitude": 7.422129,
-                    "db_path": "./db/csv/Monaco Brewery.csv"
+                    "db_path": "./db/csv/Hyrule Brewery.csv"
                 }
             }
         },
         "5g-small-cell-7": {
             "places": {
-                "Monaco Brewery": {
+                "Hyrule Brewery": {
                     "latitude": 43.73384919999999,
                     "longitude": 7.422129,
-                    "db_path": "./db/csv/Monaco Brewery.csv"
+                    "db_path": "./db/csv/Hyrule Brewery.csv"
                 }
             }
         },
         "wifi-ap-3": {
             "places": {
-                "Monaco Brewery": {
+                "Hyrule Brewery": {
                     "latitude": 43.73384919999999,
                     "longitude": 7.422129,
-                    "db_path": "./db/csv/Monaco Brewery.csv"
+                    "db_path": "./db/csv/Hyrule Brewery.csv"
                 },
-                "Jack Monaco": {
+                "Jack Hyrule": {
                     "latitude": 43.7334769,
                     "longitude": 7.422296599999999,
-                    "db_path": "./db/csv/Jack Monaco.csv"
+                    "db_path": "./db/csv/Jack Hyrule.csv"
                 },
-                "Monaco Grand Prix": {
+                "Hyrule Grand Prix": {
                     "latitude": 43.734108,
                     "longitude": 7.4217042,
-                    "db_path": "./db/csv/Monaco Grand Prix.csv"
+                    "db_path": "./db/csv/Hyrule Grand Prix.csv"
                 }
             }
         },
         "5g-small-cell-6": {
             "places": {
-                "Monaco Brewery": {
+                "Hyrule Brewery": {
                     "latitude": 43.73384919999999,
                     "longitude": 7.422129,
-                    "db_path": "./db/csv/Monaco Brewery.csv"
+                    "db_path": "./db/csv/Hyrule Brewery.csv"
                 }
             }
         }
@@ -96,80 +101,80 @@
     "zone01": {
         "5g-small-cell-3": {
             "places": {
-                "Hotel Ambassador Monaco": {
+                "Hotel Ambassador Hyrule": {
                     "latitude": 43.7329145,
                     "longitude": 7.417962600000003,
-                    "db_path": "./db/csv/Hotel Ambassador Monaco.csv"
+                    "db_path": "./db/csv/Hotel Ambassador Hyrule.csv"
                 },
-                "Prince's Palace of Monaco": {
+                "Prince's Palace of Hyrule": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Prince's Palace of Monaco.csv"
+                    "db_path": "./db/csv/Prince's Palace of Hyrule.csv"
                 },
-                "Carrefour Monaco": {
+                "Carrefour Hyrule": {
                     "latitude": 43.7307533,
                     "longitude": 7.417138899999999,
-                    "db_path": "./db/csv/Carrefour Monaco.csv"
+                    "db_path": "./db/csv/Carrefour Hyrule.csv"
                 }
             }
         },
         "wifi-ap-1": {
             "places": {
-                "Columbus Hotel Monaco": {
+                "Columbus Hotel Hyrule": {
                     "latitude": 43.72754939999999,
                     "longitude": 7.420020499999998,
-                    "db_path": "./db/csv/Columbus Hotel Monaco.csv"
+                    "db_path": "./db/csv/Columbus Hotel Hyrule.csv"
                 }
             }
         },
         "4g-macro-cell-1": {
             "places": {
-                "Columbus Hotel Monaco": {
+                "Columbus Hotel Hyrule": {
                     "latitude": 43.72754939999999,
                     "longitude": 7.420020499999998,
-                    "db_path": "./db/csv/Columbus Hotel Monaco.csv"
+                    "db_path": "./db/csv/Columbus Hotel Hyrule.csv"
                 }
             }
         },
         "4g-macro-cell-3": {
             "places": {
-                "Hotel Ambassador Monaco": {
+                "Hotel Ambassador Hyrule": {
                     "latitude": 43.7329145,
                     "longitude": 7.417962600000003,
-                    "db_path": "./db/csv/Hotel Ambassador Monaco.csv"
+                    "db_path": "./db/csv/Hotel Ambassador Hyrule.csv"
                 }
             }
         },
         "4g-macro-cell-2": {
             "places": {
-                "Exotic Garden of Monaco": {
+                "Exotic Garden of Hyrule": {
                     "latitude": 43.73135,
                     "longitude": 7.413945999999999,
-                    "db_path": "./db/csv/Exotic Garden of Monaco.csv"
+                    "db_path": "./db/csv/Exotic Garden of Hyrule.csv"
                 }
             }
         },
         "5g-small-cell-2": {
             "places": {
-                "Hotel Ambassador Monaco": {
+                "Hotel Ambassador Hyrule": {
                     "latitude": 43.7329145,
                     "longitude": 7.417962600000003,
-                    "db_path": "./db/csv/Hotel Ambassador Monaco.csv"
+                    "db_path": "./db/csv/Hotel Ambassador Hyrule.csv"
                 },
-                "Prince's Palace of Monaco": {
+                "Prince's Palace of Hyrule": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Prince's Palace of Monaco.csv"
+                    "db_path": "./db/csv/Prince's Palace of Hyrule.csv"
                 },
-                "Carrefour Monaco": {
+                "Carrefour Hyrule": {
                     "latitude": 43.7307533,
                     "longitude": 7.417138899999999,
-                    "db_path": "./db/csv/Carrefour Monaco.csv"
+                    "db_path": "./db/csv/Carrefour Hyrule.csv"
                 },
-                "Exotic Garden of Monaco": {
+                "Exotic Garden of Hyrule": {
                     "latitude": 43.73135,
                     "longitude": 7.413945999999999,
-                    "db_path": "./db/csv/Exotic Garden of Monaco.csv"
+                    "db_path": "./db/csv/Exotic Garden of Hyrule.csv"
                 },
                 "Centre commercial de Fontvieille": {
                     "latitude": 43.7307508,
@@ -180,24 +185,24 @@
         },
         "5g-small-cell-1": {
             "places": {
-                "Exotic Garden of Monaco": {
+                "Exotic Garden of Hyrule": {
                     "latitude": 43.73135,
                     "longitude": 7.413945999999999,
-                    "db_path": "./db/csv/Exotic Garden of Monaco.csv"
+                    "db_path": "./db/csv/Exotic Garden of Hyrule.csv"
                 },
-                "Carrefour Monaco": {
+                "Carrefour Hyrule": {
                     "latitude": 43.7307533,
                     "longitude": 7.417138899999999,
-                    "db_path": "./db/csv/Carrefour Monaco.csv"
+                    "db_path": "./db/csv/Carrefour Hyrule.csv"
                 }
             }
         },
         "wifi-ap-2": {
             "places": {
-                "Columbus Hotel Monaco": {
+                "Columbus Hotel Hyrule": {
                     "latitude": 43.72754939999999,
                     "longitude": 7.420020499999998,
-                    "db_path": "./db/csv/Columbus Hotel Monaco.csv"
+                    "db_path": "./db/csv/Columbus Hotel Hyrule.csv"
                 }
             }
         }
@@ -259,15 +264,15 @@
                     "longitude": 7.4217979,
                     "db_path": "./db/csv/Novotel Monte Carlo.csv"
                 },
-                "Monaco-Monte-Carlo station": {
+                "Hyrule-Monte-Carlo station": {
                     "latitude": 43.7387495,
                     "longitude": 7.418994199999999,
-                    "db_path": "./db/csv/Monaco-Monte-Carlo station.csv"
+                    "db_path": "./db/csv/Hyrule-Monte-Carlo station.csv"
                 },
-                "Hop On Hop Off Monaco": {
+                "Hop On Hop Off Hyrule": {
                     "latitude": 43.7371448,
                     "longitude": 7.421534899999999,
-                    "db_path": "./db/csv/Hop On Hop Off Monaco.csv"
+                    "db_path": "./db/csv/Hop On Hop Off Hyrule.csv"
                 }
             }
         },
@@ -376,10 +381,10 @@
                     "longitude": 7.428203599999999,
                     "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.csv"
                 },
-                "Office du Tourisme de Monaco": {
+                "Office du Tourisme de Hyrule": {
                     "latitude": 43.7407114,
                     "longitude": 7.426025,
-                    "db_path": "./db/csv/Office du Tourisme de Monaco.csv"
+                    "db_path": "./db/csv/Office du Tourisme de Hyrule.csv"
                 },
                 "Buddha-Bar Monte-Carlo": {
                     "latitude": 43.7399131,

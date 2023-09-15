@@ -1939,3 +1939,429 @@ Now that you know the nearby attractions, let me know what you're interested in,
 2023-09-14 20:42:29,031 - rRRm-_0WlB4npSSYAAAA: Upgrade to websocket successful
 2023-09-14 20:42:54,014 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
 2023-09-14 20:42:54,016 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:43:19,017 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:43:19,020 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:43:24,221 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73475], "longitude": [7.422502], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694749407}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694749407}, "zoneId": "zone03"}]}}
+2023-09-14 20:43:44,022 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:43:44,025 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:43:45,774 - User sent message: Hi
+2023-09-14 20:43:45,775 - Bot response: Hello! Welcome to Monaco-Monte Carlo. I would be happy to be your city guide and show you around. Let's start our tour!
+
+1. Port Palace Hôtel: This luxury hotel is located in the heart of the Port Hercules marina. It offers stunning views of the harbor and is known for its elegant design and top-notch service. Take a walk around the marina and enjoy the beautiful yachts and waterfront restaurants.
+
+2. Novotel Monte Carlo: This hotel is situated near the famous Casino Square and is a great base for exploring Monaco. From here, you can easily visit the Casino de Monte-Carlo, the Opera House, and the Prince's Palace. Enjoy the vibrant atmosphere and glamorous surroundings.
+
+3. Monaco-Monte Carlo station: This is the main train station in Monaco and is conveniently located near many attractions. From here, you can take a short walk to the Casino Square, the Japanese Gardens, or even catch a bus to explore other parts of the city.
+
+4. Hop On Hop Off Monaco: If you want to see all the major sights in Monaco, I recommend taking a Hop On Hop Off bus tour. This allows you to explore at your own pace and get off at any stop that interests you. The tour typically includes stops at the Prince's Palace, the Oceanographic Museum, and the famous Formula 1 Grand Prix circuit.
+
+5. Casino de Monte-Carlo: No visit to Monaco is complete without a visit to the iconic Casino de Monte-Carlo. Even if you're not a gambler, the building itself is worth seeing. Admire the stunning architecture and enjoy a drink at one of the nearby cafes.
+
+6. Prince's Palace: Explore the official residence of the Prince of Monaco. You can visit the State Apartments and see the changing of the guard ceremony, which takes place daily at 11:55 am. The palace offers breathtaking views of the city and the Mediterranean Sea.
+
+7. Oceanographic Museum: Located on a cliffside overlooking the sea, the Oceanographic Museum is a must-visit attraction in Monaco. It houses a vast collection of marine life, including a shark lagoon and a turtle island. The museum also offers stunning views of the coastline.
+
+8. Larvotto Beach: If you're in the mood for some relaxation, head to Larvotto Beach. This public beach offers crystal-clear waters and a sandy shoreline. You can rent sunbeds and umbrellas or simply enjoy a stroll along the prom
+<p style="color: red;">found user info: "Name","Link"</p>
+
+2023-09-14 20:44:09,027 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:44:09,030 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:44:34,032 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:44:34,034 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:44:59,036 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:44:59,040 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:45:24,042 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:45:24,045 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:45:49,046 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:45:49,048 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:46:12,908 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-5", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73696], "longitude": [7.42944], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694749576}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694749576}, "zoneId": "zone02"}]}}
+2023-09-14 20:46:14,050 - rRRm-_0WlB4npSSYAAAA: Sending packet PING data None
+2023-09-14 20:46:14,053 - rRRm-_0WlB4npSSYAAAA: Received packet PONG data 
+2023-09-14 20:46:26,451 - NumExpr defaulting to 8 threads.
+2023-09-14 20:46:26,621 - Server initialized for eventlet.
+2023-09-14 20:46:26,622 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:46:26,883 - Use pytorch device: cpu
+2023-09-14 20:46:34,843 - 7JcwQ8jYJFVofTwlAAAA: Sending packet OPEN data {'sid': '7JcwQ8jYJFVofTwlAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:46:34,847 - 7JcwQ8jYJFVofTwlAAAA: Received packet MESSAGE data 0
+2023-09-14 20:46:34,848 - 7JcwQ8jYJFVofTwlAAAA: Sending packet MESSAGE data 0{"sid":"RlhYgO72P0x333m0AAAB"}
+2023-09-14 20:46:34,849 - 7JcwQ8jYJFVofTwlAAAA: Received request to upgrade to websocket
+2023-09-14 20:46:34,850 - 7JcwQ8jYJFVofTwlAAAA: Upgrade to websocket successful
+2023-09-14 20:46:59,845 - 7JcwQ8jYJFVofTwlAAAA: Sending packet PING data None
+2023-09-14 20:46:59,848 - 7JcwQ8jYJFVofTwlAAAA: Received packet PONG data 
+2023-09-14 20:47:14,295 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-10", "address": "10.10.0.1", "locationInfo": {"latitude": [43.736847], "longitude": [7.426842], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694749637}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694749637}, "zoneId": "zone03"}]}}
+2023-09-14 20:47:14,324 - Error in chat_api: kth(=2) out of bounds (2)
+2023-09-14 20:47:24,849 - 7JcwQ8jYJFVofTwlAAAA: Sending packet PING data None
+2023-09-14 20:47:24,851 - 7JcwQ8jYJFVofTwlAAAA: Received packet PONG data 
+2023-09-14 20:47:35,934 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-7", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73648], "longitude": [7.425767], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694749659}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694749659}, "zoneId": "zone03"}]}}
+2023-09-14 20:47:35,956 - Error in chat_api: kth(=2) out of bounds (2)
+2023-09-14 20:47:49,853 - 7JcwQ8jYJFVofTwlAAAA: Sending packet PING data None
+2023-09-14 20:47:49,854 - 7JcwQ8jYJFVofTwlAAAA: Received packet PONG data 
+2023-09-14 20:48:14,854 - 7JcwQ8jYJFVofTwlAAAA: Sending packet PING data None
+2023-09-14 20:48:14,856 - 7JcwQ8jYJFVofTwlAAAA: Received packet PONG data 
+2023-09-14 20:48:39,857 - 7JcwQ8jYJFVofTwlAAAA: Sending packet PING data None
+2023-09-14 20:48:39,858 - 7JcwQ8jYJFVofTwlAAAA: Received packet PONG data 
+2023-09-14 20:49:04,859 - 7JcwQ8jYJFVofTwlAAAA: Sending packet PING data None
+2023-09-14 20:49:04,860 - 7JcwQ8jYJFVofTwlAAAA: Received packet PONG data 
+2023-09-14 20:49:29,862 - 7JcwQ8jYJFVofTwlAAAA: Sending packet PING data None
+2023-09-14 20:49:29,863 - 7JcwQ8jYJFVofTwlAAAA: Received packet PONG data 
+2023-09-14 20:49:58,230 - NumExpr defaulting to 8 threads.
+2023-09-14 20:49:58,400 - Server initialized for eventlet.
+2023-09-14 20:49:58,400 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:49:58,658 - Use pytorch device: cpu
+2023-09-14 20:50:06,603 - roySPHruxq3abwPuAAAA: Sending packet OPEN data {'sid': 'roySPHruxq3abwPuAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:50:06,607 - roySPHruxq3abwPuAAAA: Received packet MESSAGE data 0
+2023-09-14 20:50:06,608 - roySPHruxq3abwPuAAAA: Sending packet MESSAGE data 0{"sid":"DZCfYfy40vIs6xNUAAAB"}
+2023-09-14 20:50:06,609 - roySPHruxq3abwPuAAAA: Received request to upgrade to websocket
+2023-09-14 20:50:06,611 - roySPHruxq3abwPuAAAA: Upgrade to websocket successful
+2023-09-14 20:50:16,333 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-4", "address": "10.10.0.1", "locationInfo": {"latitude": [43.732826], "longitude": [7.42349], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694749819}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694749819}, "zoneId": "zone02"}]}}
+2023-09-14 20:50:16,363 - Error in chat_api: kth(=4) out of bounds (4)
+2023-09-14 20:50:31,605 - roySPHruxq3abwPuAAAA: Sending packet PING data None
+2023-09-14 20:50:31,608 - roySPHruxq3abwPuAAAA: Received packet PONG data 
+2023-09-14 20:50:56,609 - roySPHruxq3abwPuAAAA: Sending packet PING data None
+2023-09-14 20:50:56,612 - roySPHruxq3abwPuAAAA: Received packet PONG data 
+2023-09-14 20:51:21,614 - roySPHruxq3abwPuAAAA: Sending packet PING data None
+2023-09-14 20:51:21,617 - roySPHruxq3abwPuAAAA: Received packet PONG data 
+2023-09-14 20:51:48,905 - NumExpr defaulting to 8 threads.
+2023-09-14 20:51:49,075 - Server initialized for eventlet.
+2023-09-14 20:51:49,076 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:51:49,335 - Use pytorch device: cpu
+2023-09-14 20:51:56,960 - WCR3q1-eCUVL5Hu2AAAA: Sending packet OPEN data {'sid': 'WCR3q1-eCUVL5Hu2AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:51:56,964 - WCR3q1-eCUVL5Hu2AAAA: Received packet MESSAGE data 0
+2023-09-14 20:51:56,965 - WCR3q1-eCUVL5Hu2AAAA: Sending packet MESSAGE data 0{"sid":"hjGLi0T5JbfRJu8wAAAB"}
+2023-09-14 20:51:56,965 - WCR3q1-eCUVL5Hu2AAAA: Received request to upgrade to websocket
+2023-09-14 20:51:56,967 - WCR3q1-eCUVL5Hu2AAAA: Upgrade to websocket successful
+2023-09-14 20:52:07,993 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-5", "address": "10.10.0.1", "locationInfo": {"latitude": [43.734295], "longitude": [7.428092], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694749931}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694749931}, "zoneId": "zone02"}]}}
+2023-09-14 20:52:20,865 - User sent message: Hi I’m new to the city. Anywhere interesting that I should go?
+2023-09-14 20:52:20,865 - Bot response: Welcome to the city! I have some recommendations for you based on your interests. Here are a few places you might enjoy visiting:
+
+1. Train Museum: Start your exploration by visiting the Train Museum. It showcases the city's rich railway history and offers a chance to see vintage trains and learn about their significance.
+
+2. Palace: Make sure to visit the city's magnificent palace. It's an architectural marvel with stunning gardens and historical significance. Take a guided tour to learn about the palace's history and explore its grandeur.
+
+3. Bar with a Twist: If you're looking for a unique bar experience, check out "The Peppered Lounge." This trendy bar specializes in creative cocktails infused with black pepper. Enjoy the vibrant atmosphere and indulge in their innovative drink menu.
+
+4. Local Market: To experience the city's local culture, head to the bustling market. Here, you'll find a variety of fresh produce, local crafts, and street food. Take your time to explore the stalls and immerse yourself in the vibrant atmosphere.
+
+5. Park and Recreation: If you're in the mood for some outdoor relaxation, visit the city's central park. It offers beautiful green spaces, walking trails, and recreational activities. Take a leisurely stroll, have a picnic, or simply enjoy the serene surroundings.
+
+Remember to check the opening hours and any COVID-19 restrictions before visiting these places. Enjoy your time exploring the city!
+<p style="color: red;">found user info: "Personal interest", "i'm interested in Train, Palace, and bar; I like black pepper"</p>
+
+2023-09-14 20:52:21,962 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:52:21,964 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:52:46,966 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:52:46,968 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:53:11,970 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:53:11,972 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:53:32,765 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-5", "address": "10.10.0.1", "locationInfo": {"latitude": [43.73432], "longitude": [7.429308], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694750015}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694750015}, "zoneId": "zone02"}]}}
+2023-09-14 20:53:36,973 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:53:36,975 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:53:41,885 - User sent message: Ok they all sound good! Which one I should go first
+2023-09-14 20:53:41,885 - Bot response: Great! Since you're interested in trains, I recommend starting your day by visiting the Railway Museum. It's a fascinating place where you can learn about the history of trains and even see some vintage locomotives up close.
+
+After that, you can head to the Palace. The city's Palace is a beautiful architectural masterpiece with stunning gardens. Take a guided tour to explore the opulent interiors and learn about the rich history of the royal family.
+
+Once you've had your fill of history, it's time to unwind at a bar. There are many great options in the city, but I suggest checking out the "Pepper Lounge." As you mentioned you like black pepper, this bar specializes in unique cocktails infused with different flavors of pepper. It's a cozy spot with a great atmosphere to relax and enjoy your drink.
+
+Remember to check the opening hours and any specific guidelines or reservations required for each place. Enjoy your day exploring the city!
+<p style="color: red;">found user info: "Personal interest", "i'm interested in Train, Palace, and bar; I like black pepper"</p>
+
+2023-09-14 20:54:01,977 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:54:01,979 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:54:26,993 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:54:26,995 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:54:52,015 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:54:52,016 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:55:17,022 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:55:17,025 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:55:42,027 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:55:42,029 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:56:07,031 - WCR3q1-eCUVL5Hu2AAAA: Sending packet PING data None
+2023-09-14 20:56:07,034 - WCR3q1-eCUVL5Hu2AAAA: Received packet PONG data 
+2023-09-14 20:56:20,161 - NumExpr defaulting to 8 threads.
+2023-09-14 20:56:20,366 - Server initialized for eventlet.
+2023-09-14 20:56:20,367 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 20:56:20,640 - Use pytorch device: cpu
+2023-09-14 20:56:26,114 - zCNU7D9QRuy-YDHKAAAA: Sending packet OPEN data {'sid': 'zCNU7D9QRuy-YDHKAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 20:56:26,118 - zCNU7D9QRuy-YDHKAAAA: Received packet MESSAGE data 0
+2023-09-14 20:56:26,118 - zCNU7D9QRuy-YDHKAAAA: Sending packet MESSAGE data 0{"sid":"okBBAyzcyf_Kpdx4AAAB"}
+2023-09-14 20:56:26,119 - zCNU7D9QRuy-YDHKAAAA: Received request to upgrade to websocket
+2023-09-14 20:56:26,123 - zCNU7D9QRuy-YDHKAAAA: Upgrade to websocket successful
+2023-09-14 20:56:34,178 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-4", "address": "10.10.0.1", "locationInfo": {"latitude": [43.734722], "longitude": [7.423359], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694750197}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694750197}, "zoneId": "zone02"}]}}
+2023-09-14 20:56:51,116 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 20:56:51,121 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 20:56:51,796 - User sent message: Hi I’m new to the city. Anywhere interesting I should go?
+2023-09-14 20:56:51,796 - Bot response: Welcome to Monaco! There are plenty of interesting places to visit near Musée océanographique de Monaco and Jardins Saint-Martin. Here's a suggested itinerary for you:
+
+1. Musée océanographique de Monaco: Start your day by exploring the Musée océanographique de Monaco. It is a world-renowned oceanographic museum and aquarium, offering a fascinating insight into marine life. You can admire various species of fish, sharks, turtles, and even visit the rooftop terrace for a stunning view of the Mediterranean Sea.
+
+2. Jardins Saint-Martin: After the museum, take a leisurely stroll through the beautiful Jardins Saint-Martin. These gardens offer a peaceful oasis in the heart of Monaco, with lush greenery, colorful flowers, and serene fountains. It's a perfect place to relax and enjoy the scenery.
+
+3. Monaco Palace: Next, head to the nearby Monaco Palace, also known as the Prince's Palace. This historic building is the official residence of the Prince of Monaco and offers breathtaking views of the city and the sea. If you time it right, you might even witness the Changing of the Guard ceremony.
+
+4. Explore the Old Town: From the palace, wander through the charming streets of Monaco's Old Town, known as Le Rocher. Explore the narrow alleyways, visit the Saint Nicholas Cathedral, and discover quaint shops and cafes along the way.
+
+5. Bar-hopping in Monte Carlo: To end your day, head to Monte Carlo, the glamorous district of Monaco. Here, you'll find a wide range of bars and restaurants to suit your taste. If you like black pepper, I recommend trying the famous Black Pepper Beef at Buddha-Bar Monte-Carlo. Afterward, you can explore the vibrant nightlife and maybe even try your luck at the iconic Casino de Monte-Carlo.
+
+Remember to check the opening hours and any specific requirements for each attraction before visiting. Enjoy your time in Monaco!
+<p style="color: red;">found user info: "Personal interest", "i'm interested in Train, Palace, and bar; I like black pepper"</p>
+
+2023-09-14 20:57:16,123 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 20:57:16,127 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 20:57:41,129 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 20:57:41,131 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 20:57:57,503 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.736954], "longitude": [7.424407], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694750280}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694750280}, "zoneId": "zone03"}]}}
+2023-09-14 20:58:06,134 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 20:58:06,137 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 20:58:10,072 - User sent message: They all sound great! Let’s do it!
+2023-09-14 20:58:10,072 - Bot response: Great! Let's start our tour in Monaco. We'll begin at the Musée océanographique de Monaco, which is a world-renowned oceanographic museum. It's located on a cliffside overlooking the Mediterranean Sea, offering stunning views.
+
+After exploring the museum, we can head to the Jardins Saint-Martin, a beautiful garden located nearby. It's a peaceful oasis with lush greenery, vibrant flowers, and picturesque pathways. Take a leisurely stroll and enjoy the tranquility of the surroundings.
+
+Next, let's hop on a train and head to the Palace of Monaco, also known as the Prince's Palace. This magnificent palace is the official residence of the Prince of Monaco and offers a glimpse into the rich history and culture of the principality. Explore the State Apartments, the Throne Room, and the Courtyard, and don't forget to witness the Changing of the Guard ceremony, which takes place daily.
+
+After visiting the palace, let's head to a bar where you can enjoy a drink and unwind. One popular option is the Black Pepper Lounge Bar, located in Monaco's city center. This trendy bar offers a cozy atmosphere, a wide range of drinks, and a selection of delicious snacks. Whether you prefer a classic cocktail or a unique creation, the Black Pepper Lounge Bar has something for everyone.
+
+I hope you enjoy your time exploring Monaco! Let me know if there's anything else I can assist you with.
+<p style="color: red;">found user info: "Personal interest", "i'm interested in Train, Palace, and bar; I like black pepper"</p>
+
+2023-09-14 20:58:31,139 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 20:58:31,142 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 20:58:56,144 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 20:58:56,146 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 20:59:21,149 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 20:59:21,152 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 20:59:46,154 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 20:59:46,157 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:00:11,159 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:00:11,162 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:00:36,165 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:00:36,174 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:01:01,176 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:01:01,178 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:01:26,180 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:01:26,182 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:01:51,184 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:01:51,186 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:02:16,187 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:02:16,188 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:02:41,190 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:02:41,192 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:03:06,194 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:03:06,195 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:03:31,197 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:03:31,199 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:03:56,201 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:03:56,202 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:04:21,203 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:04:21,205 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:04:46,206 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:04:46,208 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:05:11,209 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:05:11,212 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:05:36,214 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:05:36,215 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:06:01,217 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:06:01,218 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:06:26,220 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:06:26,224 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:06:51,226 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:06:51,228 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:07:16,231 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:07:16,233 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:07:41,235 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:07:41,239 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:08:06,242 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:08:06,245 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:08:31,246 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:08:31,248 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:08:56,250 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:08:56,253 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:09:21,254 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:09:21,256 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:09:46,258 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:09:46,262 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:10:11,264 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:10:11,268 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:10:36,271 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:10:36,274 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:11:01,276 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:11:01,281 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:11:26,284 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:11:26,287 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:11:51,289 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:11:51,295 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:12:16,297 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:12:16,300 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:12:41,301 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:12:41,304 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:13:06,306 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:13:06,308 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:13:31,310 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:13:31,315 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:13:56,318 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:13:56,320 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:14:21,321 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:14:21,325 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:14:46,327 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:14:46,331 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:15:11,333 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:15:11,336 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:15:36,338 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:15:36,342 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:16:01,344 - zCNU7D9QRuy-YDHKAAAA: Sending packet PING data None
+2023-09-14 21:16:01,348 - zCNU7D9QRuy-YDHKAAAA: Received packet PONG data 
+2023-09-14 21:20:25,478 - NumExpr defaulting to 8 threads.
+2023-09-14 21:20:25,659 - Server initialized for eventlet.
+2023-09-14 21:20:25,660 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:20:25,950 - Use pytorch device: cpu
+2023-09-14 21:20:45,131 - NumExpr defaulting to 8 threads.
+2023-09-14 21:20:45,269 - Server initialized for eventlet.
+2023-09-14 21:20:45,270 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:20:45,482 - Use pytorch device: cpu
+2023-09-14 21:21:14,292 - NumExpr defaulting to 8 threads.
+2023-09-14 21:21:14,432 - Server initialized for eventlet.
+2023-09-14 21:21:14,433 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:21:14,652 - Use pytorch device: cpu
+2023-09-14 21:21:45,360 - NumExpr defaulting to 8 threads.
+2023-09-14 21:21:45,498 - Server initialized for eventlet.
+2023-09-14 21:21:45,498 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:21:45,713 - Use pytorch device: cpu
+2023-09-14 21:44:47,101 - NumExpr defaulting to 8 threads.
+2023-09-14 21:44:47,342 - Server initialized for eventlet.
+2023-09-14 21:44:47,342 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:44:47,632 - Use pytorch device: cpu
+2023-09-14 21:47:52,569 - NumExpr defaulting to 8 threads.
+2023-09-14 21:47:52,770 - Server initialized for eventlet.
+2023-09-14 21:47:52,771 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:47:53,057 - Use pytorch device: cpu
+2023-09-14 21:47:59,854 - 1E-LInRjM4vaZk1vAAAA: Sending packet OPEN data {'sid': '1E-LInRjM4vaZk1vAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 21:47:59,858 - 1E-LInRjM4vaZk1vAAAA: Received packet MESSAGE data 0
+2023-09-14 21:47:59,859 - 1E-LInRjM4vaZk1vAAAA: Sending packet MESSAGE data 0{"sid":"DQsabEOPdztsef60AAAB"}
+2023-09-14 21:47:59,859 - 1E-LInRjM4vaZk1vAAAA: Received request to upgrade to websocket
+2023-09-14 21:47:59,863 - 1E-LInRjM4vaZk1vAAAA: Upgrade to websocket successful
+2023-09-14 21:48:36,490 - NumExpr defaulting to 8 threads.
+2023-09-14 21:48:36,659 - Server initialized for eventlet.
+2023-09-14 21:48:36,660 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:48:36,900 - Use pytorch device: cpu
+2023-09-14 21:48:43,605 - Od8B5weuLhUHFPEkAAAA: Sending packet OPEN data {'sid': 'Od8B5weuLhUHFPEkAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 21:48:43,612 - Od8B5weuLhUHFPEkAAAA: Received packet MESSAGE data 0
+2023-09-14 21:48:43,612 - Od8B5weuLhUHFPEkAAAA: Sending packet MESSAGE data 0{"sid":"oW6xg3-hE91PZMqYAAAB"}
+2023-09-14 21:48:43,613 - Od8B5weuLhUHFPEkAAAA: Received request to upgrade to websocket
+2023-09-14 21:48:43,616 - Od8B5weuLhUHFPEkAAAA: Upgrade to websocket successful
+2023-09-14 21:49:00,559 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "4g-macro-cell-5", "address": "10.10.0.1", "locationInfo": {"latitude": [43.734585], "longitude": [7.427432], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694753343}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694753343}, "zoneId": "zone02"}]}}
+2023-09-14 21:49:08,608 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:49:08,612 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:49:14,799 - User sent message: Hi anywhere interesting I should go?
+2023-09-14 21:49:14,800 - Bot response: Sure! Based on your interests, I have a few recommendations for you. 
+
+1. Train: If you're interested in trains, you should visit the [City Railway Museum]. It showcases the history and development of trains in the city. You can learn about the different types of trains, explore vintage locomotives, and even take a ride on a miniature train.
+
+2. Palace: [City Palace] is a must-visit for palace enthusiasts. It is a magnificent architectural marvel that offers a glimpse into the city's royal heritage. Explore the opulent rooms, admire the intricate artwork, and enjoy the stunning views from the palace balconies.
+
+3. Bar: For a unique bar experience, head to [Bar Name]. It is known for its extensive selection of drinks and a cozy atmosphere. You can try their signature black pepper-infused cocktails or sample some local craft beers. The bar also hosts live music performances, making it a perfect spot to unwind and enjoy the evening.
+
+4. Local Cuisine: If you're a fan of black pepper, you must try [Restaurant Name]. They specialize in dishes that incorporate black pepper in creative ways. From black pepper steak to black pepper-infused desserts, their menu offers a unique culinary experience.
+
+5. Local Landmark: Don't miss the iconic [Landmark Name]. It is a symbol of the city's history and offers panoramic views from the top. You can take a guided tour to learn about its significance and enjoy the breathtaking vistas of the city.
+
+I hope you enjoy your time exploring these recommendations! Let me know if there's anything else I can assist you with.
+<p style="color: red;">found user info: "Personal interest", "i'm interested in Train, Palace, and bar; I like black pepper"</p>
+
+2023-09-14 21:49:33,614 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:49:33,618 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:49:58,620 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:49:58,623 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:50:23,625 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:50:23,628 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:50:48,629 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:50:48,632 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:51:13,634 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:51:13,637 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:51:38,640 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:51:38,643 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:52:03,645 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:52:03,647 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:52:28,648 - Od8B5weuLhUHFPEkAAAA: Sending packet PING data None
+2023-09-14 21:52:28,651 - Od8B5weuLhUHFPEkAAAA: Received packet PONG data 
+2023-09-14 21:52:52,398 - NumExpr defaulting to 8 threads.
+2023-09-14 21:52:52,568 - Server initialized for eventlet.
+2023-09-14 21:52:52,569 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-14 21:52:52,828 - Use pytorch device: cpu
+2023-09-14 21:52:59,766 - dj6gI5jkQoiDkT0hAAAA: Sending packet OPEN data {'sid': 'dj6gI5jkQoiDkT0hAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2023-09-14 21:52:59,770 - dj6gI5jkQoiDkT0hAAAA: Received packet MESSAGE data 0
+2023-09-14 21:52:59,771 - dj6gI5jkQoiDkT0hAAAA: Sending packet MESSAGE data 0{"sid":"5HME23Vy0vxHQvAUAAAB"}
+2023-09-14 21:52:59,771 - dj6gI5jkQoiDkT0hAAAA: Received request to upgrade to websocket
+2023-09-14 21:52:59,774 - dj6gI5jkQoiDkT0hAAAA: Upgrade to websocket successful
+2023-09-14 21:53:03,342 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "wifi-ap-6", "address": "10.10.0.1", "locationInfo": {"latitude": [43.736954], "longitude": [7.425426], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694753586}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694753586}, "zoneId": "zone03"}]}}
+2023-09-14 21:53:12,280 - User sent message: Hi anywhere interesting? 
+2023-09-14 21:53:12,280 - Bot response: Of course! Here are a few interesting places near your location:
+
+1. Train: If you're interested in trains, you might enjoy visiting the Train des Pignes. It's a scenic railway that runs between Nice and Digne-les-Bains, offering stunning views of the French Riviera and the beautiful countryside.
+
+2. Palace: The nearby Prince's Palace of Monaco is a must-visit. Located in Monaco, it's the official residence of the Prince of Monaco and offers breathtaking views of the Mediterranean Sea. You can explore the palace's state apartments, the throne room, and the stunning gardens.
+
+3. Bar: For a unique bar experience, head to the Buddha Bar in Monte Carlo. It's a trendy and stylish bar with a fusion of Asian and Mediterranean cuisines. The ambiance is fantastic, with a mix of lounge music and a chic atmosphere.
+
+If you're feeling hungry, I can recommend a restaurant that serves dishes with black pepper. Let me know if you'd like that!
+<p style="color: red;">found user info: "Personal interest", "i'm interested in Train, Palace, and bar; I like black pepper"</p>
+
+2023-09-14 21:53:24,769 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:53:24,772 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:53:49,774 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:53:49,777 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:54:14,779 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:54:14,782 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:54:17,954 - {"userList": {"resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users", "user": [{"accessPointId": "5g-small-cell-11", "address": "10.10.0.1", "locationInfo": {"latitude": [43.737328], "longitude": [7.428063], "shape": 2, "timestamp": {"nanoSeconds": 0, "seconds": 1694753661}}, "resourceURL": "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address=10.10.0.1", "timestamp": {"nanoSeconds": 0, "seconds": 1694753661}, "zoneId": "zone03"}]}}
+2023-09-14 21:54:25,496 - User sent message: Museum? 
+2023-09-14 21:54:25,496 - Bot response: Sure! If you're interested in museums, there are a couple of options nearby that you might enjoy.
+
+1. Musée océanographique de Hyrule: This museum is dedicated to oceanography and marine life. It has a wide range of exhibits showcasing various species of marine animals, interactive displays, and educational programs. You can learn about the fascinating world of the ocean and its inhabitants here.
+
+2. Egyptian Museum: This museum houses a collection of artifacts from ancient Egypt. You can explore exhibits featuring mummies, statues, hieroglyphics, and other ancient Egyptian artifacts. It's a great place to learn about the rich history and culture of Egypt.
+
+Both museums offer unique and interesting experiences. Depending on your personal interests, you can choose the one that appeals to you the most. Enjoy your visit!
+<p style="color: red;">found user info: "Name","Link""Personal interest", "i'm interested in Train, Palace, and bar; I like black pepper"</p>
+
+2023-09-14 21:54:39,784 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:54:39,786 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:55:04,787 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:55:04,791 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:55:29,793 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:55:29,795 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:55:54,797 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:55:54,800 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:56:19,802 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:56:19,805 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:56:44,807 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:56:44,810 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:57:09,812 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:57:09,815 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:57:34,818 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:57:34,820 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:57:59,822 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:57:59,825 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:58:24,827 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:58:24,829 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:58:49,831 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:58:49,834 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:59:14,836 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:59:14,839 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 21:59:39,841 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 21:59:39,844 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 22:00:04,846 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 22:00:04,849 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 22:00:29,852 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 22:00:29,855 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 22:00:54,858 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 22:00:54,859 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 22:01:19,862 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 22:01:19,863 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 22:01:44,866 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 22:01:44,868 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 22:02:09,871 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 22:02:09,874 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 22:02:34,876 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 22:02:34,879 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 
+2023-09-14 22:02:59,881 - dj6gI5jkQoiDkT0hAAAA: Sending packet PING data None
+2023-09-14 22:02:59,884 - dj6gI5jkQoiDkT0hAAAA: Received packet PONG data 

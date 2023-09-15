@@ -156,7 +156,6 @@ def save_to_csv_and_np(combined_data, cellid):
     with open(jsonfile, 'w') as file:
         json.dump(db_json, file, indent=4)
 
-
 def ensure_path(d, keys):
     for key in keys[:-1]:
         d = d.setdefault(key, {})
@@ -165,6 +164,7 @@ def ensure_path(d, keys):
 
 if __name__ == "__main__":
     #43.7410606,7.4208206
+    
     import glob
     zone_dic = {}
     for fn in glob.glob("./db/zones/*.json"):
