@@ -64,6 +64,7 @@ def upload_image():
     if sim_score:
         image_info['sim_score'] = sim_score
         image_info['text'] = image_prompts
+        
         print(image_info)
         return jsonify(success=True, message=to_sent)
     else:

@@ -47,6 +47,9 @@ class MECApp():
             # print(self.image_db_jsonlist[most_similar_img_idx])
             #return sim_score, most_similar_img_idx
             print(sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx))
+            self.convo.messages = []
+            self.convo.messages.append({"role":"system","content":self.image_db.db_image_prompt(most_similar_img_idx)})
+            
             return [sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx)]
         except:
             return [None, None, None]
@@ -72,7 +75,6 @@ class MECApp():
             return (None, None), {}
         
     def chat_api(self, user_input):
-        print("Yi asked if this is running?????")
         loc1_found_db_texts = ""
         #self.loc_user_places_api()
         #time.sleep(1)
@@ -85,8 +87,6 @@ class MECApp():
                     print(f"Found loc info {loc_name}: {text}")
                 except:
                     print("bypassing..........\n\n\n")
-
-        print("Yi asked if this is running three?????")
         user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
 
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
