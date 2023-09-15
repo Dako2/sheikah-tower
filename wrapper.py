@@ -40,43 +40,27 @@ class MECApp():
     def analyze_image_api(self, filename = './upload/image.jpeg'):
         # Read image
         img = image_vecdb.Image.open(filename)
-<<<<<<< HEAD
         try:
-            most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)        
+            most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
             print("Score: %.4f" % (sim_score))
             print("Index of most similar image in DB: %d" % (most_similar_img_idx))
-            print(self.image_db_jsonlist[most_similar_img_idx])
+            # print(self.image_db_jsonlist[most_similar_img_idx])
             #return sim_score, most_similar_img_idx
-            return [sim_score, self.image_db_jsonlist[most_similar_img_idx]]
+            return [sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx)]
         except:
             return [None, {}]
-=======
-        most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
-        
-        print("Score: %.4f" % (sim_score))
-        print("Index of most similar image in DB: %d" % (most_similar_img_idx))
-        # print(self.image_db_jsonlist[most_similar_img_idx])
-        #return sim_score, most_similar_img_idx
-        return [sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx)]
-<<<<<<< Updated upstream
-=======
->>>>>>> eebba29d56347b9a22d33664fe98ea08f4bcf1e0
->>>>>>> Stashed changes
 
+        
     def loc_user_places_api(self):
         
-        latitude, longitude, _, self.cellid, self.zoneid = fetch_user_coordinates_zoneid_cellid_real()
-        print(latitude, longitude, _, self.cellid, self.zoneid, "\n\n--")
+        #latitude, longitude, _, self.cellid, self.zoneid = fetch_user_coordinates_zoneid_cellid_real()
+        #print(latitude, longitude, _, self.cellid, self.zoneid, "\n\n--")
         latitude, longitude, _, self.cellid, self.zoneid = self.mec_virtual.fetch_user_coordinates_zoneid_cellid()
         print(latitude, longitude, _, self.cellid, self.zoneid)
 
         # todo to delete below
         #self.cellid, self.zoneid = "4g-macro-cell-4", "zone02"
-<<<<<<< Updated upstream
-        print("\n\n****************",latitude, longitude, _, self.cellid, self.zoneid)
-=======
         print("\n\n************",latitude, longitude, _, self.cellid, self.zoneid)
->>>>>>> Stashed changes
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
             place_names = ', '.join(map(str, self.places_dict.keys()))

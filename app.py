@@ -51,7 +51,6 @@ def analyze_image(filename):
 
 @app.route('/api/image', methods=['POST'])
 def upload_image():
-<<<<<<< HEAD
     file = request.files.get('file')
 
     if not file or file.filename == '':
@@ -70,25 +69,3 @@ def upload_image():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=9090, debug=False)
-=======
-    if 'file' not in request.files:
-        return jsonify(error="No file part in the request"), 400
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify(error="No selected file"), 400
-    if file:
-        filename = os.path.join(UPLOAD_FOLDER, file.filename)
-        file.save(filename)
-        # Generated image prompt
-        sim_score, image_info, image_prompt = mec.analyze_image_api(filename)
-        print(f"received image and saved {filename}")
-        print(sim_score, image_info)
-        return jsonify(success=True, message=image_info), 200
-
-if __name__ == '__main__':
-    print("http://127.0.0.1:9090")
-<<<<<<< Updated upstream
-    socketio.run(app, host='0.0.0.0',port=9090, debug=False)
-=======
-    socketio.run(app, host='0.0.0.0',port=9090, debug=False)
->>>>>>> Stashed changes
