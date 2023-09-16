@@ -36,7 +36,7 @@ class VecDataBase():
 
         return self.search_db_raw(query_embedding, corpus, corpus_embeddings, threshold, top_n)
     
-    def search_db_raw(self, query_embedding, corpus, corpus_embeddings, threshold=0.2, top_n = 2):
+    def search_db_raw(self, query_embedding, corpus, corpus_embeddings, threshold=0.6, top_n = 1):
         # Find the most similar sentences
         # hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=2)
         cosine_scores = util.pytorch_cos_sim(query_embedding, corpus_embeddings)        

@@ -68,7 +68,9 @@ class MECApp():
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
             place_names = ', '.join(map(str, self.places_dict.keys()))
-            self.convo.messages[0]["content"] = self.convo.messages[0]["content"].replace("[locations]", place_names)
+            
+            self.convo.messages[0]["content"] = f"be a helpful local guide at {place_names}. Respond concisely and cheerfully."
+            
             print(f"\n\n{self.convo.messages}\n\n")
             return (latitude, longitude), self.places_dict #(latitude, longitude) Egyption Museum: 43.731724, 7.423574
         except:
