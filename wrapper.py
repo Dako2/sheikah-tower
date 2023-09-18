@@ -30,7 +30,7 @@ class MECApp():
         self.v = VecDataBase(db_csv_paths = DATA_PATH, update_db=True)
         self.mec_virtual = VirtualMEC()
         self.places_dict = {}
-        with open('monoco_zone_cellid_places.json', 'r') as file:
+        with open('./db/monoco_zone_cellid_places.json', 'r') as file:
             self.db_json = json.load(file) 
         self.cellid = None
         self.zoneid = None

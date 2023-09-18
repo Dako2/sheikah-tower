@@ -1,6 +1,6 @@
+from flask import Flask, request, jsonify
 from concurrent.futures import ThreadPoolExecutor
 import logging
-from flask import Flask, request, jsonify
 from llm.llm_agent import Conversation
 import openai
 from environment import OPENAI_API_KEY
