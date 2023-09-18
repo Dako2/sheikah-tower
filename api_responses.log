@@ -64,3 +64,13 @@
 2023-09-17 21:45:15,145 -  * Debugger PIN: 145-398-379
 2023-09-17 21:48:36,467 - 127.0.0.1 - - [17/Sep/2023 21:48:36] "[33mGET / HTTP/1.1[0m" 404 -
 2023-09-17 21:48:37,105 - 127.0.0.1 - - [17/Sep/2023 21:48:37] "[33mGET / HTTP/1.1[0m" 404 -
+2023-09-17 21:51:46,478 - Nearby locations: {'Hotel Ambassador Hyrule': {'latitude': 43.7329145, 'longitude': 7.417962600000003, 'db_path': './db/csv/Hotel Ambassador Hyrule.csv'}, "Prince's Palace of Hyrule": {'latitude': 43.7314751, 'longitude': 7.4198627, 'db_path': "./db/csv/Prince's Palace of Hyrule.csv"}, 'Carrefour Hyrule': {'latitude': 43.7307533, 'longitude': 7.417138899999999, 'db_path': './db/csv/Carrefour Hyrule.csv'}}
+2023-09-17 21:51:46,479 - 192.168.86.34 - - [17/Sep/2023 21:51:46] "POST /api/places HTTP/1.1" 200 -
+2023-09-17 21:51:47,459 - Nearby locations: {'Hotel Ambassador Hyrule': {'latitude': 43.7329145, 'longitude': 7.417962600000003, 'db_path': './db/csv/Hotel Ambassador Hyrule.csv'}, "Prince's Palace of Hyrule": {'latitude': 43.7314751, 'longitude': 7.4198627, 'db_path': "./db/csv/Prince's Palace of Hyrule.csv"}, 'Carrefour Hyrule': {'latitude': 43.7307533, 'longitude': 7.417138899999999, 'db_path': './db/csv/Carrefour Hyrule.csv'}}
+2023-09-17 21:51:47,460 - 192.168.86.34 - - [17/Sep/2023 21:51:47] "POST /api/places HTTP/1.1" 200 -
+2023-09-17 21:51:48,558 - Nearby locations: {'Hotel Ambassador Hyrule': {'latitude': 43.7329145, 'longitude': 7.417962600000003, 'db_path': './db/csv/Hotel Ambassador Hyrule.csv'}, "Prince's Palace of Hyrule": {'latitude': 43.7314751, 'longitude': 7.4198627, 'db_path': "./db/csv/Prince's Palace of Hyrule.csv"}, 'Carrefour Hyrule': {'latitude': 43.7307533, 'longitude': 7.417138899999999, 'db_path': './db/csv/Carrefour Hyrule.csv'}}
+2023-09-17 21:51:48,559 - 192.168.86.34 - - [17/Sep/2023 21:51:48] "POST /api/places HTTP/1.1" 200 -
+2023-09-17 21:51:49,560 - Nearby locations: {'Hotel Ambassador Hyrule': {'latitude': 43.7329145, 'longitude': 7.417962600000003, 'db_path': './db/csv/Hotel Ambassador Hyrule.csv'}, "Prince's Palace of Hyrule": {'latitude': 43.7314751, 'longitude': 7.4198627, 'db_path': "./db/csv/Prince's Palace of Hyrule.csv"}}
+2023-09-17 21:51:49,561 - 192.168.86.34 - - [17/Sep/2023 21:51:49] "POST /api/places HTTP/1.1" 200 -
+2023-09-17 21:51:53,538 - User: hi, Bot: Hello! How can I assist you today at Hotel Ambassador Hyrule, Prince's Palace of Hyrule?
+2023-09-17 21:51:53,539 - 192.168.86.34 - - [17/Sep/2023 21:51:53] "POST /api/chat HTTP/1.1" 200 -
