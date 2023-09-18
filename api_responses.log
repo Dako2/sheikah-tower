@@ -74,3 +74,29 @@
 2023-09-17 21:51:49,561 - 192.168.86.34 - - [17/Sep/2023 21:51:49] "POST /api/places HTTP/1.1" 200 -
 2023-09-17 21:51:53,538 - User: hi, Bot: Hello! How can I assist you today at Hotel Ambassador Hyrule, Prince's Palace of Hyrule?
 2023-09-17 21:51:53,539 - 192.168.86.34 - - [17/Sep/2023 21:51:53] "POST /api/chat HTTP/1.1" 200 -
+2023-09-17 21:57:31,008 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-17 21:57:31,253 - Use pytorch device: cpu
+2023-09-17 21:57:36,511 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9090
+ * Running on http://192.168.86.160:9090
+2023-09-17 21:57:36,511 - [33mPress CTRL+C to quit[0m
+2023-09-17 21:57:36,512 -  * Restarting with stat
+2023-09-17 21:57:38,349 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-17 21:57:38,603 - Use pytorch device: cpu
+2023-09-17 21:57:43,542 -  * Debugger is active!
+2023-09-17 21:57:43,553 -  * Debugger PIN: 145-398-379
+2023-09-17 21:57:47,549 - Nearby locations: {'Hotel Ambassador Hyrule': {'latitude': 43.7329145, 'longitude': 7.417962600000003, 'db_path': './db/csv/Hotel Ambassador Hyrule.csv'}, "Prince's Palace of Hyrule": {'latitude': 43.7314751, 'longitude': 7.4198627, 'db_path': "./db/csv/Prince's Palace of Hyrule.csv"}, 'Carrefour Hyrule': {'latitude': 43.7307533, 'longitude': 7.417138899999999, 'db_path': './db/csv/Carrefour Hyrule.csv'}}
+2023-09-17 21:57:47,550 - 192.168.86.34 - - [17/Sep/2023 21:57:47] "POST /api/places HTTP/1.1" 200 -
+2023-09-17 21:57:48,611 - Nearby locations: {'Hotel Ambassador Hyrule': {'latitude': 43.7329145, 'longitude': 7.417962600000003, 'db_path': './db/csv/Hotel Ambassador Hyrule.csv'}, "Prince's Palace of Hyrule": {'latitude': 43.7314751, 'longitude': 7.4198627, 'db_path': "./db/csv/Prince's Palace of Hyrule.csv"}, 'Carrefour Hyrule': {'latitude': 43.7307533, 'longitude': 7.417138899999999, 'db_path': './db/csv/Carrefour Hyrule.csv'}}
+2023-09-17 21:57:48,612 - 192.168.86.34 - - [17/Sep/2023 21:57:48] "POST /api/places HTTP/1.1" 200 -
+2023-09-17 21:57:49,533 - Nearby locations: {'Hotel Ambassador Hyrule': {'latitude': 43.7329145, 'longitude': 7.417962600000003, 'db_path': './db/csv/Hotel Ambassador Hyrule.csv'}, "Prince's Palace of Hyrule": {'latitude': 43.7314751, 'longitude': 7.4198627, 'db_path': "./db/csv/Prince's Palace of Hyrule.csv"}, 'Carrefour Hyrule': {'latitude': 43.7307533, 'longitude': 7.417138899999999, 'db_path': './db/csv/Carrefour Hyrule.csv'}}
+2023-09-17 21:57:49,534 - 192.168.86.34 - - [17/Sep/2023 21:57:49] "POST /api/places HTTP/1.1" 200 -
+2023-09-17 21:57:50,739 - Nearby locations: {'Hotel Ambassador Hyrule': {'latitude': 43.7329145, 'longitude': 7.417962600000003, 'db_path': './db/csv/Hotel Ambassador Hyrule.csv'}, "Prince's Palace of Hyrule": {'latitude': 43.7314751, 'longitude': 7.4198627, 'db_path': "./db/csv/Prince's Palace of Hyrule.csv"}}
+2023-09-17 21:57:50,740 - 192.168.86.34 - - [17/Sep/2023 21:57:50] "POST /api/places HTTP/1.1" 200 -
+2023-09-17 21:58:08,158 -  * Detected change in '/Users/dako22/Documents/GitHub/sheikah-tower/wrapper.py', reloading
+2023-09-17 21:58:08,757 -  * Restarting with stat
+2023-09-17 21:58:10,785 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-17 21:58:11,056 - Use pytorch device: cpu
+2023-09-17 21:58:15,874 -  * Debugger is active!
+2023-09-17 21:58:15,883 -  * Debugger PIN: 145-398-379
