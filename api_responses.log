@@ -45,3 +45,22 @@
 2023-09-17 21:35:59,220 -  * Debugger PIN: 145-398-379
 2023-09-17 21:36:36,573 - 127.0.0.1 - - [17/Sep/2023 21:36:36] "[33mGET / HTTP/1.1[0m" 404 -
 2023-09-17 21:36:37,705 - 127.0.0.1 - - [17/Sep/2023 21:36:37] "[33mGET / HTTP/1.1[0m" 404 -
+2023-09-17 21:41:46,718 - NumExpr defaulting to 8 threads.
+2023-09-17 21:42:54,460 - NumExpr defaulting to 8 threads.
+2023-09-17 21:43:37,294 - NumExpr defaulting to 8 threads.
+2023-09-17 21:45:01,861 - NumExpr defaulting to 8 threads.
+2023-09-17 21:45:01,996 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-17 21:45:02,283 - Use pytorch device: cpu
+2023-09-17 21:45:08,329 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9090
+ * Running on http://192.168.86.160:9090
+2023-09-17 21:45:08,329 - [33mPress CTRL+C to quit[0m
+2023-09-17 21:45:08,330 -  * Restarting with stat
+2023-09-17 21:45:09,923 - NumExpr defaulting to 8 threads.
+2023-09-17 21:45:10,064 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-17 21:45:10,319 - Use pytorch device: cpu
+2023-09-17 21:45:15,134 -  * Debugger is active!
+2023-09-17 21:45:15,145 -  * Debugger PIN: 145-398-379
+2023-09-17 21:48:36,467 - 127.0.0.1 - - [17/Sep/2023 21:48:36] "[33mGET / HTTP/1.1[0m" 404 -
+2023-09-17 21:48:37,105 - 127.0.0.1 - - [17/Sep/2023 21:48:37] "[33mGET / HTTP/1.1[0m" 404 -

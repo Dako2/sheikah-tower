@@ -10,6 +10,7 @@ import json
 import time
 import image_vecdb
 from mec_apis.mec_virutal_server import VirtualMEC
+
 # [skip if saved already] convert text in db into embeddings
 #text_to_ebds_csv('db/loc_apiexhibit-info.csv','db/exhibit-info-ebds.csv')
 #text_to_ebds_csv('db/user-data.csv','db/user-data-ebds.csv')

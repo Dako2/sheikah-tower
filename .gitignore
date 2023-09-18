@@ -3,7 +3,8 @@ app.log
 *.jpeg
 *.jpg
 testdata/
-not_upload/
+_not_upload/
+uploads/
 .DS_Store
 
 *.log
