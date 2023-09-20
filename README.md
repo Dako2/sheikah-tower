@@ -26,3 +26,5 @@ We are striving to maximize the potential of edge resources, including computing
 pip install -r requirements.txt
 
 <h4> Step 2 </h4>
+
+run app.py
