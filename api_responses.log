@@ -100,3 +100,18 @@
 2023-09-17 21:58:11,056 - Use pytorch device: cpu
 2023-09-17 21:58:15,874 -  * Debugger is active!
 2023-09-17 21:58:15,883 -  * Debugger PIN: 145-398-379
+2023-09-26 22:15:35,163 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-26 22:15:35,472 - Use pytorch device: cpu
+2023-09-26 22:15:41,716 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9090
+ * Running on http://192.168.86.164:9090
+2023-09-26 22:15:41,717 - [33mPress CTRL+C to quit[0m
+2023-09-26 22:15:41,717 -  * Restarting with stat
+2023-09-26 22:15:43,737 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-09-26 22:15:43,994 - Use pytorch device: cpu
+2023-09-26 22:15:48,893 -  * Debugger is active!
+2023-09-26 22:15:48,905 -  * Debugger PIN: 145-398-379
+2023-09-26 22:17:50,919 - 192.168.86.164 - - [26/Sep/2023 22:17:50] "[33mGET / HTTP/1.1[0m" 404 -
+2023-09-26 22:17:50,952 - 192.168.86.164 - - [26/Sep/2023 22:17:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-09-26 22:18:02,542 - 192.168.86.164 - - [26/Sep/2023 22:18:02] "[33mGET http://post/ HTTP/1.1[0m" 404 -
