@@ -26,5 +26,6 @@ We are striving to maximize the potential of edge resources, including computing
 pip install -r requirements.txt
 
 <h4> Step 2 </h4>
+create a file named ".env" and add OPENAI_API_KEY=YOUR OPENAI API KEY
 
 run app.py
