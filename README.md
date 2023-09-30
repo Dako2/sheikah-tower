@@ -1,4 +1,4 @@
-<span style="color: red"> **** We are hiring! looking for network engineering supports for deployment and scale ᓚᘏᗢ **** </span>
+<h3> <span style="color: red"> **** We are hiring! looking for network engineering supports for deployment and scale ᓚᘏᗢ **** </span></h3>
 
 <h1> Hey there! We are Sheikah 👋 </h1>
 
