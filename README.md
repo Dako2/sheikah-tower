@@ -1,5 +1,5 @@
 *** We are hiring! *** 
-Looking for network engineering supports for deployment and scale. ᓚᘏᗢ Please contact qitang2023@gmail.com
+Looking for backend / network / cloud engineering supports for deployment and scale. ᓚᘏᗢ Please contact qitang2023@gmail.com
 
 
 
