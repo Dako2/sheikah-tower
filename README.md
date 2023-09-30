@@ -1,4 +1,6 @@
-<h3> <span style="color: red"> *** We are hiring! *** looking for network engineering supports for deployment and scale ᓚᘏᗢ please contact qitang2023@gmail.com </span></h3>
+*** We are hiring! *** looking for network engineering supports for deployment and scale ᓚᘏᗢ please contact qitang2023@gmail.com
+
+
 
 <h1> Hey there! We are Sheikah 👋 </h1>
 
