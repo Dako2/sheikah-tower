@@ -1,4 +1,4 @@
-*** We are hiring! *** looking for network engineering supports for deployment and scale ᓚᘏᗢ please contact qitang2023@gmail.com
+*** We are hiring! *** looking for network engineering supports for deployment and scale. ᓚᘏᗢ Please contact qitang2023@gmail.com
 
 
 
