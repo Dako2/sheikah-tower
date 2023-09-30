@@ -1,3 +1,5 @@
+**We are hiring! looking for network engineering supports for deployment and scale ~**
+
 <h1> Hey there! We are Sheikah 👋 </h1>
 
 <h3> 👨🏻‍💻 About Us and this Project </h3>
