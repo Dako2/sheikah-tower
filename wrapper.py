@@ -20,11 +20,9 @@ DATA_PATH = {
 
 FETCH_URL = 'https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='
 
-
 def load_jsonl(file_path):
     with open(file_path, 'r') as file:
         return [json.loads(line) for line in file]
-
 
 class MECApp:
     def __init__(self, user_IP_address='10.100.0.1') -> None:
