@@ -1,0 +1,25 @@
+{
+{
+    "event_time": "Tue, October 17, 1:05pm - 1:20pm | SJCC - Lower Level - LL20A", "event_title": "SONiC Foundation Updates: SONiC 2023 Unleashing the Power of Open Networking", "event_details": "SONiC Foundation Updates: SONiC 2023 Unleashing the Power of Open Networking", "event_speaker_list": "Arpit Joshipura  - The Linux Foundation\n, Xin Liu - Microsoft"
+  }
+,
+{
+    "event_time": "Tue, October 17, 1:00pm - 1:05pm | SJCC - Lower Level - LL20A", "event_title": "Welcome to the SONiC Workshop hosted by The Linux Foundation", "event_details": "Welcome to the SONiC Workshop hosted by The Linux Foundation", "event_speaker_list": "Arpit Joshipura  - The Linux Foundation\n, Xin Liu - Microsoft"
+  }
+,
+{
+    "event_time": "Tue, October 17, 1:25pm - 1:45pm | SJCC - Lower Level - LL20A", "event_title": "First Telco use case disaggregated SONiC Switches in production", "event_details": "The first disaggregated SONiC switches are now in production for Telco use case at Orange International Networks. In this presentation we will explain our product journey to customize SONiC network OS for Telco use case including security, management and lessons learned. Several switches, based on EdgeCore device, are deployed for enterprise customer GbE fiber access.", "event_speaker_list": "Jamil Chawki  - Orange International Networks"
+  },
+{
+    "event_time": "Tue, October 17, 3:05pm - 3:25pm | SJCC - Lower Level - LL20A", "event_title": "Next Generation Fabric for AI/ML use cases: Disaggregated Scheduled Fabric using SONiC",
+    "event_details": "With the advent of AI/ML applications driving the next technological revolution, Data Center network infrastructure that powers these AI/ML clusters takes center stage in enabling that leap forward. In this talk we will focus on how traditional ECMP based IP fabrics fall short of meeting the requirements for such applications and how  Disaggregated Scheduled Fabric built using SONiC enables optimal usage of the available network bandwidth. We will share how we developed, deployed and analyzed both technologies and will share how they compare.",
+    "event_speaker_list": "Praveen Bhagwatula  - Cisco\n, Prashanth Buddhala  - Cisco"
+  }
+,
+{
+    "event_time": "Thu, October 19, 3:20pm - 3:40pm | SJCC - Concourse Level - 210DH",
+    "event_title": "A SONiC-based Open Packet Broker for 5G Monitoring",
+    "event_details": "SONiC has become the NOS of choice for cloud networks, leveraging openness and data center scale providing a state-of-the-art microservices architecture suitable for network packet brokering. Typical Network Packet Brokers are appliance-based, and proprietary in nature, making them expensive and inflexible. With SONiC, Aviz has developed the industry’s first Open Packet Broker to help customers perform inline Security monitoring without compromising Network Availability. The Open Packet Broker solution harnesses the power of the NVIDIA Spectrum Ethernet ASIC providing Security team to select and distribute traffic across multiple inline security tools. SONiC is the perfect platform for a standardized packet broker solution that can provide a true Software Defined TAP and Software Defined Aggregation on hardware accelerated, highly programmable switch platforms like Spectrum Ethernet. ",
+    "event_speaker_list": "Charles Conte  - Comcast\n,David Iles - NVIDIA"
+  }
+}

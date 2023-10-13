@@ -1,4 +1,31 @@
 {
+    "zone07": {
+        "sjc-wifi-access": {
+            "places":{
+                "ocp-summit-2023":{
+                    "latitude": 37.3289935,
+                    "longitude": -121.8890406,
+                    "db_path": "./db/csv/ocp.csv"
+                },
+                "ocp-expo-hall":{
+                    "latitude": 37.3285192,
+                    "longitude": -121.8896465,
+                    "db_path": "./db/csv/ocp.csv"
+                },
+                "ocp-keynotes":{
+                    "latitude": 37.3289245,
+                    "longitude": -121.8898931,
+                    "db_path": "./db/csv/ocp.csv"
+                },
+                "ocp-sheikah-booth":{
+                    "latitude": 37.328656,
+                    "longitude": -121.8894412,
+                    "db_path": "./db/csv/ocp.csv"
+                }
+            }
+        }
+
+    },
     "zone02": {
         "5g-small-cell-4": {
             "places": {

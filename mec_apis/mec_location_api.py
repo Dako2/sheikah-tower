@@ -15,10 +15,10 @@ def fetch_user_coordinates(api_url="http://127.0.0.1:9091/get_location"):
             data = response.json()
             return data['latitude'], data['longitude'], data['timestamp_seconds']
         else:
-            print(f"Error: Received status code {response.status_code}")
+            #print(f"Error: Received status code {response.status_code}")
             return {}
     except requests.RequestException as e:
-        print(f"Error fetching location data: {e}")
+        #print(f"Error fetching location data: {e}")
         return {}
     
 def fetch_user_coordinates_zoneid_cellid(api_url="http://127.0.0.1:9091/get_location"):
@@ -30,7 +30,7 @@ def fetch_user_coordinates_zoneid_cellid(api_url="http://127.0.0.1:9091/get_loca
             data = response.json()
             return data['latitude'], data['longitude'], data['timestamp_seconds'], data['cellid'], data['zoneid']
         else:
-            print(f"Error: Received status code {response.status_code}")
+            #print(f"Error: Received status code {response.status_code}")
             return None
     except requests.RequestException as e:
         print(f"Error fetching location data: {e}")
