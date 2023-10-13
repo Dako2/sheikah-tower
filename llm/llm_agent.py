@@ -8,6 +8,7 @@ class Conversation:
         self.messages = [{"role": "system", "content": "Be a helpful tour guide"},]
     
     def call_api(self):
+        print("\n\n To_ChatGPT",self.messages)
         # text + user inputs as inputs of calling LLM APIs
         response = openai.ChatCompletion.create(
             model='gpt-3.5-turbo',

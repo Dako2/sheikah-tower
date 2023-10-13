@@ -14,7 +14,8 @@ from environment import OPENAI_API_KEY
 openai.api_key = OPENAI_API_KEY
 
 DATA_PATH = {
-    'loc1': 'db/exhibit-info.csv',
+    #'loc1': 'db/exhibit-info.csv',
+    'loc1': 'db/csv/ocp.csv',
     'user1': 'db/user-data.csv'
 }
 
@@ -59,12 +60,13 @@ class MECApp:
         except:
             return (None, None), {}
 
-    def chat_api(self, user_input):
+    def chat_api_original(self, user_input):
         loc1_found_db_texts = ""
         if self.places_dict:
             for loc_name, value in self.places_dict.items():
                 try:
                     text, _ = self.v.search_db(user_input, value['db_path'])
+                    print(value['db_path'],"\n\n\n\n\n\n\n\nxxx")
                     loc1_found_db_texts += text
                 except:
                     pass
@@ -72,6 +74,18 @@ class MECApp:
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
         return output
 
+
+    def chat_api(self, user_input):
+        loc1_found_db_texts = ""
+        try:
+            text, _ = self.v.search_db(user_input, './db/csv/ocp.csv')
+            loc1_found_db_texts += text
+        except:
+            pass
+        user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
+        output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
+        return output
+    
     def loc_user_api(self):
         try:
             return fetch_user_coordinates()
