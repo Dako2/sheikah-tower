@@ -11,3 +11,5 @@ uploads/
 __pycache__
 */__pycache__
 *.log
+llm/__pycache__/
+mec_apis/__pycache__/
