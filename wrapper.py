@@ -15,7 +15,7 @@ openai.api_key = OPENAI_API_KEY
 
 DATA_PATH = {
     #'loc1': 'db/exhibit-info.csv',
-    'loc1': 'db/csv/ocp.csv',
+    'loc1': 'db/ocp/ocp.json',
     'user1': 'db/user-data.csv'
 }
 
@@ -63,10 +63,10 @@ class MECApp:
     def chat_api_original(self, user_input):
         loc1_found_db_texts = ""
         if self.places_dict:
-            for loc_name, value in self.places_dict.items():
+            for loc_name, places in self.places_dict.items():
                 try:
-                    text, _ = self.v.search_db(user_input, value['db_path'])
-                    print(value['db_path'],"\n\n\n\n\n\n\n\nxxx")
+                    text, _ = self.v.search_db(user_input, places['db_path'])
+                    print(places['db_path'],"\n\n\n\n\n\n\n\nxxx")
                     loc1_found_db_texts += text
                 except:
                     pass
