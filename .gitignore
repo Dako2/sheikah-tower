@@ -2,6 +2,8 @@
 app.log
 *.jpeg
 *.jpg
+*.pyc
+*.npy
 testdata/
 _not_upload/
 uploads/
@@ -10,6 +12,5 @@ uploads/
 *.log
 __pycache__
 */__pycache__
-*.log
 llm/__pycache__/
 mec_apis/__pycache__/
