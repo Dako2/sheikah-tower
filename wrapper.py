@@ -21,7 +21,9 @@ DATA_PATH = {
 
 FETCH_URL = "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address="
 DEFAULT_PROMPT = "Respond friendly, cheerfully and concisely within 50 words. Keep the conversation's flow by politely asking short question or for clarification or additional details when unsure."
-DEFAULT_PROMPT_PHOTO = "The user took a photo."
+DEFAULT_PROMPT_PHOTO = "The user took a photo." #the user input prompt in image case
+UPDATE_VectDataBase = False
+
 
 def load_jsonl(file_path):
     with open(file_path, 'r') as file:
@@ -32,7 +34,7 @@ class MECApp:
         self.convo = Conversation()
         self.ip_addr = user_IP_address
 
-        self.v = VecDataBase(DATA_PATH, update_db=True)
+        self.v = VecDataBase(DATA_PATH, update_db=UPDATE_VectDataBase)
         self.mec_virtual = VirtualMEC()
         self.places_dict = {}
         
