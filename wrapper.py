@@ -14,9 +14,9 @@ from environment import OPENAI_API_KEY
 openai.api_key = OPENAI_API_KEY
 
 DATA_PATH = {
-    'loc1': './db/ocp/ocp.json',
-    'loc2': './db/ocp/ocp_speakers.json',
-    'user1': './db/users/user-data.json'
+    #'loc1': './db/ocp/ocp.json',
+    #'loc2': './db/ocp/ocp_speakers.json',
+    #'user': './db/users/user-data.json'
 }
 
 FETCH_URL = "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address="
@@ -57,12 +57,25 @@ class MECApp:
         except:
             return [None, None, None]
         
+    def check_places_dict(self, places_dict):
+        places_dict = {key: val for key, val in places_dict.items() if val['db_path']}
+        return places_dict
+
     def loc_user_places_api(self):
         latitude, longitude, _, self.cellid, self.zoneid = self.mec_virtual.fetch_user_coordinates_zoneid_cellid()
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
+            print(self.places_dict)
+            """
+            'places': {
+                'ocp-summit-2023': {'latitude': 37.3289935, 'longitude': -121.8890406, 'db_path': './db/ocp/ocp.json'}, 
+                'ocp-speakers': {'latitude': 37.3285192, 'longitude': -121.8896465, 'db_path': './db/ocp/ocp_speakers.json'}, 
+                'user': {'latitude': 37.3291639, 'longitude': -121.889011, 'db_path': ''}
+                }
+            """
             place_names = ', '.join(map(str, self.places_dict.keys()))
             self.convo.messages[0]["content"] = f"Be an assistant and guide at {place_names}. " + DEFAULT_PROMPT
+            
             return (latitude, longitude), self.places_dict
         except:
             return (None, None), {}
@@ -72,12 +85,11 @@ class MECApp:
         score = []
         if self.places_dict:
             for loc_name, places in self.places_dict.items():
-                try:
-                    print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
-                    text, score = self.v.search_db(user_input, places['db_path'], threshold=0.6, top_n = 3)
-                    loc1_found_db_texts += text
-                except:
-                    pass
+                print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
+                text, score = self.v.search_db(user_input, places['db_path'], threshold=0.6, top_n = 3)
+                print(text, score)
+                loc1_found_db_texts += text
+                
         #loc1_found_db_texts = loc1_found_db_texts[:1000] #todo adjust length of pulled db text
         #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         user_found_db_texts = ""

@@ -2,8 +2,8 @@
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
 import json
-import pickle
 import os
+from datetimerange import DateTimeRange
 
 NAME_EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
@@ -73,7 +73,6 @@ class VecDataBase():
         similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
         print(similarity.item())
 
-
     def get_embed_path(self, db_json_file):
         return db_json_file + '.ebd'
 
@@ -83,9 +82,10 @@ class VecDataBase():
             self.load_db([db_json_file])
 
         corpus_ebd = self.cache_vector_database[db_ebd_file]
-        query_embedding = self.model.encode(user_input, convert_to_numpy=True) #user input -> query_embedding
-        cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))      
+        corpus_json = self.cache_vector_database[db_json_file]
         
+        query_embedding = self.model.encode(user_input, convert_to_numpy=True) #user input -> query_embedding
+        cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))
         top_results_index = np.argpartition(-cosine_scores[0], range(top_n))[0:top_n]
 
         result = ''
@@ -96,24 +96,46 @@ class VecDataBase():
                 result_id = list(corpus_ebd.keys())[idx]
                 result += json.dumps(corpus_json[int(result_id.split('_')[0][2::])])
                 score.append(cosine_scores[0][idx].item())
+
         if result:
             print("\n most similar sentences in corpus:", result, "\n avg. score:",sum(score)/len(score),"\n")
         else:
             print("none found")
-
         return result, score
 
     def search_db_by_time(self, user_input_time, db_json_file):
-        #todo
-        pass
+        if db_json_file not in list(self.cache_vector_database.keys()): #quick load corpus
+            self.load_db([db_json_file])
 
+        corpus_json = self.cache_vector_database[db_json_file]
+        events_in_range = []
+        for event in corpus_json:
+            time_range = self.__extract_event_time_range(event)
+            if user_input_time in time_range:
+                events_in_range.append(event)
+        return events_in_range
+
+    def __extract_event_time_range(self, event):
+        event_time_str = event['event_time'].split(' | ')[0]
+        parts = event_time_str.split(', ')
+        date_str = ", ".join(parts[:-1])
+        timestamps = parts[-1].split(' - ')
+        start_time_str, end_time_str = timestamps[0], timestamps[1]
+        return DateTimeRange(date_str + ', ' + start_time_str,date_str + ', ' + end_time_str)
+    
 if __name__ == "__main__":
     DATA_PATH={'loc1':'./db/ocp/ocp.json'} #{'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
+
     v = VecDataBase(DATA_PATH, False)
     
+    # Test 1 starts from here: test the search by time
+    ############################
     db_json_file = './db/ocp/ocp.json'
     user_input = "hi, what's SONIC?"
     threshold=0.2
     top_n = 5
-    
-    
+
+    # Test 2 starts from here 
+    ############################
+    print("Found " + str(len(v.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))) + " events")
+    print(v.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))
