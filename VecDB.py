@@ -12,8 +12,34 @@ class VecDataBase():
         self.cache_vector_database = {}
         self.model = SentenceTransformer(NAME_EMBEDDING_MODEL)
         if update_db and db_paths: #initalialize embeddings
-            for _, db_path in db_paths.items():
-                self.convert_json_to_embeddings(db_path) 
+            self.load_db(db_paths)
+
+    def load_db(self, db_paths):
+        for db_json_file in db_paths:
+            if db_json_file in list(self.cache_vector_database.keys()): #quick load corpus_json 
+                corpus_json = self.cache_vector_database[db_json_file]
+                print(f"loaded json {db_json_file}")
+            else:
+                with open(db_json_file, 'r', encoding='utf-8') as file:
+                    corpus_json = json.load(file)
+                self.cache_vector_database[db_json_file] = corpus_json 
+                
+            db_ebd_file = self.get_embed_path(db_json_file)
+            if not os.path.exists(db_ebd_file):
+                self.convert_json_to_embeddings(db_json_file)
+            if db_ebd_file in list(self.cache_vector_database.keys()): #quick load embeddings corpus_ebd
+                corpus_ebd = self.cache_vector_database[db_ebd_file]
+                print(f"loaded vdb {db_ebd_file}")
+            else:
+                if os.path.getsize(db_ebd_file) > 0:
+                    with open(db_ebd_file, 'r', encoding='utf-8') as file:
+                        try:
+                            corpus_ebd = json.load(file)
+                        except json.JSONDecodeError as e:
+                            print(f"Error decoding JSON: {e}")
+                else:
+                    print(f"File is empty: {db_ebd_file}")
+                self.cache_vector_database[db_ebd_file] = corpus_ebd
 
     def convert_json_to_embeddings(self, db_paths):
         with open(db_paths, 'r') as file:
@@ -47,32 +73,16 @@ class VecDataBase():
         similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
         print(similarity.item())
 
-    def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 2): #todo
-        if db_json_file in list(self.cache_vector_database.keys()): #quick load corpus_json 
-            corpus_json = self.cache_vector_database[db_json_file]
-            print(f"loaded json {db_json_file}")
-        else:
-            with open(db_json_file, 'r', encoding='utf-8') as file:
-                corpus_json = json.load(file)
-            self.cache_vector_database[db_json_file] = corpus_json 
-            
-        db_ebd_file = db_json_file + '.ebd'
-        if not os.path.exists(db_ebd_file):
-            self.convert_json_to_embeddings(db_json_file)
-        if db_ebd_file in list(self.cache_vector_database.keys()): #quick load embeddings corpus_ebd
-            corpus_ebd = self.cache_vector_database[db_ebd_file]
-            print(f"loaded vdb {db_ebd_file}")
-        else:
-            if os.path.getsize(db_ebd_file) > 0:
-                with open(db_ebd_file, 'r', encoding='utf-8') as file:
-                    try:
-                        corpus_ebd = json.load(file)
-                    except json.JSONDecodeError as e:
-                        print(f"Error decoding JSON: {e}")
-            else:
-                print(f"File is empty: {db_ebd_file}")
-            self.cache_vector_database[db_ebd_file] = corpus_ebd
 
+    def get_embed_path(self, db_json_file):
+        return db_json_file + '.ebd'
+
+    def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 2): #todo
+        db_ebd_file = self.get_embed_path(db_json_file)
+        if db_ebd_file not in list(self.cache_vector_database.keys()): #quick load corpus
+            self.load_db([db_json_file])
+
+        corpus_ebd = self.cache_vector_database[db_ebd_file]
         query_embedding = self.model.encode(user_input, convert_to_numpy=True) #user input -> query_embedding
         cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))      
         
@@ -93,54 +103,17 @@ class VecDataBase():
 
         return result, score
 
+    def search_db_by_time(self, user_input_time, db_json_file):
+        #todo
+        pass
+
 if __name__ == "__main__":
     DATA_PATH={'loc1':'./db/ocp/ocp.json'} #{'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
-    self = VecDataBase(DATA_PATH, False)
+    v = VecDataBase(DATA_PATH, False)
     
     db_json_file = './db/ocp/ocp.json'
     user_input = "hi, what's SONIC?"
     threshold=0.2
     top_n = 5
-   
-    if db_json_file in list(self.cache_vector_database.keys()): #quick load corpus_json 
-        corpus_json = self.cache_vector_database[db_json_file]
-        print(f"loaded json {db_json_file}")
-    else:
-        with open(db_json_file, 'r', encoding='utf-8') as file:
-            corpus_json = json.load(file)
-        self.cache_vector_database[db_json_file] = corpus_json 
-
-    db_ebd_file = db_json_file + '.ebd'
-    if not os.path.exists(db_ebd_file):
-        self.convert_json_to_embeddings(db_json_file)
-    if db_ebd_file in list(self.cache_vector_database.keys()): #quick load embeddings corpus_ebd
-        corpus_ebd = self.cache_vector_database[db_ebd_file]
-        print(f"loaded vdb {db_ebd_file}")
-    else:
-        if os.path.getsize(db_ebd_file) > 0:
-            with open(db_ebd_file, 'r', encoding='utf-8') as file:
-                try:
-                    corpus_ebd = json.load(file)
-                except json.JSONDecodeError as e:
-                    print(f"Error decoding JSON: {e}")
-        else:
-            print(f"File is empty: {db_ebd_file}")
-        self.cache_vector_database[db_ebd_file] = corpus_ebd
-
-    query_embedding = self.model.encode(user_input, convert_to_numpy=True) #user input -> query_embedding
-    cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))      
     
-    top_results_index = np.argpartition(-cosine_scores[0], range(top_n))[0:top_n]
-
-    result = ''
-    score = []
-    for idx in top_results_index.tolist():
-        if cosine_scores[0][idx].item() > threshold:
-            #print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
-            result_id = list(corpus_ebd.keys())[idx]
-            result += json.dumps(corpus_json[int(result_id.split('_')[0][2::])])
-            score.append(cosine_scores[0][idx].item())
-    if result:
-        print("\n most similar sentences in corpus:", result, "\n avg. score:",sum(score)/len(score),"\n")
-    else:
-        print("none found")
+    
