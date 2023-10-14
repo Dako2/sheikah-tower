@@ -5,7 +5,6 @@ import json
 import os
 from datetimerange import DateTimeRange
 
-
 NAME_EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
 class VecDataBase():
@@ -74,7 +73,6 @@ class VecDataBase():
         similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
         print(similarity.item())
 
-
     def get_embed_path(self, db_json_file):
         return db_json_file + '.ebd'
 
@@ -85,8 +83,7 @@ class VecDataBase():
 
         corpus_ebd = self.cache_vector_database[db_ebd_file]
         query_embedding = self.model.encode(user_input, convert_to_numpy=True) #user input -> query_embedding
-        cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))      
-        
+        cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))
         top_results_index = np.argpartition(-cosine_scores[0], range(top_n))[0:top_n]
 
         result = ''
@@ -97,11 +94,11 @@ class VecDataBase():
                 result_id = list(corpus_ebd.keys())[idx]
                 result += json.dumps(corpus_json[int(result_id.split('_')[0][2::])])
                 score.append(cosine_scores[0][idx].item())
+
         if result:
             print("\n most similar sentences in corpus:", result, "\n avg. score:",sum(score)/len(score),"\n")
         else:
             print("none found")
-
         return result, score
 
     def search_db_by_time(self, user_input_time, db_json_file):
@@ -124,7 +121,6 @@ class VecDataBase():
         start_time_str, end_time_str = timestamps[0], timestamps[1]
         return DateTimeRange(date_str + ', ' + start_time_str,date_str + ', ' + end_time_str)
     
-
 if __name__ == "__main__":
     DATA_PATH={'loc1':'./db/ocp/ocp.json'} #{'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
 
