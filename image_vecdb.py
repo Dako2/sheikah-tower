@@ -8,12 +8,17 @@ from PIL import Image
 from datasets import load_dataset
 
 IMAGE_EMBEDDING_MODEL = "google/vit-base-patch16-224"
-PROMPT_TEMPLATE = """
+PROMPT_TEMPLATE_OLD = """
 The user just took a photo of “{name}”. 
 Tell the user a story about the photo, it can be history related, a fun fact, 
 future event or just any stories that can raise the user's interests.
 More info about the image: “{text}”.
 At the end of the conversation, ask the user a related question that the user might be able to guess.
+"""
+
+PROMPT_TEMPLATE = """
+Found local information:
+The photo name is “{name}”. More details “{text}”.
 """
 
 class ImageVecDataBase():

@@ -20,6 +20,7 @@ DATA_PATH = {
 
 FETCH_URL = "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address="
 DEFAULT_PROMPT = "Respond friendly, cheerfully and concisely within 50 words. Keep the conversation's flow by politely asking short question or for clarification or additional details when unsure."
+DEFAULT_PROMPT_PHOTO = "The user took a photo."
 
 def load_jsonl(file_path):
     with open(file_path, 'r') as file:
@@ -43,16 +44,16 @@ class MECApp:
 
     def analyze_image_api(self, filename='./upload/image.jpeg'):
         img = image_vecdb.Image.open(filename)
+        
         try:
             most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
-            self.convo.messages.append({
-                "role": "system",
-                "content": self.image_db.db_image_prompt(most_similar_img_idx)
-            })
-            return [sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx)]
+            
+            output = self.convo.rolling_convo(DEFAULT_PROMPT_PHOTO, self.image_db.db_image_prompt(most_similar_img_idx), "")
+            
+            return [sim_score, self.image_db.db_image_info(most_similar_img_idx), output]
         except:
             return [None, None, None]
-
+        
     def loc_user_places_api(self):
         latitude, longitude, _, self.cellid, self.zoneid = self.mec_virtual.fetch_user_coordinates_zoneid_cellid()
         try:
