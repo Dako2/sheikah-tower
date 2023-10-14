@@ -24,7 +24,7 @@ class VecDataBase():
                     corpus_json = json.load(file)
                 self.cache_vector_database[db_json_file] = corpus_json 
                 
-            db_ebd_file = db_json_file + '.ebd'
+            db_ebd_file = self.get_embed_path(db_json_file)
             if not os.path.exists(db_ebd_file):
                 self.convert_json_to_embeddings(db_json_file)
             if db_ebd_file in list(self.cache_vector_database.keys()): #quick load embeddings corpus_ebd
@@ -73,8 +73,15 @@ class VecDataBase():
         similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
         print(similarity.item())
 
+
+    def get_embed_path(self, db_json_file):
+        return db_json_file + '.ebd'
+
     def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 2): #todo
-        corpus_ebd = self.cache_vector_database[db_json_file + '.ebd']
+        if self.get_embed_path(db_json_file) not in list(self.cache_vector_database.keys()): #quick load corpus_json
+            self.load_db([db_json_file])
+
+        corpus_ebd = self.cache_vector_database[self.get_embed_path(db_json_file)]
         query_embedding = self.model.encode(user_input, convert_to_numpy=True) #user input -> query_embedding
         cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))      
         
@@ -95,6 +102,9 @@ class VecDataBase():
 
         return result, score
 
+    def search_db_by_time(self, user_input_time, db_json_file):
+        #todo
+        pass
 
 if __name__ == "__main__":
     DATA_PATH={'loc1':'./db/ocp/ocp.json'} #{'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
