@@ -15,7 +15,7 @@ openai.api_key = OPENAI_API_KEY
 
 DATA_PATH = {
     #'loc1': 'db/exhibit-info.csv',
-    'loc1': 'db/csv/ocp.csv',
+    'loc1': 'db/ocp/ocp.json',
     'user1': 'db/user-data.csv'
 }
 
@@ -29,7 +29,7 @@ class MECApp:
     def __init__(self, user_IP_address='10.100.0.1') -> None:
         self.convo = Conversation()
         self.ip_addr = user_IP_address
-        self.v = VecDataBase(db_csv_paths=DATA_PATH, update_db=True)
+        self.v = VecDataBase(db_csv_paths=DATA_PATH, update_db=False)
         self.mec_virtual = VirtualMEC()
         self.places_dict = {}
         with open('./db/monoco_zone_cellid_places.json', 'r') as file:
@@ -60,22 +60,25 @@ class MECApp:
         except:
             return (None, None), {}
 
-    def chat_api_original(self, user_input):
+    def chat_api(self, user_input):
         loc1_found_db_texts = ""
         if self.places_dict:
-            for loc_name, value in self.places_dict.items():
+            for loc_name, places in self.places_dict.items():
                 try:
-                    text, _ = self.v.search_db(user_input, value['db_path'])
-                    print(value['db_path'],"\n\n\n\n\n\n\n\nxxx")
+                    text, _ = self.v.search_db(user_input, places['db_path'])
+                    print(places['db_path'],"\n\n\n\n\n\n\n\nxxx")
                     loc1_found_db_texts += text
                 except:
                     pass
-        user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
+        #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
+        user_found_db_texts = ''
+        print(loc1_found_db_texts)
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
+        
         return output
 
 
-    def chat_api(self, user_input):
+    def chat_api1(self, user_input):
         loc1_found_db_texts = ""
         try:
             text, _ = self.v.search_db(user_input, './db/csv/ocp.csv')

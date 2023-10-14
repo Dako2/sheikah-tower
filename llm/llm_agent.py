@@ -30,7 +30,7 @@ class Conversation:
         if found_db_texts:
             self.messages.append({"role": "system", "content": f"Found some local knowledge: {found_db_texts}"})
             #vec_info = f'\n<p style="color: red;">found local info: {found_db_texts}</p>\n'
-            vec_info = f'\n === found local vectdata === \n{found_db_texts}\n'
+            vec_info = f'\n\n === found local vectdata === \n{found_db_texts}\n'
 
         #if found_db_user_data:
         #    self.messages.append({"role": "system", "content": f"The virtual user info: {found_db_user_data}"})
