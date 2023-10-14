@@ -67,6 +67,7 @@ class ImageVecDataBase():
 
     # return (most_similar_img, most_similar_img_db_index, sim_score)
     def search_db(self, user_image, threshold=0.2, top_n = 5):
+        top_n = min(top_n, len(self.dataset))
         query_embedding = self.embed_images([user_image])
         
         # Find the most similar image
@@ -95,9 +96,10 @@ class ImageVecDataBase():
         return ""
 
 if __name__ == '__main__':
-    image_db = ImageVecDataBase('./db/images', './db/images/embeddings')
+    # image folder path, and the image metadata json file path
+    image_db = ImageVecDataBase('./db/images-ocp', './db/images-ocp/embeddings')
     # Read image
-    img = Image.open('./test_data/images/test_0001.jpeg')
+    img = Image.open('./test_data/images/test_etsi_logo.jpeg')
     most_similar_img, most_similar_img_idx, sim_score = image_db.search_db(img)
     
     print("Score: %.4f" % (sim_score))
