@@ -14,9 +14,8 @@ from environment import OPENAI_API_KEY
 openai.api_key = OPENAI_API_KEY
 
 DATA_PATH = {
-    #'loc1': 'db/exhibit-info.csv',
-    'loc1': 'db/ocp/ocp.json',
-    'user1': 'db/user-data.csv'
+    'loc1': './db/ocp/ocp.json',
+    'user1': './db/user-data.csv'
 }
 
 FETCH_URL = 'https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='
@@ -29,11 +28,14 @@ class MECApp:
     def __init__(self, user_IP_address='10.100.0.1') -> None:
         self.convo = Conversation()
         self.ip_addr = user_IP_address
-        self.v = VecDataBase(db_csv_paths=DATA_PATH, update_db=False)
+
+        self.v = VecDataBase(DATA_PATH, update_db=False)
         self.mec_virtual = VirtualMEC()
         self.places_dict = {}
+        
         with open('./db/monoco_zone_cellid_places.json', 'r') as file:
             self.db_json = json.load(file)
+        
         self.cellid = None
         self.zoneid = None
         self.image_db = image_vecdb.ImageVecDataBase('./db/images', './db/images/embeddings')
@@ -42,10 +44,10 @@ class MECApp:
         img = image_vecdb.Image.open(filename)
         try:
             most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
-            self.convo.messages = [{
+            self.convo.messages.append({
                 "role": "system",
                 "content": self.image_db.db_image_prompt(most_similar_img_idx)
-            }]
+            })
             return [sim_score, self.image_db.db_image_info(most_similar_img_idx), self.image_db.db_image_prompt(most_similar_img_idx)]
         except:
             return [None, None, None]
@@ -61,24 +63,22 @@ class MECApp:
             return (None, None), {}
 
     def chat_api(self, user_input):
+
         loc1_found_db_texts = ""
         if self.places_dict:
             for loc_name, places in self.places_dict.items():
-                try:
-                    text, _ = self.v.search_db(user_input, places['db_path'])
-                    print(places['db_path'],"\n\n\n\n\n\n\n\nxxx")
-                    loc1_found_db_texts += text
-                except:
-                    pass
+                text, _ = self.v.search_db(user_input, places['db_path'])
+                print(places['db_path'],"\n\n\n\n\n\n\n\n xxx")
+                loc1_found_db_texts += text
         #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         user_found_db_texts = ''
         print(loc1_found_db_texts)
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
-        
+
         return output
 
-
     def chat_api1(self, user_input):
+
         loc1_found_db_texts = ""
         try:
             text, _ = self.v.search_db(user_input, './db/csv/ocp.csv')
@@ -87,6 +87,7 @@ class MECApp:
             pass
         user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
+
         return output
     
     def loc_user_api(self):

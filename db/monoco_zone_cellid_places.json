@@ -5,22 +5,22 @@
                 "ocp-summit-2023":{
                     "latitude": 37.3289935,
                     "longitude": -121.8890406,
-                    "db_path": "./db/ocp/ocp.json.pkl"
+                    "db_path": "./db/ocp/ocp.json"
                 },
                 "ocp-expo-hall":{
                     "latitude": 37.3285192,
                     "longitude": -121.8896465,
-                    "db_path": "./db/ocp/ocp.json.pkl"
+                    "db_path": "./db/ocp/ocp.json"
                 },
                 "ocp-keynotes":{
                     "latitude": 37.3289245,
                     "longitude": -121.8898931,
-                    "db_path": "./db/ocp/ocp.json.pkl"
+                    "db_path": "./db/ocp/ocp.json"
                 },
                 "ocp-sheikah-booth":{
-                    "latitude": 37.328656,
+                    "latitude": 37,
                     "longitude": -121.8894412,
-                    "db_path": "./db/ocp/ocp.json.pkl"
+                    "db_path": "./db/ocp/ocp.json"
                 }
             }
         }
