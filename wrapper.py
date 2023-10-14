@@ -63,7 +63,6 @@ class MECApp:
             return (None, None), {}
 
     def chat_api(self, user_input):
-
         loc1_found_db_texts = ""
         if self.places_dict:
             for loc_name, places in self.places_dict.items():
@@ -73,7 +72,6 @@ class MECApp:
                     loc1_found_db_texts += text
                 except:
                     pass
-        
         #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         user_found_db_texts = ""
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
@@ -119,3 +117,4 @@ class MECApp:
 if __name__ == "__main__":
     mec = MECApp('10.100.0.1')
     mec.loc_user_places_api()
+    mec.chat_api("what's Sonic?")
