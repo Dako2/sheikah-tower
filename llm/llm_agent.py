@@ -41,7 +41,6 @@ class Conversation:
         #    vec_info = f'\n<p style="color: red;">found user info: {found_db_user_data}</p>\n'
         
         chat_response = self.call_api() # use new added user_input to call API again
-
         if found_db_texts:    
             self.messages = self.messages[:-1]
 

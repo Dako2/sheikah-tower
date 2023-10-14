@@ -65,7 +65,7 @@ class MECApp:
         latitude, longitude, _, self.cellid, self.zoneid = self.mec_virtual.fetch_user_coordinates_zoneid_cellid()
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
-            print(self.places_dict)
+            #print(self.places_dict)
             """
             'places': {
                 'ocp-summit-2023': {'latitude': 37.3289935, 'longitude': -121.8890406, 'db_path': './db/ocp/ocp.json'}, 

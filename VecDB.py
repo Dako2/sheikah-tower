@@ -78,6 +78,7 @@ class VecDataBase():
 
     def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 2): #todo
         db_ebd_file = self.get_embed_path(db_json_file)
+
         if db_ebd_file not in list(self.cache_vector_database.keys()): #quick load corpus
             self.load_db([db_json_file])
 
@@ -90,13 +91,15 @@ class VecDataBase():
 
         result = ''
         score = []
-        print(f"searching score: {top_results_index}")
+
         for idx in top_results_index.tolist():
             if cosine_scores[0][idx].item() > threshold:
                 #print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
                 result_id = list(corpus_ebd.keys())[idx]
                 result += json.dumps(corpus_json[int(result_id.split('_')[0][2::])])
                 score.append(cosine_scores[0][idx].item())
+            else:
+                print(f"searching score: {cosine_scores[0][idx].item()}")
 
         if result:
             print("\n most similar sentences in corpus:", result, "\n avg. score:",sum(score)/len(score),"\n")

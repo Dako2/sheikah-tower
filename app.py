@@ -43,7 +43,7 @@ def places_api():
     #nearby_locations['user'] = {'latitude': lat, 'longitude': lgn,'db_path':''}
     
     logging.info(f'Nearby locations: {nearby_locations}')
-    print({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
+    #print({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
 
     return jsonify({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
 
