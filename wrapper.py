@@ -15,6 +15,7 @@ openai.api_key = OPENAI_API_KEY
 
 DATA_PATH = {
     'loc1': './db/ocp/ocp.json',
+    'loc2': './db/ocp/ocp_speakers.json',
     'user1': './db/users/user-data.json'
 }
 
@@ -31,7 +32,7 @@ class MECApp:
         self.convo = Conversation()
         self.ip_addr = user_IP_address
 
-        self.v = VecDataBase(DATA_PATH, update_db=False)
+        self.v = VecDataBase(DATA_PATH, update_db=True)
         self.mec_virtual = VirtualMEC()
         self.places_dict = {}
         
