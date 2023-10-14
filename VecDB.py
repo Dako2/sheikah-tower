@@ -139,5 +139,5 @@ if __name__ == "__main__":
 
     # Test 2 starts from here 
     ############################
-    print("Found " + str(len(self.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))) + " events")
-    print(self.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))
+    print("Found " + str(len(v.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))) + " events")
+    print(v.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))
