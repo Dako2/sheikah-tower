@@ -6,11 +6,6 @@
                     "latitude": 37.3289935,
                     "longitude": -121.8890406,
                     "db_path": "./db/ocp/ocp.json"
-                },
-                "ocp-speakers":{
-                    "latitude": 37.3285192,
-                    "longitude": -121.8896465,
-                    "db_path": "./db/ocp/ocp_speakers.json"
                 }
             }
         }
@@ -38,6 +33,11 @@
                     "latitude": 37,
                     "longitude": -121.8894412,
                     "db_path": ""
+                },
+                "ocp-speakers":{
+                    "latitude": 37.3285192,
+                    "longitude": -121.8896465,
+                    "db_path": "./db/ocp/ocp_speakers.json"
                 }
             }
         }
