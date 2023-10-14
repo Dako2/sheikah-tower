@@ -79,7 +79,7 @@ class VecDataBase():
 
     def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 2): #todo
         db_ebd_file = self.get_embed_path(db_json_file)
-        if db_ebd_file not in list(self.cache_vector_database.keys()): #quick load corpus_json
+        if db_ebd_file not in list(self.cache_vector_database.keys()): #quick load corpus
             self.load_db([db_json_file])
 
         corpus_ebd = self.cache_vector_database[db_ebd_file]
