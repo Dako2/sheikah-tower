@@ -69,17 +69,18 @@ class MECApp:
             for loc_name, places in self.places_dict.items():
                 try:
                     print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
-                    text, _ = self.v.search_db(user_input, places['db_path'])
+                    text, score = self.v.search_db(user_input, places['db_path'])
                     loc1_found_db_texts += text
                 except:
                     pass
-        loc1_found_db_texts = loc1_found_db_texts[:1000]
+        loc1_found_db_texts = loc1_found_db_texts[:1000] #todo adjust length of pulled db text
         #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         user_found_db_texts = ""
         print(loc1_found_db_texts,"\n\n======found vector above database=======\n")
+        print(score) # todo to delete when clean up
 
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
-
+        
         return output
     
     def loc_user_api(self):

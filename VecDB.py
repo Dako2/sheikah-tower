@@ -42,12 +42,12 @@ class VecDataBase():
         embeddings_dict = {key: embedding for key, embedding in zip(corpus_dict.keys(), embeddings)}
         return embeddings_dict
  
-    def similarity(self, sentences, threshold=0.6, top_n = 2):
+    def similarity(self, sentences, threshold=0.6, top_n = 2): # todo @yi
         embeddings = self.model.encode(sentences, convert_to_numpy=True)
         similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
         print(similarity.item())
 
-    def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 1):
+    def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 2): #todo
         if db_json_file in list(self.cache_vector_database.keys()): #quick load corpus_json 
             corpus_json = self.cache_vector_database[db_json_file]
             print(f"loaded json {db_json_file}")
