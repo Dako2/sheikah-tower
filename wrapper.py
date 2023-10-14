@@ -70,11 +70,11 @@ class MECApp:
             for loc_name, places in self.places_dict.items():
                 try:
                     print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
-                    text, score = self.v.search_db(user_input, places['db_path'], threshold=0.2, top_n =5)
+                    text, score = self.v.search_db(user_input, places['db_path'], threshold=0.6, top_n = 3)
                     loc1_found_db_texts += text
                 except:
                     pass
-        loc1_found_db_texts = loc1_found_db_texts[:1000] #todo adjust length of pulled db text
+        #loc1_found_db_texts = loc1_found_db_texts[:1000] #todo adjust length of pulled db text
         #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         user_found_db_texts = ""
 

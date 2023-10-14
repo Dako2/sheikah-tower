@@ -32,7 +32,7 @@ class Conversation:
         self.messages.append({"role": "user", "content": user_input})
         vec_info = ''
         if found_db_texts:
-            self.messages.append({"role": "assistant", "content": f"Found some local knowledge: {found_db_texts}"})
+            self.messages.append({"role": "system", "content": f"Found some local knowledge: {found_db_texts}"})
             #vec_info = f'\n<p style="color: red;">found local info: {found_db_texts}</p>\n'
             vec_info = f'\n\n === found local vectdata === \n{found_db_texts}\n'
         
