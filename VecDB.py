@@ -84,6 +84,7 @@ class VecDataBase():
             self.load_db([db_json_file])
 
         corpus_ebd = self.cache_vector_database[db_ebd_file]
+        corpus_json = self.cache_vector_database[db_json_file]
         query_embedding = self.model.encode(user_input, convert_to_numpy=True) #user input -> query_embedding
         cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))      
         
