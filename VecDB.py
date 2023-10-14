@@ -8,7 +8,6 @@ import os
 NAME_EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
 class VecDataBase():
-
     def __init__(self, db_paths, update_db = True):
         self.cache_vector_database = {}
         self.model = SentenceTransformer(NAME_EMBEDDING_MODEL)
@@ -48,8 +47,7 @@ class VecDataBase():
         similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
         print(similarity.item())
 
-    def search_db(self, user_input, db_json_file, threshold=0.2, top_n = 5):
-
+    def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 1):
         if db_json_file in list(self.cache_vector_database.keys()): #quick load corpus_json 
             corpus_json = self.cache_vector_database[db_json_file]
             print(f"loaded json {db_json_file}")
@@ -61,8 +59,6 @@ class VecDataBase():
         db_ebd_file = db_json_file + '.ebd'
         if not os.path.exists(db_ebd_file):
             self.convert_json_to_embeddings(db_json_file)
-        
-        print(f"{db_ebd_file}...........123")
         if db_ebd_file in list(self.cache_vector_database.keys()): #quick load embeddings corpus_ebd
             corpus_ebd = self.cache_vector_database[db_ebd_file]
             print(f"loaded vdb {db_ebd_file}")
@@ -75,11 +71,10 @@ class VecDataBase():
                         print(f"Error decoding JSON: {e}")
             else:
                 print(f"File is empty: {db_ebd_file}")
-                
             self.cache_vector_database[db_ebd_file] = corpus_ebd
 
         query_embedding = self.model.encode(user_input, convert_to_numpy=True) #user input -> query_embedding
-        cosine_scores = util.pytorch_cos_sim(query_embedding, corpus_ebd.values())       
+        cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))      
         top_results = np.argpartition(-cosine_scores, range(top_n))[0:top_n]
 
         result = ''
@@ -92,54 +87,19 @@ class VecDataBase():
                 score.append(cosine_scores[0][idx].item())
         if result:
             print("\n most similar sentences in corpus:", result, "\n avg. score:",sum(score)/len(score),"\n")
+        else:
+            print("none found")
         return result, score
 
-    def search_db_v0(self, user_input, db_text_file, threshold=0.2, top_n = 5):
-        query_embedding = self.model.encode(user_input, convert_to_numpy=True)
-        # Load corpus and corpus embedding
-        if db_text_file in list(self.cache_vector_database.keys()):
-            corpus_embeddings = self.cache_vector_database[db_text_file]
-            print(f"loading the cached database {db_text_file}")
-        else:
-            if db_text_file[-3::] == 'npy':
-                with open(db_text_file, 'r') as file:
-                    corpus = [line.strip() for line in file.readlines()] #List
-                corpus_embeddings = np.load(db_text_file)
-                self.cache_vector_database[db_text_file] = corpus_embeddings
-                
-            elif db_text_file[-3::] == 'pkl':
-                with open(db_text_file, "rb") as file:
-                    corpus_embeddings = pickle.load(file)
-                self.cache_vector_database[db_text_file] = list(corpus_embeddings.values())
-                corpus_mapper = list(corpus_embeddings.keys())
-            else:
-                print(f"error in opening the database {db_text_file}")
-        
-        return self.search_db_raw(query_embedding, corpus, corpus_embeddings, threshold, top_n)
-    
-    def search_db_raw(self, query_embedding, corpus, corpus_embeddings, threshold=0.6, top_n = 1):
-        # Find the most similar sentences
-        # hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=2)
-        cosine_scores = util.pytorch_cos_sim(query_embedding, corpus_embeddings)        
-        top_results = np.argpartition(-cosine_scores, range(top_n))[0:top_n]
-        result = ""
-        score = []
-        for idx in top_results[0]:
-        #the index of the list; if only corpus then return the corpus[idx]; 
-        #if pickel then return corpus[idx] and parse it json_data[int(x.split('_')[0][2::])] 'id0' and find the index in the original json file. 
-            if cosine_scores[0][idx].item() > threshold:
-                #print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
-                result += corpus[idx]
-                score.append(cosine_scores[0][idx].item())
-        if result:
-            print("\n most similar sentences in corpus:", result, "avg. score:",sum(score)/len(score),"\n")
-        return result, score
-    
 if __name__ == "__main__":
     DATA_PATH={'loc1':'./db/ocp/ocp.json'} #{'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
     v = VecDataBase(DATA_PATH, True)
-    #res, score = v.search_db('Nefertiti Bust-Nefertiti','db/exhibit-info.csv')
-    #x = v.text_to_ebds_json('./db/ocp/ocp.jsonl')
-
-
-
+    
+    db_json_file = './db/ocp/ocp.json'
+    user_input = "hi, what's SONIC?"
+    threshold=0.2
+    top_n = 1
+    v.search_db(user_input, db_json_file,threshold,top_n)
+    v.search_db("how's going", db_json_file,threshold,top_n)
+    v.search_db(user_input, db_json_file,threshold,top_n)
+    v.search_db(user_input, db_json_file,threshold,top_n)

@@ -6,6 +6,18 @@
                     "latitude": 37.3289935,
                     "longitude": -121.8890406,
                     "db_path": "./db/ocp/ocp.json"
+                }
+            }
+        }
+
+    },
+    "zonex": {
+        "sjc-wifi-access": {
+            "places":{
+                "ocp-summit-2023":{
+                    "latitude": 37.3289935,
+                    "longitude": -121.8890406,
+                    "db_path": "./db/ocp/ocp.json"
                 },
                 "ocp-expo-hall":{
                     "latitude": 37.3285192,
@@ -20,7 +32,7 @@
                 "ocp-sheikah-booth":{
                     "latitude": 37,
                     "longitude": -121.8894412,
-                    "db_path": "./db/ocp/ocp.json"
+                    "db_path": ""
                 }
             }
         }

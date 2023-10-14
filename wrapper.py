@@ -15,7 +15,7 @@ openai.api_key = OPENAI_API_KEY
 
 DATA_PATH = {
     'loc1': './db/ocp/ocp.json',
-    'user1': './db/user-data.csv'
+    'user1': './db/users/user-data.json'
 }
 
 FETCH_URL = 'https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='
@@ -33,7 +33,7 @@ class MECApp:
         self.mec_virtual = VirtualMEC()
         self.places_dict = {}
         
-        with open('./db/monoco_zone_cellid_places.json', 'r') as file:
+        with open("./db/monoco_zone_cellid_places.json", 'r') as file:
             self.db_json = json.load(file)
         
         self.cellid = None
@@ -57,7 +57,7 @@ class MECApp:
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
             place_names = ', '.join(map(str, self.places_dict.keys()))
-            self.convo.messages[0]["content"] = f"be a helpful local guide at {place_names}. Respond concisely and cheerfully."
+            self.convo.messages[0]["content"] = f"Be an assistant and guide at {place_names}. Answer cheerfully, concisely, and shortly less than 50 words. Ask for calrification when needed."
             return (latitude, longitude), self.places_dict
         except:
             return (None, None), {}
@@ -67,21 +67,24 @@ class MECApp:
         loc1_found_db_texts = ""
         if self.places_dict:
             for loc_name, places in self.places_dict.items():
-                text, _ = self.v.search_db(user_input, places['db_path'])
-                print(places['db_path'],"\n\n\n\n\n\n\n\n xxx")
-                loc1_found_db_texts += text
+                try:
+                    print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
+                    text, _ = self.v.search_db(user_input, places['db_path'])
+                    loc1_found_db_texts += text
+                except:
+                    pass
+        
         #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
-        user_found_db_texts = ''
-        print(loc1_found_db_texts)
+        user_found_db_texts = ""
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
-
+        print(loc1_found_db_texts,"\n\n======found vector above database=======\n")
         return output
 
     def chat_api1(self, user_input):
 
         loc1_found_db_texts = ""
         try:
-            text, _ = self.v.search_db(user_input, './db/csv/ocp.csv')
+            text, _ = self.v.search_db(user_input, './db/ocp/ocp.csv')
             loc1_found_db_texts += text
         except:
             pass

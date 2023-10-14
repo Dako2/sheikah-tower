@@ -1,4 +1,5 @@
-{
+[
+    {
     "id0": "NameLink",
     "id1": "OriginHyrule",
     "id2": "SpeciesHylian",
@@ -8,4 +9,5 @@
     "id6": "Main AntagonistGanon or Ganondorf",
     "id7": "Iconic OutfitGreen tunic and hat",
     "id8": "Main WeaponMaster Sword"
-}
+    }
+]
