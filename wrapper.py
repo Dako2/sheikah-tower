@@ -18,7 +18,8 @@ DATA_PATH = {
     'user1': './db/users/user-data.json'
 }
 
-FETCH_URL = 'https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='
+FETCH_URL = "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address="
+DEFAULT_PROMPT = "Respond friendly, cheerfully and concisely within 50 words. Keep the conversation's flow by politely asking short question or for clarification or additional details when unsure."
 
 def load_jsonl(file_path):
     with open(file_path, 'r') as file:
@@ -57,7 +58,7 @@ class MECApp:
         try:
             self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
             place_names = ', '.join(map(str, self.places_dict.keys()))
-            self.convo.messages[0]["content"] = f"Be an assistant and guide at {place_names}. Answer cheerfully, concisely, and shortly less than 50 words. Ask for calrification when needed."
+            self.convo.messages[0]["content"] = f"Be an assistant and guide at {place_names}. " + DEFAULT_PROMPT
             return (latitude, longitude), self.places_dict
         except:
             return (None, None), {}
@@ -77,19 +78,6 @@ class MECApp:
         user_found_db_texts = ""
         print(loc1_found_db_texts,"\n\n======found vector above database=======\n")
 
-        output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
-
-        return output
-
-    def chat_api1(self, user_input):
-
-        loc1_found_db_texts = ""
-        try:
-            text, _ = self.v.search_db(user_input, './db/ocp/ocp.csv')
-            loc1_found_db_texts += text
-        except:
-            pass
-        user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
 
         return output
