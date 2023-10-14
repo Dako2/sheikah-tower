@@ -1,5 +1,14 @@
-__pycache__
-*.pyc
-.DS_Store
 .env
 app.log
+*.jpeg
+*.jpg
+*.pyc
+testdata/
+_not_upload/
+uploads/
+.DS_Store
+
+*.log
+__pycache__
+*/__pycache__
+*.log

@@ -1,11 +1,15 @@
 sentence_transformers
 openai
-dotenv
+# dotenv
 python-dotenv
 torch
 pandas
 numpy
-json
+# json
 requests
-time
-math
+# time
+# math
+transformers
+datasets
+matplotlib
+flask

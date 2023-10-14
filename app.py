@@ -1,88 +1,137 @@
+from flask import Flask, request, jsonify
+from werkzeug.datastructures import FileStorage
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
 import logging
-import eventlet
-from flask import Flask, render_template_string
-from flask_socketio import SocketIO, emit
 from llm.llm_agent import Conversation
 import openai
 from environment import OPENAI_API_KEY
 import wrapper
+import os
 
-eventlet.monkey_patch()
-conversation = Conversation()  # An instance of the Conversation class to handle the chat.
-openai.api_key = OPENAI_API_KEY
+from uuid import uuid4
 
+# Initialize executor and set workers
+executor = ThreadPoolExecutor(max_workers=4)
+
+UPLOAD_FOLDER = 'uploads'
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+
+# Set up Flask and logging
 app = Flask(__name__)
-socketio = SocketIO(app, logger=True, engineio_logger=True, cors_allowed_origins="*")
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+openai.api_key = OPENAI_API_KEY
 mec = wrapper.MECApp()
 
-@app.route('/')
-def chat():
-    chat_history = "".join([f"<p><strong>{message['role'].capitalize()}:</strong> {message['content']}</p>" for message in conversation.messages])
-    return render_template_string("""
-        <html>
-        <head>
-        <title>OpenAI Chatbot</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
-        <style>
-            body {
-                display: flex;
-                flex-direction: column;
-                height: 100vh;
-                margin: 0;
-            }
+def fetch_chat_response(user_message):
+    return mec.chat_api(user_message)
 
-            #chatbox {
-                flex: 1;
-                overflow-y: auto;
-                padding: 10px;
-                border-bottom: 1px solid #ccc;
-            }
-        </style>
-        </head>
-        <body>
-            <h1>Chat with OpenAI</h1>
-            <div id="chatbox">
-                {{ chat_history|safe }}
-            </div>
-            <form onsubmit="sendMessage(event)">
-                <input type="text" name="message" id="messageInput" placeholder="Enter your message">
-                <button type="submit">Send</button>
-            </form>
-            <script>
-                var socket = io.connect('http://localhost:9090');
-                
-                socket.on('new message', function(data) {
-                    var messageElement = document.createElement('p');
-                    messageElement.innerHTML = '<strong>' + data.sender + ':</strong> ' + data.message;
-                    var chatbox = document.getElementById('chatbox');
-                    chatbox.appendChild(messageElement);
-                    chatbox.scrollTop = chatbox.scrollHeight;
-                });
+@app.route('/api/location', methods=['POST'])
+def location_api(ip_addr = '10.10.0.1'):
+    lat, lgn, _ = mec.loc_user_api(ip_addr)
+    logging.info(f'Location: {lat}, {lgn}')
+    return jsonify({'latitude': lat, 'longitude': lgn})
 
-                function sendMessage(event) {
-                    event.preventDefault();
-                    var inputElement = document.getElementById('messageInput');
-                    var message = inputElement.value;
-                    socket.emit('message sent', {'message': message});
-                    inputElement.value = '';
-                }
-            </script>
-        </body>
-        </html>
-    """, chat_history=chat_history)
+def fetch_places_data():
+    return mec.loc_user_places_api()
 
-@socketio.on('message sent')
-def handle_message(data):
-    user_message = data['message']
-    logging.info(f'User sent message: {user_message}')
-    emit('new message', {'sender': 'You', 'message': user_message}, broadcast=True)
-    
-    #bot_response = conversation.rolling_convo(user_message, None, None) #default
-    bot_response = mec.chat_api(user_message) #vector database
-    
-    logging.info(f'Bot response: {bot_response}')
-    emit('new message', {'sender': 'Bot', 'message': bot_response}, broadcast=True)
+@app.route('/api/places', methods=['POST'])
+def places_api():
+    (lat, lgn), nearby_locations = executor.submit(fetch_places_data).result()
+    nearby_locations['user'] = {'latitude': lat, 'longitude': lgn,'db_path':''}
+    logging.info(f'Nearby locations: {nearby_locations}')
+    print({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
+
+    return jsonify({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
+
+@app.route('/api/chat', methods=['POST'])
+def chat_api():
+    user_message = request.json['message']
+    bot_response = executor.submit(fetch_chat_response, user_message).result()
+    logging.info(f'User: {user_message}, Bot: {bot_response}')
+    return jsonify({'message': bot_response})
+
+def analyze_image(filename):
+    return mec.analyze_image_api(filename)
+
+@app.route('/api/image', methods=['POST'])
+def upload_image():
+    file = request.files.get('file')
+
+    if not file or file.filename == '':
+        return jsonify(error="No file provided"), 400
+
+    filename = os.path.join(UPLOAD_FOLDER, file.filename)
+    file.save(filename)
+
+    sim_score, image_info, image_prompts = executor.submit(analyze_image, filename).result()
+    to_sent = {'file_name':'something.jpeg','sim_score':sim_score, 'text':image_prompts}
+    if sim_score:
+        image_info['sim_score'] = sim_score
+        image_info['text'] = image_prompts
+        
+        print(image_info)
+        return jsonify(success=True, message=to_sent)
+    else:
+        return jsonify(success=True, message={"file_name": "N/A", "text": "Image not found in vector database!!!", "sim_score": None})
+
+
+class Message:
+    def __init__(self, content, chatroom_id, timestamp, sender="user"):
+        self.content = content
+        self.chatroom_id = chatroom_id
+        self.timestamp = timestamp
+        self.sender = sender  # 'user' or 'bot'
+
+@app.route('/api/messages', methods=['POST'])
+def receive_message():
+    # Get the multipart data
+    contentType = request.form.get("contentType")
+    content = request.form.get("content")
+    image_file: FileStorage = request.files.get("imageData")
+    audio_file: FileStorage = request.files.get("audioData")
+    chatRoomID = request.form.get("chatRoomID")
+    senderUserID = request.form.get("senderUserID")
+
+    # Logging the received data for debugging
+    if content:
+        print(f"Received content: {content}")
+    if image_file:
+        print(f"Received image with filename: {image_file.filename}")
+        # Save or process the image as needed
+    if audio_file:
+        print(f"Received audio with filename: {audio_file.filename}")
+        # Save or process the audio as needed
+
+    # Generate some fields for the response
+    messageID = str(uuid4())  # Generate a unique message ID
+    timestamp = datetime.utcnow()  # Current time
+    status = "sent"  # Set the status as sent once received by the server
+
+    # Construct the response based on MessageDTO
+    response_data = {
+        "messageID": messageID,
+        "chatRoomID": chatRoomID,
+        "senderUserID": chatRoomID,
+        "contentType": contentType,
+        "content": content,
+        # Storing file paths for simplicity in this example. In a real-world scenario, you'd want to handle files differently.
+        "imageData": f"/path/to/images/{image_file.filename}" if image_file else None,
+        "audioData": f"/path/to/audios/{audio_file.filename}" if audio_file else None,
+        "timestamp": timestamp.timestamp(),  # This will return the time in seconds since 1970
+        "status": status
+    }
+
+    print(f"send back \n {response_data}")
+
+    return jsonify(response_data)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=False, port=9090)
+    print("..........\n\n\n")
+    app.run(host='0.0.0.0', port=9090, debug=True)
+
+
+
+
