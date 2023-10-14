@@ -90,6 +90,7 @@ class VecDataBase():
 
         result = ''
         score = []
+        print(f"searching score: {top_results_index}")
         for idx in top_results_index.tolist():
             if cosine_scores[0][idx].item() > threshold:
                 #print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
