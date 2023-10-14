@@ -72,10 +72,13 @@ class MECApp:
                     loc1_found_db_texts += text
                 except:
                     pass
+        loc1_found_db_texts = loc1_found_db_texts[:1000]
         #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         user_found_db_texts = ""
-        output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
         print(loc1_found_db_texts,"\n\n======found vector above database=======\n")
+
+        output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
+
         return output
 
     def chat_api1(self, user_input):
@@ -117,4 +120,11 @@ class MECApp:
 if __name__ == "__main__":
     mec = MECApp('10.100.0.1')
     mec.loc_user_places_api()
-    mec.chat_api("what's Sonic?")
+    
+    try:
+        while True:  # keep running until Ctrl+C is pressed
+            user_input = input("Please enter something: ")
+            mec.chat_api(user_input)
+            
+    except KeyboardInterrupt:
+        print("\nExiting the program.")

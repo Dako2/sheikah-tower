@@ -13,7 +13,7 @@ class Conversation:
         response = openai.ChatCompletion.create(
             model='gpt-3.5-turbo',
             messages=self.messages,
-            max_tokens=4000,
+            max_tokens=500,
             temperature=1.5 #0.4 More parameters can be added if necessary
             # presence_penalty=0, frequency_penalty=0 # [-2~2]
         )
