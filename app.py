@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from werkzeug.datastructures import FileStorage
+#from werkzeug.datastructures import FileStorage
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 import logging
@@ -77,7 +77,7 @@ def upload_image():
     else:
         return jsonify(success=True, message={"file_name": "N/A", "text": "Image not found in vector database!!!", "sim_score": None})
 
-
+"""
 class Message:
     def __init__(self, content, chatroom_id, timestamp, sender="user"):
         self.content = content
@@ -126,7 +126,8 @@ def receive_message():
 
     print(f"send back \n {response_data}")
 
-    return jsonify(response_data)
+    return jsonify(response_data) 
+"""
 
 if __name__ == '__main__':
     print("..........\n\n\n")
