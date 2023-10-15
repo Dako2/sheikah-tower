@@ -60,7 +60,7 @@ class SheikahApp:
         if self.places_dict:
             for loc_name, places in self.places_dict.items():
                 print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
-                text, score = self.v.search_db(user_input, places['db_path'], threshold=0.5, top_n = 5)
+                text, score = self.v.search_db(user_input, places['db_path'], threshold=0.3, top_n = 3)
                 print(text, score)
                 loc1_found_db_texts += text
                 
