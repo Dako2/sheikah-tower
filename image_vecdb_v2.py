@@ -9,7 +9,10 @@ import matplotlib.pyplot as plt
 
 
 IMAGE_EMBEDDING_MODEL = "openai/clip-vit-base-patch16"
-PROMPT_TEMPLATE = """The photo name is “{name}”. More details “{text}”."""
+PROMPT_TEMPLATE = """
+Found local information:
+The photo name is “{name}”. More details “{text}”.
+"""
 
 class ImageVecDataBaseV2():
     def __init__(self, db_image_dir_path, db_image_embeding_path, update=True):

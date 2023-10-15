@@ -36,8 +36,8 @@ class Conversation:
             #vec_info = f'\n<p style="color: red;">found local info: {found_db_texts}</p>\n'
             vec_info = f'\n\n === found local vectdata === \n{found_db_texts}\n'
         
-        #if found_db_user_data:
-        #    self.messages.append({"role": "system", "content": f"The virtual user info: {found_db_user_data}"})
+        if found_db_user_data:
+            self.messages.append({"role": "system", "content": f"{found_db_user_data}"})
         #    vec_info = f'\n<p style="color: red;">found user info: {found_db_user_data}</p>\n'
         
         chat_response = self.call_api() # use new added user_input to call API again

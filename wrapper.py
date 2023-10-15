@@ -21,8 +21,14 @@ DATA_PATH = {
 
 FETCH_URL = "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address="
 DEFAULT_PROMPT = "Respond friendly, cheerfully and concisely within 50 words. Keep the conversation's flow by politely asking short question or for clarification or additional details when unsure."
-DEFAULT_PROMPT_PHOTO = "I found this summary of the I just took." #the user input prompt in image case
-UPDATE_VectDataBase = True
+DEFAULT_PROMPT_PHOTO = """
+The user just took a photo. 
+Tell the user a story about the photo, it can be history related, a fun fact, 
+future event or just any stories that can raise the user's interests.
+At the end of the conversation, ask the user a related question that the user might be able to guess.
+"""
+#the user input prompt in image case
+UPDATE_VectDataBase = False
 
 def load_jsonl(file_path):
     with open(file_path, 'r') as file:
@@ -42,7 +48,7 @@ class SheikahApp:
 
             print(f"image score: {sim_score}")
             
-            output = self.convo.rolling_convo(DEFAULT_PROMPT_PHOTO, self.image_db.db_image_prompt(most_similar_img_idx), "")
+            output = self.convo.rolling_convo("", self.image_db.db_image_prompt(most_similar_img_idx), DEFAULT_PROMPT_PHOTO)
             
             return [sim_score, self.image_db.db_image_info(most_similar_img_idx), output]
         except:
