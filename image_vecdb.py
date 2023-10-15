@@ -66,13 +66,15 @@ class ImageVecDataBase():
         pass
 
     # return (most_similar_img, most_similar_img_db_index, sim_score)
-    def search_db(self, user_image, threshold=0.2, top_n = 5):
+    def search_db(self, user_image, threshold=0.2, top_n = 1):
         top_n = min(top_n, len(self.dataset))
         query_embedding = self.embed_images([user_image])
         
         # Find the most similar image
         cosine_scores = util.pytorch_cos_sim(query_embedding, self.corpus_embeddings)        
         top_results = np.argpartition(-cosine_scores, range(top_n))[0:top_n]
+
+        print(cosine_scores, top_results, )
 
         # #print("\nTop {top_n} most similar sentences in corpus:")
         score = []

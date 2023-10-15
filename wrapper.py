@@ -43,13 +43,16 @@ class MECApp:
         
         self.cellid = None
         self.zoneid = None
-        self.image_db = image_vecdb.ImageVecDataBase('./db/images', './db/images/embeddings')
+        #self.image_db = image_vecdb.ImageVecDataBase('./db/images', './db/images/embeddings')
+        self.image_db = image_vecdb.ImageVecDataBase('./db/images-ocp', './db/images-ocp/embeddings')
 
-    def analyze_image_api(self, filename='./upload/image.jpeg'):
+    def analyze_image_api(self, filename='./upload/image.jpg'):
         img = image_vecdb.Image.open(filename)
         
         try:
             most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
+
+            print(f"image score: {sim_score}")
             
             output = self.convo.rolling_convo(DEFAULT_PROMPT_PHOTO, self.image_db.db_image_prompt(most_similar_img_idx), "")
             
@@ -86,7 +89,7 @@ class MECApp:
         if self.places_dict:
             for loc_name, places in self.places_dict.items():
                 print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
-                text, score = self.v.search_db(user_input, places['db_path'], threshold=0.6, top_n = 3)
+                text, score = self.v.search_db(user_input, places['db_path'], threshold=0.5, top_n = 5)
                 print(text, score)
                 loc1_found_db_texts += text
                 
