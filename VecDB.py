@@ -8,6 +8,8 @@ import nlp_time_detector as nlp_time
 
 NAME_EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
+
+
 class VecDataBase():
     def __init__(self, db_paths, update_db = True):
         self.cache_vector_database = {}
@@ -116,17 +118,20 @@ class VecDataBase():
         return result, score
 
     def search_db_by_time(self, user_input_times, db_json_file):
-        if db_json_file not in list(self.cache_vector_database.keys()): #quick load corpus
-            self.load_db([db_json_file])
+        try:
+            if db_json_file not in list(self.cache_vector_database.keys()): #quick load corpus
+                self.load_db([db_json_file])
 
-        corpus_json = self.cache_vector_database[db_json_file]
-        events_in_range = {}
-        for id, event in enumerate(corpus_json):
-            time_range = self.__extract_event_time_range(event)
-            for user_input_time in user_input_times:
-                if user_input_time in time_range:
-                    events_in_range[id] = event
-        return events_in_range
+            corpus_json = self.cache_vector_database[db_json_file]
+            events_in_range = {}
+            for id, event in enumerate(corpus_json):
+                time_range = self.__extract_event_time_range(event)
+                for user_input_time in user_input_times:
+                    if user_input_time in time_range:
+                        events_in_range[id] = event
+            return events_in_range
+        except:
+            return {}
 
     def __extract_event_time_range(self, event):
         event_time_str = event['event_time'].split(' | ')[0]

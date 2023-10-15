@@ -8,7 +8,6 @@ from VecDB import VecDataBase
 from mec_apis.mec_location_api import (fetch_user_coordinates, 
                                        fetch_user_coordinates_zoneid_cellid, 
                                        fetch_user_coordinates_zoneid_cellid_real)
-from mec_apis.mec_virutal_server import VirtualMEC
 from environment import OPENAI_API_KEY
 from PIL import Image
 
@@ -30,21 +29,12 @@ def load_jsonl(file_path):
     with open(file_path, 'r') as file:
         return [json.loads(line) for line in file]
 
-class MECApp:
-    def __init__(self, user_IP_address='10.100.0.1') -> None:
+class SheikahApp:
+    def __init__(self, db_paths, image_db_paths, update_db) -> None:
         self.convo = Conversation()
-        self.ip_addr = user_IP_address
-
-        self.v = VecDataBase(DATA_PATH, update_db=UPDATE_VectDataBase)
-        self.mec_virtual = VirtualMEC()
+        self.v = VecDataBase(db_paths, update_db)
         self.places_dict = {}
-        
-        with open("./db/monoco_zone_cellid_places.json", 'r') as file:
-            self.db_json = json.load(file)
-        
-        self.cellid = None
-        self.zoneid = None
-        self.image_db = image_vecdb_v2.ImageVecDataBaseV2('./db/images-ocp', './db/images-ocp/embeddings')
+        self.image_db = image_vecdb_v2.ImageVecDataBaseV2(image_db_paths[0],image_db_paths[1])
 
     def analyze_image_api(self, filename='./upload/image.jpeg'):
         img = Image.open(filename)
@@ -58,29 +48,6 @@ class MECApp:
             return [sim_score, self.image_db.db_image_info(most_similar_img_idx), output]
         except:
             return [None, None, None]
-        
-    def check_places_dict(self, places_dict):
-        places_dict = {key: val for key, val in places_dict.items() if val['db_path']}
-        return places_dict
-
-    def loc_user_places_api(self):
-        latitude, longitude, _, self.cellid, self.zoneid = self.mec_virtual.fetch_user_coordinates_zoneid_cellid()
-        try:
-            self.places_dict = self.db_json[self.zoneid][self.cellid]["places"]
-            #print(self.places_dict)
-            """
-            'places': {
-                'ocp-summit-2023': {'latitude': 37.3289935, 'longitude': -121.8890406, 'db_path': './db/ocp/ocp.json'}, 
-                'ocp-speakers': {'latitude': 37.3285192, 'longitude': -121.8896465, 'db_path': './db/ocp/ocp_speakers.json'}, 
-                'user': {'latitude': 37.3291639, 'longitude': -121.889011, 'db_path': ''}
-                }
-            """
-            place_names = ', '.join(map(str, self.places_dict.keys()))
-            self.convo.messages[0]["content"] = f"Be an assistant and guide at {place_names}. " + DEFAULT_PROMPT
-            
-            return (latitude, longitude), self.places_dict
-        except:
-            return (None, None), {}
 
     def chat_api(self, user_input):
         loc1_found_db_texts = ""
@@ -102,13 +69,6 @@ class MECApp:
         output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
         
         return output
-    
-    def loc_user_api(self):
-        try:
-            return fetch_user_coordinates()
-        except:
-            print("user loc cannot be found")
-            return (None, None)
 
     def desert_mode(self, user_input):
         user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
@@ -127,7 +87,7 @@ class MECApp:
 
 
 if __name__ == "__main__":
-    mec = MECApp('10.100.0.1')
+    mec = SheikahApp('10.100.0.1')
     mec.loc_user_places_api()
     
     try:

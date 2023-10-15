@@ -23,7 +23,7 @@ class JsonlIterator:
         self.index = (self.index + 1) % len(self.lines)
         return data
 
-class VirtualMEC:
+class VirtualMEP:
     def __init__(self, filename='./mec_apis/api_responses.jsonl'):
         self.jsonl_iter = JsonlIterator(filename)
 
@@ -58,7 +58,7 @@ class VirtualMEC:
 
 
 # Initialize the VirtualMEC
-v = VirtualMEC()
+v = VirtualMEP()
 
 """
 def broadcast_location(latitude, longitude):

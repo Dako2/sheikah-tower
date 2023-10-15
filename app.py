@@ -8,12 +8,13 @@ import openai
 from environment import OPENAI_API_KEY
 import wrapper
 import os
-
+from mec_apis.mec_virutal_server import VirtualMEP
 from uuid import uuid4
-
+import json
 # Initialize executor and set workers
 executor = ThreadPoolExecutor(max_workers=4)
 
+openai.api_key = OPENAI_API_KEY
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
@@ -22,12 +23,15 @@ if not os.path.exists(UPLOAD_FOLDER):
 app = Flask(__name__)
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-openai.api_key = OPENAI_API_KEY
-mec = wrapper.MECApp()
+DATA_PATHS = ['./db/ocp/ocp.json', './db/sanjose/Egyptian_Museum.json']
+with open("./db/zone_cellid_places.json", 'r') as file:
+    db_json = json.load(file)
+
+mep_virtual = VirtualMEP() #
+mec = wrapper.SheikahApp(db_paths = DATA_PATHS, image_db_paths = ('./db/images-ocp', './db/images-ocp/embeddings'), update_db = False)
 
 def fetch_chat_response(user_message):
     return mec.chat_api(user_message)
-
 @app.route('/api/location', methods=['POST'])
 def location_api(ip_addr = '10.10.0.1'):
     lat, lgn, _ = mec.loc_user_api(ip_addr)
@@ -35,7 +39,21 @@ def location_api(ip_addr = '10.10.0.1'):
     return jsonify({'latitude': lat, 'longitude': lgn})
 
 def fetch_places_data():
-    return mec.loc_user_places_api()
+    latitude, longitude, _, cellid, zoneid = mep_virtual.fetch_user_coordinates_zoneid_cellid()
+    try:
+        places_dict = db_json[zoneid][cellid]["places"]
+        """
+        'places': {
+            'ocp-summit-2023': {'latitude': 37.3289935, 'longitude': -121.8890406, 'db_path': './db/ocp/ocp.json'}, 
+            'ocp-speakers': {'latitude': 37.3285192, 'longitude': -121.8896465, 'db_path': './db/ocp/ocp_speakers.json'}, 
+            'user': {'latitude': 37.3291639, 'longitude': -121.889011, 'db_path': ''}
+            }
+        """
+        #convo.messages[0]["content"] = f"Be an assistant and guide at {place_names}." + DEFAULT_PROMPT
+        place_names = ', '.join(map(str, places_dict.keys()))
+        return (latitude, longitude), places_dict
+    except:
+        return (None, None), {}
 
 @app.route('/api/places', methods=['POST'])
 def places_api():
@@ -52,9 +70,12 @@ def place_tapped():
         data = request.get_json()  # Get JSON payload
         place_name = data.get('place_name')  # Extract the place name
         print(f"Place Tapped: {place_name}")  # Log the name of the tapped place
-        
         # TODO: Perform any server-side action (e.g., store in database, etc.)
-        
+        mec.convo.messages = [{"role": "system", "content": f"Be an assistant and guide at {place_name}." + wrapper.DEFAULT_PROMPT},]
+        _, updated_places = fetch_places_data()
+
+        print(place_name, updated_places)
+        mec.places_dict = {place_name: updated_places[place_name]}
         # Responding back to the client
         return jsonify({"status": "success", "message": place_name}), 200
     except Exception as e:
@@ -86,7 +107,6 @@ def upload_image():
     if sim_score:
         image_info['sim_score'] = sim_score
         image_info['text'] = image_prompts
-        
         print(image_info)
         return jsonify(success=True, message=to_sent)
     else:

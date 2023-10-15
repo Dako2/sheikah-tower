@@ -6,6 +6,11 @@
                     "latitude": 37.3289935,
                     "longitude": -121.8890406,
                     "db_path": "./db/ocp/ocp.json"
+                },
+                "Rosicrucian Egyptian Museum":{
+                    "latitude": 37.333486,
+                    "longitude": -121.922884,
+                    "db_path": "./db/sanjose/egyptian_museum.json"
                 }
             }
         }
