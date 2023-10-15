@@ -28,7 +28,7 @@ future event or just any stories that can raise the user's interests.
 At the end of the conversation, ask the user a related question that the user might be able to guess.
 """
 #the user input prompt in image case
-UPDATE_VectDataBase = False
+UPDATE_VectDataBase = True
 
 def load_jsonl(file_path):
     with open(file_path, 'r') as file:

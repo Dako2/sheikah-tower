@@ -6,7 +6,7 @@ import csv
 trans = str.maketrans("", "", "{}")
 
 # Get all csv files in the ./csv/ directory
-fns = glob.glob("./*.csv")
+fns = glob.glob("./sanjose/museum.csv")
 
 # Loop through each file
 for fn in fns:

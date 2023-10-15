@@ -1,5 +1,41 @@
 [
     {
+        "open time": "Open Time: The Rosicrucian Egyptian Museum is open: Fridays 10 am - 5 pm Saturdays/Sundays 11 am - 6 pm "
+    },
+    {
+        "tickets purchase":" Here are the ticket prices: \n Adults (18-64) - $10.00 \n Adults (65 and older) - $8.00 \n Students with ID - $8.00 \n Children (ages 7 to 17) - $8.00 \n Children 6 and under - complimentary \n * $1.00 discount for adults members of KQED and Military with a valid ID"
+    },
+    {
+        "event_time": "Saturday, October 14, at 8:00 a.m | ",
+        "event_title": "Solar Eclipse Watch Party",
+        "event_details": "On Saturday, October 14, at 9:20 am, San Jose will experience a 75.8 percent eclipse of the Sun. Join us in the Rosicrucian Peace Garden to observe and celebrate this remarkable astronomical event, when the new moon passes directly between Earth and the Sun, obscuring more than three-quarters of our view of the Sun. Eclipse viewing glasses will be provided to the first two hundred participants. Please bring your own lawn chairs, if desired. Admission is free with paid entry to the museum.",
+        "event_speaker_list": ""
+    },
+    {
+        "event_time": "Saturday, October 14, at 1:30 p.m. | ",
+        "event_title": "Rosicrucian Peace Garden Tour",
+        "event_details": "The banks of the Nile provided the Ancient Egyptians with fertile soils and fresh water to farm wheat, fruits, and herbs that sustained their civilization for millennia. In celebration of their natural abundance, the ancient Egyptians would build elaborate and beautiful gardens that provided a place for family, leisure, and meditation. We invite you to tour an authentic reproduction of an 18th Dynasty Peace Garden at Rosicrucian Park. We will explore some of the buildings and their uses, learn about the edible and medicinal plants, and meet our beloved fish.",
+        "event_speaker_list": ""
+    },
+    {
+        "event_time": "Sunday, October 15, at 1:30 p.m. | ",
+        "event_title": "Exploring California Native Plants",
+        "event_details": "How much do you know about the biodiversity of our region? We invite you on this relaxing tour of Rosicrucian Park’s six acres of California Native Gardens. Our Master Gardener will reveal some of the fascinating species native to California, along with their wonderful secrets. You will learn how we created a habitat for native pollinators, including attracting four species of hummingbirds, while saving millions of gallons of water per year, helping preserve this precious natural resource. Come learn how you can do this at home.",
+        "event_speaker_list": ""
+    },
+    {
+        "event_time": "October 21, 1:30PM - 2:30PM | ",
+        "event_title": "Cats of Ancient Egypt",
+        "event_details": "Cats of Ancient Egypt Please join us to learn the secrets of why the Ancient Egyptians loved the feline form, how cats influenced the Ancient Egyptian spiritual beliefs, and even meet a mummified Ancient Egyptian cat up close!",
+        "event_speaker_list": ""
+    },
+    {
+        "event_time":"October 22, 1:30 PM - 2:30 PM",
+        "event_title":"Perspectives of Pollinators",
+        "event_details":"Explore the world of native California pollinators in our newest workshop at Rosicrucian Park! Learn about the crucial roles of bees, butterflies, and other pollinators in our ecosystems and then experience the world from a whole new perspective!",
+        "event_speaker_list": ""
+    },
+    {
         "id0": "Nefertiti Bust-This replica of the bust of Nefertiti was created in the 1930s and is made of plaster and paint.This was only a sculptor's model never meant to be a work of art on its own.",
         "id1": "Nefertiti Bust-This bust of Nefertiti is a very rare replica one of only three made off of the original which is currently in the Egyptian Museum Berlin.",
         "id2": "Nefertiti Bust-Nefertiti as you can see lived up to her name which means 'The Beautiful One Has Arrived.' Her left eye is missing. This doesn't mean that she was blind in one eye and it doesn't mean that this was lost.",
@@ -22,5 +58,17 @@
         "id13": "Ba Bird- These human-headed images represent the ba bird an aspect of the soul believed to fly out of the tomb.",
         "id14": "Ba Bird-Egyptologists suspect the ba was based on the bat which lived in the tombs and flew out at dusk.",
         "id15": "Ba Bird-This sculpture made of wood and paint is from the Late Period 712-332 BCE."
+    },
+    {
+        "id0": "History The Rosicrucian Egyptian Museum began with one small artifact a Sekhmet (lion goddess) statue which stood on the desk of H. Spencer Lewis the founder of the Rosicrucian Order AMORC.",
+        "id1": "AMORC which was founded in 1915 is a philosophical and educational public benefit (501c3) organization. Rosicrucian students study along with other subjects the wisdom of the ancient mystery schools including those of ancient Egypt.",
+        "id2": "In the 1920s AMORC supported the excavations of the Egypt Exploration Society in Tell el-Amarna (Akhetaten) the city of the Pharaoh Akhnaton. In gratitude the Egypt Exploration Society donated several artifacts from their finds to AMORC.",
+        "id3": "H. Spencer Lewis encouraged members to add to this collection which they did.",
+        "id4": "In 1927 H. Spencer Lewis conceived of a public collection. He had glass cases built for the artifacts on the second floor of AMORC’s Administration building.",
+        "id5": "In 1929 AMORC sponsored an initiatic journey through Egypt led by H. Spencer Lewis. This trip generated much enthusiasm which resulted in additional donations of artifacts and funds for the Museum. By 1932 the collection had outgrown its second-floor home so an additional building was constructed – the Rosicrucian Egyptian Oriental Museum.",
+        "id6": "Ralph M. Lewis H. Spencer Lewis’s son and successor as Imperator of AMORC directed the growth of the Museum over the next few decades. By the early 1960s the Museum’s collection had grown to more than 2000 artifacts. A fully modern and larger museum facility was needed at this time. In 1965 Ralph Lewis personally led the research team that explored many tombs and temples in Egypt on which the new Museum building was modeled. In November 1966 the new Rosicrucian Egyptian Museum opened.",
+        "id7": "Today the Museum with over 4000 artifacts houses the largest collection of authentic Ancient Egyptian artifacts on display in western North America. The Museum hosts more than 100000 guests per year including 26000 schoolchildren.",
+        "id8": "The Museum highly values collaborative research and in recent years has worked on projects alongside many institutions including Stanford University Hospital UCLA NASA Ames Biocomputation Center the British Museum National Geographic’s Mummy Road Show and others.",
+        "id9": "The Museum’s future looks promising with new exhibits tours and workshops with continuing research and scholarship and with a perennial commitment to education and service."
     }
 ]
