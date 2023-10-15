@@ -1,24 +1,19 @@
 import re
+import datetime
+# from datetimerange import DateTimeRange
+from dateparser.search import search_dates
 
-#TODO
 def extract_time(sentence):
-    # Define regular expressions to match different time formats
-    time_regexes = [
-        r'\d{1,2}:\d{2}\s*(?:AM|PM|am|pm)?',  # 12-hour format
-        r'\d{1,2}\s*(?:AM|PM|am|pm)',  # 12-hour format without colon
-        r'\d{1,2}\.\d{2}',  # Decimal format
-        r'\d{1,2}:\d{2}',  # 24-hour format
-    ]
+    sentence_dates = search_dates(sentence)
+    if sentence_dates is None:
+        return None
     
-    # Combine all regexes into a single pattern
-    pattern = '|'.join(time_regexes)
-    
-    # Search for the pattern in the sentence
-    match = re.search(pattern, sentence)
-    
-    # If a match is found, return the matched string
-    if match:
-        return match.group(0)
-    
-    # Otherwise, return None
-    return None
+    return sentence_dates[0]
+
+
+if __name__ == "__main__":
+    print(extract_time("What are the events today?"))
+    print(extract_time("What are the events in 1 hour?"))
+    print(extract_time("What were the events at 2pm today?"))
+    print(extract_time("What were the events at 2pm tmr?"))
+    print(extract_time("Who is David?"))
