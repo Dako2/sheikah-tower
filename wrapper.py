@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 
 import openai
-import image_vecdb
+import image_vecdb_v2
 from llm.llm_agent import Conversation
 from VecDB import VecDataBase
 from mec_apis.mec_location_api import (fetch_user_coordinates, 
@@ -44,7 +44,7 @@ class MECApp:
         
         self.cellid = None
         self.zoneid = None
-        self.image_db = image_vecdb.ImageVecDataBase('./db/images-ocp', './db/images-ocp/embeddings')
+        self.image_db = image_vecdb_v2.ImageVecDataBaseV2('./db/images-ocp', './db/images-ocp/embeddings')
 
     def analyze_image_api(self, filename='./upload/image.jpeg'):
         img = Image.open(filename)
