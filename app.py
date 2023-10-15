@@ -46,6 +46,21 @@ def places_api():
 
     return jsonify({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
 
+@app.route('/api/place_tapped', methods=['POST'])
+def place_tapped():
+    try:
+        data = request.get_json()  # Get JSON payload
+        place_name = data.get('place_name')  # Extract the place name
+        print(f"Place Tapped: {place_name}")  # Log the name of the tapped place
+        
+        # TODO: Perform any server-side action (e.g., store in database, etc.)
+        
+        # Responding back to the client
+        return jsonify({"status": "success", "message": "Place name received"}), 200
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")  # Log the error for debugging
+        return jsonify({"status": "error", "message": "An error occurred processing the request"}), 500
+
 @app.route('/api/chat', methods=['POST'])
 def chat_api():
     user_message = request.json['message']
