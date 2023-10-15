@@ -141,7 +141,6 @@ class VecDataBase():
     
 if __name__ == "__main__":
     DATA_PATH={'loc1':'./db/ocp/ocp.json'} #{'loc1':'db/exhibit-info.csv', 'user1':'db/user-data.csv'}
-
     v = VecDataBase(DATA_PATH, False)
     
     # Test 1 starts from here: test the search by time

@@ -1,8 +1,8 @@
 .env
 app.log
 api_responses.log
-*.jpeg
-*.jpg
+//*.jpeg
+//*.jpg
 *.pyc
 *.npy
 testdata/
