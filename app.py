@@ -40,9 +40,9 @@ def fetch_places_data():
 @app.route('/api/places', methods=['POST'])
 def places_api():
     (lat, lgn), nearby_locations = executor.submit(fetch_places_data).result()
-    nearby_locations['user'] = {'latitude': lat, 'longitude': lgn,'db_path':''}
+    #nearby_locations['user'] = {'latitude': lat, 'longitude': lgn,'db_path':''}
     logging.info(f'Nearby locations: {nearby_locations}')
-    print({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
+    #print({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
 
     return jsonify({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
 
