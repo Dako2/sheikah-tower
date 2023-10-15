@@ -14,23 +14,6 @@ Found local information:
 The photo name is “{name}”. More details “{text}”.
 """
 
-# def embed_image_with_clip(image_path):
-#     # Load the model and processor
-#     model = CLIPModel.from_pretrained("openai/clip-vit-base-patch16")
-#     processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch16")
-
-#     # Load the image and preprocess
-#     image = Image.open(image_path)
-#     image_input = processor(text="dummy", images=image, return_tensors="pt", padding=True)
-
-#     # Get the image embeddingr
-#     with torch.no_grad():
-#         outputs = model(**image_input)
-#         image_features = outputs.image_embeds
-
-#     return image_features
-
-
 class ImageVecDataBaseV2():
     def __init__(self, db_image_dir_path, db_image_embeding_path, update=True):
         self.model = CLIPModel.from_pretrained(IMAGE_EMBEDDING_MODEL)
@@ -55,10 +38,15 @@ class ImageVecDataBaseV2():
                 print(e)
                 continue
             
-            img = Image.open(os.path.join(db_image_dir_path, img_data['file_name']))
-            if img is not None:
-                img_data['image'] = img
-            dataset.append(img_data)
+            try:
+                img = Image.open(os.path.join(db_image_dir_path, img_data['file_name']))
+                if img is not None:
+                    img_data['image'] = img
+                dataset.append(img_data)
+            except Exception as e:
+                print(e)
+                continue
+
         return dataset
 
 
@@ -80,7 +68,7 @@ class ImageVecDataBaseV2():
         return embeddings
 
     # return (most_similar_img, most_similar_img_db_index, sim_score)
-    def search_db(self, user_image, threshold=0.2, top_n = 5):
+    def search_db(self, user_image, threshold=0.7, top_n = 5):
         top_n = min(top_n, len(self.dataset))
         query_embedding = self.embed_images([user_image])
 
