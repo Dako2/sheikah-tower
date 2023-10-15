@@ -8,8 +8,6 @@ import nlp_time_detector as nlp_time
 
 NAME_EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
-
-
 class VecDataBase():
     def __init__(self, db_paths, update_db = True):
         self.cache_vector_database = {}
