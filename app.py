@@ -56,7 +56,7 @@ def place_tapped():
         # TODO: Perform any server-side action (e.g., store in database, etc.)
         
         # Responding back to the client
-        return jsonify({"status": "success", "message": "Place name received"}), 200
+        return jsonify({"status": "success", "message": place_name}), 200
     except Exception as e:
         print(f"An error occurred: {str(e)}")  # Log the error for debugging
         return jsonify({"status": "error", "message": "An error occurred processing the request"}), 500
