@@ -44,6 +44,7 @@ class ImageVecDataBase():
         
         # Load db corpus embeddings
         self.corpus_embeddings = np.load(self.db_image_embeding_path + '.npy')
+        print(self.corpus_embeddings.shape)
        
     def db_embedding_dump(self, db_image_embeding_path):
         embeddings = self.embed_images([data['image'] for data in self.dataset])
@@ -57,13 +58,6 @@ class ImageVecDataBase():
         with torch.no_grad():
             embeddings = self.model(**new_batch).last_hidden_state[:, 0].cpu()
         return embeddings
-
-    #WIP
-    def similarity(self, image, threshold=0.6, top_n = 2):
-        embeddings = self.embed_images([image])
-        # similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1])
-        # print(similarity.item())
-        pass
 
     # return (most_similar_img, most_similar_img_db_index, sim_score)
     def search_db(self, user_image, threshold=0.2, top_n = 1):
@@ -101,7 +95,7 @@ if __name__ == '__main__':
     # image folder path, and the image metadata json file path
     image_db = ImageVecDataBase('./db/images-ocp', './db/images-ocp/embeddings')
     # Read image
-    img = Image.open('./test_data/images/test_etsi_logo.jpeg')
+    img = Image.open('./test_data/images/test_google_logo2.jpg')
     most_similar_img, most_similar_img_idx, sim_score = image_db.search_db(img)
     
     print("Score: %.4f" % (sim_score))

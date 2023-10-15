@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 
 import openai
-import image_vecdb
+import image_vecdb_v2
 from llm.llm_agent import Conversation
 from VecDB import VecDataBase
 from mec_apis.mec_location_api import (fetch_user_coordinates, 
@@ -10,6 +10,7 @@ from mec_apis.mec_location_api import (fetch_user_coordinates,
                                        fetch_user_coordinates_zoneid_cellid_real)
 from mec_apis.mec_virutal_server import VirtualMEC
 from environment import OPENAI_API_KEY
+from PIL import Image
 
 openai.api_key = OPENAI_API_KEY
 
@@ -43,12 +44,10 @@ class MECApp:
         
         self.cellid = None
         self.zoneid = None
-        #self.image_db = image_vecdb.ImageVecDataBase('./db/images', './db/images/embeddings')
-        self.image_db = image_vecdb.ImageVecDataBase('./db/images-ocp', './db/images-ocp/embeddings')
+        self.image_db = image_vecdb_v2.ImageVecDataBaseV2('./db/images-ocp', './db/images-ocp/embeddings')
 
-    def analyze_image_api(self, filename='./upload/image.jpg'):
-        img = image_vecdb.Image.open(filename)
-        
+    def analyze_image_api(self, filename='./upload/image.jpeg'):
+        img = Image.open(filename)
         try:
             most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
 
