@@ -49,7 +49,12 @@ class ImageVecDataBaseV2():
 
         dataset = []
         for json_str in json_list:
-            img_data = json.loads(json_str)
+            try: 
+                img_data = json.loads(json_str)
+            except json.JSONDecodeError as e:
+                print(e)
+                continue
+            
             img = Image.open(os.path.join(db_image_dir_path, img_data['file_name']))
             if img is not None:
                 img_data['image'] = img

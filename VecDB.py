@@ -4,6 +4,7 @@ import numpy as np
 import json
 import os
 from datetimerange import DateTimeRange
+import nlp_time_detector as nlp_time
 
 NAME_EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
@@ -76,7 +77,7 @@ class VecDataBase():
     def get_embed_path(self, db_json_file):
         return db_json_file + '.ebd'
 
-    def search_db(self, user_input, db_json_file, threshold=0.5, top_n = 2): #todo
+    def search_db(self, user_input, db_json_file, threshold=0.2, top_n = 2): #todo
         db_ebd_file = self.get_embed_path(db_json_file)
 
         if db_ebd_file not in list(self.cache_vector_database.keys()): #quick load corpus
@@ -89,15 +90,22 @@ class VecDataBase():
         cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))
         top_results_index = np.argpartition(-cosine_scores[0], range(top_n))[0:top_n]
 
+        extracted_time = nlp_time.extract_time(user_input)
+        time_based_events = None
+        if extracted_time:
+            print(f"extracted time: {extracted_time}")
+            time_based_events = self.search_db_by_time([t[1] for t in extracted_time], db_json_file)
+        
         result = ''
         score = []
-
         for idx in top_results_index.tolist():
             if cosine_scores[0][idx].item() > threshold:
                 #print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
                 result_id = list(corpus_ebd.keys())[idx]
-                result += json.dumps(corpus_json[int(result_id.split('_')[0][2::])])
-                score.append(cosine_scores[0][idx].item())
+                id = int(result_id.split('_')[0][2::])
+                if time_based_events is None or id in time_based_events.keys():
+                    result += json.dumps(corpus_json[int(result_id.split('_')[0][2::])])
+                    score.append(cosine_scores[0][idx].item())
             else:
                 print(f"searching score: {cosine_scores[0][idx].item()}")
 
@@ -107,16 +115,17 @@ class VecDataBase():
             print("none found")
         return result, score
 
-    def search_db_by_time(self, user_input_time, db_json_file):
+    def search_db_by_time(self, user_input_times, db_json_file):
         if db_json_file not in list(self.cache_vector_database.keys()): #quick load corpus
             self.load_db([db_json_file])
 
         corpus_json = self.cache_vector_database[db_json_file]
-        events_in_range = []
-        for event in corpus_json:
+        events_in_range = {}
+        for id, event in enumerate(corpus_json):
             time_range = self.__extract_event_time_range(event)
-            if user_input_time in time_range:
-                events_in_range.append(event)
+            for user_input_time in user_input_times:
+                if user_input_time in time_range:
+                    events_in_range[id] = event
         return events_in_range
 
     def __extract_event_time_range(self, event):
