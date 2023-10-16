@@ -51,13 +51,6 @@ def fetch_userlist_in_zone(zone_id):
     else:
         print(f"Request failed with status code: {response.status_code}")
         return None
-"""
-# an exapple to call the function and provide the desired zone ID, input: zone01
-zone_id = 'zone01'
-userlist = fetch_userlist_in_zone(zone_id)
-if userlist is not None:
-    print(userlist)
-"""
 
 def fetch_distance(address1, latitude, longitude):
     api_url = f'https://try-mec.etsi.org/sbxvfgnt57/mep2/location/v2/queries/distance?address={address1}&latitude={latitude}&longitude={longitude}'

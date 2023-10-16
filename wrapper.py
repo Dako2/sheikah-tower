@@ -8,6 +8,7 @@ from VecDB import VecDataBase
 from mec_apis.mec_location_api import (fetch_user_coordinates, 
                                        fetch_user_coordinates_zoneid_cellid, 
                                        fetch_user_coordinates_zoneid_cellid_real)
+
 from environment import OPENAI_API_KEY
 from PIL import Image
 
@@ -41,15 +42,12 @@ class SheikahApp:
         self.places_dict = {}
         self.image_db = image_vecdb_v2.ImageVecDataBaseV2(image_db_paths[0],image_db_paths[1])
 
-    def analyze_image_api(self, filename='./upload/image.jpeg'):
+    def analyze_image_api(self, filename='./upload/image.jpg'):
         img = Image.open(filename)
         try:
             most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
-
-            print(f"image score: {sim_score}")
-            
-            output = self.convo.rolling_convo("", self.image_db.db_image_prompt(most_similar_img_idx), DEFAULT_PROMPT_PHOTO)
-            
+            print(f"image score: {sim_score}")            
+            output = self.convo.rolling_convo(user_id, "", self.image_db.db_image_prompt(most_similar_img_idx), DEFAULT_PROMPT_PHOTO)
             return [sim_score, self.image_db.db_image_info(most_similar_img_idx), output]
         except:
             return [None, None, None]
@@ -67,14 +65,31 @@ class SheikahApp:
         #loc1_found_db_texts = loc1_found_db_texts[:1000] #todo adjust length of pulled db text
         #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
         user_found_db_texts = ""
-
         print(f"{loc1_found_db_texts}\n\n======found vector above database=======\n")
         print(f"Score: {score}") # todo to delete when clean up
-
-        output = self.convo.rolling_convo(user_input, loc1_found_db_texts, user_found_db_texts)
+        output = self.convo.rolling_convo(user_id, user_input, loc1_found_db_texts, user_found_db_texts)
         
         return output
-
+    
+    def chat_api_v2(self, inputs):
+        user_id, user_input = inputs
+        loc1_found_db_texts = ""
+        score = []
+        if self.places_dict:
+            for loc_name, places in self.places_dict.items():
+                print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
+                text, score = self.v.search_db(user_input, places['db_path'], threshold=0.3, top_n = 3)
+                print(text, score)
+                loc1_found_db_texts += text
+        #loc1_found_db_texts = loc1_found_db_texts[:1000] #todo adjust length of pulled db text
+        #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
+        user_found_db_texts = ""
+        print(f"{loc1_found_db_texts}\n\n======found vector above database=======\n")
+        print(f"Score: {score}") # todo to delete when clean up
+        output = self.convo.rolling_convo(user_id, user_input, loc1_found_db_texts, user_found_db_texts)
+        
+        return output
+    
     def desert_mode(self, user_input):
         user_found_db_texts, user_found_score = self.v.search_db(user_input, DATA_PATH['user1'])
         return user_found_db_texts, user_found_score

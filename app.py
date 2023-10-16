@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-#from werkzeug.datastructures import FileStorage
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 import logging
@@ -11,6 +10,7 @@ import os
 from mec_apis.mec_virutal_server import VirtualMEP
 from uuid import uuid4
 import json
+
 # Initialize executor and set workers
 executor = ThreadPoolExecutor(max_workers=4)
 
@@ -29,14 +29,6 @@ with open("./db/zone_cellid_places.json", 'r') as file:
 
 mep_virtual = VirtualMEP() #
 mec = wrapper.SheikahApp(db_paths = DATA_PATHS, image_db_paths = ('./db/images-ocp', './db/images-ocp/embeddings'), update_db = False)
-
-def fetch_chat_response(user_message):
-    return mec.chat_api(user_message)
-@app.route('/api/location', methods=['POST'])
-def location_api(ip_addr = '10.10.0.1'):
-    lat, lgn, _ = mec.loc_user_api(ip_addr)
-    logging.info(f'Location: {lat}, {lgn}')
-    return jsonify({'latitude': lat, 'longitude': lgn})
 
 def fetch_places_data():
     latitude, longitude, _, cellid, zoneid = mep_virtual.fetch_user_coordinates_zoneid_cellid()
@@ -68,10 +60,15 @@ def places_api():
 def place_tapped():
     try:
         data = request.get_json()  # Get JSON payload
+        try:
+            user_id = request.json['user_id']  # Get the user ID
+        except:
+            print("no user id found")
+            user_id = "anonymous"
         place_name = data.get('place_name')  # Extract the place name
         print(f"Place Tapped: {place_name}")  # Log the name of the tapped place
         # TODO: Perform any server-side action (e.g., store in database, etc.)
-        mec.convo.messages = [{"role": "system", "content": f"Be an assistant and guide at {place_name}." + wrapper.DEFAULT_PROMPT},]
+        mec.convo.chat_histories[user_id] = [{"role": "system", "content": f"Be an assistant and guide at {place_name}." + wrapper.DEFAULT_PROMPT},]
         _, updated_places = fetch_places_data()
 
         print(place_name, updated_places)
@@ -82,11 +79,27 @@ def place_tapped():
         print(f"An error occurred: {str(e)}")  # Log the error for debugging
         return jsonify({"status": "error", "message": "An error occurred processing the request"}), 500
 
+def fetch_chat_response(user_message):
+    return mec.chat_api(user_message)
+
 @app.route('/api/chat', methods=['POST'])
 def chat_api():
     user_message = request.json['message']
     bot_response = executor.submit(fetch_chat_response, user_message).result()
     logging.info(f'User: {user_message}, Bot: {bot_response}')
+    return jsonify({'message': bot_response})
+
+@app.route('/api/chat_v2', methods=['POST'])
+def chat_api_v2():
+    try:
+        user_id = request.json['user_id']  # Get the user ID
+    except:
+        print("no user id found")
+        user_id = "anonymous"
+    user_message = request.json['message']
+    bot_response = executor.submit(mec.chat_api_v2, [user_id, user_message]).result()
+    logging.info(f'User ({user_id}): {user_message}, Bot: {bot_response}')
+    # Save the user's message and the bot's response to the database with user_id
     return jsonify({'message': bot_response})
 
 def analyze_image(filename):
