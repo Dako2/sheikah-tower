@@ -67,7 +67,7 @@ class SheikahApp:
         user_found_db_texts = ""
         print(f"{loc1_found_db_texts}\n\n======found vector above database=======\n")
         print(f"Score: {score}") # todo to delete when clean up
-        output = self.convo.rolling_convo(user_id, user_input, loc1_found_db_texts, user_found_db_texts)
+        output = self.convo.rolling_convo("anonymous", user_input, loc1_found_db_texts, user_found_db_texts)
         
         return output
     

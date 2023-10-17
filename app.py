@@ -82,14 +82,14 @@ def place_tapped():
 def fetch_chat_response(user_message):
     return mec.chat_api(user_message)
 
-@app.route('/api/chat', methods=['POST'])
+@app.route('/api/chat_v1', methods=['POST'])
 def chat_api():
     user_message = request.json['message']
     bot_response = executor.submit(fetch_chat_response, user_message).result()
     logging.info(f'User: {user_message}, Bot: {bot_response}')
     return jsonify({'message': bot_response})
 
-@app.route('/api/chat_v2', methods=['POST'])
+@app.route('/api/chat', methods=['POST'])
 def chat_api_v2():
     try:
         user_id = request.json['user_id']  # Get the user ID
