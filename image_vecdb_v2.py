@@ -49,7 +49,6 @@ class ImageVecDataBaseV2():
 
         return dataset
 
-
     def db_embedding_dump(self, db_image_embeding_path):
         embeddings = self.embed_images([data['image'] for data in self.dataset])
         np.save(db_image_embeding_path, embeddings)
@@ -68,7 +67,7 @@ class ImageVecDataBaseV2():
         return embeddings
 
     # return (most_similar_img, most_similar_img_db_index, sim_score)
-    def search_db(self, user_image, threshold=0.7, top_n = 5):
+    def search_db(self, user_image, threshold=0.6, top_n = 1):
         top_n = min(top_n, len(self.dataset))
         query_embedding = self.embed_images([user_image])
 
@@ -81,10 +80,10 @@ class ImageVecDataBaseV2():
         for idx in top_results[0]:
             score = cosine_scores[0][idx]
             if cosine_scores[0][idx].item() > threshold:
-                return self.dataset[idx]['image'], int(idx.int()), float(score.float())
-            
+                return(self.dataset[idx]['image'], int(idx.int()), float(score.float()))
+        
         return None, None, None
-    
+            
     def db_image_prompt(self, idx):
         if idx >= 0 and idx < len(self.dataset):
            return PROMPT_TEMPLATE.format(name=self.dataset[idx]["name"], text=self.dataset[idx]["text"])
@@ -100,17 +99,17 @@ class ImageVecDataBaseV2():
 
 if __name__ == '__main__':
     # image folder path, and the image metadata json file path
-    image_db = ImageVecDataBaseV2('./db/images-ocp', './db/images-ocp/embeddings')
+    image_db = ImageVecDataBaseV2('./db/images', './db/images/embeddings')
     # Read image
     # img = Image.open('./test_data/images/test_google_logo2.jpg')
+
     img = Image.open('./test_data/images/test_google_logo.jpg')
     # img = Image.open('./test_data/images/test_etsi_logo.jpeg')
-    most_similar_img, most_similar_img_idx, sim_score = image_db.search_db(img)
-    
-    print("Score: %.4f" % (sim_score))
-    print("Index of most similar image in DB: %.4f" % (most_similar_img_idx))
-    plt.imshow(most_similar_img)
-    plt.show()
+    #most_similar_img, most_similar_img_idx, sim_score = image_db.search_db(img)
+
+    print(image_db.search_db(img))
+
+
 
 
 

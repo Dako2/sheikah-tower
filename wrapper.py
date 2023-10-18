@@ -5,9 +5,6 @@ import openai
 import image_vecdb_v2
 from llm.llm_agent import Conversation
 from VecDB import VecDataBase
-from mec_apis.mec_location_api import (fetch_user_coordinates, 
-                                       fetch_user_coordinates_zoneid_cellid, 
-                                       fetch_user_coordinates_zoneid_cellid_real)
 
 from environment import OPENAI_API_KEY
 from PIL import Image
@@ -40,10 +37,11 @@ class SheikahApp:
         self.convo = Conversation()
         self.v = VecDataBase(db_paths, update_db)
         self.places_dict = {}
-        self.image_db = image_vecdb_v2.ImageVecDataBaseV2(image_db_paths[0],image_db_paths[1])
+        self.image_db = image_vecdb_v2.ImageVecDataBaseV2(image_db_paths[0], image_db_paths[1])
 
-    def analyze_image_api(self, filename='./upload/image.jpg'):
+    def analyze_image_api(self, user_id, filename='./uploads/image.jpg'):
         img = Image.open(filename)
+        print(filename)
         try:
             most_similar_img, most_similar_img_idx, sim_score = self.image_db.search_db(img)
             print(f"image score: {sim_score}")            
@@ -51,25 +49,6 @@ class SheikahApp:
             return [sim_score, self.image_db.db_image_info(most_similar_img_idx), output]
         except:
             return [None, None, None]
-
-    def chat_api(self, user_input):
-        loc1_found_db_texts = ""
-        score = []
-        if self.places_dict:
-            for loc_name, places in self.places_dict.items():
-                print("\nxxx\n", loc_name, "\nxxx\n", places['db_path'],"\nxxx\n")
-                text, score = self.v.search_db(user_input, places['db_path'], threshold=0.3, top_n = 3)
-                print(text, score)
-                loc1_found_db_texts += text
-                
-        #loc1_found_db_texts = loc1_found_db_texts[:1000] #todo adjust length of pulled db text
-        #user_found_db_texts, _ = self.v.search_db(user_input, DATA_PATH['user1'])
-        user_found_db_texts = ""
-        print(f"{loc1_found_db_texts}\n\n======found vector above database=======\n")
-        print(f"Score: {score}") # todo to delete when clean up
-        output = self.convo.rolling_convo("anonymous", user_input, loc1_found_db_texts, user_found_db_texts)
-        
-        return output
     
     def chat_api_v2(self, inputs):
         user_id, user_input = inputs
@@ -105,7 +84,6 @@ class SheikahApp:
     def if_leave_a_spot(self):
         return False  # TODO: Implement further logic
 
-
 if __name__ == "__main__":
     mec = SheikahApp('10.100.0.1')
     mec.loc_user_places_api()
@@ -113,7 +91,7 @@ if __name__ == "__main__":
     try:
         while True:  # keep running until Ctrl+C is pressed
             user_input = input("Please enter something: ")
-            mec.chat_api(user_input)
+            mec.chat_api_v2(user_input)
             
     except KeyboardInterrupt:
         print("\nExiting the program.")

@@ -47,7 +47,8 @@ class VecDataBase():
             corpus_list = json.load(file)
         
         embeddings = {}
-        
+        if type(corpus_list) == dict:
+            corpus_list = [corpus_list]
         # Processing the embeddings
         for i, event in enumerate(corpus_list):
             for name, value in event.items():
@@ -90,11 +91,11 @@ class VecDataBase():
         cosine_scores = util.pytorch_cos_sim(query_embedding, list(corpus_ebd.values()))
         top_results_index = np.argpartition(-cosine_scores[0], range(top_n))[0:top_n]
 
-        extracted_time = nlp_time.extract_time(user_input)
+        #extracted_time = nlp_time.extract_time(user_input)
         time_based_events = None
-        if extracted_time:
-            print(f"extracted time: {extracted_time}")
-            time_based_events = self.search_db_by_time([t[1] for t in extracted_time], db_json_file)
+        #if extracted_time:
+        #    print(f"extracted time: {extracted_time}")
+        #    time_based_events = self.search_db_by_time([t[1] for t in extracted_time], db_json_file)
         
         result = ''
         score = []
@@ -103,6 +104,9 @@ class VecDataBase():
                 #print(corpus[idx], "(Score: %.4f)" % (cosine_scores[0][idx]))
                 result_id = list(corpus_ebd.keys())[idx]
                 id = int(result_id.split('_')[0][2::])
+
+                print(corpus_json)
+                print(result_id)
                 if time_based_events is None or id in time_based_events.keys():
                     result += json.dumps(corpus_json[int(result_id.split('_')[0][2::])])
                     score.append(cosine_scores[0][idx].item())
@@ -145,12 +149,14 @@ if __name__ == "__main__":
     
     # Test 1 starts from here: test the search by time
     ############################
-    db_json_file = './db/ocp/ocp.json'
-    user_input = "hi, what's SONIC?"
-    threshold=0.2
+    db_json_file = "./db/csv/Egyptian Museum.json"
+    user_input = "hi, what's it about?"
+    threshold=1.0
     top_n = 5
+
+    v.search_db(user_input, db_json_file)
 
     # Test 2 starts from here 
     ############################
-    print("Found " + str(len(v.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))) + " events")
-    print(v.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))
+    ##print("Found " + str(len(v.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))) + " events")
+    #print(v.search_db_by_time('2023-10-17 15:30:00', './db/ocp/ocp.json'))

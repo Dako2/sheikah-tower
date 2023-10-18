@@ -21,7 +21,7 @@ def fetch_user_coordinates(api_url="http://127.0.0.1:9091/get_location"):
         #print(f"Error fetching location data: {e}")
         return {}
     
-def fetch_user_coordinates_zoneid_cellid(api_url="http://127.0.0.1:9091/get_location"):
+def fetch_user_coordinates_zoneid_cellid_virtual(api_url="http://127.0.0.1:9091/get_location"):
     try:
         response = requests.get(api_url)
         
@@ -78,7 +78,7 @@ def fetch_user_coordinates_real(ip_address, fetchURL='https://try-mec.etsi.org/s
         print(f"Request failed with status code: {response.status_code}")
         return None, None, None
 
-def fetch_user_coordinates_zoneid_cellid_real(ip_address ="10.10.0.4", fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='):
+def fetch_user_coordinates_zoneid_cellid(ip_address ="10.10.0.4", fetchURL='https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address='):
     api_url = f'{fetchURL}{ip_address}'
     response = requests.get(api_url)
     
@@ -130,5 +130,5 @@ if __name__ == '__main__':
     ip_address = '10.100.0.3'  # Replace with your IP address
 
     while True:
-        print(fetch_user_coordinates_zoneid_cellid_real(ip_address))
+        print(fetch_user_coordinates_zoneid_cellid(ip_address))
         time.sleep(1)

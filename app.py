@@ -8,8 +8,14 @@ from environment import OPENAI_API_KEY
 import wrapper
 import os
 from mec_apis.mec_virutal_server import VirtualMEP
+import mec_apis.mec_location_api as MEP
+
 from uuid import uuid4
 import json
+
+mep = VirtualMEP()
+#mep = MEP
+ip_address = "10.10.0.4"
 
 # Initialize executor and set workers
 executor = ThreadPoolExecutor(max_workers=4)
@@ -27,11 +33,10 @@ DATA_PATHS = ['./db/ocp/ocp.json', './db/sanjose/Egyptian_Museum.json']
 with open("./db/zone_cellid_places.json", 'r') as file:
     db_json = json.load(file)
 
-mep_virtual = VirtualMEP() #
-mec = wrapper.SheikahApp(db_paths = DATA_PATHS, image_db_paths = ('./db/images-ocp', './db/images-ocp/embeddings'), update_db = False)
+mec = wrapper.SheikahApp(db_paths = DATA_PATHS, image_db_paths = ('./db/images', './db/images/embeddings'), update_db = False)
 
 def fetch_places_data():
-    latitude, longitude, _, cellid, zoneid = mep_virtual.fetch_user_coordinates_zoneid_cellid()
+    latitude, longitude, _, cellid, zoneid = mep.fetch_user_coordinates_zoneid_cellid()
     try:
         places_dict = db_json[zoneid][cellid]["places"]
         """
@@ -53,41 +58,35 @@ def places_api():
     #nearby_locations['user'] = {'latitude': lat, 'longitude': lgn,'db_path':''}
     logging.info(f'Nearby locations: {nearby_locations}')
     #print({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
-
+    nearby_locations['user'] = {'latitude': lat, 'longitude': lgn, 'db_path': ''}
     return jsonify({"message":{'latitude': lat, 'longitude': lgn, 'places': nearby_locations}})
 
 @app.route('/api/place_tapped', methods=['POST'])
 def place_tapped():
+    data = request.get_json()  # Get JSON payload
     try:
-        data = request.get_json()  # Get JSON payload
-        try:
-            user_id = request.json['user_id']  # Get the user ID
-        except:
-            print("no user id found")
-            user_id = "anonymous"
-        place_name = data.get('place_name')  # Extract the place name
-        print(f"Place Tapped: {place_name}")  # Log the name of the tapped place
-        # TODO: Perform any server-side action (e.g., store in database, etc.)
+        user_id = data.get('user_id')  # Get the user ID
+    except:
+        print("no user id found")
+        user_id = "anonymous"
+    place_name = data.get('place_name')  # Extract the place name
+    print(f"Place Tapped: {place_name}")  # Log the name of the tapped place
+    # TODO: Perform any server-side action (e.g., store in database, etc.)
+
+    _, updated_places = fetch_places_data()
+    print(place_name, updated_places)
+    mec.places_dict = {place_name: updated_places[place_name]}
+
+    if user_id not in mec.convo.chat_histories.keys():
+        print(f"creating chathistory for user {user_id}")
         mec.convo.chat_histories[user_id] = [{"role": "system", "content": f"Be an assistant and guide at {place_name}." + wrapper.DEFAULT_PROMPT},]
-        _, updated_places = fetch_places_data()
+        print("\n\n\n\n\n/////////")
+    
+    #bot_response = executor.submit(mec.chat_api_v2, [user_id, "Hi"]).result()
+    #logging.info(f'User ({user_id}): {"Hi"}, Bot: {bot_response}')
 
-        print(place_name, updated_places)
-        mec.places_dict = {place_name: updated_places[place_name]}
-        # Responding back to the client
-        return jsonify({"status": "success", "message": place_name}), 200
-    except Exception as e:
-        print(f"An error occurred: {str(e)}")  # Log the error for debugging
-        return jsonify({"status": "error", "message": "An error occurred processing the request"}), 500
-
-def fetch_chat_response(user_message):
-    return mec.chat_api(user_message)
-
-@app.route('/api/chat_v1', methods=['POST'])
-def chat_api():
-    user_message = request.json['message']
-    bot_response = executor.submit(fetch_chat_response, user_message).result()
-    logging.info(f'User: {user_message}, Bot: {bot_response}')
-    return jsonify({'message': bot_response})
+    # Responding back to the client
+    return jsonify({"status": "success", "message": place_name}), 200
 
 @app.route('/api/chat', methods=['POST'])
 def chat_api_v2():
@@ -102,20 +101,25 @@ def chat_api_v2():
     # Save the user's message and the bot's response to the database with user_id
     return jsonify({'message': bot_response})
 
-def analyze_image(filename):
-    return mec.analyze_image_api(filename)
+def analyze_image(inputs):
+    user_id, filename = inputs
+    return mec.analyze_image_api(user_id, filename)
 
 @app.route('/api/image', methods=['POST'])
 def upload_image():
-    file = request.files.get('file')
-
+    file = request.files['file']
+    # Check if no file is selected
     if not file or file.filename == '':
-        return jsonify(error="No file provided"), 400
+        return jsonify(success=False, error="No file selected"), 400
+    
+    user_id = "anonymous"
 
     filename = os.path.join(UPLOAD_FOLDER, file.filename)
     file.save(filename)
 
-    sim_score, image_info, image_prompts = executor.submit(analyze_image, filename).result()
+    print(user_id, filename)
+ 
+    sim_score, image_info, image_prompts = executor.submit(analyze_image, [user_id, filename]).result()
     to_sent = {'file_name':'something.jpeg','sim_score':sim_score, 'text':image_prompts}
     if sim_score:
         image_info['sim_score'] = sim_score

@@ -50,39 +50,39 @@
     "zone02": {
         "5g-small-cell-4": {
             "places": {
-                "Hotel Ambassador Hyrule": {
+                "Hotel Ambassador Monaco": {
                     "latitude": 43.7329145,
                     "longitude": 7.417962600000003,
-                    "db_path": "./db/csv/Hotel Ambassador Hyrule.csv.npy"
+                    "db_path": "./db/csv/Hotel Ambassador Monaco.json"
                 },
-                "Prince's Palace of Hyrule": {
+                "Prince's Palace of Monaco": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Prince's Palace of Hyrule.csv.npy"
+                    "db_path": "./db/csv/Prince's Palace of Monaco.json"
                 }
             }
         },
         "4g-macro-cell-4": {
             "places": {
-                "Mus\u00e9e oc\u00e9anographique de Hyrule": {
+                "Mus\u00e9e oc\u00e9anographique de Monaco": {
                     "latitude": 43.7308132,
                     "longitude": 7.425573999999999,
-                    "db_path": "./db/csv/Mus\u00e9e oc\u00e9anographique de Hyrule.csv.npy"
+                    "db_path": "./db/csv/Mus\u00e9e oc\u00e9anographique de Monaco.json"
                 },
-                "Hyrule Jardins Saint-Martin": {
+                "Monaco Jardins Saint-Martin": {
                     "latitude": 43.7299628,
                     "longitude": 7.424147400000001,
-                    "db_path": "./db/csv/Jardins Saint-Martin.csv.npy"
+                    "db_path": "./db/csv/Jardins Saint-Martin.json"
                 },
                 "Egyptian Museum": {
                     "latitude": 43.731724,
                     "longitude": 7.423574,
-                    "db_path": "./db/csv/Egyptian Museum.csv.npy"
+                    "db_path": "./db/csv/Egyptian Museum.json"
                 },
 		        "Cafe of Hyrule": {
                     "latitude": 43.731722,
                     "longitude": 7.423572,
-                    "db_path": "./db/csv/Cafe of Hyrule.csv.npy"
+                    "db_path": "./db/csv/Cafe of Hyrule.json"
 		        }
             }
         },
@@ -91,62 +91,39 @@
                 "Secret Egyptian Museum of Hyrule": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Egyptian Museum.csv.npy"
+                    "db_path": "./db/csv/Egyptian Museum.json"
                 }
             }
         },
         "5g-small-cell-8": {
             "places": {
-                "Mus\u00e9e oc\u00e9anographique de Hyrule": {
+                "Mus\u00e9e oc\u00e9anographique de Monaco": {
                     "latitude": 43.7308132,
                     "longitude": 7.425573999999999,
-                    "db_path": "./db/csv/Mus\u00e9e oc\u00e9anographique de Hyrule.csv.npy"
-                }
-            }
-        },
-        "wifi-ap-5": {
-            "places": {
-                "Hyrule Brewery": {
-                    "latitude": 43.73384919999999,
-                    "longitude": 7.422129,
-                    "db_path": "./db/csv/Hyrule Brewery.csv.npy"
-                }
-            }
-        },
-        "5g-small-cell-7": {
-            "places": {
-                "Hyrule Brewery": {
-                    "latitude": 43.73384919999999,
-                    "longitude": 7.422129,
-                    "db_path": "./db/csv/Hyrule Brewery.csv.npy"
+                    "db_path": "./db/csv/Mus\u00e9e oc\u00e9anographique de Monaco.json"
                 }
             }
         },
         "wifi-ap-3": {
             "places": {
-                "Hyrule Brewery": {
-                    "latitude": 43.73384919999999,
-                    "longitude": 7.422129,
-                    "db_path": "./db/csv/Hyrule Brewery.csv.npy"
-                },
-                "Jack Hyrule": {
+                "Jack Monaco": {
                     "latitude": 43.7334769,
                     "longitude": 7.422296599999999,
-                    "db_path": "./db/csv/Jack Hyrule.csv.npy"
+                    "db_path": "./db/csv/Jack Monaco.json"
                 },
-                "Hyrule Grand Prix": {
+                "Monaco Grand Prix": {
                     "latitude": 43.734108,
                     "longitude": 7.4217042,
-                    "db_path": "./db/csv/Hyrule Grand Prix.csv.npy"
+                    "db_path": "./db/csv/Monaco Grand Prix.json"
                 }
             }
         },
         "5g-small-cell-6": {
             "places": {
-                "Hyrule Brewery": {
+                "Monaco Brewery": {
                     "latitude": 43.73384919999999,
                     "longitude": 7.422129,
-                    "db_path": "./db/csv/Hyrule Brewery.csv.npy"
+                    "db_path": "./db/csv/Monaco Brewery.json"
                 }
             }
         }
@@ -154,108 +131,99 @@
     "zone01": {
         "5g-small-cell-3": {
             "places": {
-                "Hotel Ambassador Hyrule": {
+                "Hotel Ambassador Monaco": {
                     "latitude": 43.7329145,
                     "longitude": 7.417962600000003,
-                    "db_path": "./db/csv/Hotel Ambassador Hyrule.csv.npy"
+                    "db_path": "./db/csv/Hotel Ambassador Monaco.json"
                 },
-                "Prince's Palace of Hyrule": {
+                "Prince's Palace of Monaco": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Prince's Palace of Hyrule.csv.npy"
+                    "db_path": "./db/csv/Prince's Palace of Monaco.json"
                 },
-                "Carrefour Hyrule": {
+                "Carrefour Monaco": {
                     "latitude": 43.7307533,
                     "longitude": 7.417138899999999,
-                    "db_path": "./db/csv/Carrefour Hyrule.csv.npy"
-                }
-            }
-        },
-        "wifi-ap-1": {
-            "places": {
-                "Columbus Hotel Hyrule": {
-                    "latitude": 43.72754939999999,
-                    "longitude": 7.420020499999998,
-                    "db_path": "./db/csv/Columbus Hotel Hyrule.csv.npy"
+                    "db_path": "./db/csv/Carrefour Monaco.json"
                 }
             }
         },
         "4g-macro-cell-1": {
             "places": {
-                "Columbus Hotel Hyrule": {
+                "Columbus Hotel Monaco": {
                     "latitude": 43.72754939999999,
                     "longitude": 7.420020499999998,
-                    "db_path": "./db/csv/Columbus Hotel Hyrule.csv.npy"
+                    "db_path": "./db/csv/Columbus Hotel Monaco.json"
                 }
             }
         },
         "4g-macro-cell-3": {
             "places": {
-                "Hotel Ambassador Hyrule": {
+                "Hotel Ambassador Monaco": {
                     "latitude": 43.7329145,
                     "longitude": 7.417962600000003,
-                    "db_path": "./db/csv/Hotel Ambassador Hyrule.csv.npy"
+                    "db_path": "./db/csv/Hotel Ambassador Monaco.json"
                 }
             }
         },
         "4g-macro-cell-2": {
             "places": {
-                "Exotic Garden of Hyrule": {
+                "Exotic Garden of Monaco": {
                     "latitude": 43.73135,
                     "longitude": 7.413945999999999,
-                    "db_path": "./db/csv/Exotic Garden of Hyrule.csv.npy"
+                    "db_path": "./db/csv/Exotic Garden of Monaco.json"
                 }
             }
         },
         "5g-small-cell-2": {
             "places": {
-                "Hotel Ambassador Hyrule": {
+                "Hotel Ambassador Monaco": {
                     "latitude": 43.7329145,
                     "longitude": 7.417962600000003,
-                    "db_path": "./db/csv/Hotel Ambassador Hyrule.csv.npy"
+                    "db_path": "./db/csv/Hotel Ambassador Monaco.json"
                 },
-                "Prince's Palace of Hyrule": {
+                "Prince's Palace of Monaco": {
                     "latitude": 43.7314751,
                     "longitude": 7.4198627,
-                    "db_path": "./db/csv/Prince's Palace of Hyrule.csv.npy"
+                    "db_path": "./db/csv/Prince's Palace of Monaco.json"
                 },
-                "Carrefour Hyrule": {
+                "Carrefour Monaco": {
                     "latitude": 43.7307533,
                     "longitude": 7.417138899999999,
-                    "db_path": "./db/csv/Carrefour Hyrule.csv.npy"
+                    "db_path": "./db/csv/Carrefour Monaco.json"
                 },
-                "Exotic Garden of Hyrule": {
+                "Exotic Garden of Monaco": {
                     "latitude": 43.73135,
                     "longitude": 7.413945999999999,
-                    "db_path": "./db/csv/Exotic Garden of Hyrule.csv.npy"
+                    "db_path": "./db/csv/Exotic Garden of Monaco.json"
                 },
                 "Centre commercial de Fontvieille": {
                     "latitude": 43.7307508,
                     "longitude": 7.4168534,
-                    "db_path": "./db/csv/Centre commercial de Fontvieille.csv.npy"
+                    "db_path": "./db/csv/Centre commercial de Fontvieille.json"
                 }
             }
         },
         "5g-small-cell-1": {
             "places": {
-                "Exotic Garden of Hyrule": {
+                "Exotic Garden of Monaco": {
                     "latitude": 43.73135,
                     "longitude": 7.413945999999999,
-                    "db_path": "./db/csv/Exotic Garden of Hyrule.csv.npy"
+                    "db_path": "./db/csv/Exotic Garden of Monaco.json"
                 },
-                "Carrefour Hyrule": {
+                "Carrefour Monaco": {
                     "latitude": 43.7307533,
                     "longitude": 7.417138899999999,
-                    "db_path": "./db/csv/Carrefour Hyrule.csv.npy"
+                    "db_path": "./db/csv/Carrefour Monaco.json"
                 }
             }
         },
         "wifi-ap-2": {
             "places": {
-                "Columbus Hotel Hyrule": {
+                "Columbus Hotel Monaco": {
                     "latitude": 43.72754939999999,
                     "longitude": 7.420020499999998,
-                    "db_path": "./db/csv/Columbus Hotel Hyrule.csv.npy"
+                    "db_path": "./db/csv/Columbus Hotel Monaco.json"
                 }
             }
         }
@@ -266,42 +234,42 @@
                 "Hotel de Paris Monte-Carlo": {
                     "latitude": 43.73900479999999,
                     "longitude": 7.427464499999997,
-                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.json"
                 },
                 "H\u00f4tel Hermitage Monte-Carlo": {
                     "latitude": 43.73844319999999,
                     "longitude": 7.425951699999998,
-                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.json"
                 },
                 "Fairmont Monte Carlo": {
                     "latitude": 43.7398968,
                     "longitude": 7.429953599999999,
-                    "db_path": "./db/csv/Fairmont Monte Carlo.csv.npy"
+                    "db_path": "./db/csv/Fairmont Monte Carlo.json"
                 },
                 "Casino de Monte-Carlo": {
                     "latitude": 43.7390972,
                     "longitude": 7.428068100000001,
-                    "db_path": "./db/csv/Casino de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Casino de Monte-Carlo.json"
                 },
                 "Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo": {
                     "latitude": 43.7395255,
                     "longitude": 7.427937599999998,
-                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.json"
                 },
                 "Casino Caf\u00e9 de Paris": {
                     "latitude": 43.73973350000001,
                     "longitude": 7.427713,
-                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.csv.npy"
+                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.json"
                 },
                 "Op\u00e9ra de Monte-Carlo": {
                     "latitude": 43.7389849,
                     "longitude": 7.428203599999999,
-                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.json"
                 },
                 "Buddha-Bar Monte-Carlo": {
                     "latitude": 43.7399131,
                     "longitude": 7.4291073,
-                    "db_path": "./db/csv/Buddha-Bar Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Buddha-Bar Monte-Carlo.json"
                 }
             }
         },
@@ -310,22 +278,22 @@
                 "Port Palace H\u00f4tel": {
                     "latitude": 43.737212,
                     "longitude": 7.424075099999999,
-                    "db_path": "./db/csv/Port Palace H\u00f4tel.csv.npy"
+                    "db_path": "./db/csv/Port Palace H\u00f4tel.json"
                 },
                 "Novotel Monte Carlo": {
                     "latitude": 43.73896269999999,
                     "longitude": 7.4217979,
-                    "db_path": "./db/csv/Novotel Monte Carlo.csv.npy"
+                    "db_path": "./db/csv/Novotel Monte Carlo.json"
                 },
-                "Hyrule-Monte-Carlo station": {
+                "Monaco-Monte-Carlo station": {
                     "latitude": 43.7387495,
                     "longitude": 7.418994199999999,
-                    "db_path": "./db/csv/Hyrule-Monte-Carlo station.csv.npy"
+                    "db_path": "./db/csv/Monaco-Monte-Carlo station.json"
                 },
-                "Hop On Hop Off Hyrule": {
+                "Hop On Hop Off Monaco": {
                     "latitude": 43.7371448,
                     "longitude": 7.421534899999999,
-                    "db_path": "./db/csv/Hop On Hop Off Hyrule.csv.npy"
+                    "db_path": "./db/csv/Hop On Hop Off Monaco.json"
                 }
             }
         },
@@ -334,47 +302,47 @@
                 "H\u00f4tel Hermitage Monte-Carlo": {
                     "latitude": 43.73844319999999,
                     "longitude": 7.425951699999998,
-                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.json"
                 },
                 "Hotel de Paris Monte-Carlo": {
                     "latitude": 43.73900479999999,
                     "longitude": 7.427464499999997,
-                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.json"
                 },
                 "Hotel Metropole, Monte Carlo": {
                     "latitude": 43.74093209999999,
                     "longitude": 7.427932600000001,
-                    "db_path": "./db/csv/Hotel Metropole, Monte Carlo.csv.npy"
+                    "db_path": "./db/csv/Hotel Metropole, Monte Carlo.json"
                 },
                 "Fairmont Monte Carlo": {
                     "latitude": 43.7398968,
                     "longitude": 7.429953599999999,
-                    "db_path": "./db/csv/Fairmont Monte Carlo.csv.npy"
+                    "db_path": "./db/csv/Fairmont Monte Carlo.json"
                 },
                 "Casino de Monte-Carlo": {
                     "latitude": 43.7390972,
                     "longitude": 7.428068100000001,
-                    "db_path": "./db/csv/Casino de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Casino de Monte-Carlo.json"
                 },
                 "Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo": {
                     "latitude": 43.7395255,
                     "longitude": 7.427937599999998,
-                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.json"
                 },
                 "Casino Caf\u00e9 de Paris": {
                     "latitude": 43.73973350000001,
                     "longitude": 7.427713,
-                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.csv.npy"
+                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.json"
                 },
                 "Buddha-Bar Monte-Carlo": {
                     "latitude": 43.7399131,
                     "longitude": 7.4291073,
-                    "db_path": "./db/csv/Buddha-Bar Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Buddha-Bar Monte-Carlo.json"
                 },
                 "Op\u00e9ra de Monte-Carlo": {
                     "latitude": 43.7389849,
                     "longitude": 7.428203599999999,
-                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.json"
                 }
             }
         },
@@ -383,17 +351,17 @@
                 "H\u00f4tel Hermitage Monte-Carlo": {
                     "latitude": 43.73844319999999,
                     "longitude": 7.425951699999998,
-                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.json"
                 },
                 "Port Palace H\u00f4tel": {
                     "latitude": 43.737212,
                     "longitude": 7.424075099999999,
-                    "db_path": "./db/csv/Port Palace H\u00f4tel.csv.npy"
+                    "db_path": "./db/csv/Port Palace H\u00f4tel.json"
                 },
                 "Pattaya": {
                     "latitude": 43.7370965,
                     "longitude": 7.425144599999999,
-                    "db_path": "./db/csv/Pattaya.csv.npy"
+                    "db_path": "./db/csv/Pattaya.json"
                 }
             }
         },
@@ -402,47 +370,47 @@
                 "H\u00f4tel Hermitage Monte-Carlo": {
                     "latitude": 43.73844319999999,
                     "longitude": 7.425951699999998,
-                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.json"
                 },
                 "Hotel de Paris Monte-Carlo": {
                     "latitude": 43.73900479999999,
                     "longitude": 7.427464499999997,
-                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.json"
                 },
                 "Hotel Metropole, Monte Carlo": {
                     "latitude": 43.74093209999999,
                     "longitude": 7.427932600000001,
-                    "db_path": "./db/csv/Hotel Metropole, Monte Carlo.csv.npy"
+                    "db_path": "./db/csv/Hotel Metropole, Monte Carlo.json"
                 },
                 "Casino de Monte-Carlo": {
                     "latitude": 43.7390972,
                     "longitude": 7.428068100000001,
-                    "db_path": "./db/csv/Casino de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Casino de Monte-Carlo.json"
                 },
                 "Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo": {
                     "latitude": 43.7395255,
                     "longitude": 7.427937599999998,
-                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.json"
                 },
                 "Casino Caf\u00e9 de Paris": {
                     "latitude": 43.73973350000001,
                     "longitude": 7.427713,
-                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.csv.npy"
+                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.json"
                 },
                 "Op\u00e9ra de Monte-Carlo": {
                     "latitude": 43.7389849,
                     "longitude": 7.428203599999999,
-                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.json"
                 },
-                "Office du Tourisme de Hyrule": {
+                "Office du Tourisme de Monaco": {
                     "latitude": 43.7407114,
                     "longitude": 7.426025,
-                    "db_path": "./db/csv/Office du Tourisme de Hyrule.csv.npy"
+                    "db_path": "./db/csv/Office du Tourisme de Monaco.json"
                 },
                 "Buddha-Bar Monte-Carlo": {
                     "latitude": 43.7399131,
                     "longitude": 7.4291073,
-                    "db_path": "./db/csv/Buddha-Bar Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Buddha-Bar Monte-Carlo.json"
                 }
             }
         },
@@ -451,37 +419,37 @@
                 "H\u00f4tel Hermitage Monte-Carlo": {
                     "latitude": 43.73844319999999,
                     "longitude": 7.425951699999998,
-                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/H\u00f4tel Hermitage Monte-Carlo.json"
                 },
                 "Hotel de Paris Monte-Carlo": {
                     "latitude": 43.73900479999999,
                     "longitude": 7.427464499999997,
-                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.json"
                 },
                 "Port Palace H\u00f4tel": {
                     "latitude": 43.737212,
                     "longitude": 7.424075099999999,
-                    "db_path": "./db/csv/Port Palace H\u00f4tel.csv.npy"
+                    "db_path": "./db/csv/Port Palace H\u00f4tel.json"
                 },
                 "Casino de Monte-Carlo": {
                     "latitude": 43.7390972,
                     "longitude": 7.428068100000001,
-                    "db_path": "./db/csv/Casino de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Casino de Monte-Carlo.json"
                 },
                 "Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo": {
                     "latitude": 43.7395255,
                     "longitude": 7.427937599999998,
-                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.json"
                 },
                 "Op\u00e9ra de Monte-Carlo": {
                     "latitude": 43.7389849,
                     "longitude": 7.428203599999999,
-                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.json"
                 },
                 "Casino Caf\u00e9 de Paris": {
                     "latitude": 43.73973350000001,
                     "longitude": 7.427713,
-                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.csv.npy"
+                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.json"
                 }
             }
         },
@@ -490,37 +458,37 @@
                 "Fairmont Monte Carlo": {
                     "latitude": 43.7398968,
                     "longitude": 7.429953599999999,
-                    "db_path": "./db/csv/Fairmont Monte Carlo.csv.npy"
+                    "db_path": "./db/csv/Fairmont Monte Carlo.json"
                 },
                 "Hotel de Paris Monte-Carlo": {
                     "latitude": 43.73900479999999,
                     "longitude": 7.427464499999997,
-                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Hotel de Paris Monte-Carlo.json"
                 },
                 "Casino de Monte-Carlo": {
                     "latitude": 43.7390972,
                     "longitude": 7.428068100000001,
-                    "db_path": "./db/csv/Casino de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Casino de Monte-Carlo.json"
                 },
                 "Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo": {
                     "latitude": 43.7395255,
                     "longitude": 7.427937599999998,
-                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Caf\u00e9 de Paris Monte-Carlo \u00e0 la Salle Empire de l'H\u00f4tel de Paris Monte-Carlo.json"
                 },
                 "Casino Caf\u00e9 de Paris": {
                     "latitude": 43.73973350000001,
                     "longitude": 7.427713,
-                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.csv.npy"
+                    "db_path": "./db/csv/Casino Caf\u00e9 de Paris.json"
                 },
                 "Buddha-Bar Monte-Carlo": {
                     "latitude": 43.7399131,
                     "longitude": 7.4291073,
-                    "db_path": "./db/csv/Buddha-Bar Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Buddha-Bar Monte-Carlo.json"
                 },
                 "Op\u00e9ra de Monte-Carlo": {
                     "latitude": 43.7389849,
                     "longitude": 7.428203599999999,
-                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.csv.npy"
+                    "db_path": "./db/csv/Op\u00e9ra de Monte-Carlo.json"
                 }
             }
         }
