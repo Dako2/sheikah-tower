@@ -19,8 +19,7 @@ DATA_PATH = {
 
 FETCH_URL = "https://try-mec.etsi.org/sbxkbwuvda/mep1/location/v2/queries/users?address="
 DEFAULT_PROMPT = "Respond friendly, cheerfully and concisely within 50 words. Keep the conversation's flow by politely asking short question or for clarification or additional details when unsure."
-DEFAULT_PROMPT_PHOTO = """
-The user just took a photo. 
+DEFAULT_PROMPT_PHOTO = """ The user just took a photo. 
 Tell the user a story about the photo, it can be history related, a fun fact, 
 future event or just any stories that can raise the user's interests.
 At the end of the conversation, ask the user a related question that the user might be able to guess.
